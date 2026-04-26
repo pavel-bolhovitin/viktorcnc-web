@@ -47,5 +47,8 @@
   },
   "tailwindCSS.classFunctions": [
     "cva"
+  ],
+  "cSpell.words": [
+    "oklch"
   ]
 }
