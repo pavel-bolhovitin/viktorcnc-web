@@ -10,11 +10,7 @@ import Image from 'next/image';
 import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-
-const EMAIL = 'info@yourdomain.com';
-const PHONE = '+371 XX XXX XXX';
-const PHONE_HREF = 'tel:+371XXXXXXXX';
-const WHATSAPP_HREF = 'https://wa.me/371XXXXXXXX';
+import { env } from '@/utils/env';
 
 export function HeroSection() {
   return (
@@ -72,7 +68,7 @@ function ContactBlockCurrent() {
     <>
       <div className='mb-3 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center'>
         <Button asChild size='lg' className='group px-4'>
-          <a href={`mailto:${EMAIL}`}>
+          <a href={`mailto:${env.email}`}>
             Get a Quote
             <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
           </a>
@@ -80,21 +76,25 @@ function ContactBlockCurrent() {
 
         <div className='flex gap-2'>
           <Button variant='outline' size='sm' asChild>
-            <a href={`mailto:${EMAIL}`}>
+            <a href={`mailto:${env.email}`}>
               <Mail />
               Email
             </a>
           </Button>
 
           <Button variant='outline' size='sm' asChild>
-            <a href={WHATSAPP_HREF} target='_blank' rel='noopener noreferrer'>
+            <a
+              href={env.whatsappHref}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <MessageCircle />
               WhatsApp
             </a>
           </Button>
 
           <Button variant='outline' size='sm' asChild>
-            <a href={PHONE_HREF}>
+            <a href={env.phoneHref}>
               <Phone />
               Call
             </a>
@@ -105,14 +105,14 @@ function ContactBlockCurrent() {
       <div className='mb-3 grid grid-cols-[auto_1fr] items-center gap-x-4 text-xs'>
         <span className='text-muted-foreground'>Email</span>
         <div className='flex items-center gap-1'>
-          <span className='font-mono font-medium'>{EMAIL}</span>
-          <CopyButton text={EMAIL} label='Email' />
+          <span className='font-mono font-medium'>{env.email}</span>
+          <CopyButton text={env.email} label='Email' />
         </div>
 
         <span className='text-muted-foreground'>Phone / WhatsApp</span>
         <div className='flex items-center gap-1'>
-          <span className='font-mono font-medium'>{PHONE}</span>
-          <CopyButton text={PHONE} label='Phone' />
+          <span className='font-mono font-medium'>{env.phone}</span>
+          <CopyButton text={env.phone} label='Phone' />
         </div>
       </div>
 
