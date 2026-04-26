@@ -51,11 +51,15 @@ export function HeroSection() {
             unique projects.
           </p>
 
-          <p className='mb-10 font-mono text-xs text-muted-foreground'>
-            Typical tolerance: ±0.01&nbsp;mm&nbsp;&bull;&nbsp;Materials:
-            Aluminum, Steel, Plastics&nbsp;&bull;&nbsp;Based in
-            Latvia&nbsp;&bull;&nbsp;Worldwide Shipping
-          </p>
+          <div className='mb-10 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs text-muted-foreground'>
+            <span>Typical tolerance: ±0.01 mm</span>
+            <span className='h-3 w-px bg-border' />
+            <span>Materials: Aluminum, Steel, Plastics</span>
+            <span className='h-3 w-px bg-border' />
+            <span>Based in Latvia</span>
+            <span className='h-3 w-px bg-border' />
+            <span>Worldwide Shipping</span>
+          </div>
 
           <div className='mb-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center'>
             <Button
@@ -97,41 +101,39 @@ export function HeroSection() {
             Send 3D models, drawings, sketches — or ask any questions.
           </p>
 
-          <div className='rounded border border-border/30 bg-muted/50 p-4'>
-            <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
-              <div>
-                <p className='mb-1 text-[10px] font-semibold uppercase tracking-widest text-primary'>
-                  Email
-                </p>
-                <div className='flex items-center gap-1'>
-                  <a
-                    href={`mailto:${EMAIL}`}
-                    className='font-mono text-sm font-semibold transition-colors hover:text-primary'
-                  >
-                    {EMAIL}
-                  </a>
-                  <CopyButton text={EMAIL} />
-                </div>
-              </div>
-              <div>
-                <p className='mb-1 text-[10px] font-semibold uppercase tracking-widest text-primary'>
-                  Phone / WhatsApp
-                </p>
-                <div className='flex items-center gap-1'>
-                  <a
-                    href={PHONE_HREF}
-                    className='font-mono text-sm font-semibold transition-colors hover:text-primary'
-                  >
-                    {PHONE}
-                  </a>
-                  <CopyButton text={PHONE} />
-                </div>
+          <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+            <div>
+              <p className='mb-1 text-[10px] font-semibold uppercase tracking-widest text-primary'>
+                Email
+              </p>
+              <div className='flex items-center gap-1'>
+                <a
+                  href={`mailto:${EMAIL}`}
+                  className='font-mono text-sm font-semibold transition-colors hover:text-primary'
+                >
+                  {EMAIL}
+                </a>
+                <CopyButton text={EMAIL} />
               </div>
             </div>
-            <div className='mt-3 flex items-center gap-1.5 text-[11px] text-muted-foreground'>
-              <UserRound className='size-3.5' />
-              Direct communication with machinist
+            <div>
+              <p className='mb-1 text-[10px] font-semibold uppercase tracking-widest text-primary'>
+                Phone / WhatsApp
+              </p>
+              <div className='flex items-center gap-1'>
+                <a
+                  href={PHONE_HREF}
+                  className='font-mono text-sm font-semibold transition-colors hover:text-primary'
+                >
+                  {PHONE}
+                </a>
+                <CopyButton text={PHONE} />
+              </div>
             </div>
+          </div>
+          <div className='mt-3 flex items-center gap-1.5 text-[11px] text-muted-foreground'>
+            <UserRound className='size-3.5' />
+            Direct communication with machinist
           </div>
         </div>
       </div>
