@@ -1,10 +1,9 @@
 import { AppBar } from '@/components/AppBar';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
+import { ServicesSection } from '@/components/sections/ServicesSection';
 
 const placeholderSections = [
-  { label: 'Services', bg: 'bg-gray-100' },
-  { label: 'Materials', bg: 'bg-white' },
   { label: 'Proof — Work Showcase', bg: 'bg-gray-100' },
   { label: 'Process', bg: 'bg-gray-100' },
   { label: 'FAQ', bg: 'bg-white' },
@@ -18,16 +17,9 @@ export default function Home() {
 
       <main>
         <HeroSection />
-        {placeholderSections.slice(0, 3).map(({ label, bg }) => (
-          <section
-            key={label}
-            className={`${bg} flex min-h-96 items-center justify-center`}
-          >
-            <span className='text-2xl font-semibold opacity-40'>{label}</span>
-          </section>
-        ))}
+        <ServicesSection />
         <MeetFounderSection />
-        {placeholderSections.slice(3).map(({ label, bg }) => (
+        {placeholderSections.map(({ label, bg }) => (
           <section
             key={label}
             className={`${bg} flex min-h-96 items-center justify-center`}
