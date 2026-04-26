@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { env } from '@/utils/env';
 
 const FOUNDED_YEAR = 1994;
-const YEARS_EXPERIENCE = Math.ceil(new Date().getFullYear() - FOUNDED_YEAR);
+const YEARS_EXPERIENCE = new Date().getFullYear() - FOUNDED_YEAR;
 
 export function HeroSection() {
   return (
