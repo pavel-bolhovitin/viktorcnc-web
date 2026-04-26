@@ -6,14 +6,11 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import Image from 'next/image';
-
 import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
+import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { env } from '@/utils/env';
-
-const FOUNDED_YEAR = 1994;
-const YEARS_EXPERIENCE = new Date().getFullYear() - FOUNDED_YEAR;
 
 export function HeroSection() {
   return (
