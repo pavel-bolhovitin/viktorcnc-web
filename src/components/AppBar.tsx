@@ -1,4 +1,6 @@
-import { DraftingCompass } from 'lucide-react';
+import { ArrowRightIcon, DraftingCompass } from 'lucide-react';
+import { env } from '@/utils/env';
+import { Button } from './ui/button';
 
 export function AppBar() {
   return (
@@ -36,12 +38,12 @@ export function AppBar() {
         </a>
       </nav>
 
-      <a
-        href='#contact'
-        className='rounded-md bg-primary px-4 py-1.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90'
-      >
-        Get a Quote
-      </a>
+      <Button asChild size='lg' className='group px-4'>
+        <a href={`mailto:${env.email}`}>
+          Get a Quote
+          <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
+        </a>
+      </Button>
     </header>
   );
 }
