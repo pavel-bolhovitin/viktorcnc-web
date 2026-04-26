@@ -21,7 +21,7 @@ export function HeroSection() {
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
         <Image
-          src='/hero-bg-2.png'
+          src='/hero-bg.jpg'
           alt=''
           fill
           sizes='100vw'
