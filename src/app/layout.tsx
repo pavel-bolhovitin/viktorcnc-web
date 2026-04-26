@@ -28,8 +28,10 @@ export default function RootLayout({
       lang='en'
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Toaster position='bottom-center' />
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='min-h-full flex flex-col'>
+        {children}
+        <Toaster position='bottom-center' />
+      </body>
     </html>
   );
 }

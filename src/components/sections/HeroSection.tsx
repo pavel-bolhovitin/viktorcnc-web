@@ -116,10 +116,10 @@ function ContactBlockCurrent() {
         </div>
       </div>
 
-      <p className='text-xs text-muted-foreground'>
+      <div className='text-xs text-muted-foreground'>
         <p>Send 3D models, drawings, sketches — or ask any questions.</p>
         <p>Direct communication with machinist.</p>
-      </p>
+      </div>
     </>
   );
 }

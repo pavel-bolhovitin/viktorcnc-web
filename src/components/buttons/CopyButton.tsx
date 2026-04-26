@@ -1,7 +1,8 @@
+'use client';
+
 import { Check, Copy } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'sonner';
-
 import { Button } from '@/components/ui/button';
 
 export function CopyButton({ text, label }: { text: string; label?: string }) {
