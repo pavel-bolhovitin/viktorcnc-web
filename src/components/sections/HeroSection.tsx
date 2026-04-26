@@ -12,6 +12,9 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { env } from '@/utils/env';
 
+const FOUNDED_YEAR = 1994;
+const YEARS_EXPERIENCE = Math.ceil(new Date().getFullYear() - FOUNDED_YEAR);
+
 export function HeroSection() {
   return (
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
@@ -31,7 +34,7 @@ export function HeroSection() {
         <div className='col-span-12 md:col-span-8 lg:col-span-6 rounded-lg border border-white/20 bg-white/40 p-6 backdrop-blur-xs md:p-10'>
           <Badge variant='outline' className='rounded-sm mb-5'>
             <ShieldCheck className='size-3.5 text-primary' />
-            20+ Years CNC Machining Experience
+            {YEARS_EXPERIENCE}+ Years CNC Machining Experience
           </Badge>
 
           <h1 className='mb-5 text-4xl font-semibold leading-tight tracking-tight lg:text-5xl'>
@@ -49,7 +52,7 @@ export function HeroSection() {
           <div className='mb-10 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs text-muted-foreground'>
             <span>Tolerance up to ±0.01 mm</span>
             <span className='h-3 w-px bg-border' />
-            <span>Materials: Aluminum, Steel, Plastics</span>
+            <span>Materials: Aluminum, Plastics, Steel</span>
             <span className='h-3 w-px bg-border' />
             <span>Based in Latvia</span>
             <span className='h-3 w-px bg-border' />
