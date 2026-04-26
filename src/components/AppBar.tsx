@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 export function AppBar() {
   return (
-    <header className='sticky top-0 z-(--z-app-bar) flex h-16 items-center justify-between border-b border-b-gray-100 bg-white/80 px-8 backdrop-blur-md'>
+    <header className='sticky top-0 z-(--z-app-bar) flex h-16 items-center justify-between border-b border-b-gray-100 bg-white/60 px-8 backdrop-blur-md'>
       <div className='flex items-center gap-2'>
         <DraftingCompass
           className='h-6 w-6 rotate-180 text-primary'
