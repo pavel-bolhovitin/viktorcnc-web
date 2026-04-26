@@ -23,7 +23,7 @@ export function HeroSection() {
       <div className='absolute inset-0 z-0'>
         <Image
           src='/hero-bg-2.png'
-          alt='CNC machining center'
+          alt=''
           fill
           sizes='100vw'
           className='object-cover filter-[grayscale(0.2)_contrast(1.1)]'

@@ -1,4 +1,5 @@
-import { HeroSection } from '@/components/sections/hero';
+import { AppBar } from '@/components/AppBar';
+import { HeroSection } from '@/components/sections/HeroSection';
 
 const sections = [
   { label: 'Services', bg: 'bg-gray-100' },
@@ -13,9 +14,7 @@ const sections = [
 export default function Home() {
   return (
     <>
-      <header className="sticky top-0 z-10 flex h-16 items-center border-b bg-white px-8">
-        App Bar
-      </header>
+      <AppBar />
 
       <main>
         <HeroSection />
