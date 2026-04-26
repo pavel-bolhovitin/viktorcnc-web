@@ -10,7 +10,7 @@ export function AppBar() {
           className='h-6 w-6 rotate-180 text-primary'
           strokeWidth={1.75}
         />
-        <span className='text-lg font-bold tracking-tight'>VictorCNC</span>
+        <span className='text-lg font-bold tracking-tight'>{env.appName}</span>
       </div>
 
       <nav className='hidden items-center gap-6 text-sm font-medium text-foreground/70 md:flex'>
