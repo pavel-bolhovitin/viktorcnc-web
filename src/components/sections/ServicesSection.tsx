@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Package } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
@@ -37,17 +37,11 @@ const services = [
     title: 'Reverse Engineering & CAD Modeling',
     image: '/cad.png',
     alt: 'CAD model of a mechanical part for reverse engineering',
-    specs: [{ label: 'File Formats', value: 'STEP, IGES, STL, DXF' }],
+    specs: [],
     description:
       'Recreating accurate CAD models from physical samples, broken parts, or sketches to manufacture fully functional replacements.',
     materials: ['Metal Parts', 'Plastic Parts'],
   },
-];
-
-const materials = [
-  { name: 'Aluminum', grades: '6061, 7075' },
-  { name: 'Steel & Stainless', grades: '304, 316L' },
-  { name: 'Engineering Plastics', grades: 'POM, PTFE, Nylon, ABS' },
 ];
 
 export function ServicesSection() {
@@ -71,7 +65,7 @@ export function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.id}
-              className='flex flex-col border border-gray-200 bg-white transition-colors hover:border-primary/30'
+              className='group flex flex-col border border-gray-200 bg-white transition-colors hover:border-primary/30'
             >
               <div className='relative aspect-video overflow-hidden'>
                 <Image
@@ -79,28 +73,30 @@ export function ServicesSection() {
                   alt={service.alt}
                   fill
                   sizes='(max-width: 768px) 100vw, 33vw'
-                  className='object-cover grayscale transition-all duration-500 hover:grayscale-0'
+                  className='object-cover grayscale transition-all duration-500 group-hover:grayscale-0'
                 />
               </div>
 
-              <div className='flex flex-grow flex-col p-6'>
+              <div className='flex grow flex-col p-6'>
                 <h3 className='mb-4 text-base font-semibold leading-snug'>
                   {service.title}
                 </h3>
 
-                <div className='mb-4 border border-gray-100 bg-gray-50 p-3'>
-                  {service.specs.map((spec) => (
-                    <p
-                      key={spec.label}
-                      className='font-mono text-xs leading-relaxed text-muted-foreground'
-                    >
-                      <span className='text-foreground'>{spec.label}:</span>{' '}
-                      {spec.value}
-                    </p>
-                  ))}
-                </div>
+                {service.specs.length > 0 && (
+                  <div className='mb-4 border border-gray-100 bg-gray-50 p-3'>
+                    {service.specs.map((spec) => (
+                      <p
+                        key={spec.label}
+                        className='font-mono text-xs leading-relaxed text-muted-foreground'
+                      >
+                        <span className='text-foreground'>{spec.label}:</span>{' '}
+                        {spec.value}
+                      </p>
+                    ))}
+                  </div>
+                )}
 
-                <p className='mb-6 flex-grow text-sm leading-relaxed text-muted-foreground'>
+                <p className='mb-6 grow text-sm leading-relaxed text-muted-foreground'>
                   {service.description}
                 </p>
 
@@ -119,48 +115,50 @@ export function ServicesSection() {
           ))}
         </div>
 
-        <div className='mb-8 overflow-hidden border border-gray-200'>
-          <div className='grid grid-cols-1 divide-y divide-gray-200 lg:grid-cols-4 lg:divide-x lg:divide-y-0'>
-            <div className='bg-gray-50 p-6'>
-              <h3 className='mb-1 text-sm font-semibold'>
-                Supported Materials
-              </h3>
-              <p className='text-xs text-muted-foreground'>
-                Core materials used in most projects.
-              </p>
-            </div>
-            {materials.map(({ name, grades }) => (
-              <div key={name} className='flex flex-col gap-1 p-6'>
-                <span className='font-mono text-xs font-semibold uppercase tracking-wider text-primary'>
+        <div className='mb-8 bg-gray-50 px-8 py-6'>
+          <p className='mb-5 font-mono text-xs uppercase tracking-wider text-muted-foreground'>
+            Supported Materials
+          </p>
+          <div className='grid grid-cols-1 gap-6 sm:grid-cols-3'>
+            {[
+              {
+                name: 'Aluminum',
+                grades: '6061, 7075 & others',
+                note: 'Lightweight, high strength-to-weight ratio',
+              },
+              {
+                name: 'Steel & Stainless',
+                grades: '304, 316L & others',
+                note: 'Corrosion resistant, high durability',
+              },
+              {
+                name: 'Engineering Plastics',
+                grades: 'POM, PTFE, Nylon, ABS & others',
+                note: 'Chemical resistance, low friction',
+              },
+            ].map(({ name, grades, note }) => (
+              <div key={name}>
+                <p className='mb-0.5 font-mono text-xs font-semibold uppercase tracking-wider text-primary'>
                   {name}
-                </span>
-                <span className='font-mono text-xs text-muted-foreground'>
+                </p>
+                <p className='mb-1.5 font-mono text-xs text-muted-foreground'>
                   {grades}
-                </span>
+                </p>
+                <p className='text-xs leading-relaxed text-muted-foreground'>
+                  {note}
+                </p>
               </div>
             ))}
           </div>
-
-          <div className='flex flex-col items-start justify-between gap-3 border-t border-gray-200 bg-gray-50 px-6 py-4 md:flex-row md:items-center'>
-            <p className='max-w-xl text-sm italic text-muted-foreground'>
-              If you&apos;re unsure which material fits your part, I can
-              recommend the best option based on load, environment, and
-              application.
+          <div className='mt-6 border-t border-gray-200 pt-4'>
+            <p className='text-xs text-muted-foreground'>
+              These are the most commonly used materials.{' '}
+              <strong className='text-foreground'>
+                Working with something else?
+              </strong>{' '}
+              Send your requirements — I'll confirm availability and recommend
+              the right grade for your application.
             </p>
-            <div className='flex shrink-0 flex-col gap-3 sm:flex-row sm:gap-4'>
-              <div className='flex items-center gap-1.5'>
-                <CheckCircle className='size-3.5 shrink-0 text-primary' />
-                <span className='font-mono text-xs uppercase tracking-wider text-muted-foreground'>
-                  ISO 2768
-                </span>
-              </div>
-              <div className='flex items-center gap-1.5'>
-                <Package className='size-3.5 shrink-0 text-primary' />
-                <span className='font-mono text-xs uppercase tracking-wider text-muted-foreground'>
-                  Material Sourcing Available
-                </span>
-              </div>
-            </div>
           </div>
         </div>
 
