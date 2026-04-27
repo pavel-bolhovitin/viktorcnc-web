@@ -62,7 +62,6 @@ const machines = [
   },
 ];
 
-
 export function ProductionFacilitySection() {
   return (
     <section className='border-y border-gray-200 bg-white py-20'>
@@ -144,14 +143,20 @@ export function ProductionFacilitySection() {
               </h3>
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              Every part is checked using precision measuring tools to ensure
-              it matches your drawing exactly.
+              Every part is checked using precision measuring tools to ensure it
+              matches your drawing exactly.
             </p>
             <div className='space-y-1.5'>
-              {['Digital calipers', 'Micrometers', 'Surface measurement tools'].map((tool) => (
+              {[
+                'Digital calipers',
+                'Micrometers',
+                'Surface measurement tools',
+              ].map((tool) => (
                 <div key={tool} className='flex items-center gap-2'>
                   <span className='h-1.5 w-1.5 shrink-0 bg-primary' />
-                  <span className='font-mono text-xs text-muted-foreground'>{tool}</span>
+                  <span className='font-mono text-xs text-muted-foreground'>
+                    {tool}
+                  </span>
                 </div>
               ))}
             </div>
@@ -184,7 +189,7 @@ export function ProductionFacilitySection() {
             </a>
           </Button>
           <p className='font-mono text-xs text-muted-foreground'>
-            Ready to start? Send your drawing and get a quote within 24 hours.
+            Ready to start? Send your drawing and get a quote.
           </p>
         </div>
       </div>
