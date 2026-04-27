@@ -1,6 +1,7 @@
 import { AppBar } from '@/components/AppBar';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
+import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
 
 const placeholderSections = [
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <ServicesSection />
+        <ProductionFacilitySection />
         <MeetFounderSection />
         {placeholderSections.map(({ label, bg }) => (
           <section
