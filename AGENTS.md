@@ -31,3 +31,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **@description**: Consistent naming across the codebase.
 
 - **Components** (`.tsx` files containing a React component): PascalCase. `HeroSection.tsx`, `CopyButton.tsx` — correct. `heroSection.tsx`, `copy-button.tsx` — forbidden.
+
+### [RULE] No Section Label Comments in JSX
+
+**@when**: *.tsx
+
+**@description**: Do not add `{/* Label */}` comments that merely name the block below them (e.g. `{/* Header */}`, `{/* Quality Control */}`, `{/* CTA */}`). Well-named elements and structure make these redundant. Only add a JSX comment when explaining a non-obvious constraint or workaround.

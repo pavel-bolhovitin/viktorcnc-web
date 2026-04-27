@@ -67,7 +67,6 @@ export function ProductionFacilitySection() {
   return (
     <section className='border-y border-gray-200 bg-white py-20'>
       <div className='mx-auto max-w-7xl px-6'>
-        {/* Header */}
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
             Production Facility
@@ -83,7 +82,6 @@ export function ProductionFacilitySection() {
           </p>
         </div>
 
-        {/* Machine cards */}
         <div className='mb-16 space-y-6'>
           {machines.map((machine, index) => {
             const flip = index % 2 === 1;
@@ -93,7 +91,6 @@ export function ProductionFacilitySection() {
                 key={machine.id}
                 className={`group flex flex-col md:flex-row ${flip ? 'md:flex-row-reverse' : ''} gap-0`}
               >
-                {/* Image — 3/5 */}
                 <div className='relative h-96 overflow-hidden border border-gray-200 md:h-120 md:w-3/5'>
                   <Image
                     src={machine.image}
@@ -104,7 +101,6 @@ export function ProductionFacilitySection() {
                   />
                 </div>
 
-                {/* Text — 2/5 */}
                 <div className='flex flex-col justify-between border border-gray-200 bg-white p-8 md:w-2/5'>
                   <div>
                     <div className='mb-8 flex items-start justify-between'>
@@ -139,9 +135,7 @@ export function ProductionFacilitySection() {
           })}
         </div>
 
-        {/* Quality Control + Personally Operated */}
         <div className='mb-16 grid grid-cols-1 gap-12 border-t border-gray-200 pt-12 md:grid-cols-2'>
-          {/* Quality Control */}
           <div className='space-y-4'>
             <div className='flex items-center gap-2'>
               <ShieldCheck className='h-5 w-5 shrink-0 text-primary' />
@@ -167,7 +161,6 @@ export function ProductionFacilitySection() {
             </p>
           </div>
 
-          {/* Personally Operated */}
           <div className='space-y-4'>
             <div className='flex items-center gap-2'>
               <UserCheck className='h-5 w-5 shrink-0 text-primary' />
@@ -183,7 +176,6 @@ export function ProductionFacilitySection() {
           </div>
         </div>
 
-        {/* CTA */}
         <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
           <Button asChild size='lg' className='group px-6'>
             <a href={`mailto:${env.email}`}>
