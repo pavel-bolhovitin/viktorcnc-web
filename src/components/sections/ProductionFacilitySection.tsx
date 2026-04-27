@@ -1,11 +1,8 @@
 import {
   ArrowRight,
-  Droplets,
   RefreshCw,
-  Settings,
   Settings2,
   ShieldCheck,
-  Thermometer,
   UserCheck,
   Zap,
 } from 'lucide-react';
@@ -26,7 +23,7 @@ const machines = [
     image: '/milling-center-2.jpg',
     alt: 'High-speed CNC milling center cutting aluminum parts at 24000 RPM',
     specs: [
-      { label: 'Target Materials', value: 'Aluminum & Plastics' },
+      { label: 'Target Materials', value: 'Aluminum, Steel & Plastics' },
       { label: 'Spindle Speed', value: '24,000 RPM' },
       { label: 'Configuration', value: '3-Axis High-Speed' },
     ],
@@ -65,12 +62,6 @@ const machines = [
   },
 ];
 
-const measurementTools = [
-  'Digital Micrometers (0.001 mm)',
-  'Mitutoyo Height Gauges',
-  'Surface Finish Profilometer',
-  'Granite Surface Plate Grade 00',
-];
 
 export function ProductionFacilitySection() {
   return (
@@ -159,26 +150,21 @@ export function ProductionFacilitySection() {
               </h3>
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              Accuracy is verified at every stage of production. Using
-              calibrated micrometers, bore gauges, and surface roughness
-              testers, I ensure that every dimension meets your specified
-              tolerances. Measurement reports available upon request.
+              Every part is checked using precision measuring tools to ensure
+              it matches your drawing exactly.
             </p>
-            <div className='border border-gray-200 bg-gray-50 p-4'>
-              <p className='mb-3 font-mono text-[11px] font-semibold uppercase tracking-wider text-muted-foreground'>
-                Measurement Inventory
-              </p>
-              <div className='grid grid-cols-2 gap-2'>
-                {measurementTools.map((tool) => (
-                  <div key={tool} className='flex items-center gap-2'>
-                    <span className='h-1.5 w-1.5 shrink-0 bg-primary' />
-                    <span className='font-mono text-xs text-muted-foreground'>
-                      {tool}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            <div className='space-y-1.5'>
+              {['Digital calipers', 'Micrometers', 'Surface measurement tools'].map((tool) => (
+                <div key={tool} className='flex items-center gap-2'>
+                  <span className='h-1.5 w-1.5 shrink-0 bg-primary' />
+                  <span className='font-mono text-xs text-muted-foreground'>{tool}</span>
+                </div>
+              ))}
             </div>
+            <p className='text-sm leading-relaxed text-muted-foreground'>
+              Parts are verified before delivery — no guesswork, only measured
+              results.
+            </p>
           </div>
 
           {/* Personally Operated */}
@@ -190,42 +176,10 @@ export function ProductionFacilitySection() {
               </h3>
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              By operating as a specialized independent facility, I eliminate
-              the noise of large-scale manufacturing. Every toolpath is
-              optimized and every machine is personally maintained — one-off
-              prototypes receive the same attention as complex batch runs.
+              All machines are set up, operated, and maintained by me
+              personally. This ensures consistent quality and full control at
+              every stage.
             </p>
-            <div className='space-y-3'>
-              {[
-                {
-                  icon: Droplets,
-                  title: 'Lubrication Control',
-                  desc: 'High-grade synthetic coolants for thermal stability.',
-                },
-                {
-                  icon: Thermometer,
-                  title: 'Climate Optimization',
-                  desc: 'Laboratory-stable temperature for geometric repeatability.',
-                },
-                {
-                  icon: Settings,
-                  title: 'Toolpath Optimization',
-                  desc: 'Every tool path reviewed and tested before production run.',
-                },
-              ].map(({ icon: Icon, title, desc }) => (
-                <div key={title} className='flex items-start gap-3'>
-                  <Icon className='mt-0.5 h-4 w-4 shrink-0 text-muted-foreground' />
-                  <div>
-                    <p className='font-mono text-[11px] font-semibold uppercase tracking-wider text-foreground'>
-                      {title}
-                    </p>
-                    <p className='text-xs leading-relaxed text-muted-foreground'>
-                      {desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
 
