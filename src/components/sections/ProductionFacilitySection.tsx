@@ -1,10 +1,13 @@
 import {
   ArrowRight,
   Droplets,
+  RefreshCw,
   Settings,
+  Settings2,
   ShieldCheck,
   Thermometer,
   UserCheck,
+  Zap,
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -13,26 +16,13 @@ import { env } from '@/utils/env';
 
 const machines = [
   {
-    id: 'milling-01',
-    label: 'Primary Milling Unit',
-    title: 'CNC Milling Center',
-    image: '/milling-center-1.jpg',
-    alt: 'High-precision 3-axis CNC milling machine center',
-    specs: [
-      { label: 'Configuration', value: '3-Axis' },
-      { label: 'Travel (X/Y/Z)', value: '760 × 500 × 500 mm' },
-      { label: 'Accuracy', value: '±0.005 mm' },
-    ],
-    features: [
-      'Complex shape machining',
-      'Tight tolerances',
-      'Smooth surface finish',
-    ],
-  },
-  {
     id: 'milling-02',
+    unitId: 'UNIT_01',
+    icon: Zap,
     label: 'High-Speed Processing',
     title: 'CNC Milling Center — High Speed',
+    description:
+      'Optimized for aluminum and plastics — high spindle speeds with fine surface finish.',
     image: '/milling-center-2.jpg',
     alt: 'High-speed CNC spindle milling aluminum parts',
     specs: [
@@ -40,27 +30,37 @@ const machines = [
       { label: 'Spindle Speed', value: '24,000 RPM' },
       { label: 'Configuration', value: '3-Axis High-Speed' },
     ],
-    features: [
-      'Fast cycle times',
-      'Fine surface finish',
-      'Light alloy specialist',
+  },
+  {
+    id: 'milling-01',
+    unitId: 'UNIT_02',
+    icon: Settings2,
+    label: 'Primary Milling Unit',
+    title: 'CNC Milling Center',
+    description:
+      '3-axis precision machining for complex geometries and tight dimensional tolerances.',
+    image: '/milling-center-1.jpg',
+    alt: 'High-precision 3-axis CNC milling machine center',
+    specs: [
+      { label: 'Configuration', value: '3-Axis' },
+      { label: 'Travel (X/Y/Z)', value: '760 × 500 × 500 mm' },
+      { label: 'Accuracy', value: '±0.005 mm' },
     ],
   },
   {
     id: 'lathe',
+    unitId: 'UNIT_03',
+    icon: RefreshCw,
     label: 'Turning Department',
     title: 'Precision CNC Lathe',
+    description:
+      'CNC turning for shafts, bushings, and threaded parts with consistent diameter accuracy.',
     image: '/turning-center.jpg',
     alt: 'Precision CNC lathe turning a cylindrical metal part',
     specs: [
       { label: 'Max Diameter', value: '250 mm' },
       { label: 'Max Length', value: '800 mm' },
       { label: 'Spindle Bore', value: '65 mm' },
-    ],
-    features: [
-      'Shafts, bushings, threaded parts',
-      'Consistent diameter accuracy',
-      'Clean surface finish',
     ],
   },
 ];
@@ -85,63 +85,67 @@ export function ProductionFacilitySection() {
             Production Facility — Precision You Can Rely On
           </h2>
           <p className='text-base leading-relaxed text-muted-foreground'>
-            My workshop in Latvia is equipped for custom CNC part production —
-            from single prototypes to batch orders. Every machine is calibrated
-            and maintained to ensure consistent micron-level accuracy.
+            Located in Latvia, my workshop is optimized for high-precision
+            custom orders. I combine industry-standard CNC machinery with
+            specialized metrology tools to ensure every micron matches your
+            blueprint.
           </p>
         </div>
 
         {/* Machine cards */}
-        <div className='mb-16 grid grid-cols-1 gap-6 md:grid-cols-3'>
-          {machines.map((machine) => (
-            <div
-              key={machine.id}
-              className='group flex flex-col border border-gray-200 bg-white transition-colors hover:border-primary/30'
-            >
-              <div className='relative aspect-video overflow-hidden'>
-                <Image
-                  src={machine.image}
-                  alt={machine.alt}
-                  fill
-                  sizes='(max-width: 768px) 100vw, 33vw'
-                  className='object-cover transition-all duration-500'
-                />
-              </div>
-
-              <div className='flex grow flex-col p-6'>
-                <p className='mb-1 font-mono text-[10px] uppercase tracking-wider text-primary'>
-                  {machine.label}
-                </p>
-                <h3 className='mb-4 text-base font-semibold leading-snug'>
-                  {machine.title}
-                </h3>
-
-                <div className='mb-4 border border-gray-100 bg-gray-50 p-3'>
-                  {machine.specs.map((spec) => (
-                    <p
-                      key={spec.label}
-                      className='font-mono text-xs leading-relaxed text-muted-foreground'
-                    >
-                      <span className='text-foreground'>{spec.label}:</span>{' '}
-                      {spec.value}
-                    </p>
-                  ))}
+        <div className='mb-16 space-y-6'>
+          {machines.map((machine, index) => {
+            const flip = index % 2 === 1;
+            const Icon = machine.icon;
+            return (
+              <div
+                key={machine.id}
+                className={`group flex flex-col md:flex-row ${flip ? 'md:flex-row-reverse' : ''} gap-0`}
+              >
+                {/* Image — 3/5 */}
+                <div className='relative h-96 overflow-hidden border border-gray-200 md:h-120 md:w-3/5'>
+                  <Image
+                    src={machine.image}
+                    alt={machine.alt}
+                    fill
+                    sizes='(max-width: 768px) 100vw, 60vw'
+                    className='object-cover transition-all duration-500'
+                  />
                 </div>
 
-                <ul className='space-y-1'>
-                  {machine.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className='flex items-center gap-2 text-xs text-muted-foreground'
-                    >
-                      <span className='h-1 w-1 shrink-0 bg-primary' />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                {/* Text — 2/5 */}
+                <div className='flex flex-col justify-between border border-gray-200 bg-white p-8 md:w-2/5'>
+                  <div>
+                    <div className='mb-8 flex items-start justify-between'>
+                      <span className='bg-gray-100 px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-gray-600'>
+                        {machine.unitId}
+                      </span>
+                      <Icon className='h-4 w-4 text-primary' />
+                    </div>
+                    <h3 className='mb-3 text-lg font-semibold leading-snug'>
+                      {machine.title}
+                    </h3>
+                    <p className='text-sm leading-relaxed text-muted-foreground'>
+                      {machine.description}
+                    </p>
+                  </div>
+
+                  <div className='space-y-2.5 border-t border-gray-100 pt-5'>
+                    {machine.specs.map((spec) => (
+                      <div key={spec.label} className='flex justify-between'>
+                        <span className='font-mono text-[10px] uppercase tracking-wider text-muted-foreground'>
+                          {spec.label}
+                        </span>
+                        <span className='font-mono text-xs font-medium text-foreground'>
+                          {spec.value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Quality Control + Personally Operated */}
