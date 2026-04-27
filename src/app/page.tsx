@@ -1,4 +1,5 @@
 import { AppBar } from '@/components/AppBar';
+import { FaqSection } from '@/components/sections/FaqSection';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
@@ -7,7 +8,6 @@ import { ServicesSection } from '@/components/sections/ServicesSection';
 const placeholderSections = [
   { label: 'Proof — Work Showcase', bg: 'bg-gray-100' },
   { label: 'Process', bg: 'bg-gray-100' },
-  { label: 'FAQ', bg: 'bg-white' },
   { label: 'CTA', bg: 'bg-gray-900 text-white' },
 ];
 
@@ -21,6 +21,7 @@ export default function Home() {
         <ServicesSection />
         <ProductionFacilitySection />
         <MeetFounderSection />
+        <FaqSection />
         {placeholderSections.map(({ label, bg }) => (
           <section
             key={label}
