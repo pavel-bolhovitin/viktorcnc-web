@@ -19,12 +19,12 @@ const machines = [
     id: 'milling-02',
     unitId: 'UNIT_01',
     icon: Zap,
-    label: 'High-Speed Processing',
-    title: 'CNC Milling Center — High Speed',
+    label: 'High-Speed Milling',
+    title: 'Precision CNC Milling — High Speed',
     description:
-      'Optimized for aluminum and plastics — high spindle speeds with fine surface finish.',
+      'CNC milling of aluminum and plastic parts at 24,000 RPM spindle speed — fine surface finish with tight dimensional tolerances.',
     image: '/milling-center-2.jpg',
-    alt: 'High-speed CNC spindle milling aluminum parts',
+    alt: 'High-speed CNC milling center cutting aluminum parts at 24000 RPM',
     specs: [
       { label: 'Target Materials', value: 'Aluminum & Plastics' },
       { label: 'Spindle Speed', value: '24,000 RPM' },
@@ -36,15 +36,15 @@ const machines = [
     unitId: 'UNIT_02',
     icon: Settings2,
     label: 'Primary Milling Unit',
-    title: 'CNC Milling Center',
+    title: 'Precision 3-Axis CNC Milling',
     description:
-      '3-axis precision machining for complex geometries and tight dimensional tolerances.',
+      'CNC milling of complex parts, housings, brackets, and custom components for mechanical applications. Suitable for prototypes and small batch production.',
     image: '/milling-center-1.jpg',
-    alt: 'High-precision 3-axis CNC milling machine center',
+    alt: 'Precision 3-axis CNC milling machine center for custom metal parts',
     specs: [
+      { label: 'Working Area', value: '760 × 500 × 500 mm' },
+      { label: 'Tolerances', value: 'up to ±0.01 mm' },
       { label: 'Configuration', value: '3-Axis' },
-      { label: 'Travel (X/Y/Z)', value: '760 × 500 × 500 mm' },
-      { label: 'Accuracy', value: '±0.005 mm' },
     ],
   },
   {
@@ -52,15 +52,15 @@ const machines = [
     unitId: 'UNIT_03',
     icon: RefreshCw,
     label: 'Turning Department',
-    title: 'Precision CNC Lathe',
+    title: 'High-Accuracy Lathe Turning',
     description:
-      'CNC turning for shafts, bushings, and threaded parts with consistent diameter accuracy.',
+      'Precision turning of cylindrical parts such as shafts, bushings, and mechanical components with high surface quality and tight tolerances.',
     image: '/turning-center.jpg',
-    alt: 'Precision CNC lathe turning a cylindrical metal part',
+    alt: 'Precision CNC lathe turning cylindrical metal shafts and bushings',
     specs: [
       { label: 'Max Diameter', value: '250 mm' },
       { label: 'Max Length', value: '800 mm' },
-      { label: 'Spindle Bore', value: '65 mm' },
+      { label: 'Tolerances', value: 'up to ±0.03 mm' },
     ],
   },
 ];
