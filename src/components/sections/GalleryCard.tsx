@@ -1,8 +1,9 @@
 'use client';
 
+import Fade from 'embla-carousel-fade';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Carousel,
   type CarouselApi,
@@ -13,45 +14,10 @@ import {
 export type PhotoEntry = { src: string; alt: string };
 export type PhotoSet = { id: string; height: number; photos: PhotoEntry[] };
 
-const TWEEN_FACTOR_BASE = 0.15;
-
 export function GalleryCard({ set }: { set: PhotoSet }) {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
   const count = set.photos.length;
-  const tweenFactor = useRef(0);
-  const tweenNodes = useRef<HTMLElement[]>([]);
-
-  const setTweenNodes = useCallback((emblaApi: NonNullable<CarouselApi>) => {
-    tweenNodes.current = emblaApi
-      .slideNodes()
-      .map((node) => node.querySelector('.parallax-layer') as HTMLElement);
-  }, []);
-
-  const setTweenFactor = useCallback((emblaApi: NonNullable<CarouselApi>) => {
-    tweenFactor.current = TWEEN_FACTOR_BASE * emblaApi.scrollSnapList().length;
-  }, []);
-
-  const tweenParallax = useCallback((emblaApi: NonNullable<CarouselApi>) => {
-    const engine = emblaApi.internalEngine();
-    const scrollProgress = emblaApi.scrollProgress();
-    emblaApi.scrollSnapList().forEach((scrollSnap: number, index: number) => {
-      let diffToTarget = scrollSnap - scrollProgress;
-      if (engine.options.loop) {
-        engine.slideLooper.loopPoints.forEach((loopItem) => {
-          const target = loopItem.target();
-          if (index === loopItem.index && target !== 0) {
-            const sign = Math.sign(target);
-            if (sign === -1) diffToTarget = scrollSnap - (1 + scrollProgress);
-            if (sign === 1) diffToTarget = scrollSnap + (1 - scrollProgress);
-          }
-        });
-      }
-      const translate = diffToTarget * (-1 * tweenFactor.current) * 100;
-      const node = tweenNodes.current[index];
-      if (node) node.style.transform = `translateX(${translate}%)`;
-    });
-  }, []);
 
   useEffect(() => {
     if (!api) return;
@@ -62,41 +28,25 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
     };
   }, [api]);
 
-  useEffect(() => {
-    if (!api) return;
-    setTweenNodes(api);
-    setTweenFactor(api);
-    tweenParallax(api);
-    api.on('reInit', setTweenNodes);
-    api.on('reInit', setTweenFactor);
-    api.on('reInit', tweenParallax);
-    api.on('scroll', tweenParallax);
-    return () => {
-      api.off('reInit', setTweenNodes);
-      api.off('reInit', setTweenFactor);
-      api.off('reInit', tweenParallax);
-      api.off('scroll', tweenParallax);
-    };
-  }, [api, setTweenNodes, setTweenFactor, tweenParallax]);
-
   return (
-    <Carousel setApi={setApi} opts={{ loop: true }} className='group overflow-hidden'>
-      <CarouselContent className='ml-0'>
+    <Carousel
+      setApi={setApi}
+      opts={{ loop: true, duration: 22 }}
+      plugins={[Fade()]}
+      className='group overflow-hidden'
+      style={{ height: set.height }}
+    >
+      <CarouselContent className='ml-0 h-full'>
         {set.photos.map((photo) => (
           <CarouselItem key={photo.src} className='pl-0'>
-            <div className='w-full overflow-hidden' style={{ height: set.height }}>
-              <div
-                className='parallax-layer relative h-full'
-                style={{ width: 'calc(100% + 3rem)', marginLeft: '-1.5rem' }}
-              >
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                  className='object-cover'
-                />
-              </div>
+            <div className='relative w-full' style={{ height: set.height }}>
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                fill
+                sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                className='object-cover transition-transform duration-500 group-hover:scale-105'
+              />
             </div>
           </CarouselItem>
         ))}
