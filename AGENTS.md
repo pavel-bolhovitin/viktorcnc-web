@@ -1,5 +1,25 @@
 # AGENTS.md
 
+## Project Architecture
+
+**Stack**: React + Next.js (App Router) + shadcn/ui + Tailwind CSS. Deployed as static site to AWS S3.
+
+**Rendering**: SSG only. All pages use `generateStaticParams` / `export const dynamic = 'force-static'` where needed. No SSR, no server actions that require a running server. Output: `next export` (`output: 'export'` in `next.config`).
+
+**Hosting**: S3 static website hosting (+ CloudFront CDN). No Node.js server at runtime. API routes forbidden — they won't run.
+
+**UI components**: shadcn/ui (Radix primitives + Tailwind). Add components via `npx shadcn@latest add <component>`, never hand-roll what shadcn provides.
+
+**Styling**: Tailwind CSS utility classes only. No CSS modules, no styled-components.
+
+**Key constraints**:
+
+- No dynamic routes that aren't statically pre-rendered at build time.
+- No `useSearchParams` without a Suspense boundary (Next.js static export requirement).
+- Images: use `next/image` from `next-export-optimize-images` (drop-in replacement that optimizes images at build time for static export). Import from `next-export-optimize-images`, not `next/image`.
+
+---
+
 *Rules Template:*
 
 ```md
