@@ -1,5 +1,6 @@
 import { AppBar } from '@/components/AppBar';
 import { FaqSection } from '@/components/sections/FaqSection';
+import { GallerySection } from '@/components/sections/GallerySection';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
@@ -22,6 +23,7 @@ export default function Home() {
         <ProductionFacilitySection />
         <MeetFounderSection />
         <FaqSection />
+        <GallerySection />
         {placeholderSections.map(({ label, bg }) => (
           <section
             key={label}
