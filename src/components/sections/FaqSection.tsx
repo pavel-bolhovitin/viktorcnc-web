@@ -8,6 +8,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
+import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 
 const faqs = [
@@ -45,11 +46,11 @@ const faqs = [
   },
 ];
 
-export function FaqSection() {
+export function FaqSection({ className }: { className?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className='bg-white py-20'>
+    <section className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>

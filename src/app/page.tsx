@@ -7,7 +7,6 @@ import { ProductionFacilitySection } from '@/components/sections/ProductionFacil
 import { ServicesSection } from '@/components/sections/ServicesSection';
 
 const placeholderSections = [
-  { label: 'Proof — Work Showcase', bg: 'bg-gray-100' },
   { label: 'Process', bg: 'bg-gray-100' },
   { label: 'CTA', bg: 'bg-gray-900 text-white' },
 ];
@@ -19,11 +18,11 @@ export default function Home() {
 
       <main>
         <HeroSection />
-        <ServicesSection />
-        <ProductionFacilitySection />
-        <MeetFounderSection />
-        <FaqSection />
-        <GallerySection />
+        <ServicesSection className='bg-white border-b border-b-gray-100' />
+        <GallerySection className='bg-gray-50 border-b border-b-gray-100' />
+        <ProductionFacilitySection className='bg-white border-b border-b-gray-100' />
+        <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
+        <FaqSection className='bg-white border-b border-b-gray-100' />
         {placeholderSections.map(({ label, bg }) => (
           <section
             key={label}

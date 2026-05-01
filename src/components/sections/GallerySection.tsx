@@ -1,4 +1,5 @@
 import { GalleryCard, type PhotoSet } from '@/components/sections/GalleryCard';
+import { cn } from '@/lib/utils';
 
 const photoSets: PhotoSet[] = [
   {
@@ -68,9 +69,9 @@ const photoSets: PhotoSet[] = [
   },
 ];
 
-export function GallerySection() {
+export function GallerySection({ className }: { className?: string }) {
   return (
-    <section className='bg-white py-20'>
+    <section className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>

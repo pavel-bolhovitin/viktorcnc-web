@@ -31,7 +31,7 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
   return (
     <Carousel
       setApi={setApi}
-      opts={{ loop: true, duration: 22 }}
+      opts={{ loop: true, duration: 0 }}
       plugins={[Fade()]}
       className='group overflow-hidden'
       style={{ height: set.height }}

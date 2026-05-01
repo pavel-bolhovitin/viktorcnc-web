@@ -9,6 +9,7 @@ import {
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 
 const machines = [
@@ -62,9 +63,13 @@ const machines = [
   },
 ];
 
-export function ProductionFacilitySection() {
+export function ProductionFacilitySection({
+  className,
+}: {
+  className?: string;
+}) {
   return (
-    <section className='border-y border-gray-200 bg-white py-20'>
+    <section className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>

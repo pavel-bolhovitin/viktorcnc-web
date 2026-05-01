@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { env } from '@/utils/env';
 
-export function HeroSection() {
+export function HeroSection({ className }: { className?: string }) {
   return (
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
