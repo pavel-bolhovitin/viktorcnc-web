@@ -1,86 +1,38 @@
+import cncPartsMeta from '../../../../public/images/cnc-parts-meta.json';
 import type { PhotoSet } from './GalleryCard';
 
-export const photoSets: PhotoSet[] = [
-  {
-    id: 'a',
-    height: 280,
-    photos: [
-      { src: '/founder.jpg', alt: 'Workshop founder' },
-      { src: '/turning-center.jpg', alt: 'CNC turning center' },
-    ],
-  },
-  {
-    id: 'b',
-    height: 360,
-    photos: [{ src: '/milling-center-1.jpg', alt: 'CNC milling center 1' }],
-  },
-  {
-    id: 'c',
-    height: 220,
-    photos: [
-      { src: '/milling-center-2.jpg', alt: 'CNC milling center 2' },
-      { src: '/hero-bg.jpg', alt: 'Machine shop workshop' },
-      { src: '/milling.png', alt: 'Milling operation' },
-    ],
-  },
-  {
-    id: 'd',
-    height: 320,
-    photos: [
-      { src: '/turning.png', alt: 'Turning operation' },
-      { src: '/cad.png', alt: 'CAD model' },
-    ],
-  },
-  {
-    id: 'e',
-    height: 240,
-    photos: [{ src: '/hero-bg.jpg', alt: 'Machine shop workshop' }],
-  },
-  {
-    id: 'f',
-    height: 380,
-    photos: [
-      { src: '/cad.png', alt: 'CAD model' },
-      { src: '/founder.jpg', alt: 'Workshop founder' },
-    ],
-  },
-  {
-    id: 'g',
-    height: 260,
-    photos: [
-      { src: '/milling.png', alt: 'Milling operation' },
-      { src: '/milling-center-1.jpg', alt: 'CNC milling center 1' },
-      { src: '/turning-center.jpg', alt: 'CNC turning center' },
-    ],
-  },
-  {
-    id: 'h',
-    height: 340,
-    photos: [{ src: '/turning-center.jpg', alt: 'CNC turning center' }],
-  },
-  {
-    id: 'i',
-    height: 200,
-    photos: [
-      { src: '/milling-center-2.jpg', alt: 'CNC milling center 2' },
-      { src: '/turning.png', alt: 'Turning operation' },
-    ],
-  },
-  {
-    id: 'j',
-    height: 300,
-    photos: [
-      { src: '/images/gallery/example_1_1.webp', alt: 'CNC part example' },
-      { src: '/images/gallery/example_1_2.webp', alt: 'CNC part example' },
-      { src: '/images/gallery/example_1_3.webp', alt: 'CNC part example' },
-    ],
-  },
-  {
-    id: 'k',
-    height: 320,
-    photos: [
-      { src: '/images/gallery/example_2_1.webp', alt: 'CNC part example' },
-      { src: '/images/gallery/example_2_2.webp', alt: 'CNC part example' },
-    ],
-  },
-];
+type ImageMeta = { filename: string; width: number; height: number };
+
+function gcd(a: number, b: number): number {
+  return b === 0 ? a : gcd(b, a % b);
+}
+
+function toAspect(w: number, h: number): string {
+  const rw = Math.round(w);
+  const rh = Math.round(h);
+  const d = gcd(rw, rh);
+  return `${rw / d}/${rh / d}`;
+}
+
+function aspectMean(images: ImageMeta[]): string {
+  const avgW = images.reduce((s, i) => s + i.width, 0) / images.length;
+  const avgH = images.reduce((s, i) => s + i.height, 0) / images.length;
+  return toAspect(avgW, avgH);
+}
+
+function aspectMedian(images: ImageMeta[]): string {
+  const ratios = images.map((i) => i.width / i.height).sort((a, b) => a - b);
+  const mid = Math.floor(ratios.length / 2);
+  const ratio =
+    ratios.length % 2 === 1 ? ratios[mid] : (ratios[mid - 1] + ratios[mid]) / 2;
+  return toAspect(Math.round(ratio * 1000), 1000);
+}
+
+export const photoSets: PhotoSet[] = cncPartsMeta.map((set) => ({
+  id: set.id,
+  aspect: aspectMean(set.images),
+  photos: set.images.map((img) => ({
+    src: `/images/${img.filename}`,
+    alt: `CNC machined part, set ${set.number}`,
+  })),
+}));

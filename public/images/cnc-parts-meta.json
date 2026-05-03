@@ -1,47 +1,81 @@
 [
   {
     "id": "cnc-part-set-1",
-    "aspectMean": "5:7",
-    "aspectMedian": "357:500",
-    "aspectDominant": "1669:2337",
+    "number": 1,
     "images": [
       {
         "filename": "cnc-part-set-1-example-1.webp",
         "width": 1669,
-        "height": 2337,
-        "aspect": "1669:2337"
+        "height": 2337
       },
       {
         "filename": "cnc-part-set-1-example-2.webp",
         "width": 1669,
-        "height": 2337,
-        "aspect": "1669:2337"
+        "height": 2337
       },
       {
         "filename": "cnc-part-set-1-example-3.webp",
         "width": 1596,
-        "height": 2235,
-        "aspect": "532:745"
+        "height": 2235
+      }
+    ]
+  },
+  {
+    "id": "cnc-part-set-10",
+    "number": 10,
+    "images": [
+      {
+        "filename": "cnc-part-set-10-example-1.webp",
+        "width": 1429,
+        "height": 2000
+      },
+      {
+        "filename": "cnc-part-set-10-example-2.webp",
+        "width": 1429,
+        "height": 2000
+      }
+    ]
+  },
+  {
+    "id": "cnc-part-set-12",
+    "number": 12,
+    "images": [
+      {
+        "filename": "cnc-part-set-12-example-1.webp",
+        "width": 2000,
+        "height": 1429
       }
     ]
   },
   {
     "id": "cnc-part-set-2",
-    "aspectMean": "100:67",
-    "aspectMedian": "3:2",
-    "aspectDominant": "8:5",
+    "number": 2,
     "images": [
       {
         "filename": "cnc-part-set-2-example-1.webp",
         "width": 2000,
-        "height": 1250,
-        "aspect": "8:5"
+        "height": 1250
       },
       {
         "filename": "cnc-part-set-2-example-2.webp",
         "width": 2000,
-        "height": 1429,
-        "aspect": "2000:1429"
+        "height": 1429
+      }
+    ]
+  },
+  {
+    "id": "cnc-part-set-7",
+    "number": 7,
+    "images": [
+      {
+        "filename": "cnc-part-set-7-example-1.webp",
+        "width": 2000,
+        "height": 1429
+      },
+      {
+        "filename": "cnc-part-set-7-example-2.webp",
+        "width": 2000,
+        "height": 1429
       }
     ]
   }

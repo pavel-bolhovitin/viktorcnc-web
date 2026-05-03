@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/carousel';
 
 export type PhotoEntry = { src: string; alt: string };
-export type PhotoSet = { id: string; height: number; photos: PhotoEntry[] };
+export type PhotoSet = { id: string; aspect: string; photos: PhotoEntry[] };
 
 export function GalleryCard({ set }: { set: PhotoSet }) {
   const [api, setApi] = useState<CarouselApi>();
@@ -33,19 +33,19 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       setApi={setApi}
       opts={{ loop: true, duration: 0 }}
       plugins={[Fade()]}
-      className='group overflow-hidden'
-      style={{ height: set.height }}
+      className="group overflow-hidden *:data-[slot='carousel-content']:h-full"
+      style={{ aspectRatio: set.aspect }}
     >
       <CarouselContent className='ml-0 h-full'>
         {set.photos.map((photo) => (
-          <CarouselItem key={photo.src} className='pl-0'>
-            <div className='relative w-full' style={{ height: set.height }}>
+          <CarouselItem key={photo.src} className='pl-0 h-full'>
+            <div className='relative h-full w-full'>
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
                 sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                className='object-cover transition-transform duration-500 group-hover:scale-105'
+                className='object-cover transition-transform duration-500 group-hover:scale-102'
               />
             </div>
           </CarouselItem>
@@ -54,14 +54,14 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
 
       {count > 1 && (
         <>
-          <div className='absolute bottom-0 left-0 right-0 flex justify-center'>
-            <div className='flex gap-1.5 bg-black/15 px-2.5 py-1.5 backdrop-blur-sm'>
+          <div className='absolute bottom-2 left-0 right-0 flex justify-center'>
+            <div className='flex gap-1 rounded-full bg-black/15 p-1.25 backdrop-blur-sm'>
               {set.photos.map((p, i) => (
                 <button
                   key={p.src}
                   type='button'
                   onClick={() => api?.scrollTo(i)}
-                  className={`h-1.25 transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}
+                  className={`h-1.25 rounded-full transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}
                 />
               ))}
             </div>
