@@ -2,7 +2,7 @@
 
 import Fade from 'embla-carousel-fade';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 import { useEffect, useState } from 'react';
 import {
   Carousel,
@@ -35,13 +35,16 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       style={{ aspectRatio: set.aspect }}
     >
       <CarouselContent className='ml-0 h-full'>
-        {set.photos.map((photo) => (
-          <CarouselItem key={photo.src} className='pl-0 h-full'>
+        {set.photos.map((photo, i) => (
+          // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+          <CarouselItem key={i} className='pl-0 h-full'>
             <div className='relative h-full w-full'>
               <Image
                 src={photo.src}
                 alt={photo.alt}
                 fill
+                placeholder='blur'
+                blurDataURL={photo.blurDataURL}
                 sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
                 className='object-cover transition-transform duration-500 group-hover:scale-102'
               />
@@ -56,7 +59,8 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
             <div className='flex gap-1 rounded-full bg-black/15 p-1.25 backdrop-blur-sm'>
               {set.photos.map((p, i) => (
                 <button
-                  key={p.src}
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  key={i}
                   type='button'
                   onClick={() => api?.scrollTo(i)}
                   className={`h-1.25 rounded-full transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}

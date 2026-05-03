@@ -1,4 +1,15 @@
-import cncPartsMeta from '../../../../public/images/cnc-parts-meta.json';
+import type { StaticImageData } from 'next/image';
+import imgSet1Ex1 from '$/public/images/cnc-part-set-1-example-1.webp';
+import imgSet1Ex2 from '$/public/images/cnc-part-set-1-example-2.webp';
+import imgSet1Ex3 from '$/public/images/cnc-part-set-1-example-3.webp';
+import imgSet2Ex1 from '$/public/images/cnc-part-set-2-example-1.webp';
+import imgSet2Ex2 from '$/public/images/cnc-part-set-2-example-2.webp';
+import imgSet7Ex1 from '$/public/images/cnc-part-set-7-example-1.webp';
+import imgSet7Ex2 from '$/public/images/cnc-part-set-7-example-2.webp';
+import imgSet10Ex1 from '$/public/images/cnc-part-set-10-example-1.webp';
+import imgSet10Ex2 from '$/public/images/cnc-part-set-10-example-2.webp';
+import imgSet12Ex1 from '$/public/images/cnc-part-set-12-example-1.webp';
+import cncPartsMeta from '$/public/images/cnc-parts-meta.json';
 
 type ImageMeta = { filename: string; width: number; height: number };
 
@@ -6,7 +17,7 @@ export type CncPartSetId = keyof typeof cncPartsMeta;
 
 export type Material = 'aluminum' | 'steel' | 'plastic' | 'brass';
 
-export type PhotoEntry = { src: string; alt: string };
+export type PhotoEntry = { src: string; blurDataURL: string; alt: string };
 
 export type PhotoSet = {
   id: CncPartSetId;
@@ -14,6 +25,19 @@ export type PhotoSet = {
   photos: PhotoEntry[];
   order: number;
   material: Material[];
+};
+
+const imageMap: Record<string, StaticImageData> = {
+  'cnc-part-set-1-example-1.webp': imgSet1Ex1,
+  'cnc-part-set-1-example-2.webp': imgSet1Ex2,
+  'cnc-part-set-1-example-3.webp': imgSet1Ex3,
+  'cnc-part-set-10-example-1.webp': imgSet10Ex1,
+  'cnc-part-set-10-example-2.webp': imgSet10Ex2,
+  'cnc-part-set-12-example-1.webp': imgSet12Ex1,
+  'cnc-part-set-2-example-1.webp': imgSet2Ex1,
+  'cnc-part-set-2-example-2.webp': imgSet2Ex2,
+  'cnc-part-set-7-example-1.webp': imgSet7Ex1,
+  'cnc-part-set-7-example-2.webp': imgSet7Ex2,
 };
 
 function gcd(a: number, b: number): number {
@@ -33,20 +57,13 @@ function aspectMean(images: ImageMeta[]): string {
   return toAspect(avgW, avgH);
 }
 
-function aspectMedian(images: ImageMeta[]): string {
-  const ratios = images.map((i) => i.width / i.height).sort((a, b) => a - b);
-  const mid = Math.floor(ratios.length / 2);
-  const ratio =
-    ratios.length % 2 === 1 ? ratios[mid] : (ratios[mid - 1] + ratios[mid]) / 2;
-  return toAspect(Math.round(ratio * 1000), 1000);
-}
-
 const photoSetMap: Partial<Record<CncPartSetId, PhotoSet>> = {
   'cnc-part-set-1': {
     id: cncPartsMeta['cnc-part-set-1'].id as CncPartSetId,
     aspect: aspectMean(cncPartsMeta['cnc-part-set-1'].images),
     photos: cncPartsMeta['cnc-part-set-1'].images.map((img) => ({
       src: `/images/${img.filename}`,
+      blurDataURL: imageMap[img.filename]?.blurDataURL ?? '',
       alt: `CNC machined part, set ${cncPartsMeta['cnc-part-set-1'].number}`,
     })),
     order: 0,

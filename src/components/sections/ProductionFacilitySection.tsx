@@ -6,7 +6,7 @@ import {
   UserCheck,
   Zap,
 } from 'lucide-react';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -100,6 +100,7 @@ export function ProductionFacilitySection({
                     src={machine.image}
                     alt={machine.alt}
                     fill
+                    placeholder='blur'
                     sizes='(max-width: 768px) 100vw, 60vw'
                     className='object-cover transition-all duration-500'
                   />

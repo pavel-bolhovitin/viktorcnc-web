@@ -5,12 +5,13 @@ import {
   Phone,
   ShieldCheck,
 } from 'lucide-react';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { env } from '@/utils/env';
+import HeroBg from '$/public/hero-bg.jpg';
 
 export function HeroSection({ className }: { className?: string }) {
   return (
@@ -20,6 +21,8 @@ export function HeroSection({ className }: { className?: string }) {
           src='/hero-bg.jpg'
           alt=''
           fill
+          placeholder='blur'
+          blurDataURL={HeroBg.blurDataURL}
           sizes='100vw'
           className='object-cover filter-[grayscale(0.2)_contrast(1.1)]'
           priority

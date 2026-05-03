@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-import Image from 'next/image';
+import Image from 'next-export-optimize-images/image';
 
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -73,6 +73,7 @@ export function ServicesSection({ className }: { className?: string }) {
                   src={service.image}
                   alt={service.alt}
                   fill
+                  placeholder='blur'
                   sizes='(max-width: 768px) 100vw, 33vw'
                   className='object-cover grayscale transition-all duration-500 group-hover:grayscale-0'
                 />
