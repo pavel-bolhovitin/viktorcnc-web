@@ -1,7 +1,6 @@
-import { GalleryCard, type PhotoSet } from '@/components/sections/GalleryCard';
-import { cn } from '@/lib/utils';
+import type { PhotoSet } from './GalleryCard';
 
-const photoSets: PhotoSet[] = [
+export const photoSets: PhotoSet[] = [
   {
     id: 'a',
     height: 280,
@@ -67,28 +66,21 @@ const photoSets: PhotoSet[] = [
       { src: '/turning.png', alt: 'Turning operation' },
     ],
   },
+  {
+    id: 'j',
+    height: 300,
+    photos: [
+      { src: '/images/gallery/example_1_1.webp', alt: 'CNC part example' },
+      { src: '/images/gallery/example_1_2.webp', alt: 'CNC part example' },
+      { src: '/images/gallery/example_1_3.webp', alt: 'CNC part example' },
+    ],
+  },
+  {
+    id: 'k',
+    height: 320,
+    photos: [
+      { src: '/images/gallery/example_2_1.webp', alt: 'CNC part example' },
+      { src: '/images/gallery/example_2_2.webp', alt: 'CNC part example' },
+    ],
+  },
 ];
-
-export function GallerySection({ className }: { className?: string }) {
-  return (
-    <section className={cn('py-20', className)}>
-      <div className='mx-auto max-w-7xl px-6'>
-        <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
-          <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            Work Gallery
-          </p>
-          <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            Our Work
-          </h2>
-        </div>
-        <div className='columns-1 gap-4 sm:columns-2 lg:columns-3'>
-          {photoSets.map((set) => (
-            <div key={set.id} className='mb-4 break-inside-avoid'>
-              <GalleryCard set={set} />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
