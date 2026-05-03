@@ -6,14 +6,14 @@ import { photoSets } from '@/components/sections/gallery/photoSets';
 import { Toggle } from '@/components/ui/toggle';
 import { cn } from '@/lib/utils';
 
+const ALL = 'All Materials';
+
 const MATERIALS = [
-  'All Materials',
-  'Aluminum',
-  'Steel',
-  'Plastic',
-  'Bronze',
-] as const;
-const ALL = MATERIALS[0];
+  ALL,
+  ...Array.from(new Set(photoSets.flatMap((s) => s.material))).map(
+    (m) => m.charAt(0).toUpperCase() + m.slice(1)
+  ),
+];
 
 export function GallerySection({ className }: { className?: string }) {
   const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
@@ -64,11 +64,19 @@ export function GallerySection({ className }: { className?: string }) {
           ))}
         </div>
         <div className='columns-1 gap-4 sm:columns-2 lg:columns-3'>
-          {photoSets.map((set) => (
-            <div key={set.id} className='mb-4 break-inside-avoid'>
-              <GalleryCard set={set} />
-            </div>
-          ))}
+          {photoSets
+            .filter(
+              (set) =>
+                selected.has(ALL) ||
+                set.material.some((m) =>
+                  selected.has(m.charAt(0).toUpperCase() + m.slice(1))
+                )
+            )
+            .map((set) => (
+              <div key={set.id} className='mb-4 break-inside-avoid'>
+                <GalleryCard set={set} />
+              </div>
+            ))}
         </div>
       </div>
     </section>

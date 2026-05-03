@@ -57,22 +57,33 @@ function aspectMean(images: ImageMeta[]): string {
   return toAspect(avgW, avgH);
 }
 
-const photoSetMap: Partial<Record<CncPartSetId, PhotoSet>> = {
-  'cnc-part-set-1': {
-    id: cncPartsMeta['cnc-part-set-1'].id as CncPartSetId,
-    aspect: aspectMean(cncPartsMeta['cnc-part-set-1'].images),
-    photos: cncPartsMeta['cnc-part-set-1'].images.flatMap((img) => {
+function makeSet(
+  id: CncPartSetId,
+  order: number,
+  material: Material[],
+): PhotoSet {
+  const meta = cncPartsMeta[id];
+  return {
+    id,
+    aspect: aspectMean(meta.images),
+    photos: meta.images.flatMap((img) => {
       const src = imageMap[img.filename];
       if (!src) return [];
-      return [{ src, alt: `CNC machined part, set ${cncPartsMeta['cnc-part-set-1'].number}` }];
+      return [{ src, alt: `CNC machined part, set ${meta.number}` }];
     }),
-    order: 0,
-    material: ['aluminum'],
-  },
-  // 'cnc-part-set-2': cncPartsMeta['cnc-part-set-2'],
-  // 'cnc-part-set-7': {},
-  // 'cnc-part-set-10': {},
-  // 'cnc-part-set-12': {},
+    order,
+    material,
+  };
+}
+
+const photoSetMap: Partial<Record<CncPartSetId, PhotoSet>> = {
+  'cnc-part-set-1': makeSet('cnc-part-set-1', 0, ['aluminum']),
+  'cnc-part-set-2': makeSet('cnc-part-set-2', 1, ['steel']),
+  'cnc-part-set-7': makeSet('cnc-part-set-7', 2, ['plastic']),
+  'cnc-part-set-10': makeSet('cnc-part-set-10', 3, ['aluminum']),
+  'cnc-part-set-12': makeSet('cnc-part-set-12', 4, ['brass']),
 };
 
-export const photoSets = Object.values(photoSetMap);
+export const photoSets = Object.values(photoSetMap).sort(
+  (a, b) => a.order - b.order,
+);

@@ -19,8 +19,10 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
 
   useEffect(() => {
     if (!api) return;
+
     const onSelect = () => setActive(api.selectedScrollSnap());
     api.on('select', onSelect);
+
     return () => {
       api.off('select', onSelect);
     };
@@ -34,6 +36,12 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       className="group overflow-hidden *:data-[slot='carousel-content']:h-full"
       style={{ aspectRatio: set.aspect }}
     >
+      <div className='absolute top-2 left-2 z-10 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
+        {set.material
+          .map((m) => m.charAt(0).toUpperCase() + m.slice(1))
+          .join(', ')}
+      </div>
+
       <CarouselContent className='ml-0 h-full'>
         {set.photos.map((photo) => (
           <CarouselItem key={photo.src.src} className='pl-0 h-full'>
@@ -54,13 +62,13 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       {count > 1 && (
         <>
           <div className='absolute bottom-2 left-0 right-0 flex justify-center'>
-            <div className='flex gap-1 rounded-full bg-black/15 p-1.25 backdrop-blur-sm'>
+            <div className='flex gap-1 bg-black/30 px-2 py-1.5 backdrop-blur-sm'>
               {set.photos.map((p, i) => (
                 <button
                   key={p.src.src}
                   type='button'
                   onClick={() => api?.scrollTo(i)}
-                  className={`h-1.25 rounded-full transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}
+                  className={`h-1.25 transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}
                 />
               ))}
             </div>
