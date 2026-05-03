@@ -8,7 +8,7 @@
 
 **Hosting**: S3 static website hosting (+ CloudFront CDN). No Node.js server at runtime. API routes forbidden — they won't run.
 
-**UI components**: shadcn/ui (Radix primitives + Tailwind). Add components via `npx shadcn@latest add <component>`, never hand-roll what shadcn provides.
+**UI components**: shadcn/ui (Radix primitives + Tailwind). Add components via `npx shadcn@latest add <component>`, never hand-roll what shadcn provides. Always check `src/components/ui/` for an existing component before writing a custom one — use what's already there.
 
 **Styling**: Tailwind CSS utility classes only. No CSS modules, no styled-components.
 
@@ -51,6 +51,16 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **@description**: Consistent naming across the codebase.
 
 - **Components** (`.tsx` files containing a React component): PascalCase. `HeroSection.tsx`, `CopyButton.tsx` — correct. `heroSection.tsx`, `copy-button.tsx` — forbidden.
+
+### [RULE] Use Existing UI Components First
+
+**@when**: always, before writing any interactive or styled element
+
+**@description**: Always check `src/components/ui/` before building a custom element. shadcn/ui components cover buttons, toggles, dialogs, inputs, carousels, etc. Hand-rolling duplicates what's already there and drifts from design system tokens.
+
+- **Check first**: look in `src/components/ui/` before creating any new interactive element.
+- **Customize via className**: pass Tailwind overrides via `className` — `cn` uses `tailwind-merge` so conflicts resolve correctly.
+- **Add missing**: if a needed component is absent, add it via `npx shadcn@latest add <component>`, don't hand-roll.
 
 ### [RULE] No Section Label Comments in JSX
 
