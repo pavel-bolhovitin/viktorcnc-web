@@ -10,9 +10,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-
-export type PhotoEntry = { src: string; alt: string };
-export type PhotoSet = { id: string; aspect: string; photos: PhotoEntry[] };
+import type { PhotoSet } from './photoSets';
 
 export function GalleryCard({ set }: { set: PhotoSet }) {
   const [api, setApi] = useState<CarouselApi>();

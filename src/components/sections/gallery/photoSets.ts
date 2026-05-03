@@ -1,7 +1,20 @@
 import cncPartsMeta from '../../../../public/images/cnc-parts-meta.json';
-import type { PhotoSet } from './GalleryCard';
 
 type ImageMeta = { filename: string; width: number; height: number };
+
+export type CncPartSetId = keyof typeof cncPartsMeta;
+
+export type Material = 'aluminum' | 'steel' | 'plastic' | 'brass';
+
+export type PhotoEntry = { src: string; alt: string };
+
+export type PhotoSet = {
+  id: CncPartSetId;
+  aspect: string;
+  photos: PhotoEntry[];
+  order: number;
+  material: Material[];
+};
 
 function gcd(a: number, b: number): number {
   return b === 0 ? a : gcd(b, a % b);
@@ -28,11 +41,21 @@ function aspectMedian(images: ImageMeta[]): string {
   return toAspect(Math.round(ratio * 1000), 1000);
 }
 
-export const photoSets: PhotoSet[] = cncPartsMeta.map((set) => ({
-  id: set.id,
-  aspect: aspectMean(set.images),
-  photos: set.images.map((img) => ({
-    src: `/images/${img.filename}`,
-    alt: `CNC machined part, set ${set.number}`,
-  })),
-}));
+const photoSetMap: Partial<Record<CncPartSetId, PhotoSet>> = {
+  'cnc-part-set-1': {
+    id: cncPartsMeta['cnc-part-set-1'].id as CncPartSetId,
+    aspect: aspectMean(cncPartsMeta['cnc-part-set-1'].images),
+    photos: cncPartsMeta['cnc-part-set-1'].images.map((img) => ({
+      src: `/images/${img.filename}`,
+      alt: `CNC machined part, set ${cncPartsMeta['cnc-part-set-1'].number}`,
+    })),
+    order: 0,
+    material: ['aluminum'],
+  },
+  // 'cnc-part-set-2': cncPartsMeta['cnc-part-set-2'],
+  // 'cnc-part-set-7': {},
+  // 'cnc-part-set-10': {},
+  // 'cnc-part-set-12': {},
+};
+
+export const photoSets = Object.values(photoSetMap);

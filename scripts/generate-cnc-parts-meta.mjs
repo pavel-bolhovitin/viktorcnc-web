@@ -24,10 +24,11 @@ for (const filename of files) {
   setsMap.get(setId).images.push({ filename, width, height });
 }
 
-const result = Array.from(setsMap.entries()).map(([id, { number, images }]) => ({
-  id,
-  number,
-  images,
-}));
+const result = Object.fromEntries(
+  Array.from(setsMap.entries()).map(([id, { number, images }]) => [
+    id,
+    { id, number, images },
+  ])
+);
 
 writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2));
