@@ -17,7 +17,7 @@ export type CncPartSetId = keyof typeof cncPartsMeta;
 
 export type Material = 'aluminum' | 'steel' | 'plastic' | 'brass';
 
-export type PhotoEntry = { src: string; blurDataURL: string; alt: string };
+export type PhotoEntry = { src: StaticImageData; alt: string };
 
 export type PhotoSet = {
   id: CncPartSetId;
@@ -61,11 +61,11 @@ const photoSetMap: Partial<Record<CncPartSetId, PhotoSet>> = {
   'cnc-part-set-1': {
     id: cncPartsMeta['cnc-part-set-1'].id as CncPartSetId,
     aspect: aspectMean(cncPartsMeta['cnc-part-set-1'].images),
-    photos: cncPartsMeta['cnc-part-set-1'].images.map((img) => ({
-      src: `/images/${img.filename}`,
-      blurDataURL: imageMap[img.filename]?.blurDataURL ?? '',
-      alt: `CNC machined part, set ${cncPartsMeta['cnc-part-set-1'].number}`,
-    })),
+    photos: cncPartsMeta['cnc-part-set-1'].images.flatMap((img) => {
+      const src = imageMap[img.filename];
+      if (!src) return [];
+      return [{ src, alt: `CNC machined part, set ${cncPartsMeta['cnc-part-set-1'].number}` }];
+    }),
     order: 0,
     material: ['aluminum'],
   },

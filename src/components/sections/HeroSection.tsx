@@ -18,14 +18,12 @@ export function HeroSection({ className }: { className?: string }) {
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
         <Image
-          src='/hero-bg.jpg'
+          src={HeroBg}
           alt=''
           fill
           placeholder='blur'
-          blurDataURL={HeroBg.blurDataURL}
           sizes='100vw'
           className='object-cover filter-[grayscale(0.2)_contrast(1.1)]'
-          priority
         />
         <div className='absolute inset-0 bg-linear-to-r from-white via-white/80 to-transparent' />
       </div>
