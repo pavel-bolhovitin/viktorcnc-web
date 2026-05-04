@@ -48,6 +48,22 @@ import imgSet26Ex2 from '$/public/images/cnc-part-set-26-example-2.webp';
 import imgSet26Ex3 from '$/public/images/cnc-part-set-26-example-3.webp';
 import imgSet29Ex1 from '$/public/images/cnc-part-set-29-example-1.webp';
 import imgSet30Ex1 from '$/public/images/cnc-part-set-30-example-1.webp';
+import imgSet33Ex1 from '$/public/images/cnc-part-set-33-example-1.webp';
+import imgSet33Ex2 from '$/public/images/cnc-part-set-33-example-2.webp';
+import imgSet34Ex1 from '$/public/images/cnc-part-set-34-example-1.webp';
+import imgSet34Ex2 from '$/public/images/cnc-part-set-34-example-2.webp';
+import imgSet35Ex1 from '$/public/images/cnc-part-set-35-example-1.webp';
+import imgSet35Ex2 from '$/public/images/cnc-part-set-35-example-2.webp';
+import imgSet35Ex3 from '$/public/images/cnc-part-set-35-example-3.webp';
+import imgSet36Ex1 from '$/public/images/cnc-part-set-36-example-1.webp';
+import imgSet37Ex1 from '$/public/images/cnc-part-set-37-example-1.webp';
+import imgSet38Ex1 from '$/public/images/cnc-part-set-38-example-1.webp';
+import imgSet38Ex2 from '$/public/images/cnc-part-set-38-example-2.webp';
+import imgSet39Ex1 from '$/public/images/cnc-part-set-39-example-1.webp';
+import imgSet40Ex1 from '$/public/images/cnc-part-set-40-example-1.webp';
+import imgSet40Ex2 from '$/public/images/cnc-part-set-40-example-2.webp';
+import imgSet41Ex1 from '$/public/images/cnc-part-set-41-example-1.webp';
+import imgSet41Ex2 from '$/public/images/cnc-part-set-41-example-2.webp';
 import cncPartsMeta from '$/public/images/cnc-parts-meta.json';
 
 export type CncPartSetId = keyof typeof cncPartsMeta;
@@ -157,4 +173,13 @@ export const photoSets: PhotoSet[] = [
   ),
   makeSet('cnc-part-set-29', 29, ['plastic'], [imgSet29Ex1], true),
   makeSet('cnc-part-set-30', 30, ['aluminum', 'steel'], [imgSet30Ex1], true),
+  makeSet('cnc-part-set-33', 33, ['aluminum'], [imgSet33Ex1, imgSet33Ex2], true),
+  makeSet('cnc-part-set-34', 34, ['aluminum'], [imgSet34Ex1, imgSet34Ex2]),
+  makeSet('cnc-part-set-35', 35, ['plastic'], [imgSet35Ex1, imgSet35Ex2, imgSet35Ex3]),
+  makeSet('cnc-part-set-36', 36, ['plastic'], [imgSet36Ex1]),
+  makeSet('cnc-part-set-37', 37, ['plastic'], [imgSet37Ex1]),
+  makeSet('cnc-part-set-38', 38, ['aluminum'], [imgSet38Ex1, imgSet38Ex2]),
+  makeSet('cnc-part-set-39', 39, ['aluminum'], [imgSet39Ex1]),
+  makeSet('cnc-part-set-40', 40, ['aluminum'], [imgSet40Ex1, imgSet40Ex2]),
+  makeSet('cnc-part-set-41', 41, ['aluminum'], [imgSet41Ex1, imgSet41Ex2]),
 ];
