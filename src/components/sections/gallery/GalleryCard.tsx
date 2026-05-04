@@ -15,12 +15,22 @@ import type { PhotoSet } from './photoSets';
 export function GalleryCard({ set }: { set: PhotoSet }) {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
+  const [loaded, setLoaded] = useState<Set<number>>(new Set([0]));
   const count = set.photos.length;
 
   useEffect(() => {
     if (!api) return;
 
-    const onSelect = () => setActive(api.selectedScrollSnap());
+    const onSelect = () => {
+      const idx = api.selectedScrollSnap();
+      setActive(idx);
+      setLoaded((prev) => {
+        if (prev.has(idx)) return prev;
+        const next = new Set(prev);
+        next.add(idx);
+        return next;
+      });
+    };
     api.on('select', onSelect);
 
     return () => {
@@ -43,17 +53,24 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       </div>
 
       <CarouselContent className='ml-0 h-full'>
-        {set.photos.map((photo) => (
+        {set.photos.map((photo, i) => (
           <CarouselItem key={photo.src.src} className='pl-0 h-full'>
             <div className='relative h-full w-full'>
-              <Image
-                src={photo.src}
-                alt={photo.alt}
-                fill
-                placeholder='blur'
-                sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                className='object-cover transition-transform duration-500 group-hover:scale-102'
-              />
+              {loaded.has(i) ? (
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  placeholder='blur'
+                  sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
+                  className='object-cover transition-transform duration-500 group-hover:scale-102'
+                />
+              ) : (
+                <div
+                  className='absolute inset-0 bg-cover bg-center'
+                  style={{ backgroundImage: `url(${photo.src.blurDataURL})` }}
+                />
+              )}
             </div>
           </CarouselItem>
         ))}
