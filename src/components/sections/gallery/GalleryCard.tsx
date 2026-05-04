@@ -1,7 +1,7 @@
 'use client';
 
 import Fade from 'embla-carousel-fade';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Shapes } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useEffect, useState } from 'react';
 import {
@@ -51,6 +51,13 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
           .map((m) => m.charAt(0).toUpperCase() + m.slice(1))
           .join(', ')}
       </div>
+
+      {set.parts > 1 && (
+        <div className='absolute top-2 right-2 z-10 flex items-center gap-1 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
+          <Shapes className='h-3 w-3' />
+          {set.parts} parts
+        </div>
+      )}
 
       <CarouselContent className='ml-0 h-full'>
         {set.photos.map((photo, i) => (
