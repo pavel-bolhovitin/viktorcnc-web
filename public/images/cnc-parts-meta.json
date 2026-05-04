@@ -261,6 +261,38 @@
       }
     ]
   },
+  "cnc-part-set-28": {
+    "id": "cnc-part-set-28",
+    "number": 28,
+    "images": [
+      {
+        "filename": "cnc-part-set-28-example-1.webp",
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "filename": "cnc-part-set-28-example-2.webp",
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "filename": "cnc-part-set-28-example-3.webp",
+        "width": 1496,
+        "height": 2000
+      }
+    ]
+  },
+  "cnc-part-set-29": {
+    "id": "cnc-part-set-29",
+    "number": 29,
+    "images": [
+      {
+        "filename": "cnc-part-set-29-example-1.webp",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
   "cnc-part-set-3": {
     "id": "cnc-part-set-3",
     "number": 3,
@@ -293,6 +325,17 @@
       {
         "filename": "cnc-part-set-3-example-6.webp",
         "width": 1600,
+        "height": 2000
+      }
+    ]
+  },
+  "cnc-part-set-30": {
+    "id": "cnc-part-set-30",
+    "number": 30,
+    "images": [
+      {
+        "filename": "cnc-part-set-30-example-1.webp",
+        "width": 2000,
         "height": 2000
       }
     ]

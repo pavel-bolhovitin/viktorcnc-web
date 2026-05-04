@@ -36,6 +36,20 @@
 - **Something C**: description about something C.
 ```
 
+## Scripts
+
+### `scripts/generate-cnc-parts-meta.mjs`
+
+Scans `public/images/` for all `cnc-part-set-*.webp` files, reads each image's pixel dimensions via `image-size`, and writes the result to `public/images/cnc-parts-meta.json`.
+
+**When to run**: after adding new CNC part set images to `public/images/`. The JSON is imported by `src/components/sections/gallery/photoSets.ts` — the `CncPartSetId` type and per-set metadata (number, image dimensions) come from it.
+
+```sh
+node scripts/generate-cnc-parts-meta.mjs
+```
+
+---
+
 ## [RULES GROUP] Nextjs Rules
 
 This is NOT the Next.js you know
