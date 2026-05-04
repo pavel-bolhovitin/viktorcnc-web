@@ -64,6 +64,11 @@ import imgSet40Ex1 from '$/public/images/cnc-part-set-40-example-1.webp';
 import imgSet40Ex2 from '$/public/images/cnc-part-set-40-example-2.webp';
 import imgSet41Ex1 from '$/public/images/cnc-part-set-41-example-1.webp';
 import imgSet41Ex2 from '$/public/images/cnc-part-set-41-example-2.webp';
+import imgSet42Ex1 from '$/public/images/cnc-part-set-42-example-1.webp';
+import imgSet42Ex2 from '$/public/images/cnc-part-set-42-example-2.webp';
+import imgSet43Ex1 from '$/public/images/cnc-part-set-43-example-1.webp';
+import imgSet43Ex2 from '$/public/images/cnc-part-set-43-example-2.webp';
+import imgSet43Ex3 from '$/public/images/cnc-part-set-43-example-3.webp';
 import cncPartsMeta from '$/public/images/cnc-parts-meta.json';
 
 export type CncPartSetId = keyof typeof cncPartsMeta;
@@ -182,4 +187,6 @@ export const photoSets: PhotoSet[] = [
   makeSet('cnc-part-set-39', 39, ['aluminum'], [imgSet39Ex1]),
   makeSet('cnc-part-set-40', 40, ['aluminum'], [imgSet40Ex1, imgSet40Ex2]),
   makeSet('cnc-part-set-41', 41, ['aluminum'], [imgSet41Ex1, imgSet41Ex2]),
+  makeSet('cnc-part-set-42', 42, ['aluminum'], [imgSet42Ex1, imgSet42Ex2]),
+  makeSet('cnc-part-set-43', 43, ['aluminum'], [imgSet43Ex1, imgSet43Ex2, imgSet43Ex3]),
 ];
