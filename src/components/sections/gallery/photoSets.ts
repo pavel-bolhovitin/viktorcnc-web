@@ -30,6 +30,9 @@ import imgSet13Ex3 from '$/public/images/cnc-part-set-13-example-3.webp';
 import imgSet14Ex1 from '$/public/images/cnc-part-set-14-example-1.webp';
 import imgSet15Ex1 from '$/public/images/cnc-part-set-15-example-1.webp';
 import imgSet15Ex2 from '$/public/images/cnc-part-set-15-example-2.webp';
+import imgSet16Ex1 from '$/public/images/cnc-part-set-16-example-1.webp';
+import imgSet17Ex1 from '$/public/images/cnc-part-set-17-example-1.webp';
+import imgSet17Ex2 from '$/public/images/cnc-part-set-17-example-2.webp';
 import cncPartsMeta from '$/public/images/cnc-parts-meta.json';
 
 export type CncPartSetId = keyof typeof cncPartsMeta;
@@ -42,7 +45,7 @@ export type PhotoSet = {
   photos: PhotoEntry[];
   order: number;
   material: Material[];
-  parts: number;
+  isMultiPart: boolean;
 };
 
 function gcd(a: number, b: number): number {
@@ -61,7 +64,7 @@ function makeSet(
   order: number,
   material: Material[],
   images: StaticImageData[],
-  parts: number = 1,
+  isMultiPart: boolean = false,
 ): PhotoSet {
   const meta = cncPartsMeta[id];
   return {
@@ -73,24 +76,49 @@ function makeSet(
     })),
     order,
     material,
-    parts,
+    isMultiPart,
   };
 }
 
 export const photoSets: PhotoSet[] = [
-  makeSet('cnc-part-set-1', 0, ['aluminum'], [imgSet1Ex1, imgSet1Ex2, imgSet1Ex3]),
+  makeSet(
+    'cnc-part-set-1',
+    0,
+    ['aluminum'],
+    [imgSet1Ex1, imgSet1Ex2, imgSet1Ex3],
+  ),
   makeSet('cnc-part-set-2', 1, ['steel'], [imgSet2Ex1, imgSet2Ex2]),
-  makeSet('cnc-part-set-3', 2, ['aluminum'], [imgSet3Ex1, imgSet3Ex2, imgSet3Ex3, imgSet3Ex4, imgSet3Ex5, imgSet3Ex6], 3),
+  makeSet(
+    'cnc-part-set-3',
+    2,
+    ['aluminum'],
+    [imgSet3Ex1, imgSet3Ex2, imgSet3Ex3, imgSet3Ex4, imgSet3Ex5, imgSet3Ex6],
+    true,
+  ),
   makeSet('cnc-part-set-4', 3, ['aluminum'], [imgSet4Ex1, imgSet4Ex2]),
   makeSet('cnc-part-set-5', 4, ['aluminum'], [imgSet5Ex1]),
   makeSet('cnc-part-set-6', 5, ['aluminum'], [imgSet6Ex1]),
   makeSet('cnc-part-set-7', 6, ['plastic'], [imgSet7Ex1, imgSet7Ex2]),
-  makeSet('cnc-part-set-8', 7, ['aluminum'], [imgSet8Ex1]),
+  makeSet('cnc-part-set-8', 7, ['aluminum'], [imgSet8Ex1], true),
   makeSet('cnc-part-set-9', 8, ['aluminum'], [imgSet9Ex1, imgSet9Ex2]),
   makeSet('cnc-part-set-10', 9, ['aluminum'], [imgSet10Ex1, imgSet10Ex2]),
   makeSet('cnc-part-set-11', 10, ['aluminum'], [imgSet11Ex1, imgSet11Ex2]),
   makeSet('cnc-part-set-12', 11, ['brass'], [imgSet12Ex1]),
-  makeSet('cnc-part-set-13', 12, ['brass', 'plastic', 'steel'], [imgSet13Ex1, imgSet13Ex2, imgSet13Ex3]),
+  makeSet(
+    'cnc-part-set-13',
+    12,
+    ['brass', 'plastic', 'steel'],
+    [imgSet13Ex1, imgSet13Ex2, imgSet13Ex3],
+    true,
+  ),
   makeSet('cnc-part-set-14', 13, ['aluminum'], [imgSet14Ex1]),
   makeSet('cnc-part-set-15', 14, ['aluminum'], [imgSet15Ex1, imgSet15Ex2]),
+  makeSet('cnc-part-set-16', 15, ['steel'], [imgSet16Ex1], true),
+  makeSet(
+    'cnc-part-set-17',
+    16,
+    ['aluminum'],
+    [imgSet17Ex1, imgSet17Ex2],
+    true,
+  ),
 ];

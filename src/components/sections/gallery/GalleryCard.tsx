@@ -52,10 +52,10 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
           .join(', ')}
       </div>
 
-      {set.parts > 1 && (
+      {set.isMultiPart && (
         <div className='absolute top-2 right-2 z-10 flex items-center gap-1 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
           <Shapes className='h-3 w-3' />
-          {set.parts} parts
+          Multi-part
         </div>
       )}
 

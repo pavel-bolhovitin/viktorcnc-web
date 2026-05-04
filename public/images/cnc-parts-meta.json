@@ -111,6 +111,33 @@
       }
     ]
   },
+  "cnc-part-set-16": {
+    "id": "cnc-part-set-16",
+    "number": 16,
+    "images": [
+      {
+        "filename": "cnc-part-set-16-example-1.webp",
+        "width": 1792,
+        "height": 1792
+      }
+    ]
+  },
+  "cnc-part-set-17": {
+    "id": "cnc-part-set-17",
+    "number": 17,
+    "images": [
+      {
+        "filename": "cnc-part-set-17-example-1.webp",
+        "width": 1792,
+        "height": 1792
+      },
+      {
+        "filename": "cnc-part-set-17-example-2.webp",
+        "width": 1792,
+        "height": 1792
+      }
+    ]
+  },
   "cnc-part-set-2": {
     "id": "cnc-part-set-2",
     "number": 2,
