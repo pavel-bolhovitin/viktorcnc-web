@@ -5,11 +5,9 @@ import { HeroSection } from '@/components/sections/HeroSection';
 import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
+import { WorkFlowSection } from '@/components/sections/WorkFlowSection';
 
-const placeholderSections = [
-  { label: 'Process', bg: 'bg-gray-100' },
-  { label: 'CTA', bg: 'bg-gray-900 text-white' },
-];
+const placeholderSections = [{ label: 'CTA', bg: 'bg-gray-900 text-white' }];
 
 export default function Home() {
   return (
@@ -23,6 +21,7 @@ export default function Home() {
         <ProductionFacilitySection className='bg-white border-b border-b-gray-100' />
         <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
         <FaqSection className='bg-white border-b border-b-gray-100' />
+        <WorkFlowSection className='bg-gray-50 border-b border-b-gray-100' />
         {placeholderSections.map(({ label, bg }) => (
           <section
             key={label}
