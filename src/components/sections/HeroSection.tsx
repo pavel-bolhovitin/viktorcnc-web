@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { env } from '@/utils/env';
-import HeroBg from '$/public/hero-bg.jpg';
+import HeroBg from '$/public/hero-bg.webp';
 
 export function HeroSection({ className }: { className?: string }) {
   return (

@@ -1,8 +1,8 @@
 import Image from 'next-export-optimize-images/image';
-
 import { FOUNDER_FULL_NAME, YEARS_EXPERIENCE } from '@/constants/founder';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
+import founderImg from '$/public/founder.webp';
 
 const stats = [
   {
@@ -48,7 +48,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
           <div className='relative'>
             <div className='relative aspect-4/5 overflow-hidden border border-gray-200'>
               <Image
-                src='/founder.jpg'
+                src={founderImg}
                 alt='Viktor — Senior CNC Engineer & Founder of Viktor CNC, in a professional workshop environment'
                 fill
                 placeholder='blur'

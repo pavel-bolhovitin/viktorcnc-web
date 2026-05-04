@@ -62,6 +62,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **Customize via className**: pass Tailwind overrides via `className` — `cn` uses `tailwind-merge` so conflicts resolve correctly.
 - **Add missing**: if a needed component is absent, add it via `npx shadcn@latest add <component>`, don't hand-roll.
 
+### [RULE] No Blank Lines Between Imports
+
+**@when**: `*.ts`, `*.tsx`
+
+**@description**: All import statements must be contiguous — no blank lines between them. Import order is handled by the linter; blank lines are not needed and will trigger lint errors.
+
 ### [RULE] No Section Label Comments in JSX
 
 **@when**: *.tsx

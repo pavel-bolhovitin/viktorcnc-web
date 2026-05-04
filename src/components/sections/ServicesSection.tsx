@@ -1,15 +1,17 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
-
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
+import cadImg from '$/public/cad.webp';
+import millingImg from '$/public/milling.webp';
+import turningImg from '$/public/turning.webp';
 
 const services = [
   {
     id: 'milling',
     title: 'Precision 3-Axis CNC Milling',
-    image: '/milling.png',
+    image: millingImg,
     alt: 'CNC milling machine cutting a metal part',
     specs: [
       { label: 'Working Area', value: '760 × 500 × 500 mm' },
@@ -22,7 +24,7 @@ const services = [
   {
     id: 'turning',
     title: 'High-Accuracy Lathe Turning',
-    image: '/turning.png',
+    image: turningImg,
     alt: 'Lathe machine turning a cylindrical metal part',
     specs: [
       { label: 'Max Diameter', value: '250 mm' },
@@ -36,7 +38,7 @@ const services = [
   {
     id: 'reverse-engineering',
     title: 'Reverse Engineering & CAD Modeling',
-    image: '/cad.png',
+    image: cadImg,
     alt: 'CAD model of a mechanical part for reverse engineering',
     specs: [],
     description:
