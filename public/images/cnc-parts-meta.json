@@ -36,6 +36,22 @@
       }
     ]
   },
+  "cnc-part-set-11": {
+    "id": "cnc-part-set-11",
+    "number": 11,
+    "images": [
+      {
+        "filename": "cnc-part-set-11-example-1.webp",
+        "width": 1500,
+        "height": 2000
+      },
+      {
+        "filename": "cnc-part-set-11-example-2.webp",
+        "width": 1500,
+        "height": 2000
+      }
+    ]
+  },
   "cnc-part-set-12": {
     "id": "cnc-part-set-12",
     "number": 12,
@@ -99,6 +115,44 @@
       }
     ]
   },
+  "cnc-part-set-4": {
+    "id": "cnc-part-set-4",
+    "number": 4,
+    "images": [
+      {
+        "filename": "cnc-part-set-4-example-1.webp",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "filename": "cnc-part-set-4-example-2.webp",
+        "width": 2000,
+        "height": 1500
+      }
+    ]
+  },
+  "cnc-part-set-5": {
+    "id": "cnc-part-set-5",
+    "number": 5,
+    "images": [
+      {
+        "filename": "cnc-part-set-5-example-1.webp",
+        "width": 2000,
+        "height": 1501
+      }
+    ]
+  },
+  "cnc-part-set-6": {
+    "id": "cnc-part-set-6",
+    "number": 6,
+    "images": [
+      {
+        "filename": "cnc-part-set-6-example-1.webp",
+        "width": 2000,
+        "height": 2000
+      }
+    ]
+  },
   "cnc-part-set-7": {
     "id": "cnc-part-set-7",
     "number": 7,
@@ -112,6 +166,33 @@
         "filename": "cnc-part-set-7-example-2.webp",
         "width": 2000,
         "height": 1429
+      }
+    ]
+  },
+  "cnc-part-set-8": {
+    "id": "cnc-part-set-8",
+    "number": 8,
+    "images": [
+      {
+        "filename": "cnc-part-set-8-example-1.webp",
+        "width": 2000,
+        "height": 1136
+      }
+    ]
+  },
+  "cnc-part-set-9": {
+    "id": "cnc-part-set-9",
+    "number": 9,
+    "images": [
+      {
+        "filename": "cnc-part-set-9-example-1.webp",
+        "width": 2000,
+        "height": 2000
+      },
+      {
+        "filename": "cnc-part-set-9-example-2.webp",
+        "width": 2000,
+        "height": 2000
       }
     ]
   }
