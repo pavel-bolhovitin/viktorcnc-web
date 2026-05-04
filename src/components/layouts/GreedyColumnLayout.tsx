@@ -1,13 +1,14 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
-type Props<T> = {
+export type GreedyColumnLayoutProps<T> = {
   data: T[];
   keyExtractor: (item: T) => string;
   widthExtractor: (item: T) => number;
   heightExtractor: (item: T) => number;
   renderItem: (item: T) => ReactNode;
-  showItemCount: number;
+  pageSize: number;
+  page: number;
   numColumns?: number;
   className?: string;
 };
@@ -36,17 +37,18 @@ export function GreedyColumnLayout<T>({
   widthExtractor,
   heightExtractor,
   renderItem,
-  showItemCount,
+  pageSize,
+  page,
   numColumns = 3,
   className,
-}: Props<T>) {
+}: GreedyColumnLayoutProps<T>) {
   const cols = distributeToColumns(
     data,
     numColumns,
     widthExtractor,
     heightExtractor,
   );
-  const visibleKeys = new Set(data.slice(0, showItemCount).map(keyExtractor));
+  const visibleKeys = new Set(data.slice(0, (page + 1) * pageSize).map(keyExtractor));
 
   return (
     <div

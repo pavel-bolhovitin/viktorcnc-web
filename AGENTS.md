@@ -65,6 +65,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **@description**: Consistent naming across the codebase.
 
 - **Components** (`.tsx` files containing a React component): PascalCase. `HeroSection.tsx`, `CopyButton.tsx` — correct. `heroSection.tsx`, `copy-button.tsx` — forbidden.
+- **Props types**: export the props type as `export type {ComponentName}Props`. Example: `export type GalleryCardProps = { ... }`. Always exported so consumers can reference it.
 
 ### [RULE] Use Existing UI Components First
 

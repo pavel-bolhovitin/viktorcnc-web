@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { GreedyColumnLayout } from '@/components/layouts/GreedyColumnLayout';
 import { GalleryCard } from '@/components/sections/gallery/GalleryCard';
 import { GalleryDialog } from '@/components/sections/gallery/GalleryDialog';
@@ -11,8 +11,9 @@ import {
 import { Toggle } from '@/components/ui/toggle';
 import { cn } from '@/lib/utils';
 
+const PAGE_SIZE = 10;
+
 const ALL = 'All Materials';
-const PAGES = 3;
 
 const MATERIALS = [
   ALL,
@@ -29,9 +30,7 @@ function parseAspect(aspect: string): [number, number] {
 export function GallerySection({ className }: { className?: string }) {
   const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
   const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
-  const [showItemCount, setShowItemCount] = useState(() => {
-    return Math.ceil(photoSets.length / PAGES);
-  });
+  const [pageSize, setPageSize] = useState(PAGE_SIZE);
 
   const filteredSets = photoSets.filter(
     (set) =>
@@ -41,14 +40,10 @@ export function GallerySection({ className }: { className?: string }) {
       ),
   );
 
-  const chunkSize = Math.ceil(filteredSets.length / PAGES);
-  const remaining = filteredSets.length - showItemCount;
-
-  useEffect(() => {
-    setShowItemCount(Math.ceil(filteredSets.length / PAGES));
-  }, [filteredSets.length]);
+  const remaining = filteredSets.length - pageSize;
 
   function toggle(material: string) {
+    setPageSize(PAGE_SIZE);
     if (material === ALL) {
       setSelected(new Set([ALL]));
     } else {
@@ -94,7 +89,8 @@ export function GallerySection({ className }: { className?: string }) {
           keyExtractor={(set) => set.id}
           widthExtractor={(set) => parseAspect(set.aspect)[0]}
           heightExtractor={(set) => parseAspect(set.aspect)[1]}
-          showItemCount={showItemCount}
+          pageSize={pageSize}
+          page={0}
           renderItem={(set) => (
             <GalleryCard set={set} onExpand={() => setOpenSet(set)} />
           )}
@@ -104,14 +100,10 @@ export function GallerySection({ className }: { className?: string }) {
           <div className='mt-8 text-center'>
             <button
               type='button'
-              onClick={() =>
-                setShowItemCount((prev) =>
-                  Math.min(prev + chunkSize, filteredSets.length),
-                )
-              }
+              onClick={() => setPageSize((prev) => prev + PAGE_SIZE)}
               className='border border-primary/40 px-6 py-2 font-mono text-xs uppercase tracking-wider text-primary/60 hover:border-primary hover:text-primary transition-colors'
             >
-              Show more ({Math.min(chunkSize, remaining)})
+              Show more ({Math.min(PAGE_SIZE, remaining)})
             </button>
           </div>
         )}
