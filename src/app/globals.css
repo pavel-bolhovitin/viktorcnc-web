@@ -6,7 +6,8 @@
 
 @theme inline {
   --z-base: 0;
-  --z-app-bar: 9999;
+  --z-app-bar: 900;
+  --z-dialog: 1000;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -129,5 +130,12 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import Fade from 'embla-carousel-fade';
-import { ChevronLeft, ChevronRight, Shapes } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Maximize2, Shapes } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useEffect, useState } from 'react';
 import {
@@ -12,7 +12,13 @@ import {
 } from '@/components/ui/carousel';
 import type { PhotoSet } from './photoSets';
 
-export function GalleryCard({ set }: { set: PhotoSet }) {
+export function GalleryCard({
+  set,
+  onExpand,
+}: {
+  set: PhotoSet;
+  onExpand?: () => void;
+}) {
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
   const [loaded, setLoaded] = useState<Set<number>>(new Set([0]));
@@ -43,8 +49,12 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
       setApi={setApi}
       opts={{ loop: true, duration: 0 }}
       plugins={[Fade()]}
+      onClick={onExpand}
       className="group overflow-hidden *:data-[slot='carousel-content']:h-full"
-      style={{ aspectRatio: set.aspect }}
+      style={{
+        aspectRatio: set.aspect,
+        cursor: onExpand ? 'zoom-in' : undefined,
+      }}
     >
       <div className='absolute top-2 left-2 z-10 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
         {set.material
@@ -56,6 +66,14 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
         <div className='absolute top-2 right-2 z-10 flex items-center gap-1 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
           <Shapes className='h-3 w-3' />
           Multi-part
+        </div>
+      )}
+
+      {onExpand && (
+        <div className='absolute bottom-2 right-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
+          <div className='bg-black/40 p-1.5 backdrop-blur-sm rounded-sm text-white'>
+            <Maximize2 className='h-3.5 w-3.5' />
+          </div>
         </div>
       )}
 
@@ -91,7 +109,10 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
                 <button
                   key={p.src.src}
                   type='button'
-                  onClick={() => api?.scrollTo(i)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    api?.scrollTo(i);
+                  }}
                   className={`h-1.25 transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}
                 />
               ))}
@@ -99,14 +120,20 @@ export function GalleryCard({ set }: { set: PhotoSet }) {
           </div>
           <button
             type='button'
-            onClick={() => api?.scrollPrev()}
+            onClick={(e) => {
+              e.stopPropagation();
+              api?.scrollPrev();
+            }}
             className='absolute left-0 top-1/2 -translate-y-1/2 bg-black/40 p-2 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100'
           >
             <ChevronLeft className='h-5 w-5' />
           </button>
           <button
             type='button'
-            onClick={() => api?.scrollNext()}
+            onClick={(e) => {
+              e.stopPropagation();
+              api?.scrollNext();
+            }}
             className='absolute right-0 top-1/2 -translate-y-1/2 bg-black/40 p-2 text-white opacity-0 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-100'
           >
             <ChevronRight className='h-5 w-5' />

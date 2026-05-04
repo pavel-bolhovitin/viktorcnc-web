@@ -2,7 +2,11 @@
 
 import { useState } from 'react';
 import { GalleryCard } from '@/components/sections/gallery/GalleryCard';
-import { photoSets } from '@/components/sections/gallery/photoSets';
+import { GalleryDialog } from '@/components/sections/gallery/GalleryDialog';
+import {
+  type PhotoSet,
+  photoSets,
+} from '@/components/sections/gallery/photoSets';
 import { Toggle } from '@/components/ui/toggle';
 import { cn } from '@/lib/utils';
 
@@ -17,6 +21,7 @@ const MATERIALS = [
 
 export function GallerySection({ className }: { className?: string }) {
   const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
+  const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
 
   function toggle(material: string) {
     if (material === ALL) {
@@ -76,11 +81,19 @@ export function GallerySection({ className }: { className?: string }) {
             )
             .map((set) => (
               <div key={set.id} className='mb-4 break-inside-avoid'>
-                <GalleryCard set={set} />
+                <GalleryCard set={set} onExpand={() => setOpenSet(set)} />
               </div>
             ))}
         </div>
       </div>
+
+      <GalleryDialog
+        set={openSet}
+        open={openSet !== null}
+        onOpenChange={(open) => {
+          if (!open) setOpenSet(null);
+        }}
+      />
     </section>
   );
 }
