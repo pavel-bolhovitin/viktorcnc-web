@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { GreedyColumnLayout } from '@/components/layouts/GreedyColumnLayout';
 import { GalleryCard } from '@/components/sections/gallery/GalleryCard';
 import { GalleryDialog } from '@/components/sections/gallery/GalleryDialog';
 import {
@@ -11,6 +12,7 @@ import { Toggle } from '@/components/ui/toggle';
 import { cn } from '@/lib/utils';
 
 const ALL = 'All Materials';
+const PAGES = 3;
 
 const MATERIALS = [
   ALL,
@@ -19,29 +21,46 @@ const MATERIALS = [
   ),
 ];
 
+function parseAspect(aspect: string): [number, number] {
+  const [w, h] = aspect.split('/').map(Number);
+  return [w, h];
+}
+
 export function GallerySection({ className }: { className?: string }) {
   const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
   const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
+  const [showItemCount, setShowItemCount] = useState(() => {
+    return Math.ceil(photoSets.length / PAGES);
+  });
+
+  const filteredSets = photoSets.filter(
+    (set) =>
+      selected.has(ALL) ||
+      set.material.some((m) =>
+        selected.has(m.charAt(0).toUpperCase() + m.slice(1)),
+      ),
+  );
+
+  const chunkSize = Math.ceil(filteredSets.length / PAGES);
+  const remaining = filteredSets.length - showItemCount;
+
+  useEffect(() => {
+    setShowItemCount(Math.ceil(filteredSets.length / PAGES));
+  }, [filteredSets.length]);
 
   function toggle(material: string) {
     if (material === ALL) {
       setSelected(new Set([ALL]));
-      return;
+    } else {
+      setSelected((prev) => {
+        const next = new Set(prev);
+        next.delete(ALL);
+        if (next.has(material)) next.delete(material);
+        else next.add(material);
+        if (next.size === 0) next.add(ALL);
+        return next;
+      });
     }
-
-    setSelected((prev) => {
-      const next = new Set(prev);
-      next.delete(ALL);
-
-      if (next.has(material)) {
-        next.delete(material);
-      } else {
-        next.add(material);
-      }
-
-      if (next.size === 0) next.add(ALL);
-      return next;
-    });
   }
 
   return (
@@ -70,21 +89,32 @@ export function GallerySection({ className }: { className?: string }) {
           ))}
         </div>
 
-        <div className='columns-1 gap-4 sm:columns-2 lg:columns-3'>
-          {photoSets
-            .filter(
-              (set) =>
-                selected.has(ALL) ||
-                set.material.some((m) =>
-                  selected.has(m.charAt(0).toUpperCase() + m.slice(1)),
-                ),
-            )
-            .map((set) => (
-              <div key={set.id} className='mb-4 break-inside-avoid'>
-                <GalleryCard set={set} onExpand={() => setOpenSet(set)} />
-              </div>
-            ))}
-        </div>
+        <GreedyColumnLayout
+          data={filteredSets}
+          keyExtractor={(set) => set.id}
+          widthExtractor={(set) => parseAspect(set.aspect)[0]}
+          heightExtractor={(set) => parseAspect(set.aspect)[1]}
+          showItemCount={showItemCount}
+          renderItem={(set) => (
+            <GalleryCard set={set} onExpand={() => setOpenSet(set)} />
+          )}
+        />
+
+        {remaining > 0 && (
+          <div className='mt-8 text-center'>
+            <button
+              type='button'
+              onClick={() =>
+                setShowItemCount((prev) =>
+                  Math.min(prev + chunkSize, filteredSets.length),
+                )
+              }
+              className='border border-primary/40 px-6 py-2 font-mono text-xs uppercase tracking-wider text-primary/60 hover:border-primary hover:text-primary transition-colors'
+            >
+              Show more ({Math.min(chunkSize, remaining)})
+            </button>
+          </div>
+        )}
       </div>
 
       <GalleryDialog
