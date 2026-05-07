@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { Button } from '@/components/ui/button';
+import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 import millingCenter1 from '$/public/milling-center-1.webp';
@@ -71,7 +72,7 @@ export function ProductionFacilitySection({
   className?: string;
 }) {
   return (
-    <section className={cn('py-20', className)}>
+    <section id={SECTION_IDS.facility} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>

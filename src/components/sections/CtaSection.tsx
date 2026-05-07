@@ -1,4 +1,5 @@
 import { Mail, MessageCircle, Phone } from 'lucide-react';
+import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 
@@ -9,7 +10,7 @@ export type CtaSectionProps = {
 export function CtaSection({ className }: CtaSectionProps) {
   return (
     <section
-      id='contact'
+      id={SECTION_IDS.contact}
       className={cn('bg-slate-900 py-20 text-center text-white', className)}
     >
       <div className='mx-auto max-w-7xl px-6'>

@@ -8,6 +8,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible';
+import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 
@@ -50,7 +51,7 @@ export function FaqSection({ className }: { className?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className={cn('py-20', className)}>
+    <section id={SECTION_IDS.faq} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>

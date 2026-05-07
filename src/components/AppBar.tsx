@@ -1,4 +1,5 @@
 import { ArrowRightIcon, DraftingCompass } from 'lucide-react';
+import { SECTION_IDS } from '@/constants/sections';
 import { env } from '@/utils/env';
 import { Button } from './ui/button';
 
@@ -14,26 +15,16 @@ export function AppBar() {
       </div>
 
       <nav className='hidden items-center gap-6 text-sm font-medium text-foreground/70 md:flex'>
-        <a href='#services' className='transition-colors hover:text-foreground'>
+        <a href={`#${SECTION_IDS.services}`} className='transition-colors hover:text-foreground'>
           Services
         </a>
-
-        <a
-          href='#materials'
-          className='transition-colors hover:text-foreground'
-        >
-          Materials
+        <a href={`#${SECTION_IDS.gallery}`} className='transition-colors hover:text-foreground'>
+          Gallery
         </a>
-
-        <a href='#work' className='transition-colors hover:text-foreground'>
-          Work
-        </a>
-
-        <a href='#process' className='transition-colors hover:text-foreground'>
+        <a href={`#${SECTION_IDS.process}`} className='transition-colors hover:text-foreground'>
           Process
         </a>
-
-        <a href='#faq' className='transition-colors hover:text-foreground'>
+        <a href={`#${SECTION_IDS.faq}`} className='transition-colors hover:text-foreground'>
           FAQ
         </a>
       </nav>

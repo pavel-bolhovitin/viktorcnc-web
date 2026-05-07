@@ -1,5 +1,6 @@
 import Image from 'next-export-optimize-images/image';
 import { FOUNDER_FULL_NAME, YEARS_EXPERIENCE } from '@/constants/founder';
+import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 import founderImg from '$/public/founder.webp';
@@ -42,7 +43,7 @@ const skills = [
 
 export function MeetFounderSection({ className }: { className?: string }) {
   return (
-    <section className={cn('py-20', className)}>
+    <section id={SECTION_IDS.founder} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16'>
           <div className='relative'>

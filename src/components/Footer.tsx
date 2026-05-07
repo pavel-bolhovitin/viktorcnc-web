@@ -6,24 +6,9 @@ import {
   Phone,
 } from 'lucide-react';
 import { FOUNDED_YEAR, YEARS_EXPERIENCE } from '@/constants/founder';
+import { NAV_LINKS, SERVICE_LINKS } from '@/constants/sections';
 import { env } from '@/utils/env';
 
-const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Materials', href: '#materials' },
-  { label: 'Work', href: '#work' },
-  { label: 'Process', href: '#process' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Contact', href: '#contact' },
-];
-
-const SERVICE_LINKS = [
-  { label: 'CNC Milling', href: '#services' },
-  { label: 'CNC Turning', href: '#services' },
-  { label: 'Reverse Engineering', href: '#services' },
-  { label: 'CAD Modeling', href: '#services' },
-  { label: 'Batch Production', href: '#services' },
-];
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
