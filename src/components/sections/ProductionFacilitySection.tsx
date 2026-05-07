@@ -191,10 +191,10 @@ export function ProductionFacilitySection({
         </div>
 
         <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
-          <Button asChild size='lg' className='group px-6'>
-            <a href={`mailto:${env.email}`}>
+          <Button asChild size='lg' className='group h-auto px-6 py-3 whitespace-normal!'>
+            <a href={`mailto:${env.email}`} className='flex items-center gap-2 text-left'>
               Send your drawing — get a quote
-              <ArrowRight className='transition-transform duration-200 group-hover:translate-x-0.5' />
+              <ArrowRight className='shrink-0 transition-transform duration-200 group-hover:translate-x-0.5' />
             </a>
           </Button>
           <p className='font-mono text-xs text-muted-foreground'>

@@ -75,7 +75,7 @@ function ContactBlockCurrent() {
           </a>
         </Button>
 
-        <div className='flex gap-2'>
+        <div className='flex flex-wrap gap-2'>
           <Button variant='outline' size='sm' asChild>
             <a href={`mailto:${env.email}`}>
               <Mail />
@@ -103,16 +103,20 @@ function ContactBlockCurrent() {
         </div>
       </div>
 
-      <div className='mb-3 grid grid-cols-[auto_1fr] items-center gap-x-4 text-xs'>
+      <div className='mb-3 grid grid-cols-1 items-center gap-x-4 gap-y-0.5 text-xs sm:grid-cols-[auto_1fr]'>
         <span className='text-muted-foreground'>Email</span>
         <div className='flex items-center gap-1'>
-          <span className='cursor-text select-all font-mono font-medium'>{env.email}</span>
+          <span className='cursor-text select-all font-mono font-medium'>
+            {env.email}
+          </span>
           <CopyButton text={env.email} label='Email' />
         </div>
 
         <span className='text-muted-foreground'>Phone / WhatsApp</span>
         <div className='flex items-center gap-1'>
-          <span className='cursor-text select-all font-mono font-medium'>{env.phone}</span>
+          <span className='cursor-text select-all font-mono font-medium'>
+            {env.phone}
+          </span>
           <CopyButton text={env.phone} label='Phone' />
         </div>
       </div>

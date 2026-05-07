@@ -41,13 +41,30 @@ const skills = [
   'Reverse Engineering',
 ];
 
+function SectionHeading() {
+  return (
+    <div>
+      <h2 className='mb-2 text-3xl font-semibold leading-tight tracking-tight'>
+        Meet Your CNC Engineer & Founder
+      </h2>
+      <h3 className='mb-4 text-base font-medium text-muted-foreground'>
+        {FOUNDER_FULL_NAME} — Senior CNC Engineer & Founder of {env.appName}
+      </h3>
+      <div className='mb-6 h-1 w-16 bg-primary' />
+    </div>
+  );
+}
+
 export function MeetFounderSection({ className }: { className?: string }) {
   return (
     <section id={SECTION_IDS.founder} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
+        <div className='lg:hidden'>
+          <SectionHeading />
+        </div>
         <div className='grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16'>
           <div className='relative'>
-            <div className='relative aspect-4/5 overflow-hidden border border-gray-200'>
+            <div className='relative aspect-4/5 max-h-150 overflow-hidden border border-gray-200 lg:max-h-none'>
               <Image
                 src={founderImg}
                 alt='Viktor — Senior CNC Engineer & Founder of Viktor CNC, in a professional workshop environment'
@@ -68,17 +85,8 @@ export function MeetFounderSection({ className }: { className?: string }) {
           </div>
 
           <div className='flex flex-col gap-6'>
-            <div>
-              <h2 className='mb-2 text-3xl font-semibold leading-tight tracking-tight'>
-                Meet Your CNC Engineer & Founder
-              </h2>
-
-              <h3 className='mb-4 text-base font-medium text-muted-foreground'>
-                {FOUNDER_FULL_NAME} — Senior CNC Engineer & Founder of{' '}
-                {env.appName}
-              </h3>
-
-              <div className='mb-6 h-1 w-16 bg-primary' />
+            <div className='hidden lg:block'>
+              <SectionHeading />
             </div>
 
             <div className='space-y-4 text-base leading-relaxed text-muted-foreground'>

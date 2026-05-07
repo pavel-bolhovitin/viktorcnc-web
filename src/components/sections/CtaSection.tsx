@@ -30,7 +30,7 @@ export function CtaSection({ className }: CtaSectionProps) {
                 Call us
               </p>
             </a>
-            <p className='cursor-text select-all text-xl font-bold'>
+            <p className='cursor-text select-all text-base font-bold sm:text-xl'>
               {env.phone}
             </p>
           </div>
@@ -41,7 +41,7 @@ export function CtaSection({ className }: CtaSectionProps) {
                 Email
               </p>
             </a>
-            <p className='cursor-text select-all text-xl font-bold'>
+            <p className='cursor-text select-all text-base font-bold sm:text-xl'>
               {env.email}
             </p>
           </div>
@@ -57,7 +57,7 @@ export function CtaSection({ className }: CtaSectionProps) {
                 WhatsApp
               </p>
             </a>
-            <p className='cursor-text select-all text-xl font-bold'>
+            <p className='cursor-text select-all text-base font-bold sm:text-xl'>
               {env.phone}
             </p>
           </div>

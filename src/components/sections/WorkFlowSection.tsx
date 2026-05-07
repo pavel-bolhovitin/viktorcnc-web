@@ -73,7 +73,7 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
         </div>
 
         <div className='relative'>
-          <div className='absolute left-6.75 top-0 hidden h-full w-px bg-gray-200 md:block' />
+          <div className='absolute left-5 top-0 h-full w-px bg-gray-200 md:left-6.75' />
 
           <ol className='space-y-0'>
             {steps.map((step, index) => {
@@ -81,12 +81,12 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
               return (
                 <li
                   key={step.number}
-                  className='relative grid grid-cols-1 gap-6 md:grid-cols-[56px_1fr] md:gap-10'
+                  className='relative grid grid-cols-[40px_1fr] gap-4 md:grid-cols-[56px_1fr] md:gap-10'
                 >
                   <div className='flex flex-col items-center md:items-start'>
-                    <div className='relative z-10 flex h-14 w-14 items-center justify-center border border-gray-200 bg-white'>
+                    <div className='relative z-10 flex h-10 w-10 items-center justify-center border border-gray-200 bg-white md:h-14 md:w-14'>
                       <Icon
-                        className='h-5 w-5 text-primary'
+                        className='h-4 w-4 text-primary md:h-5 md:w-5'
                         strokeWidth={1.5}
                       />
                     </div>

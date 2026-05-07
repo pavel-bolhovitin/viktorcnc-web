@@ -16,13 +16,17 @@ export function AppBar() {
 
       <nav className='hidden items-center gap-6 text-sm font-medium text-foreground/70 md:flex'>
         {NAV_LINKS.map(({ label, href }) => (
-          <a key={label} href={href} className='transition-colors hover:text-foreground'>
+          <a
+            key={label}
+            href={href}
+            className='transition-colors hover:text-foreground'
+          >
             {label}
           </a>
         ))}
       </nav>
 
-      <Button asChild size='lg' className='px-4'>
+      <Button asChild size='lg' className='hidden px-4 sm:flex'>
         <a href={`#${SECTION_IDS.contact}`}>Contact me</a>
       </Button>
     </header>
