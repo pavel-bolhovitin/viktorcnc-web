@@ -106,13 +106,13 @@ function ContactBlockCurrent() {
       <div className='mb-3 grid grid-cols-[auto_1fr] items-center gap-x-4 text-xs'>
         <span className='text-muted-foreground'>Email</span>
         <div className='flex items-center gap-1'>
-          <span className='font-mono font-medium'>{env.email}</span>
+          <span className='cursor-text select-all font-mono font-medium'>{env.email}</span>
           <CopyButton text={env.email} label='Email' />
         </div>
 
         <span className='text-muted-foreground'>Phone / WhatsApp</span>
         <div className='flex items-center gap-1'>
-          <span className='font-mono font-medium'>{env.phone}</span>
+          <span className='cursor-text select-all font-mono font-medium'>{env.phone}</span>
           <CopyButton text={env.phone} label='Phone' />
         </div>
       </div>
