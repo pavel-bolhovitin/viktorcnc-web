@@ -9,12 +9,11 @@ import { FOUNDED_YEAR, YEARS_EXPERIENCE } from '@/constants/founder';
 import { NAV_LINKS, SERVICE_LINKS } from '@/constants/sections';
 import { env } from '@/utils/env';
 
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-white text-foreground'>
+    <footer className='bg-gray-50 text-foreground'>
       <div className='mx-auto max-w-7xl px-6 py-16'>
         <div className='grid gap-10 sm:grid-cols-2 lg:grid-cols-4'>
           <div className='sm:col-span-2'>

@@ -22,7 +22,7 @@ export default function Home() {
         <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
         <FaqSection className='bg-white border-b border-b-gray-100' />
         <WorkFlowSection className='bg-gray-50 border-b border-b-gray-100' />
-        <CtaSection />
+        <CtaSection className='bg-white border-y border-b-gray-100' />
       </main>
 
       <Footer />
