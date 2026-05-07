@@ -1,5 +1,5 @@
-import { ArrowRightIcon, DraftingCompass } from 'lucide-react';
-import { SECTION_IDS } from '@/constants/sections';
+import { DraftingCompass } from 'lucide-react';
+import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
 import { env } from '@/utils/env';
 import { Button } from './ui/button';
 
@@ -15,25 +15,15 @@ export function AppBar() {
       </div>
 
       <nav className='hidden items-center gap-6 text-sm font-medium text-foreground/70 md:flex'>
-        <a href={`#${SECTION_IDS.services}`} className='transition-colors hover:text-foreground'>
-          Services
-        </a>
-        <a href={`#${SECTION_IDS.gallery}`} className='transition-colors hover:text-foreground'>
-          Gallery
-        </a>
-        <a href={`#${SECTION_IDS.process}`} className='transition-colors hover:text-foreground'>
-          Process
-        </a>
-        <a href={`#${SECTION_IDS.faq}`} className='transition-colors hover:text-foreground'>
-          FAQ
-        </a>
+        {NAV_LINKS.map(({ label, href }) => (
+          <a key={label} href={href} className='transition-colors hover:text-foreground'>
+            {label}
+          </a>
+        ))}
       </nav>
 
-      <Button asChild size='lg' className='group px-4'>
-        <a href={`mailto:${env.email}`}>
-          Get a Quote
-          <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
-        </a>
+      <Button asChild size='lg' className='px-4'>
+        <a href={`#${SECTION_IDS.contact}`}>Contact me</a>
       </Button>
     </header>
   );
