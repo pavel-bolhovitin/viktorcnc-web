@@ -30,12 +30,15 @@ export function HeroSection({ className }: { className?: string }) {
 
       <div className='relative z-10 mx-auto w-full max-w-7xl px-6 py-16 grid grid-cols-12'>
         <div className='col-span-12 md:col-span-8 lg:col-span-6 rounded-lg border border-white/20 bg-white/40 p-6 backdrop-blur-xs md:p-10'>
-          <Badge variant='outline' className='rounded-sm mb-5'>
+          <Badge
+            variant='outline'
+            className='rounded-sm mb-5 flex-wrap whitespace-normal'
+          >
             <ShieldCheck className='size-3.5 text-primary' />
             {YEARS_EXPERIENCE}+ Years CNC Machining Experience
           </Badge>
 
-          <h1 className='mb-5 text-4xl font-semibold leading-tight tracking-tight lg:text-5xl'>
+          <h1 className='mb-5 text-4xl font-semibold leading-tight tracking-tight lg:text-5xl break-all sm:break-normal'>
             Custom CNC Parts Manufacturing:{' '}
             <span className='text-primary'>From Sketch to Finished Detail</span>
           </h1>
