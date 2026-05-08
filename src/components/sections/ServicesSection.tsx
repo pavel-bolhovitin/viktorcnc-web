@@ -3,7 +3,6 @@ import Image from 'next-export-optimize-images/image';
 import { Button } from '@/components/ui/button';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
-import { env } from '@/utils/env';
 import cadImg from '$/public/cad.webp';
 import millingImg from '$/public/milling.webp';
 import turningImg from '$/public/turning.webp';
@@ -168,12 +167,9 @@ export function ServicesSection({ className }: { className?: string }) {
         </div>
 
         <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
-          <Button asChild size='lg' className='group h-auto px-6 py-3 whitespace-normal!'>
-            <a
-              href={`mailto:${env.email}`}
-              className='flex items-center gap-2 text-left'
-            >
-              Send your drawing — get a production quote
+          <Button asChild size='lg' className='group px-6'>
+            <a href={`#${SECTION_IDS.contact}`} className='flex items-center gap-2'>
+              Contact me
               <ArrowRight className='shrink-0 transition-transform duration-200 group-hover:translate-x-0.5' />
             </a>
           </Button>
