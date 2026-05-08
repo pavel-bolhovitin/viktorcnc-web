@@ -1,4 +1,5 @@
 import { AppBar } from '@/components/AppBar';
+import { AppSidebar } from '@/components/AppSidebar';
 import { Footer } from '@/components/Footer';
 import { CtaSection } from '@/components/sections/CtaSection';
 import { FaqSection } from '@/components/sections/FaqSection';
@@ -8,24 +9,28 @@ import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
 import { WorkFlowSection } from '@/components/sections/WorkFlowSection';
+import { SidebarProvider } from '@/components/ui/sidebar';
 
 export default function Home() {
   return (
-    <>
-      <AppBar />
+    <SidebarProvider defaultOpen={false}>
+      <AppSidebar />
+      <div className='flex min-w-0 flex-1 flex-col'>
+        <AppBar />
 
-      <main>
-        <HeroSection />
-        <ServicesSection className='bg-white border-b border-b-gray-100' />
-        <GallerySection className='bg-gray-50 border-b border-b-gray-100' />
-        <ProductionFacilitySection className='bg-white border-b border-b-gray-100' />
-        <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
-        <FaqSection className='bg-white border-b border-b-gray-100' />
-        <WorkFlowSection className='bg-gray-50 border-b border-b-gray-100' />
-        <CtaSection className='bg-white border-y border-b-gray-100' />
-      </main>
+        <main>
+          <HeroSection />
+          <ServicesSection className='bg-white border-b border-b-gray-100' />
+          <GallerySection className='bg-gray-50 border-b border-b-gray-100' />
+          <ProductionFacilitySection className='bg-white border-b border-b-gray-100' />
+          <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
+          <FaqSection className='bg-white border-b border-b-gray-100' />
+          <WorkFlowSection className='bg-gray-50 border-b border-b-gray-100' />
+          <CtaSection className='bg-white border-y border-b-gray-100' />
+        </main>
 
-      <Footer />
-    </>
+        <Footer />
+      </div>
+    </SidebarProvider>
   );
 }

@@ -10,8 +10,8 @@ html {
 
 @theme inline {
   --z-base: 0;
-  --z-app-bar: 900;
-  --z-dialog: 1000;
+  --z-app-bar: 30;
+  --z-dialog: 40;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
