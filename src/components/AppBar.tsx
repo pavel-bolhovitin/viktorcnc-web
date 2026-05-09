@@ -1,6 +1,7 @@
 import { DraftingCompass } from 'lucide-react';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
 import { env } from '@/utils/env';
+import { LanguageSelect } from './LanguageSelect';
 import { ThemeToggle } from './ThemeToggle';
 import { Button } from './ui/button';
 import { Separator } from './ui/separator';
@@ -39,6 +40,7 @@ export function AppBar() {
         </nav>
 
         <div className='flex items-center gap-2'>
+          <LanguageSelect className='hidden sm:flex' />
           <ThemeToggle className='hidden sm:flex' />
           <Button asChild size='lg' className='hidden px-4 sm:flex'>
             <a href={`#${SECTION_IDS.contact}`}>Contact me</a>
