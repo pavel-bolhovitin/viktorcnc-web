@@ -1,6 +1,5 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import {
   DraftingCompass,
   Factory,
@@ -12,9 +11,10 @@ import {
   Workflow,
   Wrench,
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { useEffect, useState } from 'react';
 import { FOUNDED_YEAR } from '@/constants/founder';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
+import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 import { Button } from './ui/button';
 import {
@@ -97,11 +97,11 @@ export function AppSidebar() {
                   <a href={href}>
                     {Icon && (
                       <Icon
-                        className='h-[18px] w-[18px] shrink-0'
+                        className='h-4.5 w-4.5 shrink-0'
                         strokeWidth={1.5}
                       />
                     )}
-                    <span className='text-[11px] uppercase tracking-[0.05em] font-semibold'>
+                    <span className='text-[11px] uppercase tracking-wider font-semibold'>
                       {label}
                     </span>
                   </a>
@@ -113,7 +113,7 @@ export function AppSidebar() {
         <div className='border-t border-sidebar-border mt-auto pt-6 px-2 pb-2 flex flex-col gap-3'>
           <Button
             variant='outline'
-            className='w-full rounded-none text-[11px] uppercase tracking-[0.05em] font-semibold gap-2 h-10'
+            className='w-full rounded-none text-[11px] uppercase tracking-wider font-semibold gap-2 h-10'
             asChild
             onClick={close}
           >
