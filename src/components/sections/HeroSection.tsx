@@ -13,7 +13,7 @@ import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { env } from '@/utils/env';
 import HeroBg from '$/public/hero-bg.webp';
 
-export function HeroSection({ className }: { className?: string }) {
+export function HeroSection() {
   return (
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
@@ -25,11 +25,11 @@ export function HeroSection({ className }: { className?: string }) {
           sizes='100vw'
           className='object-cover filter-[grayscale(0.2)_contrast(1.1)]'
         />
-        <div className='absolute inset-0 bg-linear-to-r from-white via-white/80 to-transparent' />
+        <div className='absolute inset-0 bg-linear-to-r from-background via-background/80 to-transparent' />
       </div>
 
       <div className='relative z-10 mx-auto w-full max-w-7xl px-6 py-16 grid grid-cols-12'>
-        <div className='col-span-12 md:col-span-8 lg:col-span-6 rounded-lg border border-white/20 bg-white/40 p-6 backdrop-blur-xs md:p-10'>
+        <div className='col-span-12 md:col-span-8 lg:col-span-6 rounded-lg border border-border/20 bg-background/40 p-6 backdrop-blur-xs md:p-10'>
           <Badge
             variant='outline'
             className='rounded-sm mb-5 flex-wrap whitespace-normal'

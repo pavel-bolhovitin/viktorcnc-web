@@ -97,7 +97,7 @@ export function ProductionFacilitySection({
                 key={machine.id}
                 className={`group flex flex-col md:flex-row ${flip ? 'md:flex-row-reverse' : ''} gap-0`}
               >
-                <div className='relative h-96 overflow-hidden border border-gray-200 md:h-120 md:w-3/5'>
+                <div className='relative h-96 overflow-hidden border border-border md:h-120 md:w-3/5'>
                   <Image
                     src={machine.image}
                     alt={machine.alt}
@@ -108,10 +108,10 @@ export function ProductionFacilitySection({
                   />
                 </div>
 
-                <div className='flex flex-col justify-between border border-gray-200 bg-white p-8 md:w-2/5'>
+                <div className='flex flex-col justify-between border border-border bg-card p-8 md:w-2/5'>
                   <div>
                     <div className='mb-8 flex items-start justify-between'>
-                      <span className='bg-gray-100 px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-gray-600'>
+                      <span className='bg-muted px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground'>
                         {machine.unitId}
                       </span>
                       <Icon className='h-4 w-4 text-primary' />
@@ -124,7 +124,7 @@ export function ProductionFacilitySection({
                     </p>
                   </div>
 
-                  <div className='space-y-2.5 border-t border-gray-100 pt-5'>
+                  <div className='space-y-2.5 border-t border-border pt-5'>
                     {machine.specs.map((spec) => (
                       <div key={spec.label} className='flex justify-between'>
                         <span className='font-mono text-[10px] uppercase tracking-wider text-muted-foreground'>
@@ -142,7 +142,7 @@ export function ProductionFacilitySection({
           })}
         </div>
 
-        <div className='mb-16 grid grid-cols-1 gap-12 border-t border-gray-200 pt-12 md:grid-cols-2'>
+        <div className='mb-16 grid grid-cols-1 gap-12 border-t border-border pt-12 md:grid-cols-2'>
           <div className='space-y-4'>
             <div className='flex items-center gap-2'>
               <ShieldCheck className='h-5 w-5 shrink-0 text-primary' />
@@ -189,7 +189,7 @@ export function ProductionFacilitySection({
           </div>
         </div>
 
-        <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
+        <div className='flex flex-col items-start gap-4 border-t border-border pt-8 sm:flex-row sm:items-center'>
           <Button asChild size='lg' className='group px-6'>
             <a
               href={`#${SECTION_IDS.contact}`}

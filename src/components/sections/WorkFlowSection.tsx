@@ -73,7 +73,7 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
         </div>
 
         <div className='relative'>
-          <div className='absolute left-5 top-0 h-full w-px bg-gray-200 md:left-6.75' />
+          <div className='absolute left-5 top-0 h-full w-px bg-border md:left-6.75' />
 
           <ol className='space-y-0'>
             {steps.map((step, index) => {
@@ -84,7 +84,7 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
                   className='relative grid grid-cols-[40px_1fr] gap-4 md:grid-cols-[56px_1fr] md:gap-10'
                 >
                   <div className='flex flex-col items-center md:items-start'>
-                    <div className='relative z-10 flex h-10 w-10 items-center justify-center border border-gray-200 bg-white md:h-14 md:w-14'>
+                    <div className='relative z-10 flex h-10 w-10 items-center justify-center border border-border bg-card md:h-14 md:w-14'>
                       <Icon
                         className='h-4 w-4 text-primary md:h-5 md:w-5'
                         strokeWidth={1.5}
@@ -113,7 +113,7 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
                       {step.keywords.map((kw) => (
                         <span
                           key={kw}
-                          className='border border-gray-200 bg-gray-100 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-gray-500'
+                          className='border border-border bg-muted px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground'
                         >
                           {kw}
                         </span>

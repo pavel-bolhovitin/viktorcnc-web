@@ -9,6 +9,7 @@ import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
 import { WorkFlowSection } from '@/components/sections/WorkFlowSection';
+import { Separator } from '@/components/ui/separator';
 import { SidebarProvider } from '@/components/ui/sidebar';
 
 export default function Home() {
@@ -20,13 +21,20 @@ export default function Home() {
 
         <main>
           <HeroSection />
-          <ServicesSection className='bg-white border-b border-b-gray-100' />
-          <GallerySection className='bg-gray-50 border-b border-b-gray-100' />
-          <ProductionFacilitySection className='bg-white border-b border-b-gray-100' />
-          <MeetFounderSection className='bg-gray-50 border-b border-b-gray-100' />
-          <FaqSection className='bg-white border-b border-b-gray-100' />
-          <WorkFlowSection className='bg-gray-50 border-b border-b-gray-100' />
-          <CtaSection className='bg-white border-y border-b-gray-100' />
+          <Separator />
+          <ServicesSection className='bg-background' />
+          <Separator />
+          <GallerySection className='bg-muted' />
+          <Separator />
+          <ProductionFacilitySection className='bg-background' />
+          <Separator />
+          <MeetFounderSection className='bg-muted' />
+          <Separator />
+          <FaqSection className='bg-background' />
+          <Separator />
+          <WorkFlowSection className='bg-muted' />
+          <Separator />
+          <CtaSection className='bg-background' />
         </main>
 
         <Footer />

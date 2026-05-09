@@ -64,7 +64,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
         </div>
         <div className='grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16'>
           <div className='relative'>
-            <div className='relative aspect-4/5 max-h-150 overflow-hidden border border-gray-200 lg:max-h-none'>
+            <div className='relative aspect-4/5 max-h-150 overflow-hidden border border-border lg:max-h-none'>
               <Image
                 src={founderImg}
                 alt='Viktor — Senior CNC Engineer & Founder of Viktor CNC, in a professional workshop environment'
@@ -73,8 +73,8 @@ export function MeetFounderSection({ className }: { className?: string }) {
                 sizes='(max-width: 1024px) 100vw, 50vw'
                 className='object-cover'
               />
-              <div className='absolute bottom-0 left-0 max-w-50 border-r border-t border-gray-200 bg-white p-4'>
-                <p className='font-mono text-xs uppercase tracking-wider text-gray-400'>
+              <div className='absolute bottom-0 left-0 max-w-50 border-r border-t border-border bg-card p-4'>
+                <p className='font-mono text-xs uppercase tracking-wider text-muted-foreground'>
                   Status
                 </p>
                 <p className='text-sm font-semibold text-primary'>
@@ -127,7 +127,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
               {stats.map(({ value, unit, label, sub }) => (
                 <div
                   key={label}
-                  className='border border-gray-200 bg-white p-4'
+                  className='border border-border bg-card p-4'
                 >
                   <div className='font-mono text-lg font-semibold text-foreground'>
                     {value}
@@ -151,7 +151,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className='border border-gray-200 bg-gray-100 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gray-700'
+                    className='border border-border bg-muted px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted-foreground'
                   >
                     {skill}
                   </span>
@@ -159,7 +159,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
               </div>
             </div>
 
-            <div className='border-t border-gray-200 pt-5'>
+            <div className='border-t border-border pt-5'>
               <h3 className='mb-2 text-base font-semibold'>How to Order</h3>
               <p className='text-sm text-muted-foreground'>
                 Send your CAD file, drawing, or sample — I will review it and

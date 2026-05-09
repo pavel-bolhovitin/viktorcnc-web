@@ -66,7 +66,7 @@ export function FaqSection({ className }: { className?: string }) {
           </p>
         </div>
 
-        <div className='divide-y divide-gray-200 border-y border-gray-200'>
+        <div className='divide-y divide-border border-y border-border'>
           {faqs.map((faq, i) => (
             <Collapsible
               key={faq.q}

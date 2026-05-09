@@ -68,7 +68,7 @@ export function ServicesSection({ className }: { className?: string }) {
           {services.map((service) => (
             <div
               key={service.id}
-              className='group flex flex-col border border-gray-200 bg-white transition-colors hover:border-primary/30'
+              className='group flex flex-col border border-border bg-card transition-colors hover:border-primary/30'
             >
               <div className='relative aspect-video overflow-hidden'>
                 <Image
@@ -87,7 +87,7 @@ export function ServicesSection({ className }: { className?: string }) {
                 </h3>
 
                 {service.specs.length > 0 && (
-                  <div className='mb-4 border border-gray-100 bg-gray-50 p-3'>
+                  <div className='mb-4 border border-border bg-muted p-3'>
                     {service.specs.map((spec) => (
                       <p
                         key={spec.label}
@@ -108,7 +108,7 @@ export function ServicesSection({ className }: { className?: string }) {
                   {service.materials.map((material) => (
                     <span
                       key={material}
-                      className='border border-gray-200 bg-gray-100 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-gray-600'
+                      className='border border-border bg-muted px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-muted-foreground'
                     >
                       {material}
                     </span>
@@ -119,7 +119,7 @@ export function ServicesSection({ className }: { className?: string }) {
           ))}
         </div>
 
-        <div className='mb-8 bg-gray-50 px-8 py-6'>
+        <div className='mb-8 bg-muted px-8 py-6'>
           <p className='mb-5 font-mono text-xs uppercase tracking-wider text-muted-foreground'>
             Supported Materials
           </p>
@@ -154,7 +154,7 @@ export function ServicesSection({ className }: { className?: string }) {
               </div>
             ))}
           </div>
-          <div className='mt-6 border-t border-gray-200 pt-4'>
+          <div className='mt-6 border-t border-border pt-4'>
             <p className='text-xs text-muted-foreground'>
               These are the most commonly used materials.{' '}
               <strong className='text-foreground'>
@@ -166,7 +166,7 @@ export function ServicesSection({ className }: { className?: string }) {
           </div>
         </div>
 
-        <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
+        <div className='flex flex-col items-start gap-4 border-t border-border pt-8 sm:flex-row sm:items-center'>
           <Button asChild size='lg' className='group px-6'>
             <a
               href={`#${SECTION_IDS.contact}`}
