@@ -55,7 +55,9 @@ export function GalleryDialog({
           aspectRatio: set.aspect,
         }}
       >
-        <DialogTitle className='sr-only'>CNC part — {materialLabel}</DialogTitle>
+        <DialogTitle className='sr-only'>
+          CNC part — {materialLabel}
+        </DialogTitle>
 
         <Carousel
           key={set.id}

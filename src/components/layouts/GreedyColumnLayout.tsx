@@ -48,7 +48,9 @@ export function GreedyColumnLayout<T>({
     widthExtractor,
     heightExtractor,
   );
-  const visibleKeys = new Set(data.slice(0, (page + 1) * pageSize).map(keyExtractor));
+  const visibleKeys = new Set(
+    data.slice(0, (page + 1) * pageSize).map(keyExtractor),
+  );
 
   return (
     <div

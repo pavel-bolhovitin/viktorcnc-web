@@ -10,7 +10,7 @@ const OUTPUT_FILE = join(IMAGES_DIR, 'cnc-parts-meta.json');
 const SET_PATTERN = /^(cnc-part-set-(\d+))-/;
 
 const files = readdirSync(IMAGES_DIR)
-  .filter(f => SET_PATTERN.test(f) && /\.webp$/i.test(f))
+  .filter((f) => SET_PATTERN.test(f) && /\.webp$/i.test(f))
   .sort();
 
 const setsMap = new Map();
@@ -20,7 +20,8 @@ for (const filename of files) {
   const buffer = readFileSync(join(IMAGES_DIR, filename));
   const { width, height } = imageSize(buffer);
 
-  if (!setsMap.has(setId)) setsMap.set(setId, { number: Number(match[2]), images: [] });
+  if (!setsMap.has(setId))
+    setsMap.set(setId, { number: Number(match[2]), images: [] });
   setsMap.get(setId).images.push({ filename, width, height });
 }
 
@@ -28,7 +29,7 @@ const result = Object.fromEntries(
   Array.from(setsMap.entries()).map(([id, { number, images }]) => [
     id,
     { id, number, images },
-  ])
+  ]),
 );
 
 writeFileSync(OUTPUT_FILE, JSON.stringify(result, null, 2));

@@ -1,7 +1,17 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { DraftingCompass, Factory, HelpCircle, Images, Mail, Menu, User, Workflow, Wrench } from 'lucide-react';
+import {
+  DraftingCompass,
+  Factory,
+  HelpCircle,
+  Images,
+  Mail,
+  Menu,
+  User,
+  Workflow,
+  Wrench,
+} from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { FOUNDED_YEAR } from '@/constants/founder';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
@@ -58,8 +68,13 @@ export function AppSidebar() {
     <Sidebar side='left' collapsible='offcanvas'>
       <SidebarHeader className='border-b border-sidebar-border h-16 px-4'>
         <div className='flex h-full items-center gap-2'>
-          <DraftingCompass className='h-6 w-6 rotate-180 text-primary' strokeWidth={1.75} />
-          <span className='text-lg font-bold tracking-tight'>{env.appName}</span>
+          <DraftingCompass
+            className='h-6 w-6 rotate-180 text-primary'
+            strokeWidth={1.75}
+          />
+          <span className='text-lg font-bold tracking-tight'>
+            {env.appName}
+          </span>
         </div>
       </SidebarHeader>
       <SidebarContent className='flex flex-col py-4 px-2'>
@@ -80,7 +95,12 @@ export function AppSidebar() {
                   )}
                 >
                   <a href={href}>
-                    {Icon && <Icon className='h-[18px] w-[18px] shrink-0' strokeWidth={1.5} />}
+                    {Icon && (
+                      <Icon
+                        className='h-[18px] w-[18px] shrink-0'
+                        strokeWidth={1.5}
+                      />
+                    )}
                     <span className='text-[11px] uppercase tracking-[0.05em] font-semibold'>
                       {label}
                     </span>

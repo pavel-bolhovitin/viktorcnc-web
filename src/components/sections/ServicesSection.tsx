@@ -168,7 +168,10 @@ export function ServicesSection({ className }: { className?: string }) {
 
         <div className='flex flex-col items-start gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:items-center'>
           <Button asChild size='lg' className='group px-6'>
-            <a href={`#${SECTION_IDS.contact}`} className='flex items-center gap-2'>
+            <a
+              href={`#${SECTION_IDS.contact}`}
+              className='flex items-center gap-2'
+            >
               Contact me
               <ArrowRight className='shrink-0 transition-transform duration-200 group-hover:translate-x-0.5' />
             </a>
