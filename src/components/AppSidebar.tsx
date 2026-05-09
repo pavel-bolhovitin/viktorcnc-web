@@ -56,8 +56,8 @@ export function AppSidebar() {
 
   return (
     <Sidebar side='left' collapsible='offcanvas'>
-      <SidebarHeader className='border-b border-sidebar-border py-6 px-4'>
-        <div className='flex items-center gap-2'>
+      <SidebarHeader className='border-b border-sidebar-border h-16 px-4'>
+        <div className='flex h-full items-center gap-2'>
           <DraftingCompass className='h-6 w-6 rotate-180 text-primary' strokeWidth={1.75} />
           <span className='text-lg font-bold tracking-tight'>{env.appName}</span>
         </div>
