@@ -78,7 +78,7 @@ export function GallerySection({ className }: { className?: string }) {
               pressed={selected.has(material)}
               onPressedChange={() => toggle(material)}
               variant='outline'
-              className='font-mono text-xs uppercase tracking-wider border-primary/40 text-primary/60 hover:bg-transparent hover:border-primary hover:text-primary data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:border-primary'
+              className='font-mono text-xs uppercase tracking-wider border-foreground/30 text-foreground/70 hover:bg-transparent hover:border-primary hover:text-primary data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:border-primary'
             >
               {material}
             </Toggle>
@@ -102,7 +102,7 @@ export function GallerySection({ className }: { className?: string }) {
             <button
               type='button'
               onClick={() => setPageSize((prev) => prev + PAGE_SIZE)}
-              className='border border-primary/40 px-6 py-2 font-mono text-xs uppercase tracking-wider text-primary/60 hover:border-primary hover:text-primary transition-colors'
+              className='border border-primary px-6 py-2 font-mono text-xs uppercase tracking-wider text-primary hover:border-primary hover:text-primary transition-colors'
             >
               Show more ({Math.min(PAGE_SIZE, remaining)})
             </button>
