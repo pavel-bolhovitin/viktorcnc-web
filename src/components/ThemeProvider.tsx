@@ -1,7 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState } from 'react';
-import { useSystemTheme, type SystemTheme } from '@/hooks/useSystemTheme';
+import { type SystemTheme, useSystemTheme } from '@/hooks/useSystemTheme';
 
 type Theme = 'light' | 'dark' | 'system';
 
@@ -11,18 +11,19 @@ interface ThemeContextValue {
   setTheme: (theme: Theme) => void;
 }
 
+const THEME_STORAGE_KEY = 'theme';
+
 const ThemeContext = createContext<ThemeContextValue | null>(null);
+
+function getInitialTheme(): Theme {
+  if (typeof window === 'undefined') return 'system';
+  const stored = localStorage.getItem(THEME_STORAGE_KEY) as Theme | null;
+  return stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system';
+}
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const systemTheme = useSystemTheme();
-  const [theme, setThemeState] = useState<Theme>('system');
-
-  useEffect(() => {
-    const stored = localStorage.getItem('theme') as Theme | null;
-    if (stored === 'light' || stored === 'dark' || stored === 'system') {
-      setThemeState(stored);
-    }
-  }, []);
+  const [theme, setThemeState] = useState<Theme>(getInitialTheme);
 
   const resolvedTheme: SystemTheme = theme === 'system' ? systemTheme : theme;
 
@@ -32,7 +33,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   const setTheme = (next: Theme) => {
     setThemeState(next);
-    localStorage.setItem('theme', next);
+    localStorage.setItem(THEME_STORAGE_KEY, next);
   };
 
   return (

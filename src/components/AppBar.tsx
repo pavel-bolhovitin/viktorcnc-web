@@ -39,7 +39,7 @@ export function AppBar() {
         </nav>
 
         <div className='flex items-center gap-2'>
-          <ThemeToggle />
+          <ThemeToggle className='hidden sm:flex' />
           <Button asChild size='lg' className='hidden px-4 sm:flex'>
             <a href={`#${SECTION_IDS.contact}`}>Contact me</a>
           </Button>

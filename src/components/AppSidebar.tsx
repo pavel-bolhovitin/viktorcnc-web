@@ -7,6 +7,9 @@ import {
   Images,
   Mail,
   Menu,
+  Monitor,
+  Moon,
+  Sun,
   User,
   Workflow,
   Wrench,
@@ -16,6 +19,7 @@ import { FOUNDED_YEAR } from '@/constants/founder';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
+import { useTheme } from './ThemeProvider';
 import { Button } from './ui/button';
 import {
   Sidebar,
@@ -52,9 +56,16 @@ export function AppSidebarTrigger({ className }: { className?: string }) {
   );
 }
 
+const THEME_OPTIONS = [
+  { value: 'system', icon: Monitor, label: 'System' },
+  { value: 'light', icon: Sun, label: 'Light' },
+  { value: 'dark', icon: Moon, label: 'Dark' },
+] as const;
+
 export function AppSidebar() {
   const { setOpenMobile } = useSidebar();
   const [activeHash, setActiveHash] = useState('');
+  const { theme, setTheme } = useTheme();
   const close = () => setOpenMobile(false);
 
   useEffect(() => {
@@ -110,10 +121,36 @@ export function AppSidebar() {
             );
           })}
         </SidebarMenu>
-        <div className='border-t border-sidebar-border mt-auto pt-6 px-2 pb-2 flex flex-col gap-3'>
+
+        <div className=' mt-auto pt-4 px-2 pb-2 flex flex-col gap-3'>
+          <div className='flex flex-col gap-1.5'>
+            <p className='text-[10px] uppercase tracking-wider font-semibold text-muted-foreground px-2'>
+              Appearance
+            </p>
+            <div className='grid grid-cols-3 gap-1 rounded-md border border-sidebar-border p-1'>
+              {THEME_OPTIONS.map(({ value, icon: Icon, label }) => (
+                <button
+                  key={value}
+                  type='button'
+                  onClick={() => setTheme(value)}
+                  aria-label={label}
+                  suppressHydrationWarning
+                  className={cn(
+                    'flex items-center justify-center rounded py-2 transition-colors',
+                    theme === value
+                      ? 'bg-sidebar-primary text-sidebar-primary-foreground'
+                      : 'text-muted-foreground hover:text-foreground',
+                  )}
+                >
+                  <Icon className='h-4 w-4' strokeWidth={1.5} />
+                </button>
+              ))}
+            </div>
+          </div>
+
           <Button
             variant='outline'
-            className='w-full rounded-none text-[11px] uppercase tracking-wider font-semibold gap-2 h-10'
+            className='w-full rounded-none text-[11px] uppercase tracking-wider font-semibold gap-2 h-10 mt-9'
             asChild
             onClick={close}
           >
@@ -122,6 +159,7 @@ export function AppSidebar() {
               Contact me
             </a>
           </Button>
+
           <div className='flex flex-col gap-1 opacity-60'>
             <p className='font-mono text-[10px] text-muted-foreground'>
               © {new Date().getFullYear()} {env.appName}. All rights reserved.
