@@ -8,6 +8,10 @@ html {
 
 @custom-variant dark (&:is(.dark *));
 
+@utility z-* {
+  z-index: --value(--z-*);
+}
+
 @theme inline {
   --z-base: 0;
   --z-app-bar: 30;

@@ -8,7 +8,7 @@ import { SidebarTrigger } from './ui/sidebar';
 
 export function AppBar() {
   return (
-    <header className='sticky top-0 z-(--z-app-bar) flex h-16 shrink-0 items-center border-b border-b-gray-100 bg-white/60 backdrop-blur-md'>
+    <header className='sticky top-0 z-app-bar flex h-16 shrink-0 items-center border-b border-b-border bg-background/60 backdrop-blur-md'>
       <div className='flex w-full items-center gap-1 px-4 sm:justify-between md:gap-6 md:px-8'>
         <div className='flex flex-row'>
           <SidebarTrigger className='-ml-1 md:hidden hover:bg-transparent' />
