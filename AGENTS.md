@@ -50,6 +50,40 @@ node scripts/generate-cnc-parts-meta.mjs
 
 ---
 
+## [RULES GROUP] shadcn Rules
+
+### [RULE] Use shadcn Design Tokens, Not Tailwind Color Primitives
+
+**@when**: always, any `*.tsx` or `*.css` file
+
+**@description**: Always use shadcn semantic tokens (`bg-background`, `text-foreground`, `border-border`, etc.) instead of Tailwind color primitives (`bg-white`, `text-gray-900`, `border-gray-200`, etc.). shadcn tokens are CSS variables that switch automatically between light, dark, and any future theme. Tailwind primitives are hardcoded and break theming.
+
+- **Wrong**: `bg-white text-gray-900 border-gray-200`
+- **Right**: `bg-background text-foreground border-border`
+
+| Token | What it controls | Used by |
+| --- | --- | --- |
+| `background` / `foreground` | Default app background and text color | Page shell, page sections, default text |
+| `card` / `card-foreground` | Elevated surfaces and content inside them | Card, dashboard panels, settings panels |
+| `popover` / `popover-foreground` | Floating surfaces and content inside them | Popover, DropdownMenu, ContextMenu, overlays |
+| `primary` / `primary-foreground` | High-emphasis actions and brand surfaces | Default Button, selected states, badges, active accents |
+| `secondary` / `secondary-foreground` | Lower-emphasis filled actions and supporting surfaces | Secondary buttons, secondary badges, supporting UI |
+| `muted` / `muted-foreground` | Subtle surfaces and lower-emphasis content | Descriptions, placeholders, empty states, helper text, subdued surfaces |
+| `accent` / `accent-foreground` | Interactive hover, focus, and active surfaces | Ghost buttons, menu highlight states, hovered rows, selected items |
+| `destructive` | Destructive actions and error emphasis | Destructive buttons, invalid states, destructive menu items |
+| `border` | Default borders and separators | Cards, menus, tables, separators, layout dividers |
+| `input` | Form control borders and input surface treatment | Input, Textarea, Select, outline-style controls |
+| `ring` | Focus rings and outlines | Buttons, inputs, checkboxes, menus, focusable controls |
+| `chart-1` ... `chart-5` | Default chart palette | Charts and chart-driven dashboard blocks |
+| `sidebar` / `sidebar-foreground` | Base sidebar surface and default sidebar text | Sidebar container and its default content |
+| `sidebar-primary` / `sidebar-primary-foreground` | High-emphasis actions inside the sidebar | Active items, icon tiles, badges, sidebar CTAs |
+| `sidebar-accent` / `sidebar-accent-foreground` | Hover and selected states inside the sidebar | Sidebar menu hover states, open items, interactive rows |
+| `sidebar-border` | Sidebar-specific borders and separators | Sidebar headers, groups, internal dividers |
+| `sidebar-ring` | Sidebar-specific focus rings | Focused controls inside the sidebar |
+| `radius` | Base corner radius scale | Cards, inputs, buttons, popovers, derived `radius-*` tokens |
+
+---
+
 ## [RULES GROUP] Nextjs Rules
 
 This is NOT the Next.js you know
