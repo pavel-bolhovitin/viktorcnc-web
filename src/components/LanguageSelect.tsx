@@ -2,6 +2,8 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { STORAGE_KEYS } from '@/constants/storageKeys';
+import { supportedLangs } from '@/i18n/config';
+import { getLocalesSelfDisplayNames } from '@/i18n/utils';
 import { cn } from '@/lib/utils';
 import {
   Select,
@@ -10,6 +12,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from './ui/select';
+
+const selfDisplayNames = getLocalesSelfDisplayNames([...supportedLangs]);
 
 export type LanguageSelectProps = {
   className?: string;
@@ -29,12 +33,16 @@ export function LanguageSelect({ className }: LanguageSelectProps) {
 
   return (
     <Select value={i18n.language} onValueChange={changeLang}>
-      <SelectTrigger className={cn('w-20', className)}>
+      <SelectTrigger className={cn('capitalize', className)}>
         <SelectValue />
       </SelectTrigger>
-      <SelectContent>
-        <SelectItem value='ru'>RU</SelectItem>
-        <SelectItem value='en'>EN</SelectItem>
+
+      <SelectContent position='popper'>
+        {Object.entries(selfDisplayNames).map(([locale, name]) => (
+          <SelectItem key={locale} value={locale} className='capitalize'>
+            {name} <span className='uppercase'>{`(${locale})`}</span>
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );

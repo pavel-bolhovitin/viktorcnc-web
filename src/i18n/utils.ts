@@ -15,3 +15,11 @@ export function getLocaleDisplayNamesInLocale(
 export function getLocaleDisplayName(locales: string) {
   return getLocaleDisplayNamesInLocale([locales], locales)[locales];
 }
+
+export function getLocalesSelfDisplayNames(
+  locales: string[],
+): Record<string, string> {
+  return Object.fromEntries(
+    locales.map((locale) => [locale, getLocaleDisplayName(locale)]),
+  );
+}

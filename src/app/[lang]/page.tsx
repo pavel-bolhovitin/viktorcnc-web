@@ -9,7 +9,6 @@ import { MeetFounderSection } from '@/components/sections/MeetFounderSection';
 import { ProductionFacilitySection } from '@/components/sections/ProductionFacilitySection';
 import { ServicesSection } from '@/components/sections/ServicesSection';
 import { WorkFlowSection } from '@/components/sections/WorkFlowSection';
-import { TestTranslation } from '@/components/TestTranslation';
 import { Separator } from '@/components/ui/separator';
 import { SidebarProvider } from '@/components/ui/sidebar';
 
@@ -22,8 +21,6 @@ export default function Home() {
         <AppBar />
 
         <main>
-          <TestTranslation />
-
           <HeroSection />
           <Separator />
           <ServicesSection className='bg-background' />
