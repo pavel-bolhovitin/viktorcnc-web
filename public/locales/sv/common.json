@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ års erfarenhet av CNC-bearbetning",
+    "headline": "Tillverkning av anpassade CNC-delar:",
+    "headlineAccent": "Från skiss till färdig detalj",
+    "description": "Jag tillverkar precisions-CNC-delar från ritningar, 3D-modeller eller prover. Från enstaka prototyper till småserieproduktion — snabbt, noggrant och pålitligt. Snäva toleranser, komplexa geometrier och professionell ytbehandling.",
+    "tolerance": "Tolerans upp till ±0,01 mm",
+    "materials": "Material: aluminium, plast, stål",
+    "location": "Baserad i Lettland",
+    "shipping": "Världsomspännande frakt",
+    "cta": "Begär offert",
+    "email": "E-post",
+    "whatsapp": "WhatsApp",
+    "call": "Ring",
+    "labelEmail": "E-post",
+    "labelPhone": "Telefon / WhatsApp",
+    "hint1": "Skicka 3D-modeller, ritningar, skisser — eller ställ frågor.",
+    "hint2": "Direkt kommunikation med maskinisten."
+  }
+}

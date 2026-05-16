@@ -1,3 +1,20 @@
 {
-  "loading": "Ielādē..."
+  "hero": {
+    "badge": "{{years}}+ gadu pieredze CNC apstrādē",
+    "headline": "Pielāgotu CNC detaļu ražošana:",
+    "headlineAccent": "No skices līdz gatavai detaļai",
+    "description": "Izgatavoju precīzas CNC detaļas pēc rasējumiem, 3D modeļiem vai paraugiem. No atsevišķiem prototipiem līdz mazām partijām — ātri, precīzi un uzticami. Stingras tolerances, sarežģītas formas un profesionāla apdare.",
+    "tolerance": "Tolerance līdz ±0.01 mm",
+    "materials": "Materiāli: alumīnijs, plastmasa, tērauds",
+    "location": "Atrodas Latvijā",
+    "shipping": "Piegāde visā pasaulē",
+    "cta": "Pieprasīt cenu",
+    "email": "E-pasts",
+    "whatsapp": "WhatsApp",
+    "call": "Zvanīt",
+    "labelEmail": "E-pasts",
+    "labelPhone": "Tālrunis / WhatsApp",
+    "hint1": "Sūtiet 3D modeļus, rasējumus, skices — vai uzdodiet jautājumus.",
+    "hint2": "Tieša saziņa ar meistaru."
+  }
 }

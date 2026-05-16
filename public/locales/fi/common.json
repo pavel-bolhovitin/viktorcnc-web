@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ vuoden kokemus CNC-koneistuksesta",
+    "headline": "Räätälöityjen CNC-osien valmistus:",
+    "headlineAccent": "Luonnoksesta valmiiseen osaan",
+    "description": "Valmistan tarkkuus-CNC-osia piirustuksista, 3D-malleista tai näytteistä. Yksittäisistä prototyypeistä pieniin sarjoihin — nopeasti, tarkasti ja luotettavasti. Tiukat toleranssit, monimutkaiset geometriat ja ammattimainen viimeistely.",
+    "tolerance": "Toleranssi ±0,01 mm asti",
+    "materials": "Materiaalit: alumiini, muovi, teräs",
+    "location": "Sijaitsee Latviassa",
+    "shipping": "Toimitus maailmanlaajuisesti",
+    "cta": "Pyydä tarjous",
+    "email": "Sähköposti",
+    "whatsapp": "WhatsApp",
+    "call": "Soita",
+    "labelEmail": "Sähköposti",
+    "labelPhone": "Puhelin / WhatsApp",
+    "hint1": "Lähetä 3D-mallit, piirustukset, luonnokset — tai kysy kysymyksiä.",
+    "hint2": "Suora viestintä koneistajan kanssa."
+  }
+}

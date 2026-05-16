@@ -13,7 +13,11 @@ import {
   SelectValue,
 } from './ui/select';
 
-const selfDisplayNames = getLocalesSelfDisplayNames([...supportedLangs]);
+const selfDisplayNames = Object.fromEntries(
+  Object.entries(getLocalesSelfDisplayNames([...supportedLangs])).sort(([, a], [, b]) =>
+    a.localeCompare(b),
+  ),
+);
 
 export type LanguageSelectProps = {
   className?: string;

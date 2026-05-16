@@ -1,3 +1,20 @@
 {
-  "loading": "Loading..."
+  "hero": {
+    "badge": "{{years}}+ Years CNC Machining Experience",
+    "headline": "Custom CNC Parts Manufacturing:",
+    "headlineAccent": "From Sketch to Finished Detail",
+    "description": "I manufacture precision CNC parts from drawings, 3D models, or samples. From one-off prototypes to small batch production - fast, accurate, and reliable. Tight tolerances, complex geometries, and professional finishing.",
+    "tolerance": "Tolerance up to ±0.01 mm",
+    "materials": "Materials: Aluminum, Plastics, Steel",
+    "location": "Based in Latvia",
+    "shipping": "Worldwide Shipping",
+    "cta": "Get a Quote",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "labelEmail": "Email",
+    "labelPhone": "Phone / WhatsApp",
+    "hint1": "Send 3D models, drawings, sketches — or ask any questions.",
+    "hint2": "Direct communication with machinist."
+  }
 }

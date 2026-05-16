@@ -1,3 +1,4 @@
+'use client';
 import {
   ArrowRightIcon,
   Mail,
@@ -6,6 +7,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
+import { useTranslation } from 'react-i18next';
 import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -14,6 +16,8 @@ import { env } from '@/utils/env';
 import HeroBg from '$/public/hero-bg.webp';
 
 export function HeroSection() {
+  const { t } = useTranslation('common');
+
   return (
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
@@ -35,29 +39,26 @@ export function HeroSection() {
             className='rounded-sm mb-5 flex-wrap whitespace-normal'
           >
             <ShieldCheck className='size-3.5 text-primary' />
-            {YEARS_EXPERIENCE}+ Years CNC Machining Experience
+            {t('hero.badge', { years: YEARS_EXPERIENCE })}
           </Badge>
 
           <h1 className='mb-5 text-4xl font-semibold leading-tight tracking-tight lg:text-5xl break-all sm:break-normal'>
-            Custom CNC Parts Manufacturing:{' '}
-            <span className='text-primary'>From Sketch to Finished Detail</span>
+            {t('hero.headline')}{' '}
+            <span className='text-primary'>{t('hero.headlineAccent')}</span>
           </h1>
 
           <p className='mb-4 max-w-xl text-base leading-relaxed text-muted-foreground'>
-            I manufacture precision CNC parts from drawings, 3D models, or
-            samples. From one-off prototypes to small batch production - fast,
-            accurate, and reliable. Tight tolerances, complex geometries, and
-            professional finishing.
+            {t('hero.description')}
           </p>
 
           <div className='mb-10 flex flex-wrap items-center gap-x-3 gap-y-1 font-mono text-xs text-muted-foreground'>
-            <span>Tolerance up to ±0.01 mm</span>
+            <span>{t('hero.tolerance')}</span>
             <span className='h-3 w-px bg-border' />
-            <span>Materials: Aluminum, Plastics, Steel</span>
+            <span>{t('hero.materials')}</span>
             <span className='h-3 w-px bg-border' />
-            <span>Based in Latvia</span>
+            <span>{t('hero.location')}</span>
             <span className='h-3 w-px bg-border' />
-            <span>Worldwide Shipping</span>
+            <span>{t('hero.shipping')}</span>
           </div>
 
           <ContactBlockCurrent />
@@ -68,12 +69,14 @@ export function HeroSection() {
 }
 
 function ContactBlockCurrent() {
+  const { t } = useTranslation('common');
+
   return (
     <>
       <div className='mb-3 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center'>
         <Button asChild size='lg' className='group px-4'>
           <a href={`mailto:${env.email}`}>
-            Get a Quote
+            {t('hero.cta')}
             <ArrowRightIcon className='transition-transform duration-200 group-hover:translate-x-0.5' />
           </a>
         </Button>
@@ -82,7 +85,7 @@ function ContactBlockCurrent() {
           <Button variant='outline' size='sm' asChild>
             <a href={`mailto:${env.email}`}>
               <Mail />
-              Email
+              {t('hero.email')}
             </a>
           </Button>
 
@@ -93,40 +96,40 @@ function ContactBlockCurrent() {
               rel='noopener noreferrer'
             >
               <MessageCircle />
-              WhatsApp
+              {t('hero.whatsapp')}
             </a>
           </Button>
 
           <Button variant='outline' size='sm' asChild>
             <a href={env.phoneHref}>
               <Phone />
-              Call
+              {t('hero.call')}
             </a>
           </Button>
         </div>
       </div>
 
       <div className='mb-3 grid grid-cols-1 items-center gap-x-4 gap-y-0.5 text-xs sm:grid-cols-[auto_1fr]'>
-        <span className='text-muted-foreground'>Email</span>
+        <span className='text-muted-foreground'>{t('hero.labelEmail')}</span>
         <div className='flex items-center gap-1'>
           <span className='cursor-text select-all font-mono font-medium'>
             {env.email}
           </span>
-          <CopyButton text={env.email} label='Email' />
+          <CopyButton text={env.email} label={t('hero.labelEmail')} />
         </div>
 
-        <span className='text-muted-foreground'>Phone / WhatsApp</span>
+        <span className='text-muted-foreground'>{t('hero.labelPhone')}</span>
         <div className='flex items-center gap-1'>
           <span className='cursor-text select-all font-mono font-medium'>
             {env.phone}
           </span>
-          <CopyButton text={env.phone} label='Phone' />
+          <CopyButton text={env.phone} label={t('hero.labelPhone')} />
         </div>
       </div>
 
       <div className='text-xs text-muted-foreground'>
-        <p>Send 3D models, drawings, sketches — or ask any questions.</p>
-        <p>Direct communication with machinist.</p>
+        <p>{t('hero.hint1')}</p>
+        <p>{t('hero.hint2')}</p>
       </div>
     </>
   );

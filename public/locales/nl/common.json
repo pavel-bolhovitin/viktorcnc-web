@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ jaar ervaring in CNC-bewerking",
+    "headline": "Maatwerk CNC-onderdelen fabricage:",
+    "headlineAccent": "Van schets tot afgewerkt onderdeel",
+    "description": "Ik produceer precisie CNC-onderdelen op basis van tekeningen, 3D-modellen of monsters. Van eenmalige prototypes tot kleine series — snel, nauwkeurig en betrouwbaar. Nauwe toleranties, complexe geometrieën en professionele afwerking.",
+    "tolerance": "Tolerantie tot ±0,01 mm",
+    "materials": "Materialen: aluminium, kunststof, staal",
+    "location": "Gevestigd in Letland",
+    "shipping": "Wereldwijde verzending",
+    "cta": "Offerte aanvragen",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "call": "Bellen",
+    "labelEmail": "E-mail",
+    "labelPhone": "Telefoon / WhatsApp",
+    "hint1": "Stuur 3D-modellen, tekeningen, schetsen — of stel vragen.",
+    "hint2": "Directe communicatie met de machinist."
+  }
+}

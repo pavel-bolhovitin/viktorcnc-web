@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ ans d'expérience en usinage CNC",
+    "headline": "Fabrication de pièces CNC sur mesure :",
+    "headlineAccent": "Du croquis à la pièce finie",
+    "description": "Je fabrique des pièces CNC de précision à partir de dessins, de modèles 3D ou d'échantillons. Des prototypes uniques aux petites séries — rapide, précis et fiable. Tolérances serrées, géométries complexes et finition professionnelle.",
+    "tolerance": "Tolérance jusqu'à ±0,01 mm",
+    "materials": "Matériaux : aluminium, plastiques, acier",
+    "location": "Basé en Lettonie",
+    "shipping": "Expédition mondiale",
+    "cta": "Demander un devis",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "call": "Appeler",
+    "labelEmail": "E-mail",
+    "labelPhone": "Téléphone / WhatsApp",
+    "hint1": "Envoyez des modèles 3D, des dessins, des croquis — ou posez vos questions.",
+    "hint2": "Communication directe avec le machiniste."
+  }
+}

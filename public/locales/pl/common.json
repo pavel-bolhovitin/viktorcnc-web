@@ -1,3 +1,20 @@
 {
-  "loading": "Ładowanie..."
+  "hero": {
+    "badge": "{{years}}+ lat doświadczenia w obróbce CNC",
+    "headline": "Produkcja niestandardowych części CNC:",
+    "headlineAccent": "Od szkicu do gotowej części",
+    "description": "Produkuję precyzyjne części CNC na podstawie rysunków, modeli 3D lub próbek. Od jednorazowych prototypów po małe serie — szybko, dokładnie i niezawodnie. Wąskie tolerancje, skomplikowane geometrie i profesjonalne wykończenie.",
+    "tolerance": "Tolerancja do ±0.01 mm",
+    "materials": "Materiały: aluminium, tworzywa sztuczne, stal",
+    "location": "Z siedzibą na Łotwie",
+    "shipping": "Wysyłka na cały świat",
+    "cta": "Zapytaj o wycenę",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "call": "Zadzwoń",
+    "labelEmail": "Email",
+    "labelPhone": "Telefon / WhatsApp",
+    "hint1": "Wyślij modele 3D, rysunki, szkice — lub zadaj pytania.",
+    "hint2": "Bezpośredni kontakt z mechanikiem."
+  }
 }

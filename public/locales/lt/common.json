@@ -1,3 +1,20 @@
 {
-  "loading": "Kraunama..."
+  "hero": {
+    "badge": "{{years}}+ metų CNC apdirbimo patirtis",
+    "headline": "Individualių CNC detalių gamyba:",
+    "headlineAccent": "Nuo eskizo iki gatavos detalės",
+    "description": "Gaminu tiksliąsias CNC detales pagal brėžinius, 3D modelius ar pavyzdžius. Nuo atskirų prototipų iki mažų serijų — greitai, tiksliai ir patikimai. Griežtos tolerancijos, sudėtingos geometrijos ir profesionali apdaila.",
+    "tolerance": "Tolerancija iki ±0.01 mm",
+    "materials": "Medžiagos: aliuminis, plastmasė, plienas",
+    "location": "Įsikūręs Latvijoje",
+    "shipping": "Pristatymas visame pasaulyje",
+    "cta": "Gauti pasiūlymą",
+    "email": "El. paštas",
+    "whatsapp": "WhatsApp",
+    "call": "Skambinti",
+    "labelEmail": "El. paštas",
+    "labelPhone": "Telefonas / WhatsApp",
+    "hint1": "Siųskite 3D modelius, brėžinius, eskizus — arba užduokite klausimus.",
+    "hint2": "Tiesioginis bendravimas su meistru."
+  }
 }

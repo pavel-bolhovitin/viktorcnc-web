@@ -1,3 +1,20 @@
 {
-  "loading": "Laadimine..."
+  "hero": {
+    "badge": "{{years}}+ aastat CNC töötlemise kogemust",
+    "headline": "Kohandatud CNC osade tootmine:",
+    "headlineAccent": "Visandist valmis detailini",
+    "description": "Valmistad täppisosi jooniste, 3D-mudelite või näidiste põhjal. Üksikutest prototüüpidest kuni väiketootmiseni — kiiresti, täpselt ja usaldusväärselt. Ranged tolerantsid, keerukad geomeetriad ja professionaalne viimistlus.",
+    "tolerance": "Tolerants kuni ±0.01 mm",
+    "materials": "Materjalid: alumiinium, plastik, teras",
+    "location": "Asub Lätis",
+    "shipping": "Ülemaailmne tarne",
+    "cta": "Küsi pakkumist",
+    "email": "E-post",
+    "whatsapp": "WhatsApp",
+    "call": "Helista",
+    "labelEmail": "E-post",
+    "labelPhone": "Telefon / WhatsApp",
+    "hint1": "Saada 3D-mudelid, joonised, visandid — või küsi küsimusi.",
+    "hint2": "Otsene suhtlus treialimeistriga."
+  }
 }

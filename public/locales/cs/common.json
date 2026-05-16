@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ let zkušeností s CNC obráběním",
+    "headline": "Výroba CNC dílů na míru:",
+    "headlineAccent": "Od náčrtu k hotovému dílu",
+    "description": "Vyrábím přesné CNC díly podle výkresů, 3D modelů nebo vzorků. Od jednorázových prototypů po malé série — rychle, přesně a spolehlivě. Úzké tolerance, složité geometrie a profesionální povrchová úprava.",
+    "tolerance": "Tolerance až ±0,01 mm",
+    "materials": "Materiály: hliník, plasty, ocel",
+    "location": "Sídlí v Lotyšsku",
+    "shipping": "Celosvětové doručení",
+    "cta": "Požádat o nabídku",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "call": "Zavolat",
+    "labelEmail": "E-mail",
+    "labelPhone": "Telefon / WhatsApp",
+    "hint1": "Pošlete 3D modely, výkresy, náčrty — nebo se zeptejte.",
+    "hint2": "Přímá komunikace s obráběčem."
+  }
+}

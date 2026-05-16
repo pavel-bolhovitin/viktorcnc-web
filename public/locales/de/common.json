@@ -1,0 +1,20 @@
+{
+  "hero": {
+    "badge": "{{years}}+ Jahre Erfahrung in der CNC-Bearbeitung",
+    "headline": "Individuelle CNC-Teile auf Bestellung:",
+    "headlineAccent": "Vom Entwurf zum fertigen Teil",
+    "description": "Ich fertige Präzisions-CNC-Teile nach Zeichnungen, 3D-Modellen oder Mustern. Von Einzelprototypen bis zur Kleinserie — schnell, präzise und zuverlässig. Enge Toleranzen, komplexe Geometrien und professionelle Oberflächenbehandlung.",
+    "tolerance": "Toleranz bis ±0,01 mm",
+    "materials": "Materialien: Aluminium, Kunststoff, Stahl",
+    "location": "Standort: Lettland",
+    "shipping": "Weltweiter Versand",
+    "cta": "Angebot anfragen",
+    "email": "E-Mail",
+    "whatsapp": "WhatsApp",
+    "call": "Anrufen",
+    "labelEmail": "E-Mail",
+    "labelPhone": "Telefon / WhatsApp",
+    "hint1": "Senden Sie 3D-Modelle, Zeichnungen, Skizzen — oder stellen Sie Fragen.",
+    "hint2": "Direkte Kommunikation mit dem Fachmann."
+  }
+}
