@@ -97,7 +97,7 @@ export function GalleryDialog({
                     fill
                     placeholder='blur'
                     sizes='(max-width: 1024px) 100vw, 896px'
-                    className='object-contain'
+                    className='object-contain select-none'
                   />
                 </div>
               </CarouselItem>

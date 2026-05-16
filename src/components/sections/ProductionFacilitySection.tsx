@@ -104,7 +104,7 @@ export function ProductionFacilitySection({
                     fill
                     placeholder='blur'
                     sizes='(max-width: 768px) 100vw, 60vw'
-                    className='object-cover transition-all duration-500'
+                    className='object-cover transition-all duration-500 select-none'
                   />
                 </div>
 

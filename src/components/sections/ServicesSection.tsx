@@ -77,7 +77,7 @@ export function ServicesSection({ className }: { className?: string }) {
                   fill
                   placeholder='blur'
                   sizes='(max-width: 768px) 100vw, 33vw'
-                  className='object-cover grayscale transition-all duration-500 group-hover:grayscale-0'
+                  className='object-cover grayscale transition-all duration-500 group-hover:grayscale-0 select-none'
                 />
               </div>
 

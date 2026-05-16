@@ -88,7 +88,7 @@ export function GalleryCard({
                   fill
                   placeholder='blur'
                   sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                  className='object-cover transition-transform duration-500 group-hover:scale-102'
+                  className='object-cover transition-transform duration-500 group-hover:scale-102 select-none'
                 />
               ) : (
                 <div

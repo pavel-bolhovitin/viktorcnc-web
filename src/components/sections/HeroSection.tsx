@@ -23,7 +23,7 @@ export function HeroSection() {
           fill
           placeholder='blur'
           sizes='100vw'
-          className='object-cover filter-[grayscale(0.2)_contrast(1.1)]'
+          className='object-cover filter-[grayscale(0.2)_contrast(1.1)] select-none'
         />
         <div className='absolute inset-0 bg-linear-to-r from-background via-background/80 to-transparent' />
       </div>

@@ -71,7 +71,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
                 fill
                 placeholder='blur'
                 sizes='(max-width: 1024px) 100vw, 50vw'
-                className='object-cover'
+                className='object-cover select-none'
               />
               <div className='absolute bottom-0 left-0 max-w-50 border-r border-t border-border bg-card p-4'>
                 <p className='font-mono text-xs uppercase tracking-wider text-muted-foreground'>
