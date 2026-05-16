@@ -1,5 +1,5 @@
-import { I18nProvider } from '@/components/I18nProvider';
 import { supportedLangs } from '@/i18n/config';
+import { I18nProvider } from '@/i18n/I18nProvider';
 
 export function generateStaticParams() {
   return supportedLangs.map((lang) => ({ lang }));
