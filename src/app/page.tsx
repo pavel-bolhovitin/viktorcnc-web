@@ -1,12 +1,13 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
-import { defaultLng } from '@/i18n';
+import i18n from '@/i18n';
 
 export default function RootPage() {
   const router = useRouter();
+
   useEffect(() => {
-    router.replace(`/${defaultLng}`);
+    router.replace(`/${i18n.language}`);
   }, [router]);
   return null;
 }
