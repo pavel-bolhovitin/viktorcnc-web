@@ -4,6 +4,7 @@ import Fade from 'embla-carousel-fade';
 import { ChevronLeft, ChevronRight, Maximize2, Shapes } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Carousel,
   type CarouselApi,
@@ -19,6 +20,7 @@ export function GalleryCard({
   set: PhotoSet;
   onExpand?: () => void;
 }) {
+  const { t } = useTranslation('common');
   const [api, setApi] = useState<CarouselApi>();
   const [active, setActive] = useState(0);
   const [loaded, setLoaded] = useState<Set<number>>(new Set([0]));
@@ -65,7 +67,7 @@ export function GalleryCard({
       {set.isMultiPart && (
         <div className='absolute top-2 right-2 z-10 flex items-center gap-1 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
           <Shapes className='h-3 w-3' />
-          Multi-part
+          {t('gallery.multiPart')}
         </div>
       )}
 

@@ -1,5 +1,7 @@
+'use client';
 import { ArrowRight } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
@@ -7,60 +9,76 @@ import cadImg from '$/public/cad.webp';
 import millingImg from '$/public/milling.webp';
 import turningImg from '$/public/turning.webp';
 
-const services = [
-  {
-    id: 'milling',
-    title: 'Precision 3-Axis CNC Milling',
-    image: millingImg,
-    alt: 'CNC milling machine cutting a metal part',
-    specs: [
-      { label: 'Working Area', value: '760 × 500 × 500 mm' },
-      { label: 'Tolerances', value: 'up to ±0.01 mm' },
-    ],
-    description:
-      'CNC milling of complex parts, housings, brackets, and custom components for mechanical applications. Suitable for prototypes and small batch production.',
-    materials: ['Aluminum', 'Steel', 'Plastics'],
-  },
-  {
-    id: 'turning',
-    title: 'High-Accuracy Lathe Turning',
-    image: turningImg,
-    alt: 'Lathe machine turning a cylindrical metal part',
-    specs: [
-      { label: 'Max Diameter', value: '250 mm' },
-      { label: 'Max Length', value: '800 mm' },
-      { label: 'Tolerances', value: 'up to ±0.03 mm' },
-    ],
-    description:
-      'Precision turning of cylindrical parts such as shafts, bushings, and mechanical components with high surface quality and tight tolerances.',
-    materials: ['Steel', 'Aluminum', 'Brass'],
-  },
-  {
-    id: 'reverse-engineering',
-    title: 'Reverse Engineering & CAD Modeling',
-    image: cadImg,
-    alt: 'CAD model of a mechanical part for reverse engineering',
-    specs: [],
-    description:
-      'Recreating accurate CAD models from physical samples, broken parts, or sketches to manufacture fully functional replacements.',
-    materials: ['Metal Parts', 'Plastic Parts'],
-  },
-];
-
 export function ServicesSection({ className }: { className?: string }) {
+  const { t } = useTranslation('common');
+
+  const services = [
+    {
+      id: 'milling',
+      title: t('services.milling.title'),
+      image: millingImg,
+      alt: t('services.milling.alt'),
+      specs: [
+        { label: t('services.milling.specWorkingArea'), value: '760 × 500 × 500 mm' },
+        { label: t('services.milling.specTolerances'), value: 'up to ±0.01 mm' },
+      ],
+      description: t('services.milling.description'),
+      materials: [t('services.milling.mat1'), t('services.milling.mat2'), t('services.milling.mat3')],
+    },
+    {
+      id: 'turning',
+      title: t('services.turning.title'),
+      image: turningImg,
+      alt: t('services.turning.alt'),
+      specs: [
+        { label: t('services.turning.specMaxDiameter'), value: '250 mm' },
+        { label: t('services.turning.specMaxLength'), value: '800 mm' },
+        { label: t('services.turning.specTolerances'), value: 'up to ±0.03 mm' },
+      ],
+      description: t('services.turning.description'),
+      materials: [t('services.turning.mat1'), t('services.turning.mat2'), t('services.turning.mat3')],
+    },
+    {
+      id: 'reverse-engineering',
+      title: t('services.reverseEngineering.title'),
+      image: cadImg,
+      alt: t('services.reverseEngineering.alt'),
+      specs: [],
+      description: t('services.reverseEngineering.description'),
+      materials: [t('services.reverseEngineering.mat1'), t('services.reverseEngineering.mat2')],
+    },
+  ];
+
+  const materialGroups = [
+    {
+      name: t('services.aluminum.name'),
+      grades: t('services.aluminum.grades'),
+      note: t('services.aluminum.note'),
+    },
+    {
+      name: t('services.steel.name'),
+      grades: t('services.steel.grades'),
+      note: t('services.steel.note'),
+    },
+    {
+      name: t('services.plastics.name'),
+      grades: t('services.plastics.grades'),
+      note: t('services.plastics.note'),
+    },
+  ];
+
   return (
     <section id={SECTION_IDS.services} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            Services & Materials
+            {t('services.eyebrow')}
           </p>
           <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            CNC Machining Services for Custom Parts
+            {t('services.heading')}
           </h2>
           <p className='text-base leading-relaxed text-muted-foreground'>
-            Manufacturing custom parts from drawings, CAD models, or physical
-            samples using metals and engineering plastics.
+            {t('services.description')}
           </p>
         </div>
 
@@ -121,26 +139,10 @@ export function ServicesSection({ className }: { className?: string }) {
 
         <div className='mb-8 bg-muted px-8 py-6'>
           <p className='mb-5 font-mono text-xs uppercase tracking-wider text-muted-foreground'>
-            Supported Materials
+            {t('services.materialsHeading')}
           </p>
           <div className='grid grid-cols-1 gap-6 sm:grid-cols-3'>
-            {[
-              {
-                name: 'Aluminum',
-                grades: '6061, 7075 & others',
-                note: 'Lightweight, high strength-to-weight ratio',
-              },
-              {
-                name: 'Steel & Stainless',
-                grades: '304, 316L & others',
-                note: 'Corrosion resistant, high durability',
-              },
-              {
-                name: 'Engineering Plastics',
-                grades: 'POM, PTFE, Nylon, ABS & others',
-                note: 'Chemical resistance, low friction',
-              },
-            ].map(({ name, grades, note }) => (
+            {materialGroups.map(({ name, grades, note }) => (
               <div key={name}>
                 <p className='mb-0.5 font-mono text-xs font-semibold uppercase tracking-wider text-primary'>
                   {name}
@@ -156,12 +158,11 @@ export function ServicesSection({ className }: { className?: string }) {
           </div>
           <div className='mt-6 border-t border-border pt-4'>
             <p className='text-xs text-muted-foreground'>
-              These are the most commonly used materials.{' '}
+              {t('services.materialsNote')}{' '}
               <strong className='text-foreground'>
-                Working with something else?
+                {t('services.materialsNoteQuestion')}
               </strong>{' '}
-              Send your requirements — I'll confirm availability and recommend
-              the right grade for your application.
+              {t('services.materialsNoteCta')}
             </p>
           </div>
         </div>
@@ -172,12 +173,12 @@ export function ServicesSection({ className }: { className?: string }) {
               href={`#${SECTION_IDS.contact}`}
               className='flex items-center gap-2'
             >
-              Contact me
+              {t('services.contact')}
               <ArrowRight className='shrink-0 transition-transform duration-200 group-hover:translate-x-0.5' />
             </a>
           </Button>
           <p className='font-mono text-xs text-muted-foreground'>
-            Machining according to ISO · Tolerances up to 0.01 mm
+            {t('services.isoNote')}
           </p>
         </div>
       </div>

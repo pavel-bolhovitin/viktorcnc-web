@@ -16,5 +16,218 @@
     "labelPhone": "Tālrunis / WhatsApp",
     "hint1": "Sūtiet 3D modeļus, rasējumus, skices — vai uzdodiet jautājumus.",
     "hint2": "Tieša saziņa ar meistaru."
+  },
+  "services": {
+    "eyebrow": "Pakalpojumi un materiāli",
+    "heading": "CNC apstrādes pakalpojumi pielāgotām detaļām",
+    "description": "Pielāgotu detaļu izgatavošana pēc rasējumiem, CAD modeļiem vai fiziskiem paraugiem no metāliem un konstruktīvajiem plastmasas materiāliem.",
+    "milling": {
+      "title": "Precīza 3 asu CNC frēzēšana",
+      "alt": "CNC frēzēšanas mašīna apstrādā metāla detaļu",
+      "specWorkingArea": "Darba zona",
+      "specTolerances": "Tolerances",
+      "description": "Sarežģītu detaļu, korpusu, kronšteinu un pielāgotu komponentu CNC frēzēšana mehāniskiem pielietojumiem. Piemērota prototipiem un mazseriju ražošanai.",
+      "mat1": "Alumīnijs",
+      "mat2": "Tērauds",
+      "mat3": "Plastmasa"
+    },
+    "turning": {
+      "title": "Augstas precizitātes virpošana",
+      "alt": "Virpa apstrādā cilindrisku metāla detaļu",
+      "specMaxDiameter": "Maks. diametrs",
+      "specMaxLength": "Maks. garums",
+      "specTolerances": "Tolerances",
+      "description": "Precīza cilindrisku detaļu virpošana: vārpstas, bukses un mehāniski komponenti ar augstu virsmas kvalitāti un stingrām tolerancēm.",
+      "mat1": "Tērauds",
+      "mat2": "Alumīnijs",
+      "mat3": "Misiņš"
+    },
+    "reverseEngineering": {
+      "title": "Reversā inženierija un CAD modelēšana",
+      "alt": "CAD modelis mehāniskai detaļai reversajai inženierijai",
+      "description": "Precīzu CAD modeļu izveide pēc fiziskiem paraugiem, bojātām detaļām vai skicēm pilnfunkcionālu aizstājēju izgatavošanai.",
+      "mat1": "Metāla detaļas",
+      "mat2": "Plastmasas detaļas"
+    },
+    "materialsHeading": "Atbalstītie materiāli",
+    "aluminum": {
+      "name": "Alumīnijs",
+      "grades": "6061, 7075 un citi",
+      "note": "Viegls, augsts izturības pret svara attiecības rādītājs"
+    },
+    "steel": {
+      "name": "Tērauds un nerūsējošais tērauds",
+      "grades": "304, 316L un citi",
+      "note": "Korozijizturīgs, augsta izturība"
+    },
+    "plastics": {
+      "name": "Konstruktīvās plastmasas",
+      "grades": "POM, PTFE, Neilons, ABS un citi",
+      "note": "Ķīmiskā izturība, zema berze"
+    },
+    "materialsNote": "Tie ir visbiežāk izmantotie materiāli.",
+    "materialsNoteQuestion": "Strādājat ar ko citu?",
+    "materialsNoteCta": "Nosūtiet savus prasījumus — apstiprināšu pieejamību un ieteikšu piemērotāko marku.",
+    "contact": "Sazināties",
+    "isoNote": "Apstrāde atbilstoši ISO · Tolerances līdz 0.01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Darba process",
+    "heading": "No idejas līdz piegādei",
+    "description": "Skaidrs, atkārtojams process — no pirmā faila līdz gatavai detaļai pie jūsu durvīm.",
+    "step": "Solis",
+    "step1": {
+      "title": "Tehniskā konsultācija un analīze",
+      "description": "Nosūtiet failus vai skici. Pārskatīšu dizainu un apstiprināšu, ka detaļu var izgatavot efektīvi un atbilstoši prasībām.",
+      "kw1": "CAD faili",
+      "kw2": "tehniskā analīze"
+    },
+    "step2": {
+      "title": "Inženierija un modelēšana",
+      "description": "Nav rasējuma? Izveidošu precīzu 3D modeli pēc jūsu parauga vai skices, tad izvēlēšos optimālo instrumenta ceļu un stratēģiju.",
+      "kw1": "3D modelēšana",
+      "kw2": "pielāgota inženierija",
+      "kw3": "apstrādes stratēģija"
+    },
+    "step3": {
+      "title": "Precīza ražošana",
+      "description": "Apstrādāts manā Latvijas uzņēmumā uz 3 asu CNC centriem. {{years}}+ gadu pieredze — personīgi uzraugu katru programmu, lai saglabātu tolerances līdz ±0.01 mm.",
+      "kw1": "CNC frēzēšana",
+      "kw2": "0.01 mm tolerances",
+      "kw3": "precīza ražošana"
+    },
+    "step4": {
+      "title": "Apdare un kvalitātes kontrole",
+      "description": "Apskaldīšana vai gravēšana pēc nepieciešamības. Katra detaļa tiek izmērīta un pārbaudīta pret jūsu rasējumu pirms nosūtīšanas.",
+      "kw1": "kvalitātes kontrole",
+      "kw2": "rūpnieciskā apdare",
+      "kw3": "virsmas apstrāde"
+    },
+    "step5": {
+      "title": "Droša piegāde",
+      "description": "Detaļas tiek iepakota transporta bojājumu novēršanai un nosūtītas lokāli vai starptautiski — gatavas lietošanai pēc saņemšanas.",
+      "kw1": "piegāde visā pasaulē",
+      "kw2": "droša iepakošana"
+    }
+  },
+  "faq": {
+    "eyebrow": "BUJ",
+    "heading": "Bieži uzdotie jautājumi",
+    "description": "Biežākie jautājumi par pielāgotu CNC detaļu pasūtīšanu, materiāliem un piegādi.",
+    "q1": "Ko var pasūtīt?",
+    "a1": "Varat pasūtīt pielāgotas CNC apstrādātas detaļas pēc jūsu rasējuma, 3D modeļa vai parauga. Izgatavoju vienreizējus prototipus, kā arī mazas un vidējas ražošanas partijas dažādām nozarēm.",
+    "q2": "Vai varat izgatavot detaļu pēc parauga vai skices?",
+    "a2": "Jā. Varu izgatavot detaļas pēc fiziska parauga, bojāta komponenta vai pat ar roku zīmētas skices. Pirms ražošanas izveidošu precīzu 3D modeli.",
+    "q3": "Ko darīt, ja nezinu materiālu vai tehniskās detaļas?",
+    "a3": "Ja neesat pārliecināts par materiālu vai tehniskajām detaļām — nav problēmu. Nosūtiet, kas ir, un es palīdzēšu atrast labāko risinājumu.",
+    "q4": "Kāds ir minimālais pasūtījums?",
+    "a4": "Nav minimālā pasūtījuma. Varat pasūtīt vienu prototipu vai mazu partiju — strādāju gan ar privātpersonām, gan uzņēmumiem.",
+    "q5": "Ar kādiem materiāliem strādājat?",
+    "a5": "Galvenokārt strādāju ar alumīniju, tēraudu un plastmasu. Pēc pieprasījuma varu apstrādāt arī citus materiālus — nosūtiet projekta detaļas, apstiprināšu pieejamību.",
+    "q6": "Cik ātri varat izgatavot detaļu?",
+    "a6": "Ražošanas laiks ir atkarīgs no pašreizējās darba slodzes, detaļas sarežģītības un pasūtījuma apjoma. Precīziem termiņiem sazinieties ar mani tieši.",
+    "q7": "Kā saņemt piedāvājumu?",
+    "a7": "Nosūtiet rasējumu, 3D failu vai pat detaļas fotoattēlu. Pārskatīšu un sniegšu cenu un ražošanas nosacījumus. Cena ir apspriežama atkarībā no apjoma un sarežģītības. Rakstiet uz {{email}} vai WhatsApp/tālrunis: {{phone}}.",
+    "q8": "Vai strādājat ar klientiem ārpus Latvijas?",
+    "a8": "Jā, strādāju ar klientiem visā Eiropā un pasaulē. Nodrošinu drošu iepakojumu un piegādi visiem pasūtījumiem."
+  },
+  "cta": {
+    "heading": "Gatavs sākt savu projektu?",
+    "description": "Saņemiet tehnisku konsultāciju tieši no galvenā inženiera. Personīgi pārskatāt katru rasējumu, lai nodrošinātu 100% izgatavošanas iespējas un precizitāti. Bez vadītājiem, bez kavēšanās — tikai profesionāli CNC risinājumi.",
+    "callLabel": "Zvanīt",
+    "emailLabel": "E-pasts",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Iepazīstieties ar CNC inženieri un dibinātāju",
+    "title": "Vecākais CNC inženieris un {{appName}} dibinātājs",
+    "bio1": "Ar vairāk nekā {{years}} gadu pieredzi augstas precizitātes CNC frēzēšanā un virpošanā sniedzu profesionālus CNC apstrādes pakalpojumus Latvijā klientiem visā pasaulē. Specializējos mehānisko detaļu izgatavošanā pēc CAD modeļiem, tehniskajiem rasējumiem, skicēm un fiziskiem paraugiem.",
+    "bio2": "Mans darbs ir vērsts uz 3 asu CNC apstrādi, precīzu virpošanu un reverso inženieriju — prototipiem, vienreizējām detaļām un mazseriju ražošanu. Piegādāju pilnīgi pabeigtas sastāvdaļas ar stingrām tolerancēm līdz 0.01 mm rūpnieciskiem un inženiertehniskiem pielietojumiem.",
+    "bio3": "Bāzējoties Latvijā, atbalstu starptautiskos klientus ar uzticamu ražošanu, ātru komunikāciju un inženiertehnisku precizitāti no koncepcijas līdz gatavai detaļai. Katrs pasūtījums tiek izpildīts personīgi, lai nodrošinātu konsekventu kvalitāti.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Gadi",
+    "stat1Label": "Pieredze CNC apstrādē un ražošanā",
+    "stat1Sub": "Pierādīta kompetence frēzēšanā, virpošanā un reversajā inženierijā",
+    "stat2Value": "Latvija",
+    "stat2Unit": "/ Pasaule",
+    "stat2Label": "Ražošana un starptautiskā piegāde",
+    "stat2Sub": "Ātra komunikācija ar klientiem visā pasaulē",
+    "stat3Value": "0.01mm",
+    "stat3Label": "Precizitātes tolerance kritiski svarīgām detaļām",
+    "stat3Sub": "Augstas precizitātes apstrāde prototipiem un funkcionāliem komponentiem",
+    "stat4Value": "Pielāgoti",
+    "stat4Unit": "Pasūtījumi",
+    "stat4Label": "Pēc CAD, rasējumiem, skicēm vai fiziskiem paraugiem",
+    "stat4Sub": "Vienreizējas detaļas un mazseriju ražošana",
+    "expertiseHeading": "Tehniskā kompetence",
+    "skill1": "CAD/CAM modelēšana",
+    "skill2": "3 asu CNC frēzēšana",
+    "skill3": "Virpošana",
+    "skill4": "Prototipu izgatavošana",
+    "skill5": "Tehnisko rasējumu analīze",
+    "skill6": "Reversā inženierija",
+    "orderHeading": "Kā pasūtīt",
+    "orderText": "Nosūtiet CAD failu, rasējumu vai paraugu — pārskatīšu un sniegšu ražošanas piedāvājumu.",
+    "statusLabel": "Statuss",
+    "statusValue": "Gatavs ražošanai",
+    "imgAlt": "Viktors — vecākais CNC inženieris un Viktor CNC dibinātājs profesionālā darbnīcā"
+  },
+  "facility": {
+    "eyebrow": "Ražošanas bāze",
+    "heading": "Ražošanas bāze — precizitāte, uz ko var paļauties",
+    "description": "Mana darbnīca Latvijā ir optimizēta augstas precizitātes pielāgotiem pasūtījumiem. Apvienoju rūpnieciskās klases CNC iekārtas ar specializētiem metroloģijas instrumentiem — katrs mikrometrs atbilst jūsu rasējumam.",
+    "unit1": {
+      "label": "Augstas ātruma frēzēšana",
+      "title": "Precīza CNC frēzēšana — augsts ātrums",
+      "description": "Alumīnija un plastmasas detaļu CNC frēzēšana ar 24 000 apgr./min vārpstas ātrumu — tīra virsma ar stingrām dimensiju tolerancēm.",
+      "alt": "Augstas ātruma CNC frēzēšanas centrs apstrādā alumīnija detaļas ar 24000 apgr./min",
+      "spec1Label": "Mērķa materiāli",
+      "spec1Value": "Alumīnijs, tērauds un plastmasa",
+      "spec2Label": "Vārpstas ātrums",
+      "spec2Value": "24 000 apgr./min",
+      "spec3Label": "Konfigurācija",
+      "spec3Value": "3 asu augstas ātruma"
+    },
+    "unit2": {
+      "label": "Galvenais frēzēšanas centrs",
+      "title": "Precīza 3 asu CNC frēzēšana",
+      "description": "Sarežģītu detaļu, korpusu, kronšteinu un pielāgotu komponentu CNC frēzēšana. Piemērota prototipiem un mazseriju ražošanai.",
+      "alt": "Precīzs 3 asu CNC frēzēšanas centrs metāla detaļu izgatavošanai",
+      "spec1Label": "Darba zona",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerances",
+      "spec2Value": "līdz ±0.01 mm",
+      "spec3Label": "Konfigurācija",
+      "spec3Value": "3 asu"
+    },
+    "unit3": {
+      "label": "Virpošanas nodaļa",
+      "title": "Augstas precizitātes virpošana",
+      "description": "Precīza cilindrisku detaļu virpošana: vārpstas, bukses un mehāniski komponenti ar augstu virsmas kvalitāti.",
+      "alt": "Precīzs CNC virpa apstrādā cilindriskas metāla vārpstas un bukses",
+      "spec1Label": "Maks. diametrs",
+      "spec1Value": "250 mm",
+      "spec2Label": "Maks. garums",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerances",
+      "spec3Value": "līdz ±0.03 mm"
+    },
+    "qcHeading": "Kvalitātes kontrole un mērīšana",
+    "qcDescription": "Katra detaļa tiek pārbaudīta ar precīziem mērinstrumentiem, lai nodrošinātu atbilstību jūsu rasējumam.",
+    "qcTool1": "Digitālie suportmēri",
+    "qcTool2": "Mikrometri",
+    "qcTool3": "Virsmas mērīšanas instrumenti",
+    "qcNote": "Detaļas tiek pārbaudītas pirms piegādes — tikai izmērīti rezultāti, nekādu minējumu.",
+    "operatedHeading": "Personīgi ekspluatēts un uzturēts",
+    "operatedDescription": "Visas iekārtas tiek uzstādītas, ekspluatētas un uzturētas personīgi. Tas nodrošina konsekventu kvalitāti un pilnu kontroli katrā posmā.",
+    "contact": "Sazināties"
+  },
+  "gallery": {
+    "eyebrow": "Darbu galerija",
+    "heading": "Pielāgotas CNC detaļas — piemēri",
+    "allMaterials": "Visi materiāli",
+    "showMore": "Rādīt vairāk ({{count}})",
+    "multiPart": "Daudzkomponentu",
+    "dialogTitle": "CNC detaļa — {{material}}"
   }
 }

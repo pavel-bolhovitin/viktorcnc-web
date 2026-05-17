@@ -1,54 +1,21 @@
+'use client';
 import Image from 'next-export-optimize-images/image';
+import { useTranslation } from 'react-i18next';
 import { FOUNDER_FULL_NAME, YEARS_EXPERIENCE } from '@/constants/founder';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 import founderImg from '$/public/founder.webp';
 
-const stats = [
-  {
-    value: `${YEARS_EXPERIENCE}+`,
-    unit: 'Years',
-    label: 'Field Experience in CNC Machining & Manufacturing',
-    sub: 'Proven expertise in CNC milling, turning, and reverse engineering',
-  },
-  {
-    value: 'Latvia',
-    unit: '/ Worldwide',
-    label: 'Manufacturing & International Delivery',
-    sub: 'Fast communication with global clients',
-  },
-  {
-    value: '0.01mm',
-    unit: '',
-    label: 'Precision Tolerance Standard for Critical Parts',
-    sub: 'High-accuracy machining for prototypes and functional components',
-  },
-  {
-    value: 'Custom',
-    unit: 'Orders',
-    label: 'From CAD, drawings, sketches, or physical samples',
-    sub: 'One-off parts & small batch production available',
-  },
-];
-
-const skills = [
-  'CAD/CAM Modeling',
-  '3-Axis CNC Milling',
-  'Lathe Turning',
-  'Prototype Manufacturing',
-  'Technical Drawing Analysis',
-  'Reverse Engineering',
-];
-
 function SectionHeading() {
+  const { t } = useTranslation('common');
   return (
     <div>
       <h2 className='mb-2 text-3xl font-semibold leading-tight tracking-tight'>
-        Meet Your CNC Engineer & Founder
+        {t('founder.eyebrow')}
       </h2>
       <h3 className='mb-4 text-base font-medium text-muted-foreground'>
-        {FOUNDER_FULL_NAME} — Senior CNC Engineer & Founder of {env.appName}
+        {FOUNDER_FULL_NAME} — {t('founder.title', { appName: env.appName })}
       </h3>
       <div className='mb-6 h-1 w-16 bg-primary' />
     </div>
@@ -56,6 +23,44 @@ function SectionHeading() {
 }
 
 export function MeetFounderSection({ className }: { className?: string }) {
+  const { t } = useTranslation('common');
+
+  const stats = [
+    {
+      value: t('founder.stat1Value', { years: YEARS_EXPERIENCE }),
+      unit: t('founder.stat1Unit'),
+      label: t('founder.stat1Label'),
+      sub: t('founder.stat1Sub'),
+    },
+    {
+      value: t('founder.stat2Value'),
+      unit: t('founder.stat2Unit'),
+      label: t('founder.stat2Label'),
+      sub: t('founder.stat2Sub'),
+    },
+    {
+      value: t('founder.stat3Value'),
+      unit: '',
+      label: t('founder.stat3Label'),
+      sub: t('founder.stat3Sub'),
+    },
+    {
+      value: t('founder.stat4Value'),
+      unit: t('founder.stat4Unit'),
+      label: t('founder.stat4Label'),
+      sub: t('founder.stat4Sub'),
+    },
+  ];
+
+  const skills = [
+    t('founder.skill1'),
+    t('founder.skill2'),
+    t('founder.skill3'),
+    t('founder.skill4'),
+    t('founder.skill5'),
+    t('founder.skill6'),
+  ];
+
   return (
     <section id={SECTION_IDS.founder} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
@@ -67,7 +72,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
             <div className='relative aspect-4/5 max-h-150 overflow-hidden border border-border lg:max-h-none'>
               <Image
                 src={founderImg}
-                alt='Viktor — Senior CNC Engineer & Founder of Viktor CNC, in a professional workshop environment'
+                alt={t('founder.imgAlt')}
                 fill
                 placeholder='blur'
                 sizes='(max-width: 1024px) 100vw, 50vw'
@@ -75,10 +80,10 @@ export function MeetFounderSection({ className }: { className?: string }) {
               />
               <div className='absolute bottom-0 left-0 max-w-50 border-r border-t border-border bg-card p-4'>
                 <p className='font-mono text-xs uppercase tracking-wider text-muted-foreground'>
-                  Status
+                  {t('founder.statusLabel')}
                 </p>
                 <p className='text-sm font-semibold text-primary'>
-                  Ready for Production
+                  {t('founder.statusValue')}
                 </p>
               </div>
             </div>
@@ -90,37 +95,9 @@ export function MeetFounderSection({ className }: { className?: string }) {
             </div>
 
             <div className='space-y-4 text-base leading-relaxed text-muted-foreground'>
-              <p>
-                With over {YEARS_EXPERIENCE} years of experience in
-                high-precision{' '}
-                <strong className='text-foreground'>
-                  CNC milling and turning
-                </strong>
-                , I provide professional CNC machining services in Latvia for
-                clients worldwide. I specialize in manufacturing mechanical
-                parts from CAD models, technical drawings, sketches, and
-                physical samples.
-              </p>
-              <p>
-                My work focuses on{' '}
-                <strong className='text-foreground'>
-                  3-axis CNC machining
-                </strong>
-                , <strong className='text-foreground'>precision turning</strong>
-                , and{' '}
-                <strong className='text-foreground'>reverse engineering</strong>{' '}
-                for prototypes, one-off parts, and small batch production. I
-                deliver fully finished components with tight tolerances up to
-                0.01mm, suitable for industrial, mechanical, and engineering
-                applications.
-              </p>
-              <p>
-                Based in Latvia, I support international clients with reliable
-                production, fast communication, and engineering-level accuracy
-                from concept to finished part. Every order is handled personally
-                to ensure consistent quality and precise execution of technical
-                requirements.
-              </p>
+              <p>{t('founder.bio1', { years: YEARS_EXPERIENCE })}</p>
+              <p>{t('founder.bio2')}</p>
+              <p>{t('founder.bio3')}</p>
             </div>
 
             <div className='grid grid-cols-2 gap-3 py-2'>
@@ -145,7 +122,7 @@ export function MeetFounderSection({ className }: { className?: string }) {
 
             <div>
               <h3 className='mb-3 text-base font-semibold'>
-                Technical Expertise
+                {t('founder.expertiseHeading')}
               </h3>
               <div className='flex flex-wrap gap-2'>
                 {skills.map((skill) => (
@@ -160,10 +137,9 @@ export function MeetFounderSection({ className }: { className?: string }) {
             </div>
 
             <div className='border-t border-border pt-5'>
-              <h3 className='mb-2 text-base font-semibold'>How to Order</h3>
+              <h3 className='mb-2 text-base font-semibold'>{t('founder.orderHeading')}</h3>
               <p className='text-sm text-muted-foreground'>
-                Send your CAD file, drawing, or sample — I will review it and
-                provide a production quote.
+                {t('founder.orderText')}
               </p>
             </div>
           </div>

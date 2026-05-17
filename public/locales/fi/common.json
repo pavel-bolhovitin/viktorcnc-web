@@ -16,5 +16,218 @@
     "labelPhone": "Puhelin / WhatsApp",
     "hint1": "Lähetä 3D-mallit, piirustukset, luonnokset — tai kysy kysymyksiä.",
     "hint2": "Suora viestintä koneistajan kanssa."
+  },
+  "services": {
+    "eyebrow": "Palvelut ja materiaalit",
+    "heading": "CNC-koneistuspalvelut räätälöidyille osille",
+    "description": "Räätälöityjen osien valmistus piirustuksista, CAD-malleista tai fyysisistä näytteistä metalleista ja teknisistä muoveista.",
+    "milling": {
+      "title": "Tarkka 3-akselinen CNC-jyrsintä",
+      "alt": "CNC-jyrsinkone työstää metalliosaa",
+      "specWorkingArea": "Työalue",
+      "specTolerances": "Toleranssit",
+      "description": "Monimutkaisten osien, koteloiden, kiinnikkeiden ja räätälöityjen komponenttien CNC-jyrsintä mekaanisiin sovelluksiin. Sopii prototyypeille ja pienille sarjoille.",
+      "mat1": "Alumiini",
+      "mat2": "Teräs",
+      "mat3": "Muovi"
+    },
+    "turning": {
+      "title": "Korkeatarkkuussorvausta",
+      "alt": "Sorvi työstää sylinterimäistä metalliosaa",
+      "specMaxDiameter": "Max halkaisija",
+      "specMaxLength": "Max pituus",
+      "specTolerances": "Toleranssit",
+      "description": "Sylinterimäisten osien tarkkuussorvaus: akselit, holkit ja mekaaniset komponentit korkealla pintalaadulla ja tiukoilla toleransseilla.",
+      "mat1": "Teräs",
+      "mat2": "Alumiini",
+      "mat3": "Messinki"
+    },
+    "reverseEngineering": {
+      "title": "Käänteinen suunnittelu ja CAD-mallinnus",
+      "alt": "CAD-malli mekaanisesta osasta käänteiseen suunnitteluun",
+      "description": "Tarkkojen CAD-mallien luominen fyysisistä näytteistä, rikkinäisistä osista tai luonnoksista täysin toimivien varaosien valmistamiseen.",
+      "mat1": "Metalliosat",
+      "mat2": "Muoviosat"
+    },
+    "materialsHeading": "Tuetut materiaalit",
+    "aluminum": {
+      "name": "Alumiini",
+      "grades": "6061, 7075 ja muut",
+      "note": "Kevyt, korkea lujuus-paino-suhde"
+    },
+    "steel": {
+      "name": "Teräs ja ruostumaton teräs",
+      "grades": "304, 316L ja muut",
+      "note": "Korroosionkestävä, korkea kestävyys"
+    },
+    "plastics": {
+      "name": "Tekniset muovit",
+      "grades": "POM, PTFE, Nylon, ABS ja muut",
+      "note": "Kemiallinen kestävyys, alhainen kitka"
+    },
+    "materialsNote": "Nämä ovat yleisimmin käytetyt materiaalit.",
+    "materialsNoteQuestion": "Työskentelets jonkin muun kanssa?",
+    "materialsNoteCta": "Lähetä vaatimuksesi — vahvistan saatavuuden ja suosittelen oikean laadun.",
+    "contact": "Ota yhteyttä",
+    "isoNote": "Koneistus ISO:n mukaan · Toleranssit 0,01 mm asti"
+  },
+  "workflow": {
+    "eyebrow": "Työnkulku",
+    "heading": "Ideasta toimitukseen",
+    "description": "Selkeä, toistettava prosessi — ensimmäisestä tiedostosta valmiiseen osaan ovellesi.",
+    "step": "Vaihe",
+    "step1": {
+      "title": "Tekninen konsultaatio ja analyysi",
+      "description": "Lähetä tiedostosi tai luonnoksesi. Tarkistan suunnittelun vahvistaakseni, että osa voidaan valmistaa tehokkaasti ja spesifikaation mukaisesti.",
+      "kw1": "CAD-tiedostot",
+      "kw2": "tekninen tarkastus"
+    },
+    "step2": {
+      "title": "Suunnittelu ja mallinnus",
+      "description": "Ei piirustusta? Rakennan tarkan 3D-mallin näytteestäsi tai luonnoksestasi, sitten valitsen optimaalisen työkaluradan ja strategian.",
+      "kw1": "3D-mallinnus",
+      "kw2": "räätälöity suunnittelu",
+      "kw3": "koneistusstrategia"
+    },
+    "step3": {
+      "title": "Tarkkuusvalmistus",
+      "description": "Koneistettu Latvian tehtaassani 3-akselisilla CNC-keskuksilla. {{years}}+ vuoden kokemus — valvon henkilökohtaisesti jokaista ohjelmaa toleranssien pitämiseksi ±0,01 mm:iin asti.",
+      "kw1": "CNC-jyrsintä",
+      "kw2": "0,01 mm toleranssit",
+      "kw3": "tarkkuusvalmistus"
+    },
+    "step4": {
+      "title": "Viimeistely ja laadunvalvonta",
+      "description": "Purseiden poisto tai kaiverrus tarpeen mukaan. Jokainen osa mitataan ja tarkistetaan piirustuksen mukaan ennen lähetystä.",
+      "kw1": "laadunvalvonta",
+      "kw2": "teollinen viimeistely",
+      "kw3": "pintakäsittely"
+    },
+    "step5": {
+      "title": "Turvallinen toimitus",
+      "description": "Osat pakataan kuljetusvaurioiden estämiseksi ja lähetetään paikallisesti tai kansainvälisesti — käyttövalmiina saapuessaan.",
+      "kw1": "maailmanlaajuinen toimitus",
+      "kw2": "turvallinen pakkaus"
+    }
+  },
+  "faq": {
+    "eyebrow": "UKK",
+    "heading": "Usein kysytyt kysymykset",
+    "description": "Yleisiä kysymyksiä räätälöityjen CNC-osien tilaamisesta, materiaaleista ja toimituksesta.",
+    "q1": "Mitä voin tilata teiltä?",
+    "a1": "Voit tilata räätälöityjä CNC-koneistettuja osia piirustuksesi, 3D-mallin tai näytteen perusteella. Valmistan kertaprototyyppejä sekä pieniä ja keskisuuria tuotantoeriä eri toimialoille.",
+    "q2": "Voitteko valmistaa osan näytteen tai luonnoksen perusteella?",
+    "a2": "Kyllä. Voin valmistaa osia fyysisestä näytteestä, rikkinäisestä komponentista tai jopa käsin piirretystä luonnoksesta. Luon tarkan 3D-mallin ennen tuotantoa.",
+    "q3": "Entä jos en tunne materiaalia tai teknisiä yksityiskohtia?",
+    "a3": "Jos olet epävarma materiaalista tai teknisistä yksityiskohdista — ei hätää. Lähetä vain mitä sinulla on, ja autan löytämään parhaan ratkaisun.",
+    "q4": "Mikä on minimaalinen tilaus?",
+    "a4": "Minimilausta ei ole. Voit tilata yhden prototyypin tai pienen erän — työskentelen sekä yksityishenkilöiden että yritysten kanssa.",
+    "q5": "Mitä materiaaleja voitte käyttää?",
+    "a5": "Työskentelen pääasiassa alumiinin, teräksen ja muovin kanssa. Pyynnöstä voin koneistaa myös muita materiaaleja — lähetä projektin tiedot, vahvistan saatavuuden.",
+    "q6": "Kuinka nopeasti voitte valmistaa osani?",
+    "a6": "Tuotantoaika riippuu nykyisestä työkuormituksesta, osan monimutkaisuudesta ja tilausmäärästä. Tarkkoja aikatauluja varten ota yhteyttä suoraan.",
+    "q7": "Kuinka saan tarjouksen?",
+    "a7": "Lähetä vain piirustuksesi, 3D-tiedostosi tai jopa kuva osasta. Tarkistan sen ja annan hinnat ja tuotannon yksityiskohdat. Hinta on neuvoteltavissa volyymin ja monimutkaisuuden mukaan. Voit tavoittaa minut sähköpostitse {{email}} tai WhatsApp/puhelimella: {{phone}}.",
+    "q8": "Työskentelettekö Latvian ulkopuolisten asiakkaiden kanssa?",
+    "a8": "Kyllä, työskentelen asiakkaiden kanssa ympäri Eurooppaa ja maailmaa. Hoidan turvallisen pakkauksen ja toimituksen kaikille tilauksille."
+  },
+  "cta": {
+    "heading": "Valmis aloittamaan räätälöidyn projektisi?",
+    "description": "Saa tekninen konsultaatio suoraan johtavalta insinööriltä. Tarkistan henkilökohtaisesti jokaisen piirustuksen varmistaakseni 100% valmistettavuuden ja tarkkuuden. Ei johtajia, ei viivästyksiä — vain ammattimaisia CNC-ratkaisuja.",
+    "callLabel": "Soita",
+    "emailLabel": "Sähköposti",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Tapaa CNC-insinöörisi ja perustaja",
+    "title": "Vanhempi CNC-insinööri ja {{appName}}:n perustaja",
+    "bio1": "Yli {{years}} vuoden kokemuksella korkeatarkkuus CNC-jyrsinnässä ja sorvauksessa tarjoan ammattimaisiaUNC-koneistuspalveluja Latviasta maailmanlaajuisille asiakkaille. Erikoistun mekaanisten osien valmistukseen CAD-malleista, teknisistä piirustuksista, luonnoksista ja fyysisistä näytteistä.",
+    "bio2": "Työssäni keskityn 3-akseliseen CNC-koneistukseen, tarkkuussorvaukseen ja käänteiseen suunnitteluun — prototyypeille, yksittäisille osille ja piensarjatuotantoon. Toimitan täysin viimeistellyt komponentit tiukoilla toleransseilla 0,01 mm:iin asti teollisiin ja teknisiin sovelluksiin.",
+    "bio3": "Latviassa toimien tuen kansainvälisiä asiakkaita luotettavalla tuotannolla, nopealla viestinnällä ja insinööritarkkuudella konseptista valmiiseen osaan. Jokainen tilaus hoidetaan henkilökohtaisesti johdonmukaisen laadun varmistamiseksi.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Vuotta",
+    "stat1Label": "Kokemus CNC-koneistuksessa ja valmistuksessa",
+    "stat1Sub": "Todistettu asiantuntemus jyrsinnässä, sorvauksessa ja käänteisessä suunnittelussa",
+    "stat2Value": "Latvia",
+    "stat2Unit": "/ Maailma",
+    "stat2Label": "Valmistus ja kansainvälinen toimitus",
+    "stat2Sub": "Nopea viestintä globaalien asiakkaiden kanssa",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Tarkkuustoleranssistandardi kriittisille osille",
+    "stat3Sub": "Korkeatarkkuuskoneistus prototyypeille ja toiminnallisille komponenteille",
+    "stat4Value": "Räätälöidyt",
+    "stat4Unit": "Tilaukset",
+    "stat4Label": "CAD:sta, piirustuksista, luonnoksista tai fyysisistä näytteistä",
+    "stat4Sub": "Yksittäiset osat ja piensarjatuotanto saatavilla",
+    "expertiseHeading": "Tekninen asiantuntemus",
+    "skill1": "CAD/CAM-mallinnus",
+    "skill2": "3-akselinen CNC-jyrsintä",
+    "skill3": "Sorvaus",
+    "skill4": "Prototyyppivalmistus",
+    "skill5": "Teknisten piirustuksien analyysi",
+    "skill6": "Käänteinen suunnittelu",
+    "orderHeading": "Kuinka tilata",
+    "orderText": "Lähetä CAD-tiedostosi, piirustuksesi tai näytteesi — tarkistan sen ja annan tuotantotarjouksen.",
+    "statusLabel": "Tila",
+    "statusValue": "Valmis tuotantoon",
+    "imgAlt": "Viktor — vanhempi CNC-insinööri ja Viktor CNC:n perustaja ammattimaisessa työpajaympäristössä"
+  },
+  "facility": {
+    "eyebrow": "Tuotantolaitos",
+    "heading": "Tuotantolaitos — tarkkuus johon voit luottaa",
+    "description": "Latvian verstaani on optimoitu korkeatarkkuuksisiin räätälöityihin tilauksiin. Yhdistän teollisuusluokan CNC-koneita erikoistuneisiin metrologiatyökaluihin — jokainen mikroni vastaa piirustustasi.",
+    "unit1": {
+      "label": "Suurnopeusfreysjyrsintä",
+      "title": "Tarkka CNC-jyrsintä — suurnopeus",
+      "description": "Alumiini- ja muoviosien CNC-jyrsintä 24 000 rpm karan nopeudella — hieno pintaviimeistely tiukoilla mittatolerausseilla.",
+      "alt": "Suurnopeuksinen CNC-jyrsinkeskus koneistaa alumiiniosia 24000 rpm",
+      "spec1Label": "Kohdematerialit",
+      "spec1Value": "Alumiini, teräs ja muovi",
+      "spec2Label": "Karan nopeus",
+      "spec2Value": "24 000 rpm",
+      "spec3Label": "Konfiguraatio",
+      "spec3Value": "3-akselinen suurnopeus"
+    },
+    "unit2": {
+      "label": "Ensisijainen jyrsinkeskus",
+      "title": "Tarkka 3-akselinen CNC-jyrsintä",
+      "description": "Monimutkaisten osien, koteloiden, kiinnikkeiden ja räätälöityjen komponenttien CNC-jyrsintä. Sopii prototyypeille ja pienille sarjoille.",
+      "alt": "Tarkka 3-akselinen CNC-jyrsinkeskus räätälöidyille metalliosille",
+      "spec1Label": "Työalue",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Toleranssit",
+      "spec2Value": "±0,01 mm asti",
+      "spec3Label": "Konfiguraatio",
+      "spec3Value": "3-akselinen"
+    },
+    "unit3": {
+      "label": "Sorvauso-osasto",
+      "title": "Korkeatarkkuussorvaus",
+      "description": "Sylinterimäisten osien tarkkuussorvaus: akselit, holkit ja mekaaniset komponentit korkealla pintalaadulla.",
+      "alt": "Tarkka CNC-sorvi sorvaa sylinterimäisiä metalliakseleja ja holkkeja",
+      "spec1Label": "Max halkaisija",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max pituus",
+      "spec2Value": "800 mm",
+      "spec3Label": "Toleranssit",
+      "spec3Value": "±0,03 mm asti"
+    },
+    "qcHeading": "Laadunvalvonta ja mittaus",
+    "qcDescription": "Jokainen osa tarkistetaan tarkkuusmittaustyökaluilla varmistaaksemme, että se vastaa piirustustasi täsmälleen.",
+    "qcTool1": "Digitaaliset työntömitat",
+    "qcTool2": "Mikrometrit",
+    "qcTool3": "Pintamittaustyökalut",
+    "qcNote": "Osat tarkistetaan ennen toimitusta — vain mitattuja tuloksia, ei arvailua.",
+    "operatedHeading": "Henkilökohtaisesti käytönohjattu ja huollettu",
+    "operatedDescription": "Kaikki koneet asennetaan, käytetään ja huolletaan henkilökohtaisesti minun toimestani. Tämä varmistaa johdonmukaisen laadun ja täyden hallinnan jokaisessa vaiheessa.",
+    "contact": "Ota yhteyttä"
+  },
+  "gallery": {
+    "eyebrow": "Työgalleria",
+    "heading": "Räätälöidyt CNC-osat — esimerkkejä",
+    "allMaterials": "Kaikki materiaalit",
+    "showMore": "Näytä lisää ({{count}})",
+    "multiPart": "Moniosaiset",
+    "dialogTitle": "CNC-osa — {{material}}"
   }
 }

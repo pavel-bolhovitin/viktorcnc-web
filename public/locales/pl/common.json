@@ -16,5 +16,218 @@
     "labelPhone": "Telefon / WhatsApp",
     "hint1": "Wyślij modele 3D, rysunki, szkice — lub zadaj pytania.",
     "hint2": "Bezpośredni kontakt z mechanikiem."
+  },
+  "services": {
+    "eyebrow": "Usługi i materiały",
+    "heading": "Usługi obróbki CNC dla części na zamówienie",
+    "description": "Produkcja części na zamówienie na podstawie rysunków, modeli CAD lub fizycznych próbek z metali i tworzyw sztucznych.",
+    "milling": {
+      "title": "Precyzyjne frezowanie CNC 3-osiowe",
+      "alt": "Frezarka CNC obrabia metalową część",
+      "specWorkingArea": "Obszar roboczy",
+      "specTolerances": "Tolerancje",
+      "description": "Frezowanie CNC złożonych części, obudów, wsporników i niestandardowych komponentów do zastosowań mechanicznych. Odpowiednie dla prototypów i produkcji małoseryjnej.",
+      "mat1": "Aluminium",
+      "mat2": "Stal",
+      "mat3": "Tworzywa sztuczne"
+    },
+    "turning": {
+      "title": "Toczenie z wysoką dokładnością",
+      "alt": "Tokarka obrabia cylindryczną metalową część",
+      "specMaxDiameter": "Maks. średnica",
+      "specMaxLength": "Maks. długość",
+      "specTolerances": "Tolerancje",
+      "description": "Precyzyjne toczenie części cylindrycznych: wałki, tuleje i elementy mechaniczne z wysoką jakością powierzchni i wąskimi tolerancjami.",
+      "mat1": "Stal",
+      "mat2": "Aluminium",
+      "mat3": "Mosiądz"
+    },
+    "reverseEngineering": {
+      "title": "Inżynieria odwrotna i modelowanie CAD",
+      "alt": "Model CAD mechanicznej części do inżynierii odwrotnej",
+      "description": "Tworzenie dokładnych modeli CAD na podstawie fizycznych próbek, uszkodzonych części lub szkiców do produkcji w pełni funkcjonalnych zamienników.",
+      "mat1": "Części metalowe",
+      "mat2": "Części z tworzyw sztucznych"
+    },
+    "materialsHeading": "Obsługiwane materiały",
+    "aluminum": {
+      "name": "Aluminium",
+      "grades": "6061, 7075 i inne",
+      "note": "Lekkie, wysoki stosunek wytrzymałości do masy"
+    },
+    "steel": {
+      "name": "Stal i stal nierdzewna",
+      "grades": "304, 316L i inne",
+      "note": "Odporność na korozję, wysoka trwałość"
+    },
+    "plastics": {
+      "name": "Tworzywa techniczne",
+      "grades": "POM, PTFE, Nylon, ABS i inne",
+      "note": "Odporność chemiczna, niskie tarcie"
+    },
+    "materialsNote": "Są to najczęściej używane materiały.",
+    "materialsNoteQuestion": "Pracujesz z czymś innym?",
+    "materialsNoteCta": "Wyślij swoje wymagania — potwierdzę dostępność i zalecę odpowiedni gatunek.",
+    "contact": "Skontaktuj się",
+    "isoNote": "Obróbka zgodna z ISO · Tolerancje do 0.01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Przepływ pracy",
+    "heading": "Od pomysłu do dostawy",
+    "description": "Jasny, powtarzalny proces — od pierwszego pliku do gotowej części pod Twoje drzwi.",
+    "step": "Krok",
+    "step1": {
+      "title": "Konsultacja techniczna i analiza",
+      "description": "Wyślij pliki lub szkic. Przeglądam projekt, aby potwierdzić, że część może być produkowana wydajnie i zgodnie ze specyfikacją.",
+      "kw1": "pliki CAD",
+      "kw2": "przegląd techniczny"
+    },
+    "step2": {
+      "title": "Inżynieria i modelowanie",
+      "description": "Brak rysunku? Tworzę precyzyjny model 3D na podstawie próbki lub szkicu, a następnie wybieram optymalną ścieżkę narzędzia i strategię.",
+      "kw1": "modelowanie 3D",
+      "kw2": "inżynieria na zamówienie",
+      "kw3": "strategia obróbki"
+    },
+    "step3": {
+      "title": "Produkcja precyzyjna",
+      "description": "Obróbka w moim zakładzie na Łotwie na centrach CNC 3-osiowych. {{years}}+ lat doświadczenia — osobiście nadzoruje każdy program, aby utrzymać tolerancje do ±0.01 mm.",
+      "kw1": "frezowanie CNC",
+      "kw2": "tolerancje 0.01 mm",
+      "kw3": "produkcja precyzyjna"
+    },
+    "step4": {
+      "title": "Wykończenie i kontrola jakości",
+      "description": "Gratowanie lub grawerowanie według potrzeb. Każda część jest mierzona i weryfikowana względem rysunku przed wysyłką.",
+      "kw1": "kontrola jakości",
+      "kw2": "wykończenie przemysłowe",
+      "kw3": "obróbka powierzchni"
+    },
+    "step5": {
+      "title": "Bezpieczna dostawa",
+      "description": "Części są pakowane w celu zapobiegania uszkodzeniom transportowym i wysyłane lokalnie lub międzynarodowo — gotowe do użycia po przybyciu.",
+      "kw1": "wysyłka na cały świat",
+      "kw2": "bezpieczne pakowanie"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Często zadawane pytania",
+    "description": "Typowe pytania dotyczące zamawiania niestandardowych części CNC, materiałów i dostawy.",
+    "q1": "Co mogę u ciebie zamówić?",
+    "a1": "Możesz zamówić niestandardowe części obrabiane CNC na podstawie rysunku, modelu 3D lub próbki. Produkuję jednorazowe prototypy, a także małe i średnie partie produkcyjne dla różnych branż.",
+    "q2": "Czy możesz wykonać część na podstawie próbki lub szkicu?",
+    "a2": "Tak. Mogę produkować części na podstawie fizycznej próbki, uszkodzonego komponentu lub nawet ręcznie narysowanego szkicu. Przed produkcją stworzę precyzyjny model 3D.",
+    "q3": "Co jeśli nie znam materiału ani szczegółów technicznych?",
+    "a3": "Jeśli nie jesteś pewien materiału lub szczegółów technicznych — nie ma problemu. Wyślij to, co masz, a ja pomogę znaleźć najlepsze rozwiązanie.",
+    "q4": "Jaka jest minimalna ilość zamówienia?",
+    "a4": "Nie ma minimalnej ilości zamówienia. Możesz zamówić jeden prototyp lub małą serię — pracuję zarówno z klientami indywidualnymi, jak i firmami.",
+    "q5": "Z jakimi materiałami pracujesz?",
+    "a5": "Głównie pracuję z aluminium, stalą i tworzywami sztucznymi. Na życzenie mogę obrabiać również inne materiały — wyślij szczegóły projektu, potwierdzę dostępność.",
+    "q6": "Jak szybko możesz wykonać moją część?",
+    "a6": "Czas produkcji zależy od bieżącego obciążenia pracą, złożoności części i wolumenu zamówienia. W celu uzyskania dokładnych terminów skontaktuj się ze mną bezpośrednio.",
+    "q7": "Jak uzyskać wycenę?",
+    "a7": "Po prostu wyślij swój rysunek, plik 3D lub nawet zdjęcie części. Przejrzę go i podam ceny oraz szczegóły produkcji. Cena jest negocjowalna w zależności od wolumenu i złożoności. Możesz skontaktować się ze mną e-mailem pod adresem {{email}} lub przez WhatsApp/telefon: {{phone}}.",
+    "q8": "Czy pracujesz z klientami spoza Łotwy?",
+    "a8": "Tak, pracuję z klientami w całej Europie i na całym świecie. Zajmuję się bezpiecznym pakowaniem i wysyłką dla wszystkich zamówień."
+  },
+  "cta": {
+    "heading": "Gotowy rozpocząć swój niestandardowy projekt?",
+    "description": "Uzyskaj konsultację techniczną bezpośrednio od głównego inżyniera. Osobiście przeglądam każdy rysunek, aby zapewnić 100% wykonalność i precyzję. Bez menedżerów, bez opóźnień — tylko profesjonalne rozwiązania CNC.",
+    "callLabel": "Zadzwoń",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Poznaj inżyniera CNC i założyciela",
+    "title": "Starszy inżynier CNC i założyciel {{appName}}",
+    "bio1": "Mając ponad {{years}} lat doświadczenia w wysokoprecyzyjnym frezowaniu i toczeniu CNC, świadczę profesjonalne usługi obróbki CNC na Łotwie dla klientów z całego świata. Specjalizuję się w produkcji części mechanicznych na podstawie modeli CAD, rysunków technicznych, szkiców i fizycznych próbek.",
+    "bio2": "Moja praca koncentruje się na obróbce CNC 3-osiowej, precyzyjnym toczeniu i inżynierii odwrotnej — dla prototypów, pojedynczych części i produkcji małoseryjnej. Dostarczam w pełni wykończone komponenty z wąskimi tolerancjami do 0.01 mm do zastosowań przemysłowych i inżynieryjnych.",
+    "bio3": "Z siedzibą na Łotwie wspierałem klientów międzynarodowych niezawodną produkcją, szybką komunikacją i precyzją inżynieryjną od koncepcji do gotowej części. Każde zamówienie jest realizowane osobiście, aby zapewnić stałą jakość.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Lat",
+    "stat1Label": "Doświadczenie w obróbce CNC i produkcji",
+    "stat1Sub": "Udokumentowana ekspertyza w frezowaniu, toczeniu i inżynierii odwrotnej",
+    "stat2Value": "Łotwa",
+    "stat2Unit": "/ Cały świat",
+    "stat2Label": "Produkcja i dostawa międzynarodowa",
+    "stat2Sub": "Szybka komunikacja z globalnymi klientami",
+    "stat3Value": "0.01mm",
+    "stat3Label": "Standard tolerancji precyzji dla części krytycznych",
+    "stat3Sub": "Obróbka wysokoprecyzyjna dla prototypów i komponentów funkcjonalnych",
+    "stat4Value": "Na zamówienie",
+    "stat4Unit": "Zlecenia",
+    "stat4Label": "Z CAD, rysunków, szkiców lub fizycznych próbek",
+    "stat4Sub": "Pojedyncze części i produkcja małoseryjna dostępna",
+    "expertiseHeading": "Ekspertyza techniczna",
+    "skill1": "Modelowanie CAD/CAM",
+    "skill2": "Frezowanie CNC 3-osiowe",
+    "skill3": "Toczenie",
+    "skill4": "Produkcja prototypów",
+    "skill5": "Analiza rysunków technicznych",
+    "skill6": "Inżynieria odwrotna",
+    "orderHeading": "Jak zamówić",
+    "orderText": "Wyślij plik CAD, rysunek lub próbkę — przejrzę i podam wycenę produkcji.",
+    "statusLabel": "Status",
+    "statusValue": "Gotowy do produkcji",
+    "imgAlt": "Viktor — starszy inżynier CNC i założyciel Viktor CNC w profesjonalnym warsztacie"
+  },
+  "facility": {
+    "eyebrow": "Zakład produkcyjny",
+    "heading": "Zakład produkcyjny — precyzja, na której możesz polegać",
+    "description": "Mój warsztat na Łotwie jest zoptymalizowany pod kątem wysokoprecyzyjnych zamówień niestandardowych. Łączę maszyny CNC klasy przemysłowej ze specjalistycznymi narzędziami metrologicznymi — każdy mikron odpowiada Twojemu projektowi.",
+    "unit1": {
+      "label": "Frezowanie wysokoobrotowe",
+      "title": "Precyzyjne frezowanie CNC — wysokie obroty",
+      "description": "Frezowanie CNC części aluminiowych i plastikowych przy prędkości wrzeciona 24 000 obr./min — gładka powierzchnia przy wąskich tolerancjach wymiarowych.",
+      "alt": "Wysokoobrotowe centrum frezowania CNC obrabia aluminiowe części przy 24000 obr./min",
+      "spec1Label": "Docelowe materiały",
+      "spec1Value": "Aluminium, stal i tworzywa",
+      "spec2Label": "Prędkość wrzeciona",
+      "spec2Value": "24 000 obr./min",
+      "spec3Label": "Konfiguracja",
+      "spec3Value": "3-osiowe wysokoobrotowe"
+    },
+    "unit2": {
+      "label": "Główne centrum frezowania",
+      "title": "Precyzyjne frezowanie CNC 3-osiowe",
+      "description": "Frezowanie CNC złożonych części, obudów, wsporników i niestandardowych komponentów. Odpowiednie dla prototypów i produkcji małoseryjnej.",
+      "alt": "Precyzyjne centrum frezowania CNC 3-osiowego dla niestandardowych części metalowych",
+      "spec1Label": "Obszar roboczy",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerancje",
+      "spec2Value": "do ±0.01 mm",
+      "spec3Label": "Konfiguracja",
+      "spec3Value": "3-osiowe"
+    },
+    "unit3": {
+      "label": "Dział toczenia",
+      "title": "Toczenie z wysoką dokładnością",
+      "description": "Precyzyjne toczenie części cylindrycznych: wałki, tuleje i elementy mechaniczne z wysoką jakością powierzchni.",
+      "alt": "Precyzyjna tokarka CNC obrabia cylindryczne metalowe wałki i tuleje",
+      "spec1Label": "Maks. średnica",
+      "spec1Value": "250 mm",
+      "spec2Label": "Maks. długość",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerancje",
+      "spec3Value": "do ±0.03 mm"
+    },
+    "qcHeading": "Kontrola jakości i pomiary",
+    "qcDescription": "Każda część jest sprawdzana precyzyjnymi narzędziami pomiarowymi, aby zapewnić dokładną zgodność z rysunkiem.",
+    "qcTool1": "Suwmiarki cyfrowe",
+    "qcTool2": "Mikrometry",
+    "qcTool3": "Narzędzia do pomiaru powierzchni",
+    "qcNote": "Części są weryfikowane przed dostawą — tylko zmierzone wyniki, żadnych domysłów.",
+    "operatedHeading": "Osobiście obsługiwany i konserwowany",
+    "operatedDescription": "Wszystkie maszyny są konfigurowane, obsługiwane i konserwowane przeze mnie osobiście. Zapewnia to stałą jakość i pełną kontrolę na każdym etapie.",
+    "contact": "Skontaktuj się"
+  },
+  "gallery": {
+    "eyebrow": "Galeria prac",
+    "heading": "Niestandardowe części CNC — przykłady",
+    "allMaterials": "Wszystkie materiały",
+    "showMore": "Pokaż więcej ({{count}})",
+    "multiPart": "Wieloczęściowe",
+    "dialogTitle": "Część CNC — {{material}}"
   }
 }

@@ -4,6 +4,7 @@ import Fade from 'embla-carousel-fade';
 import { ChevronLeft, ChevronRight, Shapes, X } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
   Carousel,
   type CarouselApi,
@@ -34,6 +35,8 @@ export function GalleryDialog({
     };
   }, [api]);
 
+  const { t } = useTranslation('common');
+
   if (!set) return null;
 
   const count = set.photos.length;
@@ -56,7 +59,7 @@ export function GalleryDialog({
         }}
       >
         <DialogTitle className='sr-only'>
-          CNC part — {materialLabel}
+          {t('gallery.dialogTitle', { material: materialLabel })}
         </DialogTitle>
 
         <Carousel
@@ -73,7 +76,7 @@ export function GalleryDialog({
             {set.isMultiPart && (
               <div className='flex items-center gap-1 rounded-sm bg-black/50 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
                 <Shapes className='h-3 w-3' />
-                Multi-part
+                {t('gallery.multiPart')}
               </div>
             )}
           </div>

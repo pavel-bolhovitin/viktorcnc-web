@@ -16,5 +16,218 @@
     "labelPhone": "Telefoon / WhatsApp",
     "hint1": "Stuur 3D-modellen, tekeningen, schetsen — of stel vragen.",
     "hint2": "Directe communicatie met de machinist."
+  },
+  "services": {
+    "eyebrow": "Diensten en materialen",
+    "heading": "CNC-bewerkingsdiensten voor maatwerk onderdelen",
+    "description": "Productie van maatwerk onderdelen op basis van tekeningen, CAD-modellen of fysieke monsters van metalen en technische kunststoffen.",
+    "milling": {
+      "title": "Precisie 3-assige CNC-frezen",
+      "alt": "CNC-freesmachine bewerkt een metalen onderdeel",
+      "specWorkingArea": "Werkgebied",
+      "specTolerances": "Toleranties",
+      "description": "CNC-frezen van complexe onderdelen, behuizingen, beugels en maatwerk componenten voor mechanische toepassingen. Geschikt voor prototypes en kleine series.",
+      "mat1": "Aluminium",
+      "mat2": "Staal",
+      "mat3": "Kunststof"
+    },
+    "turning": {
+      "title": "Hoognauwkeurig draaien",
+      "alt": "Draaibank bewerkt een cilindrisch metalen onderdeel",
+      "specMaxDiameter": "Max. diameter",
+      "specMaxLength": "Max. lengte",
+      "specTolerances": "Toleranties",
+      "description": "Precisie draaien van cilindrische onderdelen zoals assen, bussen en mechanische componenten met hoge oppervlaktekwaliteit en nauwe toleranties.",
+      "mat1": "Staal",
+      "mat2": "Aluminium",
+      "mat3": "Messing"
+    },
+    "reverseEngineering": {
+      "title": "Reverse engineering en CAD-modellering",
+      "alt": "CAD-model van een mechanisch onderdeel voor reverse engineering",
+      "description": "Het maken van nauwkeurige CAD-modellen van fysieke monsters, kapotte onderdelen of schetsen om volledig functionele vervangingen te produceren.",
+      "mat1": "Metalen onderdelen",
+      "mat2": "Kunststof onderdelen"
+    },
+    "materialsHeading": "Ondersteunde materialen",
+    "aluminum": {
+      "name": "Aluminium",
+      "grades": "6061, 7075 en andere",
+      "note": "Lichtgewicht, hoge sterkte-gewichtsverhouding"
+    },
+    "steel": {
+      "name": "Staal en roestvrij staal",
+      "grades": "304, 316L en andere",
+      "note": "Corrosiebestendig, hoge duurzaamheid"
+    },
+    "plastics": {
+      "name": "Technische kunststoffen",
+      "grades": "POM, PTFE, Nylon, ABS en andere",
+      "note": "Chemische bestendigheid, lage wrijving"
+    },
+    "materialsNote": "Dit zijn de meest gebruikte materialen.",
+    "materialsNoteQuestion": "Werkt u met iets anders?",
+    "materialsNoteCta": "Stuur uw vereisten — ik bevestig de beschikbaarheid en beveel de juiste kwaliteit aan.",
+    "contact": "Neem contact op",
+    "isoNote": "Bewerking volgens ISO · Toleranties tot 0,01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Werkproces",
+    "heading": "Van idee tot levering",
+    "description": "Een duidelijk, herhaalbaar proces — van uw eerste bestand tot het afgewerkte onderdeel voor uw deur.",
+    "step": "Stap",
+    "step1": {
+      "title": "Technisch advies en analyse",
+      "description": "Stuur uw bestanden of schets. Ik beoordeel het ontwerp om te bevestigen dat het onderdeel efficiënt en volgens specificatie kan worden geproduceerd.",
+      "kw1": "CAD-bestanden",
+      "kw2": "technische beoordeling"
+    },
+    "step2": {
+      "title": "Engineering en modellering",
+      "description": "Geen tekening? Ik bouw een nauwkeurig 3D-model van uw monster of schets en selecteer dan het optimale gereedschapspad en de beste strategie.",
+      "kw1": "3D-modellering",
+      "kw2": "maatwerk engineering",
+      "kw3": "bewerkingsstrategie"
+    },
+    "step3": {
+      "title": "Precisieproductie",
+      "description": "Bewerkt in mijn Letse vestiging op 3-assige CNC-centra. {{years}}+ jaar ervaring — ik bewaak persoonlijk elk programma om toleranties tot ±0,01 mm te handhaven.",
+      "kw1": "CNC-frezen",
+      "kw2": "0,01 mm toleranties",
+      "kw3": "precisieproductie"
+    },
+    "step4": {
+      "title": "Afwerking en kwaliteitscontrole",
+      "description": "Bramen verwijderen of graveren indien nodig. Elk onderdeel wordt gemeten en geverifieerd aan de hand van uw tekening voor verzending.",
+      "kw1": "kwaliteitscontrole",
+      "kw2": "industriële afwerking",
+      "kw3": "oppervlaktebehandeling"
+    },
+    "step5": {
+      "title": "Veilige levering",
+      "description": "Onderdelen worden verpakt om transportschade te voorkomen en lokaal of internationaal verzonden — klaar voor gebruik bij aankomst.",
+      "kw1": "wereldwijde verzending",
+      "kw2": "veilige verpakking"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Veelgestelde vragen",
+    "description": "Veelgestelde vragen over het bestellen van maatwerk CNC-onderdelen, materialen en levering.",
+    "q1": "Wat kan ik bij u bestellen?",
+    "a1": "U kunt maatwerk CNC-bewerkte onderdelen bestellen op basis van uw tekening, 3D-model of monster. Ik produceer eenmalige prototypes en kleine en middelgrote productieseries voor verschillende industrieën.",
+    "q2": "Kunt u een onderdeel maken van een monster of schets?",
+    "a2": "Ja. Ik kan onderdelen produceren van een fysiek monster, een kapot component of zelfs een handgetekende schets. Ik maak een nauwkeurig 3D-model voor de productie.",
+    "q3": "Wat als ik het materiaal of de technische details niet ken?",
+    "a3": "Als u niet zeker bent van het materiaal of de technische details — geen probleem. Stuur gewoon wat u heeft en ik help u de beste oplossing te vinden.",
+    "q4": "Wat is de minimale bestelling?",
+    "a4": "Er is geen minimale bestelling. U kunt één prototype of een kleine serie bestellen — ik werk met zowel particulieren als bedrijven.",
+    "q5": "Welke materialen kunt u gebruiken?",
+    "a5": "Ik werk voornamelijk met aluminium, staal en kunststof. Op verzoek kan ik ook andere materialen bewerken — stuur uw projectdetails en ik bevestig de beschikbaarheid.",
+    "q6": "Hoe snel kunt u mijn onderdeel maken?",
+    "a6": "De productietijd hangt af van de huidige werkbelasting, de complexiteit van het onderdeel en het bestelvolume. Neem voor nauwkeurige tijdlijnen rechtstreeks contact met me op.",
+    "q7": "Hoe krijg ik een offerte?",
+    "a7": "Stuur gewoon uw tekening, 3D-bestand of zelfs een foto van het onderdeel. Ik beoordeel het en geef prijzen en productiedetails. De prijs is onderhandelbaar afhankelijk van volume en complexiteit. U kunt mij bereiken via e-mail op {{email}} of via WhatsApp/telefoon: {{phone}}.",
+    "q8": "Werkt u met klanten buiten Letland?",
+    "a8": "Ja, ik werk met klanten in heel Europa en wereldwijd. Ik zorg voor veilige verpakking en verzending voor alle bestellingen."
+  },
+  "cta": {
+    "heading": "Klaar om uw maatwerk project te starten?",
+    "description": "Ontvang een technisch advies rechtstreeks van de hoofdingenieur. Ik beoordeel persoonlijk elke tekening om 100% maakbaarheid en precisie te garanderen. Geen managers, geen vertragingen — alleen professionele CNC-oplossingen.",
+    "callLabel": "Bellen",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Maak kennis met uw CNC-ingenieur en oprichter",
+    "title": "Senior CNC-ingenieur en oprichter van {{appName}}",
+    "bio1": "Met meer dan {{years}} jaar ervaring in hoogprecisie CNC-frezen en draaien bied ik professionele CNC-bewerkingsdiensten aan in Letland voor klanten wereldwijd. Ik specialiseer me in het produceren van mechanische onderdelen op basis van CAD-modellen, technische tekeningen, schetsen en fysieke monsters.",
+    "bio2": "Mijn werk richt zich op 3-assige CNC-bewerking, precisie draaien en reverse engineering — voor prototypes, eenmalige onderdelen en kleine serieproductie. Ik lever volledig afgewerkte componenten met nauwe toleranties tot 0,01 mm voor industriële en technische toepassingen.",
+    "bio3": "Gevestigd in Letland ondersteun ik internationale klanten met betrouwbare productie, snelle communicatie en technische precisie van concept tot afgewerkt onderdeel. Elke order wordt persoonlijk afgehandeld voor consistente kwaliteit.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Jaar",
+    "stat1Label": "Werkervaring in CNC-bewerking en productie",
+    "stat1Sub": "Bewezen expertise in frezen, draaien en reverse engineering",
+    "stat2Value": "Letland",
+    "stat2Unit": "/ Wereldwijd",
+    "stat2Label": "Productie en internationale levering",
+    "stat2Sub": "Snelle communicatie met internationale klanten",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Precisietolerantiestandaard voor kritieke onderdelen",
+    "stat3Sub": "Hoognauwkeurige bewerking voor prototypes en functionele componenten",
+    "stat4Value": "Maatwerk",
+    "stat4Unit": "Orders",
+    "stat4Label": "Van CAD, tekeningen, schetsen of fysieke monsters",
+    "stat4Sub": "Eenmalige onderdelen en kleine serie beschikbaar",
+    "expertiseHeading": "Technische expertise",
+    "skill1": "CAD/CAM-modellering",
+    "skill2": "3-assige CNC-frezen",
+    "skill3": "Draaien",
+    "skill4": "Prototypeproductie",
+    "skill5": "Analyse van technische tekeningen",
+    "skill6": "Reverse engineering",
+    "orderHeading": "Hoe te bestellen",
+    "orderText": "Stuur uw CAD-bestand, tekening of monster — ik beoordeel het en geef een productieofferte.",
+    "statusLabel": "Status",
+    "statusValue": "Klaar voor productie",
+    "imgAlt": "Viktor — senior CNC-ingenieur en oprichter van Viktor CNC in een professionele werkomgeving"
+  },
+  "facility": {
+    "eyebrow": "Productiefaciliteit",
+    "heading": "Productiefaciliteit — precisie waarop u kunt vertrouwen",
+    "description": "Mijn werkplaats in Letland is geoptimaliseerd voor hoogprecisie maatwerk orders. Ik combineer CNC-machines van industriekwaliteit met gespecialiseerde metrologiegereedschappen — elke micron komt overeen met uw blauwdruk.",
+    "unit1": {
+      "label": "Hoge snelheid frezen",
+      "title": "Precisie CNC-frezen — hoge snelheid",
+      "description": "CNC-frezen van aluminium en kunststof onderdelen bij 24.000 rpm spindel snelheid — fijne oppervlakteafwerking met nauwe dimensietoleranties.",
+      "alt": "Hoge snelheid CNC-freescentrum bewerkt aluminium onderdelen bij 24000 rpm",
+      "spec1Label": "Doelmaterialen",
+      "spec1Value": "Aluminium, staal en kunststof",
+      "spec2Label": "Spindelsnelheid",
+      "spec2Value": "24.000 rpm",
+      "spec3Label": "Configuratie",
+      "spec3Value": "3-assige hoge snelheid"
+    },
+    "unit2": {
+      "label": "Primair freescentrum",
+      "title": "Precisie 3-assige CNC-frezen",
+      "description": "CNC-frezen van complexe onderdelen, behuizingen, beugels en maatwerk componenten. Geschikt voor prototypes en kleine series.",
+      "alt": "Precisie 3-assige CNC-freescentrum voor maatwerk metalen onderdelen",
+      "spec1Label": "Werkgebied",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Toleranties",
+      "spec2Value": "tot ±0,01 mm",
+      "spec3Label": "Configuratie",
+      "spec3Value": "3-assig"
+    },
+    "unit3": {
+      "label": "Draai-afdeling",
+      "title": "Hoognauwkeurig draaien",
+      "description": "Precisie draaien van cilindrische onderdelen: assen, bussen en mechanische componenten met hoge oppervlaktekwaliteit.",
+      "alt": "Precisie CNC-draaibank bewerkt cilindrische metalen assen en bussen",
+      "spec1Label": "Max. diameter",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max. lengte",
+      "spec2Value": "800 mm",
+      "spec3Label": "Toleranties",
+      "spec3Value": "tot ±0,03 mm"
+    },
+    "qcHeading": "Kwaliteitscontrole en meting",
+    "qcDescription": "Elk onderdeel wordt gecontroleerd met precisie meetgereedschappen om exacte overeenkomst met uw tekening te garanderen.",
+    "qcTool1": "Digitale schuifmaten",
+    "qcTool2": "Micrometers",
+    "qcTool3": "Oppervlaktemeetgereedschappen",
+    "qcNote": "Onderdelen worden voor levering geverifieerd — alleen gemeten resultaten, geen giswerk.",
+    "operatedHeading": "Persoonlijk bediend en onderhouden",
+    "operatedDescription": "Alle machines worden door mij persoonlijk ingesteld, bediend en onderhouden. Dit zorgt voor consistente kwaliteit en volledige controle in elke fase.",
+    "contact": "Neem contact op"
+  },
+  "gallery": {
+    "eyebrow": "Werkgalerij",
+    "heading": "Maatwerk CNC-onderdelen — voorbeelden",
+    "allMaterials": "Alle materialen",
+    "showMore": "Meer weergeven ({{count}})",
+    "multiPart": "Meerdelig",
+    "dialogTitle": "CNC-onderdeel — {{material}}"
   }
 }

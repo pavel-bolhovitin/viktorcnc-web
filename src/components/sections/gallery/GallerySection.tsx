@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { GreedyColumnLayout } from '@/components/layouts/GreedyColumnLayout';
 import { GalleryCard } from '@/components/sections/gallery/GalleryCard';
 import { GalleryDialog } from '@/components/sections/gallery/GalleryDialog';
@@ -14,21 +15,22 @@ import { cn } from '@/lib/utils';
 
 const PAGE_SIZE = 10;
 
-const ALL = 'All Materials';
-
-const MATERIALS = [
-  ALL,
-  ...Array.from(new Set(photoSets.flatMap((s) => s.material))).map(
-    (m) => m.charAt(0).toUpperCase() + m.slice(1),
-  ),
-];
-
 function parseAspect(aspect: string): [number, number] {
   const [w, h] = aspect.split('/').map(Number);
   return [w, h];
 }
 
 export function GallerySection({ className }: { className?: string }) {
+  const { t } = useTranslation('common');
+  const ALL = t('gallery.allMaterials');
+
+  const MATERIALS = [
+    ALL,
+    ...Array.from(new Set(photoSets.flatMap((s) => s.material))).map(
+      (m) => m.charAt(0).toUpperCase() + m.slice(1),
+    ),
+  ];
+
   const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
   const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
   const [pageSize, setPageSize] = useState(PAGE_SIZE);
@@ -64,10 +66,10 @@ export function GallerySection({ className }: { className?: string }) {
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            Work Gallery
+            {t('gallery.eyebrow')}
           </p>
           <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            Custom CNC Parts — Examples
+            {t('gallery.heading')}
           </h2>
         </div>
 
@@ -104,7 +106,7 @@ export function GallerySection({ className }: { className?: string }) {
               onClick={() => setPageSize((prev) => prev + PAGE_SIZE)}
               className='border border-primary px-6 py-2 font-mono text-xs uppercase tracking-wider text-primary hover:border-primary hover:text-primary transition-colors'
             >
-              Show more ({Math.min(PAGE_SIZE, remaining)})
+              {t('gallery.showMore', { count: Math.min(PAGE_SIZE, remaining) })}
             </button>
           </div>
         )}

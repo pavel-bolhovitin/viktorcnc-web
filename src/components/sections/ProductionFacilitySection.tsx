@@ -1,3 +1,4 @@
+'use client';
 import {
   ArrowRight,
   RefreshCw,
@@ -7,6 +8,7 @@ import {
   Zap,
 } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
@@ -14,77 +16,76 @@ import millingCenter1 from '$/public/milling-center-1.webp';
 import millingCenter2 from '$/public/milling-center-2.webp';
 import turningCenter from '$/public/turning-center.webp';
 
-const machines = [
-  {
-    id: 'milling-02',
-    unitId: 'UNIT_01',
-    icon: Zap,
-    label: 'High-Speed Milling',
-    title: 'Precision CNC Milling — High Speed',
-    description:
-      'CNC milling of aluminum and plastic parts at 24,000 RPM spindle speed — fine surface finish with tight dimensional tolerances.',
-    image: millingCenter2,
-    alt: 'High-speed CNC milling center cutting aluminum parts at 24000 RPM',
-    specs: [
-      { label: 'Target Materials', value: 'Aluminum, Steel & Plastics' },
-      { label: 'Spindle Speed', value: '24,000 RPM' },
-      { label: 'Configuration', value: '3-Axis High-Speed' },
-    ],
-  },
-  {
-    id: 'milling-01',
-    unitId: 'UNIT_02',
-    icon: Settings2,
-    label: 'Primary Milling Unit',
-    title: 'Precision 3-Axis CNC Milling',
-    description:
-      'CNC milling of complex parts, housings, brackets, and custom components for mechanical applications. Suitable for prototypes and small batch production.',
-    image: millingCenter1,
-    alt: 'Precision 3-axis CNC milling machine center for custom metal parts',
-    specs: [
-      { label: 'Working Area', value: '760 × 500 × 500 mm' },
-      { label: 'Tolerances', value: 'up to ±0.01 mm' },
-      { label: 'Configuration', value: '3-Axis' },
-    ],
-  },
-  {
-    id: 'lathe',
-    unitId: 'UNIT_03',
-    icon: RefreshCw,
-    label: 'Turning Department',
-    title: 'High-Accuracy Lathe Turning',
-    description:
-      'Precision turning of cylindrical parts such as shafts, bushings, and mechanical components with high surface quality and tight tolerances.',
-    image: turningCenter,
-    alt: 'Precision CNC lathe turning cylindrical metal shafts and bushings',
-    specs: [
-      { label: 'Max Diameter', value: '250 mm' },
-      { label: 'Max Length', value: '800 mm' },
-      { label: 'Tolerances', value: 'up to ±0.03 mm' },
-    ],
-  },
-];
-
 export function ProductionFacilitySection({
   className,
 }: {
   className?: string;
 }) {
+  const { t } = useTranslation('common');
+
+  const machines = [
+    {
+      id: 'milling-02',
+      unitId: 'UNIT_01',
+      icon: Zap,
+      title: t('facility.unit1.title'),
+      description: t('facility.unit1.description'),
+      image: millingCenter2,
+      alt: t('facility.unit1.alt'),
+      specs: [
+        { label: t('facility.unit1.spec1Label'), value: t('facility.unit1.spec1Value') },
+        { label: t('facility.unit1.spec2Label'), value: t('facility.unit1.spec2Value') },
+        { label: t('facility.unit1.spec3Label'), value: t('facility.unit1.spec3Value') },
+      ],
+    },
+    {
+      id: 'milling-01',
+      unitId: 'UNIT_02',
+      icon: Settings2,
+      title: t('facility.unit2.title'),
+      description: t('facility.unit2.description'),
+      image: millingCenter1,
+      alt: t('facility.unit2.alt'),
+      specs: [
+        { label: t('facility.unit2.spec1Label'), value: t('facility.unit2.spec1Value') },
+        { label: t('facility.unit2.spec2Label'), value: t('facility.unit2.spec2Value') },
+        { label: t('facility.unit2.spec3Label'), value: t('facility.unit2.spec3Value') },
+      ],
+    },
+    {
+      id: 'lathe',
+      unitId: 'UNIT_03',
+      icon: RefreshCw,
+      title: t('facility.unit3.title'),
+      description: t('facility.unit3.description'),
+      image: turningCenter,
+      alt: t('facility.unit3.alt'),
+      specs: [
+        { label: t('facility.unit3.spec1Label'), value: t('facility.unit3.spec1Value') },
+        { label: t('facility.unit3.spec2Label'), value: t('facility.unit3.spec2Value') },
+        { label: t('facility.unit3.spec3Label'), value: t('facility.unit3.spec3Value') },
+      ],
+    },
+  ];
+
+  const qcTools = [
+    t('facility.qcTool1'),
+    t('facility.qcTool2'),
+    t('facility.qcTool3'),
+  ];
+
   return (
     <section id={SECTION_IDS.facility} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            Production Facility
+            {t('facility.eyebrow')}
           </p>
           <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            Production Facility — Precision You Can Rely On
+            {t('facility.heading')}
           </h2>
           <p className='text-base leading-relaxed text-muted-foreground'>
-            Located in Latvia, my workshop is optimized for high-precision
-            custom orders. I combine industry-standard CNC machinery with
-            specialized metrology tools to ensure every micron matches your
-            blueprint.
+            {t('facility.description')}
           </p>
         </div>
 
@@ -147,19 +148,14 @@ export function ProductionFacilitySection({
             <div className='flex items-center gap-2'>
               <ShieldCheck className='h-5 w-5 shrink-0 text-primary' />
               <h3 className='text-xl font-semibold uppercase tracking-tight'>
-                Quality Control & Measurement
+                {t('facility.qcHeading')}
               </h3>
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              Every part is checked using precision measuring tools to ensure it
-              matches your drawing exactly.
+              {t('facility.qcDescription')}
             </p>
             <div className='space-y-1.5'>
-              {[
-                'Digital calipers',
-                'Micrometers',
-                'Surface measurement tools',
-              ].map((tool) => (
+              {qcTools.map((tool) => (
                 <div key={tool} className='flex items-center gap-2'>
                   <span className='h-1.5 w-1.5 shrink-0 bg-primary' />
                   <span className='font-mono text-xs text-muted-foreground'>
@@ -169,8 +165,7 @@ export function ProductionFacilitySection({
               ))}
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              Parts are verified before delivery — no guesswork, only measured
-              results.
+              {t('facility.qcNote')}
             </p>
           </div>
 
@@ -178,13 +173,11 @@ export function ProductionFacilitySection({
             <div className='flex items-center gap-2'>
               <UserCheck className='h-5 w-5 shrink-0 text-primary' />
               <h3 className='text-xl font-semibold uppercase tracking-tight'>
-                Personally Operated & Maintained
+                {t('facility.operatedHeading')}
               </h3>
             </div>
             <p className='text-sm leading-relaxed text-muted-foreground'>
-              All machines are set up, operated, and maintained by me
-              personally. This ensures consistent quality and full control at
-              every stage.
+              {t('facility.operatedDescription')}
             </p>
           </div>
         </div>
@@ -195,7 +188,7 @@ export function ProductionFacilitySection({
               href={`#${SECTION_IDS.contact}`}
               className='flex items-center gap-2'
             >
-              Contact me
+              {t('facility.contact')}
               <ArrowRight className='shrink-0 transition-transform duration-200 group-hover:translate-x-0.5' />
             </a>
           </Button>

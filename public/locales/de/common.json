@@ -16,5 +16,218 @@
     "labelPhone": "Telefon / WhatsApp",
     "hint1": "Senden Sie 3D-Modelle, Zeichnungen, Skizzen — oder stellen Sie Fragen.",
     "hint2": "Direkte Kommunikation mit dem Fachmann."
+  },
+  "services": {
+    "eyebrow": "Leistungen & Materialien",
+    "heading": "CNC-Bearbeitungsservices für individuelle Teile",
+    "description": "Herstellung individueller Teile nach Zeichnungen, CAD-Modellen oder physischen Mustern aus Metallen und technischen Kunststoffen.",
+    "milling": {
+      "title": "Präzise 3-Achs-CNC-Fräsung",
+      "alt": "CNC-Fräsmaschine bearbeitet ein Metallteil",
+      "specWorkingArea": "Arbeitsbereich",
+      "specTolerances": "Toleranzen",
+      "description": "CNC-Fräsung komplexer Teile, Gehäuse, Halterungen und Sonderkomponenten für mechanische Anwendungen. Geeignet für Prototypen und Kleinserienfertigung.",
+      "mat1": "Aluminium",
+      "mat2": "Stahl",
+      "mat3": "Kunststoff"
+    },
+    "turning": {
+      "title": "Hochgenaues Drehen",
+      "alt": "Drehmaschine bearbeitet ein zylindrisches Metallteil",
+      "specMaxDiameter": "Max. Durchmesser",
+      "specMaxLength": "Max. Länge",
+      "specTolerances": "Toleranzen",
+      "description": "Präzisionsdrehen zylindrischer Teile wie Wellen, Buchsen und Maschinenteile mit hoher Oberflächenqualität und engen Toleranzen.",
+      "mat1": "Stahl",
+      "mat2": "Aluminium",
+      "mat3": "Messing"
+    },
+    "reverseEngineering": {
+      "title": "Reverse Engineering & CAD-Modellierung",
+      "alt": "CAD-Modell eines Maschinenteils für Reverse Engineering",
+      "description": "Erstellung präziser CAD-Modelle aus physischen Mustern, defekten Teilen oder Skizzen zur Herstellung voll funktionsfähiger Ersatzteile.",
+      "mat1": "Metallteile",
+      "mat2": "Kunststoffteile"
+    },
+    "materialsHeading": "Unterstützte Materialien",
+    "aluminum": {
+      "name": "Aluminium",
+      "grades": "6061, 7075 & weitere",
+      "note": "Leicht, hohes Festigkeit-Gewichts-Verhältnis"
+    },
+    "steel": {
+      "name": "Stahl & Edelstahl",
+      "grades": "304, 316L & weitere",
+      "note": "Korrosionsbeständig, hohe Haltbarkeit"
+    },
+    "plastics": {
+      "name": "Technische Kunststoffe",
+      "grades": "POM, PTFE, Nylon, ABS & weitere",
+      "note": "Chemikalienbeständigkeit, geringe Reibung"
+    },
+    "materialsNote": "Dies sind die am häufigsten verwendeten Materialien.",
+    "materialsNoteQuestion": "Arbeiten Sie mit etwas anderem?",
+    "materialsNoteCta": "Senden Sie Ihre Anforderungen — ich bestätige die Verfügbarkeit und empfehle die richtige Güte.",
+    "contact": "Kontakt aufnehmen",
+    "isoNote": "Bearbeitung nach ISO · Toleranzen bis 0,01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Arbeitsablauf",
+    "heading": "Von der Idee bis zur Lieferung",
+    "description": "Ein klarer, wiederholbarer Prozess — von Ihrer ersten Datei bis zum fertigen Teil an Ihrer Tür.",
+    "step": "Schritt",
+    "step1": {
+      "title": "Technische Beratung & Analyse",
+      "description": "Senden Sie Ihre Dateien oder Skizze. Ich prüfe das Design und bestätige, dass das Teil effizient und nach Spezifikation gefertigt werden kann.",
+      "kw1": "CAD-Dateien",
+      "kw2": "technische Prüfung"
+    },
+    "step2": {
+      "title": "Konstruktion & Modellierung",
+      "description": "Keine Zeichnung? Ich erstelle ein präzises 3D-Modell aus Ihrem Muster oder Ihrer Skizze und wähle dann den optimalen Werkzeugweg und die beste Strategie.",
+      "kw1": "3D-Modellierung",
+      "kw2": "individuelle Konstruktion",
+      "kw3": "Bearbeitungsstrategie"
+    },
+    "step3": {
+      "title": "Präzisionsfertigung",
+      "description": "Bearbeitung in meinem lettischen Betrieb auf 3-Achs-CNC-Zentren. {{years}}+ Jahre Erfahrung — ich überwache persönlich jedes Programm, um Toleranzen bis ±0,01 mm einzuhalten.",
+      "kw1": "CNC-Fräsung",
+      "kw2": "0,01 mm Toleranzen",
+      "kw3": "Präzisionsfertigung"
+    },
+    "step4": {
+      "title": "Nachbearbeitung & Qualitätskontrolle",
+      "description": "Entgraten oder Gravieren nach Bedarf. Jedes Teil wird vor dem Versand gemessen und anhand Ihrer Zeichnung geprüft.",
+      "kw1": "Qualitätskontrolle",
+      "kw2": "industrielle Nachbearbeitung",
+      "kw3": "Oberflächenbehandlung"
+    },
+    "step5": {
+      "title": "Sichere Lieferung",
+      "description": "Teile werden transportschadensicher verpackt und lokal oder international versandt — bei Ankunft einsatzbereit.",
+      "kw1": "weltweiter Versand",
+      "kw2": "sichere Verpackung"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Häufig gestellte Fragen",
+    "description": "Häufige Fragen zur Bestellung individueller CNC-Teile, Materialien und Lieferung.",
+    "q1": "Was kann ich bei Ihnen bestellen?",
+    "a1": "Sie können individuelle CNC-gefertigte Teile nach Ihrer Zeichnung, Ihrem 3D-Modell oder Muster bestellen. Ich fertige Einzelprototypen sowie Klein- und Mittelserien für verschiedene Branchen.",
+    "q2": "Können Sie ein Teil nach einem Muster oder einer Skizze fertigen?",
+    "a2": "Ja. Ich kann Teile nach einem physischen Muster, einem defekten Bauteil oder sogar einer handgezeichneten Skizze fertigen. Vor der Produktion erstelle ich ein präzises 3D-Modell.",
+    "q3": "Was, wenn ich Material oder technische Details nicht kenne?",
+    "a3": "Wenn Sie sich beim Material oder den technischen Details nicht sicher sind — kein Problem. Senden Sie einfach, was Sie haben, und ich helfe Ihnen, die beste Lösung zu finden.",
+    "q4": "Was ist die Mindestbestellmenge?",
+    "a4": "Es gibt keine Mindestbestellmenge. Sie können einen einzelnen Prototyp oder eine Kleinserie bestellen — ich arbeite mit Privat- und Geschäftskunden.",
+    "q5": "Mit welchen Materialien arbeiten Sie?",
+    "a5": "Ich arbeite hauptsächlich mit Aluminium, Stahl und Kunststoff. Auf Anfrage kann ich auch andere Materialien bearbeiten — senden Sie Ihre Projektdetails, ich bestätige die Verfügbarkeit.",
+    "q6": "Wie schnell können Sie mein Teil fertigen?",
+    "a6": "Die Produktionszeit hängt von der aktuellen Auslastung, Teileomplexität und Bestellmenge ab. Für genaue Termine kontaktieren Sie mich bitte direkt.",
+    "q7": "Wie erhalte ich ein Angebot?",
+    "a7": "Senden Sie einfach Ihre Zeichnung, 3D-Datei oder ein Foto des Teils. Ich prüfe es und gebe Ihnen Preis und Produktionsdetails. Der Preis ist je nach Bestellmenge und Komplexität verhandelbar. Sie erreichen mich per E-Mail unter {{email}} oder via WhatsApp/Telefon: {{phone}}.",
+    "q8": "Arbeiten Sie mit Kunden außerhalb Lettlands?",
+    "a8": "Ja, ich arbeite mit Kunden in ganz Europa und weltweit. Ich kümmere mich um sichere Verpackung und Versand für alle Bestellungen."
+  },
+  "cta": {
+    "heading": "Bereit, Ihr individuelles Projekt zu starten?",
+    "description": "Erhalten Sie eine technische Beratung direkt vom leitenden Ingenieur. Ich prüfe persönlich jede Zeichnung auf 100 % Fertigbarkeit und Präzision. Keine Zwischenhändler, keine Verzögerungen — nur professionelle CNC-Lösungen.",
+    "callLabel": "Anrufen",
+    "emailLabel": "E-Mail",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Lernen Sie Ihren CNC-Ingenieur & Gründer kennen",
+    "title": "Senior CNC-Ingenieur & Gründer von {{appName}}",
+    "bio1": "Mit über {{years}} Jahren Erfahrung in der hochpräzisen CNC-Fräsung und Drehbearbeitung biete ich professionelle CNC-Bearbeitungsservices in Lettland für Kunden weltweit. Ich spezialisiere mich auf die Herstellung mechanischer Teile nach CAD-Modellen, technischen Zeichnungen, Skizzen und physischen Mustern.",
+    "bio2": "Mein Schwerpunkt liegt auf 3-Achs-CNC-Bearbeitung, Präzisionsdrehen und Reverse Engineering — für Prototypen, Einzelteile und Kleinserien. Ich liefere fertig bearbeitete Komponenten mit engen Toleranzen bis 0,01 mm für industrielle und technische Anwendungen.",
+    "bio3": "Von Lettland aus betreue ich internationale Kunden mit zuverlässiger Fertigung, schneller Kommunikation und ingenieurtechnischer Genauigkeit vom Konzept bis zum fertigen Teil. Jeder Auftrag wird persönlich bearbeitet, um gleichbleibende Qualität zu gewährleisten.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Jahre",
+    "stat1Label": "Berufserfahrung in CNC-Bearbeitung & Fertigung",
+    "stat1Sub": "Bewährte Expertise in Fräsung, Drehen und Reverse Engineering",
+    "stat2Value": "Lettland",
+    "stat2Unit": "/ Weltweit",
+    "stat2Label": "Fertigung & internationale Lieferung",
+    "stat2Sub": "Schnelle Kommunikation mit globalen Kunden",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Präzisionstoleranz für kritische Teile",
+    "stat3Sub": "Hochgenaue Bearbeitung für Prototypen und Funktionsbauteile",
+    "stat4Value": "Individual",
+    "stat4Unit": "Aufträge",
+    "stat4Label": "Nach CAD, Zeichnungen, Skizzen oder physischen Mustern",
+    "stat4Sub": "Einzelteile & Kleinserienfertigung möglich",
+    "expertiseHeading": "Technische Expertise",
+    "skill1": "CAD/CAM-Modellierung",
+    "skill2": "3-Achs-CNC-Fräsung",
+    "skill3": "Drehbearbeitung",
+    "skill4": "Prototypenfertigung",
+    "skill5": "Technische Zeichnungsanalyse",
+    "skill6": "Reverse Engineering",
+    "orderHeading": "So bestellen Sie",
+    "orderText": "Senden Sie Ihre CAD-Datei, Zeichnung oder Muster — ich prüfe es und erstelle ein Produktionsangebot.",
+    "statusLabel": "Status",
+    "statusValue": "Bereit für die Produktion",
+    "imgAlt": "Viktor — Senior CNC-Ingenieur & Gründer von Viktor CNC, in einer professionellen Werkstatt"
+  },
+  "facility": {
+    "eyebrow": "Produktionsstätte",
+    "heading": "Produktionsstätte — Präzision, auf die Sie sich verlassen können",
+    "description": "Meine Werkstatt in Lettland ist für hochpräzise Sonderaufträge optimiert. Ich kombiniere CNC-Maschinen in Industriequalität mit spezialisierten Messtechnikwerkzeugen — jeder Mikron entspricht Ihrem Blueprint.",
+    "unit1": {
+      "label": "Hochgeschwindigkeitsfräsung",
+      "title": "Präzise CNC-Fräsung — Hochgeschwindigkeit",
+      "description": "CNC-Fräsung von Aluminium- und Kunststoffteilen bei 24.000 U/min Spindeldrehzahl — feine Oberfläche bei engen Maßtoleranzen.",
+      "alt": "Hochgeschwindigkeits-CNC-Fräszentrum bearbeitet Aluminiumteile bei 24000 U/min",
+      "spec1Label": "Zielmaterialien",
+      "spec1Value": "Aluminium, Stahl & Kunststoff",
+      "spec2Label": "Spindeldrehzahl",
+      "spec2Value": "24.000 U/min",
+      "spec3Label": "Konfiguration",
+      "spec3Value": "3-Achs Hochgeschwindigkeit"
+    },
+    "unit2": {
+      "label": "Primäres Fräszentrum",
+      "title": "Präzise 3-Achs-CNC-Fräsung",
+      "description": "CNC-Fräsung komplexer Teile, Gehäuse, Halterungen und Sonderkomponenten. Geeignet für Prototypen und Kleinserienfertigung.",
+      "alt": "Präzises 3-Achs-CNC-Fräszentrum für individuelle Metallteile",
+      "spec1Label": "Arbeitsbereich",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Toleranzen",
+      "spec2Value": "bis ±0,01 mm",
+      "spec3Label": "Konfiguration",
+      "spec3Value": "3-Achs"
+    },
+    "unit3": {
+      "label": "Drehabteilung",
+      "title": "Hochgenaues Drehen",
+      "description": "Präzisionsdrehen zylindrischer Teile wie Wellen, Buchsen und Maschinenteile mit hoher Oberflächenqualität.",
+      "alt": "Präzisions-CNC-Drehmaschine bearbeitet zylindrische Metallwellen und Buchsen",
+      "spec1Label": "Max. Durchmesser",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max. Länge",
+      "spec2Value": "800 mm",
+      "spec3Label": "Toleranzen",
+      "spec3Value": "bis ±0,03 mm"
+    },
+    "qcHeading": "Qualitätskontrolle & Messtechnik",
+    "qcDescription": "Jedes Teil wird mit Präzisionsmesswerkzeugen geprüft, um die genaue Übereinstimmung mit Ihrer Zeichnung sicherzustellen.",
+    "qcTool1": "Digitale Messschieber",
+    "qcTool2": "Mikrometer",
+    "qcTool3": "Oberflächenmesswerkzeuge",
+    "qcNote": "Teile werden vor der Lieferung geprüft — nur gemessene Ergebnisse, kein Rätselraten.",
+    "operatedHeading": "Persönlich betrieben & gewartet",
+    "operatedDescription": "Alle Maschinen werden von mir persönlich eingerichtet, betrieben und gewartet. Dies gewährleistet gleichbleibende Qualität und vollständige Kontrolle in jeder Phase.",
+    "contact": "Kontakt aufnehmen"
+  },
+  "gallery": {
+    "eyebrow": "Arbeitsgalerie",
+    "heading": "Individuelle CNC-Teile — Beispiele",
+    "allMaterials": "Alle Materialien",
+    "showMore": "Mehr anzeigen ({{count}})",
+    "multiPart": "Mehrteilig",
+    "dialogTitle": "CNC-Teil — {{material}}"
   }
 }

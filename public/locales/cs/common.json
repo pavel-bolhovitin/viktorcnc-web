@@ -16,5 +16,218 @@
     "labelPhone": "Telefon / WhatsApp",
     "hint1": "Pošlete 3D modely, výkresy, náčrty — nebo se zeptejte.",
     "hint2": "Přímá komunikace s obráběčem."
+  },
+  "services": {
+    "eyebrow": "Služby a materiály",
+    "heading": "Služby CNC obrábění pro díly na míru",
+    "description": "Výroba dílů na míru podle výkresů, CAD modelů nebo fyzických vzorků z kovů a technických plastů.",
+    "milling": {
+      "title": "Přesné 3osé CNC frézování",
+      "alt": "CNC frézka obrábí kovový díl",
+      "specWorkingArea": "Pracovní oblast",
+      "specTolerances": "Tolerance",
+      "description": "CNC frézování složitých dílů, krytů, konzol a komponent na míru pro mechanické aplikace. Vhodné pro prototypy a malosériovou výrobu.",
+      "mat1": "Hliník",
+      "mat2": "Ocel",
+      "mat3": "Plasty"
+    },
+    "turning": {
+      "title": "Vysokopřesné soustružení",
+      "alt": "Soustruh obrábí válcový kovový díl",
+      "specMaxDiameter": "Max. průměr",
+      "specMaxLength": "Max. délka",
+      "specTolerances": "Tolerance",
+      "description": "Přesné soustružení válcových dílů jako hřídele, pouzdra a mechanické součástky s vysokou kvalitou povrchu a úzkými tolerancemi.",
+      "mat1": "Ocel",
+      "mat2": "Hliník",
+      "mat3": "Mosaz"
+    },
+    "reverseEngineering": {
+      "title": "Reverzní inženýrství a CAD modelování",
+      "alt": "CAD model mechanického dílu pro reverzní inženýrství",
+      "description": "Tvorba přesných CAD modelů z fyzických vzorků, poškozených dílů nebo náčrtů pro výrobu plně funkčních náhrad.",
+      "mat1": "Kovové díly",
+      "mat2": "Plastové díly"
+    },
+    "materialsHeading": "Podporované materiály",
+    "aluminum": {
+      "name": "Hliník",
+      "grades": "6061, 7075 a další",
+      "note": "Lehký, vysoký poměr pevnosti k hmotnosti"
+    },
+    "steel": {
+      "name": "Ocel a nerezová ocel",
+      "grades": "304, 316L a další",
+      "note": "Odolnost proti korozi, vysoká trvanlivost"
+    },
+    "plastics": {
+      "name": "Technické plasty",
+      "grades": "POM, PTFE, Nylon, ABS a další",
+      "note": "Chemická odolnost, nízké tření"
+    },
+    "materialsNote": "Toto jsou nejčastěji používané materiály.",
+    "materialsNoteQuestion": "Pracujete s něčím jiným?",
+    "materialsNoteCta": "Pošlete své požadavky — potvrdím dostupnost a doporučím správnou kvalitu.",
+    "contact": "Kontaktovat mě",
+    "isoNote": "Obrábění podle ISO · Tolerance až 0,01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Pracovní postup",
+    "heading": "Od nápadu k dodávce",
+    "description": "Jasný, opakovatelný proces — od vašeho prvního souboru až po hotový díl u vašich dveří.",
+    "step": "Krok",
+    "step1": {
+      "title": "Technická konzultace a analýza",
+      "description": "Pošlete soubory nebo náčrt. Zkontroluju návrh a potvrdím, že díl může být vyroben efektivně a podle specifikace.",
+      "kw1": "CAD soubory",
+      "kw2": "technická kontrola"
+    },
+    "step2": {
+      "title": "Inženýrství a modelování",
+      "description": "Žádný výkres? Vytvořím přesný 3D model z vašeho vzorku nebo náčrtu a pak zvolím optimální dráhu nástroje a strategii.",
+      "kw1": "3D modelování",
+      "kw2": "inženýrství na míru",
+      "kw3": "strategie obrábění"
+    },
+    "step3": {
+      "title": "Přesná výroba",
+      "description": "Obráběno v mém lotyšském závodě na 3osých CNC centrech. {{years}}+ let zkušeností — osobně dohlížím na každý program, aby tolerance byly do ±0,01 mm.",
+      "kw1": "CNC frézování",
+      "kw2": "tolerance 0,01 mm",
+      "kw3": "přesná výroba"
+    },
+    "step4": {
+      "title": "Dokončovací práce a kontrola kvality",
+      "description": "Odjehlování nebo gravírování dle potřeby. Každý díl je změřen a ověřen oproti vašemu výkresu před odesláním.",
+      "kw1": "kontrola kvality",
+      "kw2": "průmyslové dokončení",
+      "kw3": "povrchová úprava"
+    },
+    "step5": {
+      "title": "Bezpečné doručení",
+      "description": "Díly jsou zabaleny pro ochranu při přepravě a zasílány lokálně nebo mezinárodně — po příjezdu připraveny k použití.",
+      "kw1": "celosvětové doručení",
+      "kw2": "bezpečné balení"
+    }
+  },
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "heading": "Nejčastěji kladené otázky",
+    "description": "Běžné otázky ohledně objednávání CNC dílů na míru, materiálů a doručení.",
+    "q1": "Co si mohu objednat?",
+    "a1": "Můžete si objednat CNC obráběné díly na míru podle vašeho výkresu, 3D modelu nebo vzorku. Vyrábím jednorázové prototypy i malé a střední výrobní série pro různá odvětví.",
+    "q2": "Můžete vyrobit díl podle vzorku nebo náčrtu?",
+    "a2": "Ano. Mohu vyrábět díly z fyzického vzorku, poškozeného komponentu nebo i ručně nakresleného náčrtu. Před výrobou vytvořím přesný 3D model.",
+    "q3": "Co když neznám materiál nebo technické detaily?",
+    "a3": "Pokud si nejste jisti materiálem nebo technickými detaily — žádný problém. Pošlete prostě to, co máte, a pomohu vám najít nejlepší řešení.",
+    "q4": "Jaká je minimální objednávka?",
+    "a4": "Minimální objednávka neexistuje. Můžete objednat jeden prototyp nebo malou sérii — pracuji s jednotlivci i firmami.",
+    "q5": "S jakými materiály pracujete?",
+    "a5": "Pracuji hlavně s hliníkem, ocelí a plasty. Na vyžádání mohu obrábět i jiné materiály — pošlete detaily projektu, potvrdím dostupnost.",
+    "q6": "Jak rychle můžete vyrobit můj díl?",
+    "a6": "Výrobní čas závisí na aktuální pracovní zátěži, složitosti dílu a objemu objednávky. Pro přesné termíny mě kontaktujte přímo.",
+    "q7": "Jak získám nabídku?",
+    "a7": "Jednoduše pošlete svůj výkres, 3D soubor nebo i fotku dílu. Prohlédnu to a sdělím ceny a výrobní detaily. Cena je vyjednatelná podle objemu a složitosti. Můžete mě kontaktovat e-mailem na {{email}} nebo přes WhatsApp/telefon: {{phone}}.",
+    "q8": "Pracujete s klienty mimo Lotyšsko?",
+    "a8": "Ano, pracuji s klienty v celé Evropě a po celém světě. Zajišťuji bezpečné balení a doručení pro všechny objednávky."
+  },
+  "cta": {
+    "heading": "Připraveni zahájit svůj projekt na míru?",
+    "description": "Získejte technickou konzultaci přímo od vedoucího inženýra. Osobně prohledám každý výkres, abych zajistil 100% vyrobitelnost a přesnost. Žádní manažeři, žádná prodlení — jen profesionální CNC řešení.",
+    "callLabel": "Zavolat",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Seznamte se s vaším CNC inženýrem a zakladatelem",
+    "title": "Senior CNC inženýr a zakladatel {{appName}}",
+    "bio1": "S více než {{years}} lety zkušeností s vysokopřesným CNC frézováním a soustružením poskytuji profesionální CNC obráběcí služby v Lotyšsku pro klienty po celém světě. Specializuji se na výrobu mechanických dílů z CAD modelů, technických výkresů, náčrtů a fyzických vzorků.",
+    "bio2": "Moje práce se zaměřuje na 3osé CNC obrábění, přesné soustružení a reverzní inženýrství — pro prototypy, kusové díly a malosériovou výrobu. Dodávám plně dokončené součástky s úzkými tolerancemi až 0,01 mm pro průmyslové a technické aplikace.",
+    "bio3": "Ze základny v Lotyšsku podporuji mezinárodní klienty spolehlivou výrobou, rychlou komunikací a inženýrskou přesností od konceptu k hotovému dílu. Každá objednávka je zpracována osobně pro zajištění konzistentní kvality.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Let",
+    "stat1Label": "Zkušenosti s CNC obráběním a výrobou",
+    "stat1Sub": "Prokázaná expertíza v frézování, soustružení a reverzním inženýrství",
+    "stat2Value": "Lotyšsko",
+    "stat2Unit": "/ Celý svět",
+    "stat2Label": "Výroba a mezinárodní dodávka",
+    "stat2Sub": "Rychlá komunikace s globálními klienty",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Standard přesnosti tolerance pro kritické díly",
+    "stat3Sub": "Vysokopřesné obrábění pro prototypy a funkční součástky",
+    "stat4Value": "Na míru",
+    "stat4Unit": "Zakázky",
+    "stat4Label": "Z CAD, výkresů, náčrtů nebo fyzických vzorků",
+    "stat4Sub": "Kusové díly a malosériová výroba k dispozici",
+    "expertiseHeading": "Technická odbornost",
+    "skill1": "CAD/CAM modelování",
+    "skill2": "3osé CNC frézování",
+    "skill3": "Soustružení",
+    "skill4": "Výroba prototypů",
+    "skill5": "Analýza technických výkresů",
+    "skill6": "Reverzní inženýrství",
+    "orderHeading": "Jak objednat",
+    "orderText": "Pošlete CAD soubor, výkres nebo vzorek — prohlédnu to a poskytnu výrobní nabídku.",
+    "statusLabel": "Stav",
+    "statusValue": "Připraven k výrobě",
+    "imgAlt": "Viktor — senior CNC inženýr a zakladatel Viktor CNC v profesionálním dílenském prostředí"
+  },
+  "facility": {
+    "eyebrow": "Výrobní zařízení",
+    "heading": "Výrobní zařízení — přesnost, na kterou se můžete spolehnout",
+    "description": "Moje dílna v Lotyšsku je optimalizována pro vysokopřesné zakázkové výroby. Kombinuji CNC stroje průmyslové kvality se specializovanými metrologickými nástroji — každý mikron odpovídá vašemu výkresu.",
+    "unit1": {
+      "label": "Vysokorychlostní frézování",
+      "title": "Přesné CNC frézování — vysoká rychlost",
+      "description": "CNC frézování hliníkových a plastových dílů při 24 000 ot./min vřetena — jemný povrch s úzkými rozměrovými tolerancemi.",
+      "alt": "Vysokorychlostní CNC frézovací centrum obrábí hliníkové díly při 24000 ot./min",
+      "spec1Label": "Cílové materiály",
+      "spec1Value": "Hliník, ocel a plasty",
+      "spec2Label": "Otáčky vřetena",
+      "spec2Value": "24 000 ot./min",
+      "spec3Label": "Konfigurace",
+      "spec3Value": "3osé vysokorychlostní"
+    },
+    "unit2": {
+      "label": "Primární frézovací centrum",
+      "title": "Přesné 3osé CNC frézování",
+      "description": "CNC frézování složitých dílů, krytů, konzol a komponent na míru. Vhodné pro prototypy a malosériovou výrobu.",
+      "alt": "Přesné 3osé CNC frézovací centrum pro kovové díly na míru",
+      "spec1Label": "Pracovní oblast",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerance",
+      "spec2Value": "do ±0,01 mm",
+      "spec3Label": "Konfigurace",
+      "spec3Value": "3osé"
+    },
+    "unit3": {
+      "label": "Soustružnické oddělení",
+      "title": "Vysokopřesné soustružení",
+      "description": "Přesné soustružení válcových dílů: hřídele, pouzdra a mechanické součástky s vysokou kvalitou povrchu.",
+      "alt": "Přesný CNC soustruh soustruží válcové kovové hřídele a pouzdra",
+      "spec1Label": "Max. průměr",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max. délka",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerance",
+      "spec3Value": "do ±0,03 mm"
+    },
+    "qcHeading": "Kontrola kvality a měření",
+    "qcDescription": "Každý díl je kontrolován přesnými měřicími nástroji, aby byla zajištěna přesná shoda s vaším výkresem.",
+    "qcTool1": "Digitální posuvná měřítka",
+    "qcTool2": "Mikrometry",
+    "qcTool3": "Nástroje pro měření povrchu",
+    "qcNote": "Díly jsou ověřeny před doručením — jen naměřené výsledky, žádné dohady.",
+    "operatedHeading": "Osobně provozováno a udržováno",
+    "operatedDescription": "Všechny stroje jsou nastavovány, provozovány a udržovány mnou osobně. To zajišťuje konzistentní kvalitu a plnou kontrolu v každé fázi.",
+    "contact": "Kontaktovat mě"
+  },
+  "gallery": {
+    "eyebrow": "Galerie prací",
+    "heading": "Díly na míru — příklady",
+    "allMaterials": "Všechny materiály",
+    "showMore": "Zobrazit více ({{count}})",
+    "multiPart": "Vícedílné",
+    "dialogTitle": "CNC díl — {{material}}"
   }
 }

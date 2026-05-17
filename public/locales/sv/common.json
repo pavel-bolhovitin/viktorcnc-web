@@ -16,5 +16,218 @@
     "labelPhone": "Telefon / WhatsApp",
     "hint1": "Skicka 3D-modeller, ritningar, skisser — eller ställ frågor.",
     "hint2": "Direkt kommunikation med maskinisten."
+  },
+  "services": {
+    "eyebrow": "Tjänster och material",
+    "heading": "CNC-bearbetningstjänster för anpassade delar",
+    "description": "Tillverkning av anpassade delar från ritningar, CAD-modeller eller fysiska prover av metaller och tekniska plaster.",
+    "milling": {
+      "title": "Precis 3-axlig CNC-fräsning",
+      "alt": "CNC-fräsmaskin bearbetar en metaldel",
+      "specWorkingArea": "Arbetsområde",
+      "specTolerances": "Toleranser",
+      "description": "CNC-fräsning av komplexa delar, höljen, konsoler och anpassade komponenter för mekaniska tillämpningar. Lämplig för prototyper och småserieproduktion.",
+      "mat1": "Aluminium",
+      "mat2": "Stål",
+      "mat3": "Plast"
+    },
+    "turning": {
+      "title": "Högprecisions svarvning",
+      "alt": "Svarv bearbetar en cylindrisk metaldel",
+      "specMaxDiameter": "Max diameter",
+      "specMaxLength": "Max längd",
+      "specTolerances": "Toleranser",
+      "description": "Precisionsvarvning av cylindriska delar som axlar, bussningar och mekaniska komponenter med hög ytkvalitet och snäva toleranser.",
+      "mat1": "Stål",
+      "mat2": "Aluminium",
+      "mat3": "Mässing"
+    },
+    "reverseEngineering": {
+      "title": "Omvänd konstruktion och CAD-modellering",
+      "alt": "CAD-modell av en mekanisk del för omvänd konstruktion",
+      "description": "Skapande av noggranna CAD-modeller från fysiska prover, trasiga delar eller skisser för att tillverka fullt fungerande ersättningar.",
+      "mat1": "Metaldelar",
+      "mat2": "Plastdelar"
+    },
+    "materialsHeading": "Stödda material",
+    "aluminum": {
+      "name": "Aluminium",
+      "grades": "6061, 7075 och andra",
+      "note": "Lätt, högt styrka-till-vikt-förhållande"
+    },
+    "steel": {
+      "name": "Stål och rostfritt stål",
+      "grades": "304, 316L och andra",
+      "note": "Korrosionsbeständig, hög hållbarhet"
+    },
+    "plastics": {
+      "name": "Tekniska plaster",
+      "grades": "POM, PTFE, Nylon, ABS och andra",
+      "note": "Kemisk beständighet, låg friktion"
+    },
+    "materialsNote": "Detta är de vanligast använda materialen.",
+    "materialsNoteQuestion": "Arbetar du med något annat?",
+    "materialsNoteCta": "Skicka dina krav — jag bekräftar tillgängligheten och rekommenderar rätt kvalitet.",
+    "contact": "Kontakta mig",
+    "isoNote": "Bearbetning enligt ISO · Toleranser upp till 0,01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Arbetsflöde",
+    "heading": "Från idé till leverans",
+    "description": "En tydlig, upprepningsbar process — från din första fil till den färdiga delen vid din dörr.",
+    "step": "Steg",
+    "step1": {
+      "title": "Teknisk konsultation och analys",
+      "description": "Skicka dina filer eller skiss. Jag granskar designen för att bekräfta att delen kan produceras effektivt och enligt specifikation.",
+      "kw1": "CAD-filer",
+      "kw2": "teknisk granskning"
+    },
+    "step2": {
+      "title": "Konstruktion och modellering",
+      "description": "Ingen ritning? Jag bygger en exakt 3D-modell från ditt prov eller din skiss och väljer sedan optimal verktygsväg och strategi.",
+      "kw1": "3D-modellering",
+      "kw2": "anpassad konstruktion",
+      "kw3": "bearbetningsstrategi"
+    },
+    "step3": {
+      "title": "Precisionstillverkning",
+      "description": "Bearbetad i mitt lettiska anläggning på 3-axliga CNC-center. {{years}}+ års erfarenhet — jag övervakar personligen varje program för att hålla toleranser upp till ±0,01 mm.",
+      "kw1": "CNC-fräsning",
+      "kw2": "0,01 mm toleranser",
+      "kw3": "precisionstillverkning"
+    },
+    "step4": {
+      "title": "Ytbehandling och kvalitetskontroll",
+      "description": "Avgratning eller gravering efter behov. Varje del mäts och verifieras mot din ritning innan leverans.",
+      "kw1": "kvalitetskontroll",
+      "kw2": "industriell ytbehandling",
+      "kw3": "ytbearbetning"
+    },
+    "step5": {
+      "title": "Säker leverans",
+      "description": "Delar förpackas för att förhindra transportskador och skickas lokalt eller internationellt — redo att användas vid ankomst.",
+      "kw1": "världsomspännande frakt",
+      "kw2": "säker förpackning"
+    }
+  },
+  "faq": {
+    "eyebrow": "Vanliga frågor",
+    "heading": "Vanliga frågor",
+    "description": "Vanliga frågor om beställning av anpassade CNC-delar, material och leverans.",
+    "q1": "Vad kan jag beställa från dig?",
+    "a1": "Du kan beställa anpassade CNC-bearbetade delar baserat på din ritning, 3D-modell eller prov. Jag tillverkar engångsprototyper samt små och medelstora produktionsserier för olika branscher.",
+    "q2": "Kan du tillverka en del från ett prov eller en skiss?",
+    "a2": "Ja. Jag kan tillverka delar från ett fysiskt prov, en trasig komponent eller till och med en handritad skiss. Jag skapar en exakt 3D-modell innan produktion.",
+    "q3": "Vad om jag inte känner till material eller tekniska detaljer?",
+    "a3": "Om du inte är säker på material eller tekniska detaljer — inget problem. Skicka bara det du har och jag hjälper dig hitta bästa lösningen.",
+    "q4": "Vad är minimibeställningen?",
+    "a4": "Det finns ingen minimibeställning. Du kan beställa en enda prototyp eller en liten serie — jag arbetar med både privatpersoner och företag.",
+    "q5": "Vilka material kan du använda?",
+    "a5": "Jag arbetar huvudsakligen med aluminium, stål och plast. På begäran kan jag bearbeta andra material — skicka dina projektdetaljer så bekräftar jag tillgängligheten.",
+    "q6": "Hur snabbt kan du tillverka min del?",
+    "a6": "Produktionstiden beror på aktuell arbetsbelastning, delkomplexitet och ordervolym. För exakta tidsramar, kontakta mig direkt.",
+    "q7": "Hur får jag en offert?",
+    "a7": "Skicka bara din ritning, 3D-fil eller till och med ett foto av delen. Jag granskar det och ger priser och produktionsdetaljer. Priset är förhandlingsbart beroende på volym och komplexitet. Du kan nå mig via e-post på {{email}} eller via WhatsApp/telefon: {{phone}}.",
+    "q8": "Arbetar du med kunder utanför Lettland?",
+    "a8": "Ja, jag arbetar med kunder i hela Europa och världen. Jag hanterar säker förpackning och frakt för alla beställningar."
+  },
+  "cta": {
+    "heading": "Redo att starta ditt anpassade projekt?",
+    "description": "Få en teknisk konsultation direkt från huvudingenjören. Jag granskar personligen varje ritning för att säkerställa 100% tillverkningsbarhet och precision. Inga mellanhänder, inga förseningar — bara professionella CNC-lösningar.",
+    "callLabel": "Ring",
+    "emailLabel": "E-post",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Möt din CNC-ingenjör och grundare",
+    "title": "Senior CNC-ingenjör och grundare av {{appName}}",
+    "bio1": "Med över {{years}} års erfarenhet av högprecisions CNC-fräsning och svarvning erbjuder jag professionella CNC-bearbetningstjänster i Lettland för kunder världen över. Jag specialiserar mig på tillverkning av mekaniska delar från CAD-modeller, tekniska ritningar, skisser och fysiska prover.",
+    "bio2": "Mitt arbete fokuserar på 3-axlig CNC-bearbetning, precisionsvarvning och omvänd konstruktion — för prototyper, enstycksdelar och småserieproduktion. Jag levererar färdigbearbetade komponenter med snäva toleranser upp till 0,01 mm för industriella och tekniska tillämpningar.",
+    "bio3": "Baserad i Lettland stödjer jag internationella kunder med tillförlitlig produktion, snabb kommunikation och ingenjörsmässig noggrannhet från koncept till färdig del. Varje order hanteras personligen för att säkerställa konsekvent kvalitet.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "År",
+    "stat1Label": "Yrkeserfarenhet inom CNC-bearbetning och tillverkning",
+    "stat1Sub": "Bevisad expertis inom fräsning, svarvning och omvänd konstruktion",
+    "stat2Value": "Lettland",
+    "stat2Unit": "/ Världen",
+    "stat2Label": "Tillverkning och internationell leverans",
+    "stat2Sub": "Snabb kommunikation med globala kunder",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Precisionstoleransstandard för kritiska delar",
+    "stat3Sub": "Högprecisionsbearbetning för prototyper och funktionella komponenter",
+    "stat4Value": "Anpassade",
+    "stat4Unit": "Beställningar",
+    "stat4Label": "Från CAD, ritningar, skisser eller fysiska prover",
+    "stat4Sub": "Enstycksdelar och småserieproduktion tillgänglig",
+    "expertiseHeading": "Teknisk expertis",
+    "skill1": "CAD/CAM-modellering",
+    "skill2": "3-axlig CNC-fräsning",
+    "skill3": "Svarvning",
+    "skill4": "Prototyptillverkning",
+    "skill5": "Analys av tekniska ritningar",
+    "skill6": "Omvänd konstruktion",
+    "orderHeading": "Hur man beställer",
+    "orderText": "Skicka din CAD-fil, ritning eller prov — jag granskar det och ger en produktionsoffert.",
+    "statusLabel": "Status",
+    "statusValue": "Redo för produktion",
+    "imgAlt": "Viktor — senior CNC-ingenjör och grundare av Viktor CNC i en professionell verkstadsmiljö"
+  },
+  "facility": {
+    "eyebrow": "Produktionsanläggning",
+    "heading": "Produktionsanläggning — precision du kan lita på",
+    "description": "Mitt verkstad i Lettland är optimerat för högprecisions anpassade beställningar. Jag kombinerar CNC-maskiner i industriklass med specialiserade metrologiverktyg — varje mikron matchar din ritning.",
+    "unit1": {
+      "label": "Höghastighets fräsning",
+      "title": "Precis CNC-fräsning — hög hastighet",
+      "description": "CNC-fräsning av aluminium- och plastdelar med 24 000 rpm spindelhastighet — fin ytfinish med snäva dimensionstoleranser.",
+      "alt": "Höghastighets CNC-fräscenter bearbetar aluminiumdelar vid 24000 rpm",
+      "spec1Label": "Målmaterial",
+      "spec1Value": "Aluminium, stål och plast",
+      "spec2Label": "Spindelhastighet",
+      "spec2Value": "24 000 rpm",
+      "spec3Label": "Konfiguration",
+      "spec3Value": "3-axlig höghastighet"
+    },
+    "unit2": {
+      "label": "Primärt fräscenter",
+      "title": "Precis 3-axlig CNC-fräsning",
+      "description": "CNC-fräsning av komplexa delar, höljen, konsoler och anpassade komponenter. Lämplig för prototyper och småserieproduktion.",
+      "alt": "Precis 3-axlig CNC-fräscenter för anpassade metaldelar",
+      "spec1Label": "Arbetsområde",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Toleranser",
+      "spec2Value": "upp till ±0,01 mm",
+      "spec3Label": "Konfiguration",
+      "spec3Value": "3-axlig"
+    },
+    "unit3": {
+      "label": "Svarvaravdelning",
+      "title": "Högprecisions svarvning",
+      "description": "Precisionsvarvning av cylindriska delar: axlar, bussningar och mekaniska komponenter med hög ytkvalitet.",
+      "alt": "Precisions CNC-svarv bearbetar cylindriska metalaxlar och bussningar",
+      "spec1Label": "Max diameter",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max längd",
+      "spec2Value": "800 mm",
+      "spec3Label": "Toleranser",
+      "spec3Value": "upp till ±0,03 mm"
+    },
+    "qcHeading": "Kvalitetskontroll och mätning",
+    "qcDescription": "Varje del kontrolleras med precisionsmätverktyg för att säkerställa exakt överensstämmelse med din ritning.",
+    "qcTool1": "Digitala skjutmått",
+    "qcTool2": "Mikrometer",
+    "qcTool3": "Ytmätningsverktyg",
+    "qcNote": "Delar verifieras före leverans — bara uppmätta resultat, inga gissningar.",
+    "operatedHeading": "Personligen drivet och underhållet",
+    "operatedDescription": "Alla maskiner installeras, drivs och underhålls av mig personligen. Detta säkerställer konsekvent kvalitet och full kontroll i varje steg.",
+    "contact": "Kontakta mig"
+  },
+  "gallery": {
+    "eyebrow": "Arbetsportfölj",
+    "heading": "Anpassade CNC-delar — exempel",
+    "allMaterials": "Alla material",
+    "showMore": "Visa mer ({{count}})",
+    "multiPart": "Flerdelad",
+    "dialogTitle": "CNC-del — {{material}}"
   }
 }

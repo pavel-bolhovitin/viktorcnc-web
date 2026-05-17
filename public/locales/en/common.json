@@ -16,5 +16,218 @@
     "labelPhone": "Phone / WhatsApp",
     "hint1": "Send 3D models, drawings, sketches — or ask any questions.",
     "hint2": "Direct communication with machinist."
+  },
+  "services": {
+    "eyebrow": "Services & Materials",
+    "heading": "CNC Machining Services for Custom Parts",
+    "description": "Manufacturing custom parts from drawings, CAD models, or physical samples using metals and engineering plastics.",
+    "milling": {
+      "title": "Precision 3-Axis CNC Milling",
+      "alt": "CNC milling machine cutting a metal part",
+      "specWorkingArea": "Working Area",
+      "specTolerances": "Tolerances",
+      "description": "CNC milling of complex parts, housings, brackets, and custom components for mechanical applications. Suitable for prototypes and small batch production.",
+      "mat1": "Aluminum",
+      "mat2": "Steel",
+      "mat3": "Plastics"
+    },
+    "turning": {
+      "title": "High-Accuracy Lathe Turning",
+      "alt": "Lathe machine turning a cylindrical metal part",
+      "specMaxDiameter": "Max Diameter",
+      "specMaxLength": "Max Length",
+      "specTolerances": "Tolerances",
+      "description": "Precision turning of cylindrical parts such as shafts, bushings, and mechanical components with high surface quality and tight tolerances.",
+      "mat1": "Steel",
+      "mat2": "Aluminum",
+      "mat3": "Brass"
+    },
+    "reverseEngineering": {
+      "title": "Reverse Engineering & CAD Modeling",
+      "alt": "CAD model of a mechanical part for reverse engineering",
+      "description": "Recreating accurate CAD models from physical samples, broken parts, or sketches to manufacture fully functional replacements.",
+      "mat1": "Metal Parts",
+      "mat2": "Plastic Parts"
+    },
+    "materialsHeading": "Supported Materials",
+    "aluminum": {
+      "name": "Aluminum",
+      "grades": "6061, 7075 & others",
+      "note": "Lightweight, high strength-to-weight ratio"
+    },
+    "steel": {
+      "name": "Steel & Stainless",
+      "grades": "304, 316L & others",
+      "note": "Corrosion resistant, high durability"
+    },
+    "plastics": {
+      "name": "Engineering Plastics",
+      "grades": "POM, PTFE, Nylon, ABS & others",
+      "note": "Chemical resistance, low friction"
+    },
+    "materialsNote": "These are the most commonly used materials.",
+    "materialsNoteQuestion": "Working with something else?",
+    "materialsNoteCta": "Send your requirements — I'll confirm availability and recommend the right grade for your application.",
+    "contact": "Contact me",
+    "isoNote": "Machining according to ISO · Tolerances up to 0.01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Workflow",
+    "heading": "From Idea to Delivery",
+    "description": "A clear, repeatable process — from your first file to the finished part at your door.",
+    "step": "Step",
+    "step1": {
+      "title": "Technical Consultation & Analysis",
+      "description": "Send your files or sketch. I review the design to confirm the part can be produced efficiently and to spec.",
+      "kw1": "CAD files",
+      "kw2": "technical review"
+    },
+    "step2": {
+      "title": "Engineering & Modeling",
+      "description": "No drawing? I build a precise 3D model from your sample or sketch, then select the optimal toolpath and strategy for your material.",
+      "kw1": "3D modeling",
+      "kw2": "custom engineering",
+      "kw3": "machining strategy"
+    },
+    "step3": {
+      "title": "Precision Manufacturing",
+      "description": "Machined in my Latvia facility on 3-axis CNC centers. {{years}}+ years of experience — I personally oversee every program to hold tolerances up to ±0.01 mm.",
+      "kw1": "CNC milling",
+      "kw2": "0.01 mm tolerances",
+      "kw3": "precision manufacturing"
+    },
+    "step4": {
+      "title": "Finishing & Quality Control",
+      "description": "Deburring or engraving as required. Every part is measured and verified against your drawing before shipping.",
+      "kw1": "quality control",
+      "kw2": "industrial finishing",
+      "kw3": "surface treatment"
+    },
+    "step5": {
+      "title": "Secure Delivery",
+      "description": "Parts are packed to prevent transit damage and shipped locally or internationally — ready to use on arrival.",
+      "kw1": "worldwide shipping",
+      "kw2": "secure packaging"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Frequently Asked Questions",
+    "description": "Common questions about ordering custom CNC parts, materials, and delivery.",
+    "q1": "What can I order from you?",
+    "a1": "You can order custom CNC machined parts based on your drawing, 3D model, or even a sample. I manufacture one-off prototypes as well as small and medium production batches for various industries.",
+    "q2": "Can you make a part from a sample or sketch?",
+    "a2": "Yes. I can manufacture parts from a physical sample, a broken component, or even a hand-drawn sketch. I'll create a precise 3D model before production.",
+    "q3": "What if I don't know the material or technical details?",
+    "a3": "If you're not sure about the material or technical details — no problem. Just send what you have, and I'll help you find the best solution.",
+    "q4": "What is the minimum order?",
+    "a4": "There is no minimum order. You can order a single prototype or a small batch — I work with both individual and business clients.",
+    "q5": "Which materials can you use?",
+    "a5": "I mainly work with aluminum, steel, and plastics, which cover most custom part orders. I can also machine other materials on request — just send your project details, and I'll confirm the best option.",
+    "q6": "How fast can you make my part?",
+    "a6": "Production time depends on current workload, part complexity, and order volume. For accurate timelines, please contact me directly with your project details.",
+    "q7": "How do I get a quote?",
+    "a7": "To get a quote, simply send your drawing, 3D file, or even a photo of the part. I'll review it and provide pricing and production details. Pricing is negotiable depending on order volume and complexity. You can reach me by email at {{email}} or via WhatsApp/Phone at {{phone}}.",
+    "q8": "Do you work with clients outside Latvia?",
+    "a8": "Yes, I work with clients across Europe and worldwide. I handle secure packaging and shipping for all orders."
+  },
+  "cta": {
+    "heading": "Ready to start your custom project?",
+    "description": "Get a technical consultation directly from the lead engineer. I personally review every drawing to ensure 100% manufacturability and precision. No managers, no delays - just professional CNC solutions.",
+    "callLabel": "Call us",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Meet Your CNC Engineer & Founder",
+    "title": "Senior CNC Engineer & Founder of {{appName}}",
+    "bio1": "With over {{years}} years of experience in high-precision CNC milling and turning, I provide professional CNC machining services in Latvia for clients worldwide. I specialize in manufacturing mechanical parts from CAD models, technical drawings, sketches, and physical samples.",
+    "bio2": "My work focuses on 3-axis CNC machining, precision turning, and reverse engineering — for prototypes, one-off parts, and small batch production. I deliver fully finished components with tight tolerances up to 0.01mm, suitable for industrial, mechanical, and engineering applications.",
+    "bio3": "Based in Latvia, I support international clients with reliable production, fast communication, and engineering-level accuracy from concept to finished part. Every order is handled personally to ensure consistent quality and precise execution of technical requirements.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Years",
+    "stat1Label": "Field Experience in CNC Machining & Manufacturing",
+    "stat1Sub": "Proven expertise in CNC milling, turning, and reverse engineering",
+    "stat2Value": "Latvia",
+    "stat2Unit": "/ Worldwide",
+    "stat2Label": "Manufacturing & International Delivery",
+    "stat2Sub": "Fast communication with global clients",
+    "stat3Value": "0.01mm",
+    "stat3Label": "Precision Tolerance Standard for Critical Parts",
+    "stat3Sub": "High-accuracy machining for prototypes and functional components",
+    "stat4Value": "Custom",
+    "stat4Unit": "Orders",
+    "stat4Label": "From CAD, drawings, sketches, or physical samples",
+    "stat4Sub": "One-off parts & small batch production available",
+    "expertiseHeading": "Technical Expertise",
+    "skill1": "CAD/CAM Modeling",
+    "skill2": "3-Axis CNC Milling",
+    "skill3": "Lathe Turning",
+    "skill4": "Prototype Manufacturing",
+    "skill5": "Technical Drawing Analysis",
+    "skill6": "Reverse Engineering",
+    "orderHeading": "How to Order",
+    "orderText": "Send your CAD file, drawing, or sample — I will review it and provide a production quote.",
+    "statusLabel": "Status",
+    "statusValue": "Ready for Production",
+    "imgAlt": "Viktor — Senior CNC Engineer & Founder of Viktor CNC, in a professional workshop environment"
+  },
+  "facility": {
+    "eyebrow": "Production Facility",
+    "heading": "Production Facility — Precision You Can Rely On",
+    "description": "Located in Latvia, my workshop is optimized for high-precision custom orders. I combine industry-standard CNC machinery with specialized metrology tools to ensure every micron matches your blueprint.",
+    "unit1": {
+      "label": "High-Speed Milling",
+      "title": "Precision CNC Milling — High Speed",
+      "description": "CNC milling of aluminum and plastic parts at 24,000 RPM spindle speed — fine surface finish with tight dimensional tolerances.",
+      "alt": "High-speed CNC milling center cutting aluminum parts at 24000 RPM",
+      "spec1Label": "Target Materials",
+      "spec1Value": "Aluminum, Steel & Plastics",
+      "spec2Label": "Spindle Speed",
+      "spec2Value": "24,000 RPM",
+      "spec3Label": "Configuration",
+      "spec3Value": "3-Axis High-Speed"
+    },
+    "unit2": {
+      "label": "Primary Milling Unit",
+      "title": "Precision 3-Axis CNC Milling",
+      "description": "CNC milling of complex parts, housings, brackets, and custom components for mechanical applications. Suitable for prototypes and small batch production.",
+      "alt": "Precision 3-axis CNC milling machine center for custom metal parts",
+      "spec1Label": "Working Area",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerances",
+      "spec2Value": "up to ±0.01 mm",
+      "spec3Label": "Configuration",
+      "spec3Value": "3-Axis"
+    },
+    "unit3": {
+      "label": "Turning Department",
+      "title": "High-Accuracy Lathe Turning",
+      "description": "Precision turning of cylindrical parts such as shafts, bushings, and mechanical components with high surface quality and tight tolerances.",
+      "alt": "Precision CNC lathe turning cylindrical metal shafts and bushings",
+      "spec1Label": "Max Diameter",
+      "spec1Value": "250 mm",
+      "spec2Label": "Max Length",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerances",
+      "spec3Value": "up to ±0.03 mm"
+    },
+    "qcHeading": "Quality Control & Measurement",
+    "qcDescription": "Every part is checked using precision measuring tools to ensure it matches your drawing exactly.",
+    "qcTool1": "Digital calipers",
+    "qcTool2": "Micrometers",
+    "qcTool3": "Surface measurement tools",
+    "qcNote": "Parts are verified before delivery — no guesswork, only measured results.",
+    "operatedHeading": "Personally Operated & Maintained",
+    "operatedDescription": "All machines are set up, operated, and maintained by me personally. This ensures consistent quality and full control at every stage.",
+    "contact": "Contact me"
+  },
+  "gallery": {
+    "eyebrow": "Work Gallery",
+    "heading": "Custom CNC Parts — Examples",
+    "allMaterials": "All Materials",
+    "showMore": "Show more ({{count}})",
+    "multiPart": "Multi-part",
+    "dialogTitle": "CNC part — {{material}}"
   }
 }

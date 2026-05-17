@@ -1,3 +1,4 @@
+'use client';
 import {
   ClipboardCheck,
   Cpu,
@@ -5,70 +6,68 @@ import {
   PackageCheck,
   PenTool,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
-
-const steps = [
-  {
-    number: '01',
-    icon: FileSearch,
-    title: 'Technical Consultation & Analysis',
-    description:
-      'Send your files or sketch. I review the design to confirm the part can be produced efficiently and to spec.',
-    keywords: ['CAD files', 'technical review'],
-  },
-  {
-    number: '02',
-    icon: PenTool,
-    title: 'Engineering & Modeling',
-    description:
-      'No drawing? I build a precise 3D model from your sample or sketch, then select the optimal toolpath and strategy for your material.',
-    keywords: ['3D modeling', 'custom engineering', 'machining strategy'],
-  },
-  {
-    number: '03',
-    icon: Cpu,
-    title: 'Precision Manufacturing',
-    description: `Machined in my Latvia facility on 3-axis CNC centers. ${YEARS_EXPERIENCE}+ years of experience — I personally oversee every program to hold tolerances up to ±0.01 mm.`,
-    keywords: ['CNC milling', '0.01 mm tolerances', 'precision manufacturing'],
-  },
-  {
-    number: '04',
-    icon: ClipboardCheck,
-    title: 'Finishing & Quality Control',
-    description:
-      'Deburring or engraving as required. Every part is measured and verified against your drawing before shipping.',
-    keywords: ['quality control', 'industrial finishing', 'surface treatment'],
-  },
-  {
-    number: '05',
-    icon: PackageCheck,
-    title: 'Secure Delivery',
-    description:
-      'Parts are packed to prevent transit damage and shipped locally or internationally — ready to use on arrival.',
-    keywords: ['worldwide shipping', 'secure packaging'],
-  },
-];
 
 export type WorkFlowSectionProps = {
   className?: string;
 };
 
 export function WorkFlowSection({ className }: WorkFlowSectionProps) {
+  const { t } = useTranslation('common');
+
+  const steps = [
+    {
+      number: '01',
+      icon: FileSearch,
+      title: t('workflow.step1.title'),
+      description: t('workflow.step1.description'),
+      keywords: [t('workflow.step1.kw1'), t('workflow.step1.kw2')],
+    },
+    {
+      number: '02',
+      icon: PenTool,
+      title: t('workflow.step2.title'),
+      description: t('workflow.step2.description'),
+      keywords: [t('workflow.step2.kw1'), t('workflow.step2.kw2'), t('workflow.step2.kw3')],
+    },
+    {
+      number: '03',
+      icon: Cpu,
+      title: t('workflow.step3.title'),
+      description: t('workflow.step3.description', { years: YEARS_EXPERIENCE }),
+      keywords: [t('workflow.step3.kw1'), t('workflow.step3.kw2'), t('workflow.step3.kw3')],
+    },
+    {
+      number: '04',
+      icon: ClipboardCheck,
+      title: t('workflow.step4.title'),
+      description: t('workflow.step4.description'),
+      keywords: [t('workflow.step4.kw1'), t('workflow.step4.kw2'), t('workflow.step4.kw3')],
+    },
+    {
+      number: '05',
+      icon: PackageCheck,
+      title: t('workflow.step5.title'),
+      description: t('workflow.step5.description'),
+      keywords: [t('workflow.step5.kw1'), t('workflow.step5.kw2')],
+    },
+  ];
+
   return (
     <section id={SECTION_IDS.process} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            Workflow
+            {t('workflow.eyebrow')}
           </p>
           <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            From Idea to Delivery
+            {t('workflow.heading')}
           </h2>
           <p className='text-base leading-relaxed text-muted-foreground'>
-            A clear, repeatable process — from your first file to the finished
-            part at your door.
+            {t('workflow.description')}
           </p>
         </div>
 
@@ -100,7 +99,7 @@ export function WorkFlowSection({ className }: WorkFlowSectionProps) {
                   >
                     <div className='mb-1 flex items-center gap-3'>
                       <span className='font-mono text-[10px] font-semibold uppercase tracking-widest text-muted-foreground'>
-                        Step {step.number}
+                        {t('workflow.step')} {step.number}
                       </span>
                     </div>
                     <h3 className='mb-2 text-base font-semibold leading-snug'>

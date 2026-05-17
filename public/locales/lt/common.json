@@ -16,5 +16,218 @@
     "labelPhone": "Telefonas / WhatsApp",
     "hint1": "Siųskite 3D modelius, brėžinius, eskizus — arba užduokite klausimus.",
     "hint2": "Tiesioginis bendravimas su meistru."
+  },
+  "services": {
+    "eyebrow": "Paslaugos ir medžiagos",
+    "heading": "CNC apdirbimo paslaugos individualioms detalėms",
+    "description": "Individualių detalių gamyba pagal brėžinius, CAD modelius ar fizinius pavyzdžius iš metalų ir techninių plastikų.",
+    "milling": {
+      "title": "Tikslus 3 ašių CNC frezavimas",
+      "alt": "CNC frezavimo staklės apdirbant metalo detalę",
+      "specWorkingArea": "Darbo zona",
+      "specTolerances": "Tolerancijos",
+      "description": "Sudėtingų detalių, korpusų, laikiklių ir individualių komponentų CNC frezavimas mechaniniams taikymams. Tinka prototipams ir mažaseriai gamybai.",
+      "mat1": "Aliuminis",
+      "mat2": "Plienas",
+      "mat3": "Plastmasė"
+    },
+    "turning": {
+      "title": "Aukšto tikslumo tekinimas",
+      "alt": "Tekinimo staklės apdirbant cilindrinę metalo detalę",
+      "specMaxDiameter": "Maks. skersmuo",
+      "specMaxLength": "Maks. ilgis",
+      "specTolerances": "Tolerancijos",
+      "description": "Tikslus cilindrinių detalių tekinimas: velenai, įvorės ir mechaniniai komponentai su aukšta paviršiaus kokybe ir griežtomis tolerancijomis.",
+      "mat1": "Plienas",
+      "mat2": "Aliuminis",
+      "mat3": "Žalvaris"
+    },
+    "reverseEngineering": {
+      "title": "Atvirkštinė inžinerija ir CAD modeliavimas",
+      "alt": "Mechaninės detalės CAD modelis atvirkštinei inžinerijai",
+      "description": "Tikslių CAD modelių kūrimas iš fizinių pavyzdžių, sugedusių detalių ar eskizų visiškai funkcionalių pakaitalų gamybai.",
+      "mat1": "Metalo detalės",
+      "mat2": "Plastiko detalės"
+    },
+    "materialsHeading": "Palaikomos medžiagos",
+    "aluminum": {
+      "name": "Aliuminis",
+      "grades": "6061, 7075 ir kiti",
+      "note": "Lengvas, aukštas stiprumo ir svorio santykis"
+    },
+    "steel": {
+      "name": "Plienas ir nerūdijantis plienas",
+      "grades": "304, 316L ir kiti",
+      "note": "Atsparumas korozijai, aukštas patvarumas"
+    },
+    "plastics": {
+      "name": "Techniniai plastikai",
+      "grades": "POM, PTFE, nailonas, ABS ir kiti",
+      "note": "Cheminis atsparumas, mažas trintis"
+    },
+    "materialsNote": "Tai dažniausiai naudojamos medžiagos.",
+    "materialsNoteQuestion": "Dirbate su kuo nors kitu?",
+    "materialsNoteCta": "Siųskite savo reikalavimus — patvirtinsiu prieinamumą ir rekomenduosiu tinkamą markę.",
+    "contact": "Susisiekti",
+    "isoNote": "Apdirbimas pagal ISO · Tolerancijos iki 0.01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Darbo eiga",
+    "heading": "Nuo idėjos iki pristatymo",
+    "description": "Aiški, kartojama procedūra — nuo pirmojo failo iki gatavos detalės prie jūsų durų.",
+    "step": "Žingsnis",
+    "step1": {
+      "title": "Techninė konsultacija ir analizė",
+      "description": "Siųskite failus ar eskizą. Peržiūrėsiu dizainą ir patvirtinsiu, kad detalė gali būti pagaminta efektyviai ir pagal specifikaciją.",
+      "kw1": "CAD failai",
+      "kw2": "techninė peržiūra"
+    },
+    "step2": {
+      "title": "Inžinerija ir modeliavimas",
+      "description": "Nėra brėžinio? Sukursiu tikslų 3D modelį iš jūsų pavyzdžio ar eskizo, tada parinksiiu optimalų įrankio trajektoriją ir strategiją.",
+      "kw1": "3D modeliavimas",
+      "kw2": "individuali inžinerija",
+      "kw3": "apdirbimo strategija"
+    },
+    "step3": {
+      "title": "Tikslus gamyba",
+      "description": "Apdirbama mano Latvijos objekte ant 3 ašių CNC centrų. {{years}}+ metų patirtis — asmeniškai prižiūriu kiekvieną programą, kad tolerancijos būtų iki ±0.01 mm.",
+      "kw1": "CNC frezavimas",
+      "kw2": "0.01 mm tolerancijos",
+      "kw3": "tiksli gamyba"
+    },
+    "step4": {
+      "title": "Apdaila ir kokybės kontrolė",
+      "description": "Degrūdavimas ar graviravimas pagal poreikį. Kiekviena detalė yra išmatuojama ir patikrinama pagal brėžinį prieš išsiuntimą.",
+      "kw1": "kokybės kontrolė",
+      "kw2": "pramoninė apdaila",
+      "kw3": "paviršiaus apdorojimas"
+    },
+    "step5": {
+      "title": "Saugus pristatymas",
+      "description": "Detalės supakuotos transportavimo pažeidimų prevencijai ir siunčiamos vietiškai ar tarptautiniu mastu — atvykus paruoštos naudoti.",
+      "kw1": "pristatymas visame pasaulyje",
+      "kw2": "saugi pakuotė"
+    }
+  },
+  "faq": {
+    "eyebrow": "DUK",
+    "heading": "Dažnai užduodami klausimai",
+    "description": "Dažni klausimai apie individualių CNC detalių užsakymą, medžiagas ir pristatymą.",
+    "q1": "Ką galiu iš jūsų užsakyti?",
+    "a1": "Galite užsakyti individualias CNC apdirbtas detales pagal savo brėžinį, 3D modelį ar pavyzdį. Gaminu vienkartinius prototipus bei mažas ir vidutines gamybos partijas įvairioms pramonės šakoms.",
+    "q2": "Ar galite pagaminti detalę pagal pavyzdį ar eskizą?",
+    "a2": "Taip. Galiu pagaminti detales iš fizinio pavyzdžio, sugedusio komponento ar net ranka nupiešto eskizo. Prieš gamybą sukursiu tikslų 3D modelį.",
+    "q3": "Ką daryti, jei nežinau medžiagos ar techninių detalių?",
+    "a3": "Jei nesate tikri dėl medžiagos ar techninių detalių — nesijaudinkite. Tiesiog siųskite tai, ką turite, ir aš padėsiu rasti geriausią sprendimą.",
+    "q4": "Koks minimalus užsakymas?",
+    "a4": "Nėra minimalaus užsakymo. Galite užsakyti vieną prototipą ar mažą partiją — dirbu tiek su fiziniais asmenimis, tiek su įmonėmis.",
+    "q5": "Su kokiomis medžiagomis dirbate?",
+    "a5": "Daugiausia dirbu su aliuminio, plieno ir plastiku. Pagal užklausą galiu apdirbti ir kitas medžiagas — siųskite projekto detales, patvirtinsiu prieinamumą.",
+    "q6": "Kaip greitai galite pagaminti mano detalę?",
+    "a6": "Gamybos laikas priklauso nuo dabartinio darbo krūvio, detalės sudėtingumo ir užsakymo kiekio. Tikslių terminų kreipkitės tiesiogiai.",
+    "q7": "Kaip gauti kainoraštį?",
+    "a7": "Tiesiog siųskite savo brėžinį, 3D failą ar net detalės nuotrauką. Peržiūrėsiu ir pateikiu kainas bei gamybos detales. Kaina yra derinama priklausomai nuo kiekio ir sudėtingumo. Galite susisiekti el. paštu {{email}} arba per WhatsApp/telefoną: {{phone}}.",
+    "q8": "Ar dirbate su klientais už Latvijos ribų?",
+    "a8": "Taip, dirbu su klientais visoje Europoje ir pasaulyje. Užtikrinu saugią pakuotę ir pristatymą visiems užsakymams."
+  },
+  "cta": {
+    "heading": "Pasiruošę pradėti savo individualų projektą?",
+    "description": "Gaukite techninę konsultaciją tiesiogiai iš pagrindinio inžinieriaus. Asmeniškai peržiūriu kiekvieną brėžinį, kad užtikrinčiau 100% pagaminamumą ir tikslumą. Jokių vadybininkų, jokių delsimų — tik profesionalūs CNC sprendimai.",
+    "callLabel": "Skambinti",
+    "emailLabel": "El. paštas",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Susipažinkite su CNC inžinieriumi ir įkūrėju",
+    "title": "Vyresnysis CNC inžinierius ir {{appName}} įkūrėjas",
+    "bio1": "Turint daugiau nei {{years}} metų aukšto tikslumo CNC frezavimo ir tekinimo patirtį, teikiu profesionalias CNC apdirbimo paslaugas Latvijoje klientams visame pasaulyje. Specializuojuosi mechaninių detalių gamyboje pagal CAD modelius, techninius brėžinius, eskizus ir fizinius pavyzdžius.",
+    "bio2": "Mano darbas sutelktas į 3 ašių CNC apdirbimą, tikslų tekinimą ir atvirkštinę inžineriją — prototipams, vienkartiinėms detalėms ir mažaseriai gamybai. Tiekiu visiškai apdirbtos komponentus su griežtomis tolerancijomis iki 0.01 mm pramoninėms ir techninėms aplikacijoms.",
+    "bio3": "Būdamas Latvijoje, palaikau tarptautinius klientus patikimu gamybos procesu, greitu bendravimu ir inžineriniu tikslumu nuo koncepcijos iki gatavos detalės. Kiekvienas užsakymas vykdomas asmeniškai, siekiant nuoseklios kokybės.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Metų",
+    "stat1Label": "Patirtis CNC apdirbime ir gamyboje",
+    "stat1Sub": "Įrodyta kompetencija frezavime, tekiniime ir atvirkštinėje inžinerijoje",
+    "stat2Value": "Latvija",
+    "stat2Unit": "/ Pasaulis",
+    "stat2Label": "Gamyba ir tarptautinis pristatymas",
+    "stat2Sub": "Greitas bendravimas su pasauliniais klientais",
+    "stat3Value": "0.01mm",
+    "stat3Label": "Tikslumo tolerancija kritinėms detalėms",
+    "stat3Sub": "Aukšto tikslumo apdirbimas prototipams ir funkcionaliems komponentams",
+    "stat4Value": "Individualūs",
+    "stat4Unit": "Užsakymai",
+    "stat4Label": "Pagal CAD, brėžinius, eskizus ar fizinius pavyzdžius",
+    "stat4Sub": "Vienkartinės detalės ir mažaseriai gamyba",
+    "expertiseHeading": "Techninė kompetencija",
+    "skill1": "CAD/CAM modeliavimas",
+    "skill2": "3 ašių CNC frezavimas",
+    "skill3": "Tekinimas",
+    "skill4": "Prototipų gamyba",
+    "skill5": "Techninių brėžinių analizė",
+    "skill6": "Atvirkštinė inžinerija",
+    "orderHeading": "Kaip užsakyti",
+    "orderText": "Siųskite CAD failą, brėžinį ar pavyzdį — peržiūrėsiu ir pateiksu gamybos pasiūlymą.",
+    "statusLabel": "Būsena",
+    "statusValue": "Pasiruošęs gamybai",
+    "imgAlt": "Viktoras — vyresnysis CNC inžinierius ir Viktor CNC įkūrėjas profesionalioje dirbtuvėje"
+  },
+  "facility": {
+    "eyebrow": "Gamybinė bazė",
+    "heading": "Gamybinė bazė — tikslumas, kuriuo galite pasikliauti",
+    "description": "Mano dirbtuvė Latvijoje yra optimizuota aukšto tikslumo individualiems užsakymams. Derinu pramoninio lygio CNC įrenginius su specializuotais metrologijos įrankiais — kiekvienas mikronas atitinka jūsų brėžinį.",
+    "unit1": {
+      "label": "Didelės spartos frezavimas",
+      "title": "Tikslus CNC frezavimas — didelė sparta",
+      "description": "Aliuminio ir plastiko detalių CNC frezavimas esant 24 000 apsk./min verpstės greičiui — smulkus paviršius su griežtomis matmenų tolerancijomis.",
+      "alt": "Didelės spartos CNC frezavimo centras apdirbant aliuminio detales 24000 apsk./min",
+      "spec1Label": "Tikslinės medžiagos",
+      "spec1Value": "Aliuminis, plienas ir plastmasė",
+      "spec2Label": "Verpstės greitis",
+      "spec2Value": "24 000 apsk./min",
+      "spec3Label": "Konfigūracija",
+      "spec3Value": "3 ašių didelės spartos"
+    },
+    "unit2": {
+      "label": "Pagrindinis frezavimo centras",
+      "title": "Tikslus 3 ašių CNC frezavimas",
+      "description": "Sudėtingų detalių, korpusų, laikiklių ir individualių komponentų CNC frezavimas. Tinka prototipams ir mažaseriai gamybai.",
+      "alt": "Tikslus 3 ašių CNC frezavimo centras individualioms metalo detalėms",
+      "spec1Label": "Darbo zona",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerancijos",
+      "spec2Value": "iki ±0.01 mm",
+      "spec3Label": "Konfigūracija",
+      "spec3Value": "3 ašių"
+    },
+    "unit3": {
+      "label": "Tekinimo skyrius",
+      "title": "Aukšto tikslumo tekinimas",
+      "description": "Tikslus cilindrinių detalių tekinimas: velenai, įvorės ir mechaniniai komponentai su aukšta paviršiaus kokybe.",
+      "alt": "Tikslus CNC tekinimo staklės apdirbant cilindrinius metalo velenus ir įvores",
+      "spec1Label": "Maks. skersmuo",
+      "spec1Value": "250 mm",
+      "spec2Label": "Maks. ilgis",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerancijos",
+      "spec3Value": "iki ±0.03 mm"
+    },
+    "qcHeading": "Kokybės kontrolė ir matavimas",
+    "qcDescription": "Kiekviena detalė patikrinama tiksliaisiais matavimo įrankiais, siekiant užtikrinti tikslų atitikimą jūsų brėžiniui.",
+    "qcTool1": "Skaitmeniniai slankmačiai",
+    "qcTool2": "Mikrometrai",
+    "qcTool3": "Paviršiaus matavimo priemonės",
+    "qcNote": "Detalės patikrinamos prieš pristatymą — tik išmatuoti rezultatai, jokių spėlionių.",
+    "operatedHeading": "Asmeniškai valdoma ir prižiūrima",
+    "operatedDescription": "Visos staklės nustatomos, valdomos ir prižiūrimos mano asmeniškai. Tai užtikrina nuoseklią kokybę ir visišką kontrolę kiekviename etape.",
+    "contact": "Susisiekti"
+  },
+  "gallery": {
+    "eyebrow": "Darbų galerija",
+    "heading": "Individualios CNC detalės — pavyzdžiai",
+    "allMaterials": "Visos medžiagos",
+    "showMore": "Rodyti daugiau ({{count}})",
+    "multiPart": "Daugiakomponentė",
+    "dialogTitle": "CNC detalė — {{material}}"
   }
 }

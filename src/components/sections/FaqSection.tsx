@@ -2,7 +2,7 @@
 
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-
+import { useTranslation } from 'react-i18next';
 import {
   Collapsible,
   CollapsibleContent,
@@ -12,57 +12,33 @@ import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
 
-const faqs = [
-  {
-    q: 'What can I order from you?',
-    a: 'You can order custom CNC machined parts based on your drawing, 3D model, or even a sample. I manufacture one-off prototypes as well as small and medium production batches for various industries.',
-  },
-  {
-    q: 'Can you make a part from a sample or sketch?',
-    a: "Yes. I can manufacture parts from a physical sample, a broken component, or even a hand-drawn sketch. I'll create a precise 3D model before production.",
-  },
-  {
-    q: "What if I don't know the material or technical details?",
-    a: "If you're not sure about the material or technical details — no problem. Just send what you have, and I'll help you find the best solution.",
-  },
-  {
-    q: 'What is the minimum order?',
-    a: 'There is no minimum order. You can order a single prototype or a small batch — I work with both individual and business clients.',
-  },
-  {
-    q: 'Which materials can you use?',
-    a: "I mainly work with aluminum, steel, and plastics, which cover most custom part orders. I can also machine other materials on request — just send your project details, and I'll confirm the best option.",
-  },
-  {
-    q: 'How fast can you make my part?',
-    a: 'Production time depends on current workload, part complexity, and order volume. For accurate timelines, please contact me directly with your project details.',
-  },
-  {
-    q: 'How do I get a quote?',
-    a: `To get a quote, simply send your drawing, 3D file, or even a photo of the part. I'll review it and provide pricing and production details. Pricing is negotiable depending on order volume and complexity. You can reach me by email at ${env.email} or via WhatsApp/Phone at ${env.phone}.`,
-  },
-  {
-    q: 'Do you work with clients outside Latvia?',
-    a: 'Yes, I work with clients across Europe and worldwide. I handle secure packaging and shipping for all orders.',
-  },
-];
-
 export function FaqSection({ className }: { className?: string }) {
+  const { t } = useTranslation('common');
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqs = [
+    { q: t('faq.q1'), a: t('faq.a1') },
+    { q: t('faq.q2'), a: t('faq.a2') },
+    { q: t('faq.q3'), a: t('faq.a3') },
+    { q: t('faq.q4'), a: t('faq.a4') },
+    { q: t('faq.q5'), a: t('faq.a5') },
+    { q: t('faq.q6'), a: t('faq.a6') },
+    { q: t('faq.q7'), a: t('faq.a7', { email: env.email, phone: env.phone }) },
+    { q: t('faq.q8'), a: t('faq.a8') },
+  ];
 
   return (
     <section id={SECTION_IDS.faq} className={cn('py-20', className)}>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-12 max-w-3xl border-l-2 border-primary pl-6'>
           <p className='mb-2 font-mono text-xs uppercase tracking-wider text-primary'>
-            FAQ
+            {t('faq.eyebrow')}
           </p>
           <h2 className='mb-4 text-3xl font-semibold leading-tight tracking-tight'>
-            Frequently Asked Questions
+            {t('faq.heading')}
           </h2>
           <p className='text-base leading-relaxed text-muted-foreground'>
-            Common questions about ordering custom CNC parts, materials, and
-            delivery.
+            {t('faq.description')}
           </p>
         </div>
 

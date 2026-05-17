@@ -16,5 +16,218 @@
     "labelPhone": "Telefon / WhatsApp",
     "hint1": "Saada 3D-mudelid, joonised, visandid — või küsi küsimusi.",
     "hint2": "Otsene suhtlus treialimeistriga."
+  },
+  "services": {
+    "eyebrow": "Teenused ja materjalid",
+    "heading": "CNC-töötlusteenused kohandatud osadele",
+    "description": "Kohandatud osade tootmine jooniste, CAD-mudelite või füüsiliste näidiste järgi metallidest ja tehnilistest plastikutest.",
+    "milling": {
+      "title": "Täpne 3-telg CNC freesimine",
+      "alt": "CNC freespink töötleb metalliosa",
+      "specWorkingArea": "Tööala",
+      "specTolerances": "Tolerantsid",
+      "description": "Keerukate osade, korpuste, konsooldide ja kohandatud komponentide CNC freesimine mehaanilisteks rakendusteks. Sobib prototüüpidele ja väikeseeriale.",
+      "mat1": "Alumiinium",
+      "mat2": "Teras",
+      "mat3": "Plastik"
+    },
+    "turning": {
+      "title": "Kõrgtäpne treimimine",
+      "alt": "Treipink töötleb silindrilist metalliosa",
+      "specMaxDiameter": "Maks. läbimõõt",
+      "specMaxLength": "Maks. pikkus",
+      "specTolerances": "Tolerantsid",
+      "description": "Silindriliste osade täpstreimimine: võllid, puksid ja mehaanika komponendid kõrge pinnakvaliteediga ja kitsaste tolerantsidega.",
+      "mat1": "Teras",
+      "mat2": "Alumiinium",
+      "mat3": "Messing"
+    },
+    "reverseEngineering": {
+      "title": "Pöördprojekteerimine ja CAD-modelleerimine",
+      "alt": "CAD-mudel mehaanilisest osast pöördprojekteerimiseks",
+      "description": "Täpsete CAD-mudelite loomine füüsilistest näidistest, katki osadest või visanditest täisfunktsionaalsete asendusosade tootmiseks.",
+      "mat1": "Metallosad",
+      "mat2": "Plastikosad"
+    },
+    "materialsHeading": "Toetatud materjalid",
+    "aluminum": {
+      "name": "Alumiinium",
+      "grades": "6061, 7075 ja teised",
+      "note": "Kerge, kõrge tugevus-kaalu suhe"
+    },
+    "steel": {
+      "name": "Teras ja roostevaba teras",
+      "grades": "304, 316L ja teised",
+      "note": "Korrosioonikindel, kõrge vastupidavus"
+    },
+    "plastics": {
+      "name": "Tehnilised plastikud",
+      "grades": "POM, PTFE, nailon, ABS ja teised",
+      "note": "Keemiline vastupidavus, madal hõõrdumine"
+    },
+    "materialsNote": "Need on kõige sagedamini kasutatavad materjalid.",
+    "materialsNoteQuestion": "Töötate millegi muuga?",
+    "materialsNoteCta": "Saada oma nõuded — kinnitan saadavuse ja soovitan õige klassi.",
+    "contact": "Võta ühendust",
+    "isoNote": "Töötlemine vastavalt ISO-le · Tolerantsid kuni 0.01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Tööprotsess",
+    "heading": "Ideest tarneeni",
+    "description": "Selge, korratav protsess — esimesest failist kuni valmis detailini teie ukseni.",
+    "step": "Samm",
+    "step1": {
+      "title": "Tehniline konsultatsioon ja analüüs",
+      "description": "Saada failid või visand. Vaatan disaini üle ja kinnitan, et osa saab tõhusalt ja spetsifikatsioonile vastavalt toota.",
+      "kw1": "CAD-failid",
+      "kw2": "tehniline ülevaatus"
+    },
+    "step2": {
+      "title": "Projekteerimine ja modelleerimine",
+      "description": "Pole joonist? Loon täpse 3D-mudeli teie näidise või visandi põhjal, seejärel valin optimaalse tööriistateekonna ja strateegia.",
+      "kw1": "3D-modelleerimine",
+      "kw2": "kohandatud projekteerimine",
+      "kw3": "töötlusstrateegia"
+    },
+    "step3": {
+      "title": "Täpistootmine",
+      "description": "Töödeldud minu Läti tehases 3-telg CNC-keskustel. {{years}}+ aastat kogemust — jälgin isiklikult iga programmi, et hoida tolerantsid kuni ±0.01 mm.",
+      "kw1": "CNC freesimine",
+      "kw2": "0.01 mm tolerantsid",
+      "kw3": "täpistootmine"
+    },
+    "step4": {
+      "title": "Viimistlus ja kvaliteedikontroll",
+      "description": "Vajadusel pursete eemaldamine või graveerimine. Iga osa mõõdetakse ja kontrollitakse vastavalt joonisele enne saatmist.",
+      "kw1": "kvaliteedikontroll",
+      "kw2": "tööstusvalmistlus",
+      "kw3": "pinnatöötlus"
+    },
+    "step5": {
+      "title": "Turvaline tarne",
+      "description": "Osad pakitakse transpordikahjustuste vältimiseks ja saadetakse kohalikult või rahvusvaheliselt — saabudes kasutamisvalmis.",
+      "kw1": "ülemaailmne tarne",
+      "kw2": "turvaline pakendamine"
+    }
+  },
+  "faq": {
+    "eyebrow": "KKK",
+    "heading": "Korduma kippuvad küsimused",
+    "description": "Tavalised küsimused kohandatud CNC-osade tellimise, materjalide ja tarne kohta.",
+    "q1": "Mida saan teilt tellida?",
+    "a1": "Saate tellida kohandatud CNC-töödeldud osi vastavalt oma joonisele, 3D-mudelile või näidisele. Valmistad üksikprototüüpe ning väike- ja kesksuuruseid tootmispartiisid erinevatele tööstustele.",
+    "q2": "Kas saate osa valmistada näidise või visandi järgi?",
+    "a2": "Jah. Saan valmistada osi füüsilise näidise, katki komponendi või isegi käsitsi joonistatud visandi järgi. Enne tootmist loon täpse 3D-mudeli.",
+    "q3": "Mis siis, kui ei tea materjali ega tehnilisi üksikasju?",
+    "a3": "Kui te pole kindel materjali või tehniliste üksikasjade osas — pole probleemi. Saatke lihtsalt see, mis teil on, ja ma aitan leida parima lahenduse.",
+    "q4": "Mis on minimaalne tellimus?",
+    "a4": "Minimaalset tellimust pole. Saate tellida ühe prototüübi või väikese partii — töötan nii era- kui äriklientidega.",
+    "q5": "Milliste materjalidega töötate?",
+    "a5": "Töötan peamiselt alumiiniumi, terase ja plastikuga. Soovi korral saan töödelda ka muid materjale — saatke projekti üksikasjad, kinnitan saadavuse.",
+    "q6": "Kui kiiresti saate osa valmistada?",
+    "a6": "Tootmisaeg sõltub praegusest töökoormusest, osa keerukusest ja tellimuse mahust. Täpsete tähtaegade saamiseks võtke minuga otse ühendust.",
+    "q7": "Kuidas saada pakkumist?",
+    "a7": "Saatke lihtsalt oma joonis, 3D-fail või isegi foto osast. Vaatan selle üle ja esitan hinnad ja tootmise üksikasjad. Hind on läbiräägitav sõltuvalt mahust ja keerukusest. Võite minuga ühendust võtta e-posti teel {{email}} või WhatsApp/telefon: {{phone}}.",
+    "q8": "Kas töötate klientidega väljaspool Lätit?",
+    "a8": "Jah, töötan klientidega üle Euroopa ja kogu maailmas. Hooldan turvalikku pakendamist ja tarnet kõigi tellimuste jaoks."
+  },
+  "cta": {
+    "heading": "Valmis oma kohandatud projekti alustama?",
+    "description": "Saage tehniline konsultatsioon otse juhtivinsenerist. Vaatan isiklikult iga joonise üle, et tagada 100% toodetavus ja täpsus. Pole juhte, pole viivitusi — ainult professionaalsed CNC-lahendused.",
+    "callLabel": "Helista",
+    "emailLabel": "E-post",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Tutvuge oma CNC insener & asutajaga",
+    "title": "Vanem CNC insener ja {{appName}} asutaja",
+    "bio1": "Üle {{years}} aasta kogemusega kõrgtäpse CNC freesimise ja treimimise alal pakun professionaalseid CNC-töötlusteenuseid Lätist kogu maailma klientidele. Spetsialiseerun mehaaniliste osade tootmisele CAD-mudelite, tehniliste jooniste, visandite ja füüsiliste näidiste järgi.",
+    "bio2": "Minu töö keskendub 3-telg CNC-töötlusele, täpstreimimisele ja pöördprojekteerimisele — prototüüpide, üksikosade ja väikeseeria tootmiseks. Tarnen täielikult viimistletud komponente kitsaste tolerantsidega kuni 0.01 mm tööstuslikeks ja tehnilisteks rakendusteks.",
+    "bio3": "Asudes Lätis, toetan rahvusvahelisi kliente usaldusväärse tootmise, kiire kommunikatsiooni ja insenertäpsusega kontseptsioonist kuni valmis detailini. Iga tellimus täidetakse isiklikult, et tagada järjepidev kvaliteet.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Aastat",
+    "stat1Label": "Kogemus CNC-töötluses ja tootmises",
+    "stat1Sub": "Tõestatud ekspertiis freesimises, treimimises ja pöördprojekteerimises",
+    "stat2Value": "Läti",
+    "stat2Unit": "/ Maailm",
+    "stat2Label": "Tootmine ja rahvusvaheline tarne",
+    "stat2Sub": "Kiire suhtlus globaalsete klientidega",
+    "stat3Value": "0.01mm",
+    "stat3Label": "Täpsustolerants kriitiliste osade jaoks",
+    "stat3Sub": "Kõrgtäpne töötlemine prototüüpidele ja funktsionaalsetele komponentidele",
+    "stat4Value": "Kohandatud",
+    "stat4Unit": "Tellimused",
+    "stat4Label": "CAD, jooniste, visandite või füüsiliste näidiste järgi",
+    "stat4Sub": "Üksikosad ja väikeseeriatootmine saadaval",
+    "expertiseHeading": "Tehniline ekspertiis",
+    "skill1": "CAD/CAM modelleerimine",
+    "skill2": "3-telg CNC freesimine",
+    "skill3": "Treimimine",
+    "skill4": "Prototüüpide tootmine",
+    "skill5": "Tehniliste jooniste analüüs",
+    "skill6": "Pöördprojekteerimine",
+    "orderHeading": "Kuidas tellida",
+    "orderText": "Saada CAD-fail, joonis või näidis — vaatan üle ja esitan tootmispakkumise.",
+    "statusLabel": "Olek",
+    "statusValue": "Valmis tootmiseks",
+    "imgAlt": "Viktor — vanem CNC insener ja Viktor CNC asutaja professionaalses töötoas"
+  },
+  "facility": {
+    "eyebrow": "Tootmisbaas",
+    "heading": "Tootmisbaas — täpsus, millele saate tugineda",
+    "description": "Minu Lätis asuv töökoda on optimeeritud kõrgtäpsete kohandatud tellimuste jaoks. Kombineerin tööstusklassi CNC-masinaid spetsiaalsete metroloogiatööriistadega — iga mikron vastab teie joonisele.",
+    "unit1": {
+      "label": "Kiirfreesimine",
+      "title": "Täpne CNC freesimine — kõrge kiirus",
+      "description": "Alumiiniumi ja plastiku osade CNC freesimine 24 000 p/min spindlikiirusel — peen pind kitsaste mõõtmeterlantsidega.",
+      "alt": "Kiir-CNC freesimiskeskus töötleb alumiiniumosi 24000 p/min",
+      "spec1Label": "Sihimaterjalid",
+      "spec1Value": "Alumiinium, teras ja plastik",
+      "spec2Label": "Spindlikiirus",
+      "spec2Value": "24 000 p/min",
+      "spec3Label": "Konfiguratsioon",
+      "spec3Value": "3-telg kiirfreesimine"
+    },
+    "unit2": {
+      "label": "Põhiline freesimiskeskus",
+      "title": "Täpne 3-telg CNC freesimine",
+      "description": "Keerukate osade, korpuste, konsooldide ja kohandatud komponentide CNC freesimine. Sobib prototüüpidele ja väikeseeriale.",
+      "alt": "Täpne 3-telg CNC freesimiskeskus kohandatud metallosadele",
+      "spec1Label": "Tööala",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolerantsid",
+      "spec2Value": "kuni ±0.01 mm",
+      "spec3Label": "Konfiguratsioon",
+      "spec3Value": "3-telg"
+    },
+    "unit3": {
+      "label": "Treimimisosakond",
+      "title": "Kõrgtäpne treimimine",
+      "description": "Silindriliste osade täpstreimimine: võllid, puksid ja mehaanikakomponendid kõrge pinnakvaliteediga.",
+      "alt": "Täpne CNC treipink töötleb silindrilisi metallivõlle ja bukse",
+      "spec1Label": "Maks. läbimõõt",
+      "spec1Value": "250 mm",
+      "spec2Label": "Maks. pikkus",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolerantsid",
+      "spec3Value": "kuni ±0.03 mm"
+    },
+    "qcHeading": "Kvaliteedikontroll ja mõõtmine",
+    "qcDescription": "Iga osa kontrollitakse täpsusmõõteriistadega, et tagada täpne vastavus teie joonisele.",
+    "qcTool1": "Digitaalsed nihikud",
+    "qcTool2": "Mikromeeter",
+    "qcTool3": "Pinnamõõtmisvahendid",
+    "qcNote": "Osad kontrollitakse enne tarnet — ainult mõõdetud tulemused, mingit arvamist.",
+    "operatedHeading": "Isiklikult juhitud ja hooldatud",
+    "operatedDescription": "Kõik masinad seadistatakse, juhitakse ja hooldatakse minu poolt isiklikult. See tagab järjepideva kvaliteedi ja täieliku kontrolli igas etapis.",
+    "contact": "Võta ühendust"
+  },
+  "gallery": {
+    "eyebrow": "Tööde galerii",
+    "heading": "Kohandatud CNC-osad — näited",
+    "allMaterials": "Kõik materjalid",
+    "showMore": "Näita rohkem ({{count}})",
+    "multiPart": "Mitmeosaline",
+    "dialogTitle": "CNC-osa — {{material}}"
   }
 }

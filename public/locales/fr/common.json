@@ -16,5 +16,218 @@
     "labelPhone": "Téléphone / WhatsApp",
     "hint1": "Envoyez des modèles 3D, des dessins, des croquis — ou posez vos questions.",
     "hint2": "Communication directe avec le machiniste."
+  },
+  "services": {
+    "eyebrow": "Services et matériaux",
+    "heading": "Services d'usinage CNC pour pièces sur mesure",
+    "description": "Fabrication de pièces sur mesure à partir de dessins, de modèles CAO ou d'échantillons physiques en métaux et plastiques techniques.",
+    "milling": {
+      "title": "Fraisage CNC 3 axes de précision",
+      "alt": "Fraiseuse CNC usinant une pièce métallique",
+      "specWorkingArea": "Zone de travail",
+      "specTolerances": "Tolérances",
+      "description": "Fraisage CNC de pièces complexes, boîtiers, supports et composants sur mesure pour applications mécaniques. Adapté aux prototypes et à la production en petites séries.",
+      "mat1": "Aluminium",
+      "mat2": "Acier",
+      "mat3": "Plastiques"
+    },
+    "turning": {
+      "title": "Tournage haute précision",
+      "alt": "Tour usinant une pièce métallique cylindrique",
+      "specMaxDiameter": "Diamètre max.",
+      "specMaxLength": "Longueur max.",
+      "specTolerances": "Tolérances",
+      "description": "Tournage de précision de pièces cylindriques telles que des arbres, bagues et composants mécaniques avec une haute qualité de surface et des tolérances serrées.",
+      "mat1": "Acier",
+      "mat2": "Aluminium",
+      "mat3": "Laiton"
+    },
+    "reverseEngineering": {
+      "title": "Rétro-ingénierie et modélisation CAO",
+      "alt": "Modèle CAO d'une pièce mécanique pour la rétro-ingénierie",
+      "description": "Création de modèles CAO précis à partir d'échantillons physiques, de pièces cassées ou de croquis pour fabriquer des remplacements entièrement fonctionnels.",
+      "mat1": "Pièces métalliques",
+      "mat2": "Pièces plastiques"
+    },
+    "materialsHeading": "Matériaux pris en charge",
+    "aluminum": {
+      "name": "Aluminium",
+      "grades": "6061, 7075 et autres",
+      "note": "Léger, rapport résistance/poids élevé"
+    },
+    "steel": {
+      "name": "Acier et acier inoxydable",
+      "grades": "304, 316L et autres",
+      "note": "Résistant à la corrosion, haute durabilité"
+    },
+    "plastics": {
+      "name": "Plastiques techniques",
+      "grades": "POM, PTFE, Nylon, ABS et autres",
+      "note": "Résistance chimique, faible friction"
+    },
+    "materialsNote": "Ce sont les matériaux les plus couramment utilisés.",
+    "materialsNoteQuestion": "Vous travaillez avec autre chose ?",
+    "materialsNoteCta": "Envoyez vos exigences — je confirme la disponibilité et recommande la bonne nuance.",
+    "contact": "Me contacter",
+    "isoNote": "Usinage selon ISO · Tolérances jusqu'à 0,01 mm"
+  },
+  "workflow": {
+    "eyebrow": "Processus de travail",
+    "heading": "De l'idée à la livraison",
+    "description": "Un processus clair et répétable — de votre premier fichier à la pièce finie à votre porte.",
+    "step": "Étape",
+    "step1": {
+      "title": "Consultation technique et analyse",
+      "description": "Envoyez vos fichiers ou votre croquis. J'examine la conception pour confirmer que la pièce peut être produite efficacement et selon les spécifications.",
+      "kw1": "fichiers CAO",
+      "kw2": "revue technique"
+    },
+    "step2": {
+      "title": "Ingénierie et modélisation",
+      "description": "Pas de dessin ? Je construis un modèle 3D précis à partir de votre échantillon ou croquis, puis je sélectionne la trajectoire d'outil et la stratégie optimales.",
+      "kw1": "modélisation 3D",
+      "kw2": "ingénierie sur mesure",
+      "kw3": "stratégie d'usinage"
+    },
+    "step3": {
+      "title": "Fabrication de précision",
+      "description": "Usiné dans mon atelier en Lettonie sur des centres CNC 3 axes. {{years}}+ ans d'expérience — je supervise personnellement chaque programme pour maintenir les tolérances jusqu'à ±0,01 mm.",
+      "kw1": "fraisage CNC",
+      "kw2": "tolérances 0,01 mm",
+      "kw3": "fabrication de précision"
+    },
+    "step4": {
+      "title": "Finition et contrôle qualité",
+      "description": "Ébavurage ou gravure selon les besoins. Chaque pièce est mesurée et vérifiée par rapport à votre dessin avant expédition.",
+      "kw1": "contrôle qualité",
+      "kw2": "finition industrielle",
+      "kw3": "traitement de surface"
+    },
+    "step5": {
+      "title": "Livraison sécurisée",
+      "description": "Les pièces sont emballées pour éviter les dommages de transport et expédiées localement ou internationalement — prêtes à l'emploi à la réception.",
+      "kw1": "expédition mondiale",
+      "kw2": "emballage sécurisé"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Questions fréquemment posées",
+    "description": "Questions courantes sur la commande de pièces CNC sur mesure, les matériaux et la livraison.",
+    "q1": "Que puis-je commander chez vous ?",
+    "a1": "Vous pouvez commander des pièces usinées CNC sur mesure basées sur votre dessin, modèle 3D ou échantillon. Je fabrique des prototypes uniques ainsi que de petites et moyennes séries de production pour diverses industries.",
+    "q2": "Pouvez-vous fabriquer une pièce à partir d'un échantillon ou d'un croquis ?",
+    "a2": "Oui. Je peux fabriquer des pièces à partir d'un échantillon physique, d'un composant cassé ou même d'un croquis dessiné à la main. Je crée un modèle 3D précis avant la production.",
+    "q3": "Et si je ne connais pas le matériau ou les détails techniques ?",
+    "a3": "Si vous n'êtes pas sûr du matériau ou des détails techniques — pas de problème. Envoyez simplement ce que vous avez et je vous aiderai à trouver la meilleure solution.",
+    "q4": "Quelle est la commande minimum ?",
+    "a4": "Il n'y a pas de commande minimum. Vous pouvez commander un seul prototype ou une petite série — je travaille avec des particuliers et des entreprises.",
+    "q5": "Quels matériaux pouvez-vous utiliser ?",
+    "a5": "Je travaille principalement avec l'aluminium, l'acier et les plastiques. Sur demande, je peux usiner d'autres matériaux — envoyez vos détails de projet et je confirme la disponibilité.",
+    "q6": "Combien de temps pour fabriquer ma pièce ?",
+    "a6": "Le délai de production dépend de la charge de travail actuelle, de la complexité de la pièce et du volume de commande. Pour des délais précis, contactez-moi directement.",
+    "q7": "Comment obtenir un devis ?",
+    "a7": "Envoyez simplement votre dessin, fichier 3D ou même une photo de la pièce. Je l'examine et vous donne les prix et détails de production. Le prix est négociable selon le volume et la complexité. Vous pouvez me contacter par e-mail à {{email}} ou via WhatsApp/téléphone : {{phone}}.",
+    "q8": "Travaillez-vous avec des clients hors de Lettonie ?",
+    "a8": "Oui, je travaille avec des clients partout en Europe et dans le monde. Je gère l'emballage sécurisé et l'expédition pour toutes les commandes."
+  },
+  "cta": {
+    "heading": "Prêt à démarrer votre projet sur mesure ?",
+    "description": "Obtenez une consultation technique directement auprès de l'ingénieur principal. J'examine personnellement chaque dessin pour garantir 100% de fabricabilité et de précision. Pas de gestionnaires, pas de délais — uniquement des solutions CNC professionnelles.",
+    "callLabel": "Appeler",
+    "emailLabel": "E-mail",
+    "whatsappLabel": "WhatsApp"
+  },
+  "founder": {
+    "eyebrow": "Rencontrez votre ingénieur CNC et fondateur",
+    "title": "Ingénieur CNC senior et fondateur de {{appName}}",
+    "bio1": "Avec plus de {{years}} ans d'expérience en fraisage et tournage CNC haute précision, je fournis des services d'usinage CNC professionnels en Lettonie pour des clients du monde entier. Je me spécialise dans la fabrication de pièces mécaniques à partir de modèles CAO, de dessins techniques, de croquis et d'échantillons physiques.",
+    "bio2": "Mon travail se concentre sur l'usinage CNC 3 axes, le tournage de précision et la rétro-ingénierie — pour les prototypes, les pièces uniques et la production en petites séries. Je livre des composants entièrement finis avec des tolérances serrées jusqu'à 0,01 mm pour des applications industrielles et techniques.",
+    "bio3": "Basé en Lettonie, je soutiens les clients internationaux avec une production fiable, une communication rapide et une précision d'ingénierie du concept à la pièce finie. Chaque commande est traitée personnellement pour garantir une qualité constante.",
+    "stat1Value": "{{years}}+",
+    "stat1Unit": "Ans",
+    "stat1Label": "Expérience en usinage CNC et fabrication",
+    "stat1Sub": "Expertise prouvée en fraisage, tournage et rétro-ingénierie",
+    "stat2Value": "Lettonie",
+    "stat2Unit": "/ Mondial",
+    "stat2Label": "Fabrication et livraison internationale",
+    "stat2Sub": "Communication rapide avec les clients mondiaux",
+    "stat3Value": "0,01mm",
+    "stat3Label": "Standard de tolérance de précision pour pièces critiques",
+    "stat3Sub": "Usinage haute précision pour prototypes et composants fonctionnels",
+    "stat4Value": "Sur mesure",
+    "stat4Unit": "Commandes",
+    "stat4Label": "À partir de CAO, dessins, croquis ou échantillons physiques",
+    "stat4Sub": "Pièces uniques et production en petites séries disponibles",
+    "expertiseHeading": "Expertise technique",
+    "skill1": "Modélisation CAO/FAO",
+    "skill2": "Fraisage CNC 3 axes",
+    "skill3": "Tournage",
+    "skill4": "Fabrication de prototypes",
+    "skill5": "Analyse de dessins techniques",
+    "skill6": "Rétro-ingénierie",
+    "orderHeading": "Comment commander",
+    "orderText": "Envoyez votre fichier CAO, dessin ou échantillon — je l'examine et vous fournis un devis de production.",
+    "statusLabel": "Statut",
+    "statusValue": "Prêt pour la production",
+    "imgAlt": "Viktor — ingénieur CNC senior et fondateur de Viktor CNC dans un environnement d'atelier professionnel"
+  },
+  "facility": {
+    "eyebrow": "Installation de production",
+    "heading": "Installation de production — précision sur laquelle vous pouvez compter",
+    "description": "Mon atelier en Lettonie est optimisé pour les commandes sur mesure haute précision. Je combine des machines CNC de qualité industrielle avec des outils de métrologie spécialisés — chaque micron correspond à votre plan.",
+    "unit1": {
+      "label": "Fraisage grande vitesse",
+      "title": "Fraisage CNC de précision — grande vitesse",
+      "description": "Fraisage CNC de pièces en aluminium et plastique à 24 000 tr/min — finition de surface fine avec des tolérances dimensionnelles serrées.",
+      "alt": "Centre de fraisage CNC grande vitesse usinant des pièces en aluminium à 24000 tr/min",
+      "spec1Label": "Matériaux cibles",
+      "spec1Value": "Aluminium, acier et plastiques",
+      "spec2Label": "Vitesse broche",
+      "spec2Value": "24 000 tr/min",
+      "spec3Label": "Configuration",
+      "spec3Value": "3 axes grande vitesse"
+    },
+    "unit2": {
+      "label": "Centre de fraisage principal",
+      "title": "Fraisage CNC 3 axes de précision",
+      "description": "Fraisage CNC de pièces complexes, boîtiers, supports et composants sur mesure. Adapté aux prototypes et à la production en petites séries.",
+      "alt": "Centre de fraisage CNC 3 axes de précision pour pièces métalliques sur mesure",
+      "spec1Label": "Zone de travail",
+      "spec1Value": "760 × 500 × 500 mm",
+      "spec2Label": "Tolérances",
+      "spec2Value": "jusqu'à ±0,01 mm",
+      "spec3Label": "Configuration",
+      "spec3Value": "3 axes"
+    },
+    "unit3": {
+      "label": "Département tournage",
+      "title": "Tournage haute précision",
+      "description": "Tournage de précision de pièces cylindriques : arbres, bagues et composants mécaniques avec haute qualité de surface.",
+      "alt": "Tour CNC de précision tournant des arbres et bagues métalliques cylindriques",
+      "spec1Label": "Diamètre max.",
+      "spec1Value": "250 mm",
+      "spec2Label": "Longueur max.",
+      "spec2Value": "800 mm",
+      "spec3Label": "Tolérances",
+      "spec3Value": "jusqu'à ±0,03 mm"
+    },
+    "qcHeading": "Contrôle qualité et mesure",
+    "qcDescription": "Chaque pièce est vérifiée avec des outils de mesure de précision pour assurer une correspondance exacte avec votre dessin.",
+    "qcTool1": "Pieds à coulisse numériques",
+    "qcTool2": "Micromètres",
+    "qcTool3": "Outils de mesure de surface",
+    "qcNote": "Les pièces sont vérifiées avant livraison — uniquement des résultats mesurés, pas de suppositions.",
+    "operatedHeading": "Personnellement opéré et entretenu",
+    "operatedDescription": "Toutes les machines sont configurées, opérées et entretenues personnellement par moi. Cela garantit une qualité constante et un contrôle total à chaque étape.",
+    "contact": "Me contacter"
+  },
+  "gallery": {
+    "eyebrow": "Galerie de travaux",
+    "heading": "Pièces CNC sur mesure — exemples",
+    "allMaterials": "Tous les matériaux",
+    "showMore": "Afficher plus ({{count}})",
+    "multiPart": "Multi-pièces",
+    "dialogTitle": "Pièce CNC — {{material}}"
   }
 }
