@@ -228,6 +228,55 @@
     "allMaterials": "Visos medžiagos",
     "showMore": "Rodyti daugiau ({{count}})",
     "multiPart": "Daugiakomponentė",
-    "dialogTitle": "CNC detalė — {{material}}"
+    "dialogTitle": "CNC detalė — {{material}}",
+    "close": "Uždaryti"
+  },
+  "nav": {
+    "services": "Paslaugos",
+    "gallery": "Galerija",
+    "workshop": "Dirbtuvė",
+    "about": "Apie mus",
+    "process": "Procesas",
+    "faq": "DUK",
+    "contact": "Kontaktai",
+    "contactButton": "Susisiekti"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC frezavimas",
+    "cncTurning": "CNC tekinimas",
+    "reverseEngineering": "Atvirkštinė inžinerija",
+    "cadModeling": "CAD modeliavimas",
+    "batchProduction": "Serijinė gamyba"
+  },
+  "footer": {
+    "description": "Profesionalios CNC apdirbimo, tekinimo ir frezavimo paslaugos Latvijoje. Daugiau nei {{years}} metų patirtis gaminant užsakomuosius komponentus.",
+    "location": "Latvija · Pristatymas visame pasaulyje",
+    "navigation": "Navigacija",
+    "services": "Paslaugos",
+    "copyright": "© {{year}} {{appName}}. Visos teisės saugomos.",
+    "tagline": "Tikslus CNC apdirbimas · Latvija · Įkurta {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Atidaryti meniu",
+    "appearance": "Išvaizda",
+    "contactButton": "Susisiekti",
+    "theme": {
+      "system": "Sistema",
+      "light": "Šviesi",
+      "dark": "Tamsi"
+    },
+    "language": "Kalba"
+  },
+  "copyButton": {
+    "copied": "Nukopijuota",
+    "labelCopied": "{{label}} nukopijuota",
+    "ariaLabel": "Kopijuoti"
+  },
+  "themeToggle": {
+    "ariaLabel": "Perjungti temą"
+  },
+  "notFound": {
+    "title": "Puslapis nerastas",
+    "backHome": "Į pradžią"
   }
 }

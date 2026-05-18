@@ -228,6 +228,55 @@
     "allMaterials": "Visi materiāli",
     "showMore": "Rādīt vairāk ({{count}})",
     "multiPart": "Daudzkomponentu",
-    "dialogTitle": "CNC detaļa — {{material}}"
+    "dialogTitle": "CNC detaļa — {{material}}",
+    "close": "Aizvērt"
+  },
+  "nav": {
+    "services": "Pakalpojumi",
+    "gallery": "Galerija",
+    "workshop": "Darbnīca",
+    "about": "Par mums",
+    "process": "Process",
+    "faq": "BUJ",
+    "contact": "Kontakti",
+    "contactButton": "Sazināties"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC frēzēšana",
+    "cncTurning": "CNC virpošana",
+    "reverseEngineering": "Reversā inženierija",
+    "cadModeling": "CAD modelēšana",
+    "batchProduction": "Sērijas ražošana"
+  },
+  "footer": {
+    "description": "Profesionāli CNC apstrādes, virpošanas un frēzēšanas pakalpojumi Latvijā. Vairāk nekā {{years}} gadu pieredze pasūtījuma komponentu ražošanā.",
+    "location": "Latvija · Piegāde visā pasaulē",
+    "navigation": "Navigācija",
+    "services": "Pakalpojumi",
+    "copyright": "© {{year}} {{appName}}. Visas tiesības aizsargātas.",
+    "tagline": "Precīzā CNC apstrāde · Latvija · Dibināts {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Atvērt izvēlni",
+    "appearance": "Izskats",
+    "contactButton": "Sazināties",
+    "theme": {
+      "system": "Sistēma",
+      "light": "Gaišs",
+      "dark": "Tumšs"
+    },
+    "language": "Valoda"
+  },
+  "copyButton": {
+    "copied": "Nokopēts",
+    "labelCopied": "{{label}} nokopēts",
+    "ariaLabel": "Kopēt"
+  },
+  "themeToggle": {
+    "ariaLabel": "Pārslēgt tēmu"
+  },
+  "notFound": {
+    "title": "Lapa nav atrasta",
+    "backHome": "Uz sākumu"
   }
 }

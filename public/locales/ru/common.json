@@ -228,6 +228,55 @@
     "allMaterials": "Все материалы",
     "showMore": "Показать ещё ({{count}})",
     "multiPart": "Составная деталь",
-    "dialogTitle": "Деталь ЧПУ — {{material}}"
+    "dialogTitle": "Деталь ЧПУ — {{material}}",
+    "close": "Закрыть"
+  },
+  "nav": {
+    "services": "Услуги",
+    "gallery": "Галерея",
+    "workshop": "Мастерская",
+    "about": "О мастере",
+    "process": "Процесс",
+    "faq": "FAQ",
+    "contact": "Контакты",
+    "contactButton": "Написать"
+  },
+  "serviceLinks": {
+    "cncMilling": "Фрезеровка на ЧПУ",
+    "cncTurning": "Токарная обработка",
+    "reverseEngineering": "Реверс-инжиниринг",
+    "cadModeling": "CAD-моделирование",
+    "batchProduction": "Серийное производство"
+  },
+  "footer": {
+    "description": "Профессиональные услуги ЧПУ-обработки, точения и фрезеровки в Латвии. Более {{years}} лет опыта в изготовлении деталей на заказ для мировых отраслей промышленности.",
+    "location": "Латвия · Доставка по всему миру",
+    "navigation": "Навигация",
+    "services": "Услуги",
+    "copyright": "© {{year}} {{appName}}. Все права защищены.",
+    "tagline": "Точная ЧПУ-обработка · Латвия · Осн. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Открыть меню",
+    "appearance": "Внешний вид",
+    "contactButton": "Написать",
+    "theme": {
+      "system": "Система",
+      "light": "Светлая",
+      "dark": "Тёмная"
+    },
+    "language": "Язык"
+  },
+  "copyButton": {
+    "copied": "Скопировано",
+    "labelCopied": "{{label}} скопировано",
+    "ariaLabel": "Копировать"
+  },
+  "themeToggle": {
+    "ariaLabel": "Переключить тему"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "backHome": "На главную"
   }
 }

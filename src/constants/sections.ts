@@ -9,19 +9,19 @@ export const SECTION_IDS = {
 } as const;
 
 export const SERVICE_LINKS = [
-  { label: 'CNC Milling', href: `#${SECTION_IDS.services}` },
-  { label: 'CNC Turning', href: `#${SECTION_IDS.services}` },
-  { label: 'Reverse Engineering', href: `#${SECTION_IDS.services}` },
-  { label: 'CAD Modeling', href: `#${SECTION_IDS.services}` },
-  { label: 'Batch Production', href: `#${SECTION_IDS.services}` },
+  { key: 'serviceLinks.cncMilling', href: `#${SECTION_IDS.services}` },
+  { key: 'serviceLinks.cncTurning', href: `#${SECTION_IDS.services}` },
+  { key: 'serviceLinks.reverseEngineering', href: `#${SECTION_IDS.services}` },
+  { key: 'serviceLinks.cadModeling', href: `#${SECTION_IDS.services}` },
+  { key: 'serviceLinks.batchProduction', href: `#${SECTION_IDS.services}` },
 ] as const;
 
 export const NAV_LINKS = [
-  { label: 'Services', href: `#${SECTION_IDS.services}` },
-  { label: 'Gallery', href: `#${SECTION_IDS.gallery}` },
-  { label: 'Workshop', href: `#${SECTION_IDS.facility}` },
-  { label: 'About', href: `#${SECTION_IDS.founder}` },
-  { label: 'Process', href: `#${SECTION_IDS.process}` },
-  { label: 'FAQ', href: `#${SECTION_IDS.faq}` },
-  { label: 'Contact', href: `#${SECTION_IDS.contact}` },
+  { key: 'nav.services', icon: 'Services', href: `#${SECTION_IDS.services}` },
+  { key: 'nav.gallery', icon: 'Gallery', href: `#${SECTION_IDS.gallery}` },
+  { key: 'nav.workshop', icon: 'Workshop', href: `#${SECTION_IDS.facility}` },
+  { key: 'nav.about', icon: 'About', href: `#${SECTION_IDS.founder}` },
+  { key: 'nav.process', icon: 'Process', href: `#${SECTION_IDS.process}` },
+  { key: 'nav.faq', icon: 'FAQ', href: `#${SECTION_IDS.faq}` },
+  { key: 'nav.contact', icon: 'Contact', href: `#${SECTION_IDS.contact}` },
 ] as const;

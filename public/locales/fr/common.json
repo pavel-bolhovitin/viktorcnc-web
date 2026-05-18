@@ -228,6 +228,55 @@
     "allMaterials": "Tous les matériaux",
     "showMore": "Afficher plus ({{count}})",
     "multiPart": "Multi-pièces",
-    "dialogTitle": "Pièce CNC — {{material}}"
+    "dialogTitle": "Pièce CNC — {{material}}",
+    "close": "Fermer"
+  },
+  "nav": {
+    "services": "Services",
+    "gallery": "Galerie",
+    "workshop": "Atelier",
+    "about": "À propos",
+    "process": "Processus",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "contactButton": "Me contacter"
+  },
+  "serviceLinks": {
+    "cncMilling": "Fraisage CNC",
+    "cncTurning": "Tournage CNC",
+    "reverseEngineering": "Rétro-ingénierie",
+    "cadModeling": "Modélisation CAO",
+    "batchProduction": "Production en série"
+  },
+  "footer": {
+    "description": "Services professionnels d'usinage CNC, de tournage et de fraisage en Lettonie. Plus de {{years}} ans d'expertise dans la fabrication de composants sur mesure.",
+    "location": "Lettonie · Expédition mondiale",
+    "navigation": "Navigation",
+    "services": "Services",
+    "copyright": "© {{year}} {{appName}}. Tous droits réservés.",
+    "tagline": "Usinage CNC de précision · Lettonie · Fondé en {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Ouvrir le menu",
+    "appearance": "Apparence",
+    "contactButton": "Me contacter",
+    "theme": {
+      "system": "Système",
+      "light": "Clair",
+      "dark": "Sombre"
+    },
+    "language": "Langue"
+  },
+  "copyButton": {
+    "copied": "Copié",
+    "labelCopied": "{{label}} copié",
+    "ariaLabel": "Copier"
+  },
+  "themeToggle": {
+    "ariaLabel": "Changer de thème"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "backHome": "Retour à l'accueil"
   }
 }

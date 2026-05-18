@@ -228,6 +228,55 @@
     "allMaterials": "Wszystkie materiały",
     "showMore": "Pokaż więcej ({{count}})",
     "multiPart": "Wieloczęściowe",
-    "dialogTitle": "Część CNC — {{material}}"
+    "dialogTitle": "Część CNC — {{material}}",
+    "close": "Zamknij"
+  },
+  "nav": {
+    "services": "Usługi",
+    "gallery": "Galeria",
+    "workshop": "Warsztat",
+    "about": "O nas",
+    "process": "Proces",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "contactButton": "Skontaktuj się"
+  },
+  "serviceLinks": {
+    "cncMilling": "Frezowanie CNC",
+    "cncTurning": "Toczenie CNC",
+    "reverseEngineering": "Inżynieria odwrotna",
+    "cadModeling": "Modelowanie CAD",
+    "batchProduction": "Produkcja seryjna"
+  },
+  "footer": {
+    "description": "Profesjonalne usługi obróbki CNC, toczenia i frezowania na Łotwie. Ponad {{years}} lat doświadczenia w produkcji niestandardowych komponentów.",
+    "location": "Łotwa · Wysyłka na cały świat",
+    "navigation": "Nawigacja",
+    "services": "Usługi",
+    "copyright": "© {{year}} {{appName}}. Wszelkie prawa zastrzeżone.",
+    "tagline": "Precyzyjna obróbka CNC · Łotwa · Zał. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Otwórz menu",
+    "appearance": "Wygląd",
+    "contactButton": "Skontaktuj się",
+    "theme": {
+      "system": "System",
+      "light": "Jasny",
+      "dark": "Ciemny"
+    },
+    "language": "Język"
+  },
+  "copyButton": {
+    "copied": "Skopiowano",
+    "labelCopied": "{{label}} skopiowano",
+    "ariaLabel": "Kopiuj"
+  },
+  "themeToggle": {
+    "ariaLabel": "Przełącz motyw"
+  },
+  "notFound": {
+    "title": "Strona nie znaleziona",
+    "backHome": "Powrót do strony głównej"
   }
 }

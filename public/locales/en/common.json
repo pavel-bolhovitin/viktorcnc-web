@@ -228,6 +228,55 @@
     "allMaterials": "All Materials",
     "showMore": "Show more ({{count}})",
     "multiPart": "Multi-part",
-    "dialogTitle": "CNC part — {{material}}"
+    "dialogTitle": "CNC part — {{material}}",
+    "close": "Close"
+  },
+  "nav": {
+    "services": "Services",
+    "gallery": "Gallery",
+    "workshop": "Workshop",
+    "about": "About",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "contactButton": "Contact me"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC Milling",
+    "cncTurning": "CNC Turning",
+    "reverseEngineering": "Reverse Engineering",
+    "cadModeling": "CAD Modeling",
+    "batchProduction": "Batch Production"
+  },
+  "footer": {
+    "description": "Professional CNC machining, turning, and milling services in Latvia. Over {{years}} years of expertise in manufacturing custom components for global industries.",
+    "location": "Latvia · Worldwide Shipping",
+    "navigation": "Navigation",
+    "services": "Services",
+    "copyright": "© {{year}} {{appName}}. All rights reserved.",
+    "tagline": "Precision CNC Machining · Latvia · Est. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Open menu",
+    "appearance": "Appearance",
+    "contactButton": "Contact me",
+    "theme": {
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "language": "Language"
+  },
+  "copyButton": {
+    "copied": "Copied to clipboard",
+    "labelCopied": "{{label}} copied",
+    "ariaLabel": "Copy to clipboard"
+  },
+  "themeToggle": {
+    "ariaLabel": "Toggle theme"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "backHome": "Back to home"
   }
 }

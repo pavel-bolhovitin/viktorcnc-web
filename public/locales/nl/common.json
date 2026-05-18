@@ -228,6 +228,55 @@
     "allMaterials": "Alle materialen",
     "showMore": "Meer weergeven ({{count}})",
     "multiPart": "Meerdelig",
-    "dialogTitle": "CNC-onderdeel — {{material}}"
+    "dialogTitle": "CNC-onderdeel — {{material}}",
+    "close": "Sluiten"
+  },
+  "nav": {
+    "services": "Diensten",
+    "gallery": "Galerij",
+    "workshop": "Werkplaats",
+    "about": "Over ons",
+    "process": "Werkwijze",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "contactButton": "Neem contact op"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC-frezen",
+    "cncTurning": "CNC-draaien",
+    "reverseEngineering": "Reverse engineering",
+    "cadModeling": "CAD-modellering",
+    "batchProduction": "Serieproductie"
+  },
+  "footer": {
+    "description": "Professionele CNC-bewerkings-, draai- en freesdiensten in Letland. Meer dan {{years}} jaar ervaring in het vervaardigen van maatwerk componenten.",
+    "location": "Letland · Wereldwijde verzending",
+    "navigation": "Navigatie",
+    "services": "Diensten",
+    "copyright": "© {{year}} {{appName}}. Alle rechten voorbehouden.",
+    "tagline": "Precisie CNC-bewerking · Letland · Opgericht {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Menu openen",
+    "appearance": "Weergave",
+    "contactButton": "Neem contact op",
+    "theme": {
+      "system": "Systeem",
+      "light": "Licht",
+      "dark": "Donker"
+    },
+    "language": "Taal"
+  },
+  "copyButton": {
+    "copied": "Gekopieerd",
+    "labelCopied": "{{label}} gekopieerd",
+    "ariaLabel": "Kopiëren"
+  },
+  "themeToggle": {
+    "ariaLabel": "Thema wisselen"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "backHome": "Terug naar home"
   }
 }

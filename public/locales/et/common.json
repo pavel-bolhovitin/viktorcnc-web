@@ -228,6 +228,55 @@
     "allMaterials": "Kõik materjalid",
     "showMore": "Näita rohkem ({{count}})",
     "multiPart": "Mitmeosaline",
-    "dialogTitle": "CNC-osa — {{material}}"
+    "dialogTitle": "CNC-osa — {{material}}",
+    "close": "Sulge"
+  },
+  "nav": {
+    "services": "Teenused",
+    "gallery": "Galerii",
+    "workshop": "Töökoda",
+    "about": "Meist",
+    "process": "Protsess",
+    "faq": "KKK",
+    "contact": "Kontakt",
+    "contactButton": "Võta ühendust"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC freesimine",
+    "cncTurning": "CNC treikimine",
+    "reverseEngineering": "Pöördprojekteerimine",
+    "cadModeling": "CAD modelleerimine",
+    "batchProduction": "Seeriatootmine"
+  },
+  "footer": {
+    "description": "Professionaalsed CNC-töötluse, treiimise ja freesimise teenused Lätis. Üle {{years}} aasta kogemust kohandatud komponentide tootmisel.",
+    "location": "Läti · Ülemaailmne tarnimine",
+    "navigation": "Navigatsioon",
+    "services": "Teenused",
+    "copyright": "© {{year}} {{appName}}. Kõik õigused kaitstud.",
+    "tagline": "Täpne CNC-töötlus · Läti · Asut. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Ava menüü",
+    "appearance": "Välimus",
+    "contactButton": "Võta ühendust",
+    "theme": {
+      "system": "Süsteem",
+      "light": "Hele",
+      "dark": "Tume"
+    },
+    "language": "Keel"
+  },
+  "copyButton": {
+    "copied": "Kopeeritud",
+    "labelCopied": "{{label}} kopeeritud",
+    "ariaLabel": "Kopeeri"
+  },
+  "themeToggle": {
+    "ariaLabel": "Vaheta teemat"
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "backHome": "Tagasi avalehele"
   }
 }

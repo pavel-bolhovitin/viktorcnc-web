@@ -228,6 +228,55 @@
     "allMaterials": "Kaikki materiaalit",
     "showMore": "Näytä lisää ({{count}})",
     "multiPart": "Moniosaiset",
-    "dialogTitle": "CNC-osa — {{material}}"
+    "dialogTitle": "CNC-osa — {{material}}",
+    "close": "Sulje"
+  },
+  "nav": {
+    "services": "Palvelut",
+    "gallery": "Galleria",
+    "workshop": "Verstas",
+    "about": "Meistä",
+    "process": "Prosessi",
+    "faq": "UKK",
+    "contact": "Yhteystiedot",
+    "contactButton": "Ota yhteyttä"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC-jyrsintä",
+    "cncTurning": "CNC-sorvaaus",
+    "reverseEngineering": "Käänteinen suunnittelu",
+    "cadModeling": "CAD-mallinnus",
+    "batchProduction": "Sarjatuotanto"
+  },
+  "footer": {
+    "description": "Ammattimaiset CNC-koneistus-, sorvaaus- ja jyrsintäpalvelut Latviassa. Yli {{years}} vuoden kokemus räätälöityjen komponenttien valmistuksesta.",
+    "location": "Latvia · Toimitus maailmanlaajuisesti",
+    "navigation": "Navigointi",
+    "services": "Palvelut",
+    "copyright": "© {{year}} {{appName}}. Kaikki oikeudet pidätetään.",
+    "tagline": "Tarkkuus-CNC-koneistus · Latvia · Perustettu {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Avaa valikko",
+    "appearance": "Ulkoasu",
+    "contactButton": "Ota yhteyttä",
+    "theme": {
+      "system": "Järjestelmä",
+      "light": "Vaalea",
+      "dark": "Tumma"
+    },
+    "language": "Kieli"
+  },
+  "copyButton": {
+    "copied": "Kopioitu",
+    "labelCopied": "{{label}} kopioitu",
+    "ariaLabel": "Kopioi"
+  },
+  "themeToggle": {
+    "ariaLabel": "Vaihda teemaa"
+  },
+  "notFound": {
+    "title": "Sivua ei löydy",
+    "backHome": "Takaisin etusivulle"
   }
 }

@@ -87,7 +87,7 @@ export function GalleryDialog({
             className='absolute top-3 right-3 z-20 bg-black/50 p-1.5 text-white backdrop-blur-sm rounded-sm transition-colors hover:bg-black/70'
           >
             <X className='h-4 w-4' />
-            <span className='sr-only'>Close</span>
+            <span className='sr-only'>{t('gallery.close')}</span>
           </button>
 
           <CarouselContent className='ml-0 h-full'>

@@ -2,12 +2,14 @@
 
 import { Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useTheme } from './ThemeProvider';
 import { Button } from './ui/button';
 
 export function ThemeToggle({ className }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { t } = useTranslation('common');
 
   useEffect(() => setMounted(true), []);
 
@@ -17,7 +19,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       size='icon'
       className={className}
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-      aria-label='Toggle theme'
+      aria-label={t('themeToggle.ariaLabel')}
     >
       {mounted && (resolvedTheme === 'dark' ? (
         <Sun className='h-5 w-5' />

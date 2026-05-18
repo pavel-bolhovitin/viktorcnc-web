@@ -228,6 +228,55 @@
     "allMaterials": "Alle Materialien",
     "showMore": "Mehr anzeigen ({{count}})",
     "multiPart": "Mehrteilig",
-    "dialogTitle": "CNC-Teil — {{material}}"
+    "dialogTitle": "CNC-Teil — {{material}}",
+    "close": "Schließen"
+  },
+  "nav": {
+    "services": "Leistungen",
+    "gallery": "Galerie",
+    "workshop": "Werkstatt",
+    "about": "Über uns",
+    "process": "Ablauf",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "contactButton": "Kontakt aufnehmen"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC-Fräsen",
+    "cncTurning": "CNC-Drehen",
+    "reverseEngineering": "Reverse Engineering",
+    "cadModeling": "CAD-Modellierung",
+    "batchProduction": "Serienproduktion"
+  },
+  "footer": {
+    "description": "Professionelle CNC-Bearbeitungs-, Dreh- und Fräsdienstleistungen in Lettland. Über {{years}} Jahre Erfahrung in der Fertigung kundenspezifischer Bauteile.",
+    "location": "Lettland · Weltweiter Versand",
+    "navigation": "Navigation",
+    "services": "Leistungen",
+    "copyright": "© {{year}} {{appName}}. Alle Rechte vorbehalten.",
+    "tagline": "Präzisions-CNC-Bearbeitung · Lettland · Gegr. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Menü öffnen",
+    "appearance": "Erscheinungsbild",
+    "contactButton": "Kontakt aufnehmen",
+    "theme": {
+      "system": "System",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "language": "Sprache"
+  },
+  "copyButton": {
+    "copied": "Kopiert",
+    "labelCopied": "{{label}} kopiert",
+    "ariaLabel": "Kopieren"
+  },
+  "themeToggle": {
+    "ariaLabel": "Design wechseln"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "backHome": "Zur Startseite"
   }
 }

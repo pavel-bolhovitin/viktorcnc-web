@@ -1,4 +1,7 @@
+'use client';
+
 import { DraftingCompass } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
 import { env } from '@/utils/env';
 import { LanguageSelect } from './LanguageSelect';
@@ -8,6 +11,8 @@ import { Separator } from './ui/separator';
 import { SidebarTrigger } from './ui/sidebar';
 
 export function AppBar() {
+  const { t } = useTranslation('common');
+
   return (
     <header className='sticky top-0 z-app-bar flex h-16 shrink-0 items-center border-b border-b-border bg-background/60 backdrop-blur-md'>
       <div className='flex w-full items-center gap-1 px-4 sm:justify-between md:gap-6 md:px-8'>
@@ -28,13 +33,13 @@ export function AppBar() {
         </div>
 
         <nav className='hidden items-center gap-6 text-sm font-medium text-foreground/70 lg:flex'>
-          {NAV_LINKS.map(({ label, href }) => (
+          {NAV_LINKS.map(({ key, href }) => (
             <a
-              key={label}
+              key={key}
               href={href}
               className='transition-colors hover:text-foreground'
             >
-              {label}
+              {t(key)}
             </a>
           ))}
         </nav>
@@ -43,7 +48,7 @@ export function AppBar() {
           <LanguageSelect className='hidden sm:flex' />
           <ThemeToggle className='hidden sm:flex' />
           <Button asChild size='lg' className='hidden px-4 sm:flex'>
-            <a href={`#${SECTION_IDS.contact}`}>Contact me</a>
+            <a href={`#${SECTION_IDS.contact}`}>{t('nav.contactButton')}</a>
           </Button>
         </div>
       </div>

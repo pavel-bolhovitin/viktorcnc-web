@@ -228,6 +228,55 @@
     "allMaterials": "Всі матеріали",
     "showMore": "Показати більше ({{count}})",
     "multiPart": "Складова деталь",
-    "dialogTitle": "Деталь ЧПК — {{material}}"
+    "dialogTitle": "Деталь ЧПК — {{material}}",
+    "close": "Закрити"
+  },
+  "nav": {
+    "services": "Послуги",
+    "gallery": "Галерея",
+    "workshop": "Майстерня",
+    "about": "Про майстра",
+    "process": "Процес",
+    "faq": "FAQ",
+    "contact": "Контакти",
+    "contactButton": "Зв'язатися"
+  },
+  "serviceLinks": {
+    "cncMilling": "Фрезерування ЧПК",
+    "cncTurning": "Токарна обробка",
+    "reverseEngineering": "Зворотна інженерія",
+    "cadModeling": "CAD-моделювання",
+    "batchProduction": "Серійне виробництво"
+  },
+  "footer": {
+    "description": "Професійні послуги ЧПК-обробки, точіння та фрезерування в Латвії. Понад {{years}} років досвіду у виготовленні деталей на замовлення.",
+    "location": "Латвія · Доставка по всьому світу",
+    "navigation": "Навігація",
+    "services": "Послуги",
+    "copyright": "© {{year}} {{appName}}. Всі права захищені.",
+    "tagline": "Точна ЧПК-обробка · Латвія · Засн. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Відкрити меню",
+    "appearance": "Вигляд",
+    "contactButton": "Зв'язатися",
+    "theme": {
+      "system": "Система",
+      "light": "Світла",
+      "dark": "Темна"
+    },
+    "language": "Мова"
+  },
+  "copyButton": {
+    "copied": "Скопійовано",
+    "labelCopied": "{{label}} скопійовано",
+    "ariaLabel": "Копіювати"
+  },
+  "themeToggle": {
+    "ariaLabel": "Переключити тему"
+  },
+  "notFound": {
+    "title": "Сторінку не знайдено",
+    "backHome": "На головну"
   }
 }

@@ -1,3 +1,5 @@
+'use client';
+
 import {
   DraftingCompass,
   Mail,
@@ -5,11 +7,13 @@ import {
   MessageCircle,
   Phone,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { FOUNDED_YEAR, YEARS_EXPERIENCE } from '@/constants/founder';
 import { NAV_LINKS, SERVICE_LINKS } from '@/constants/sections';
 import { env } from '@/utils/env';
 
 export function Footer() {
+  const { t } = useTranslation('common');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -27,14 +31,12 @@ export function Footer() {
               </span>
             </div>
             <p className='mb-6 max-w-sm text-sm leading-relaxed text-muted-foreground'>
-              Professional CNC machining, turning, and milling services in
-              Latvia. Over {YEARS_EXPERIENCE} years of expertise in
-              manufacturing custom components for global industries.
+              {t('footer.description', { years: YEARS_EXPERIENCE })}
             </p>
             <ul className='space-y-2 text-sm text-muted-foreground'>
               <li className='flex items-center gap-2'>
                 <MapPin className='size-3.5 shrink-0 text-muted-foreground/50' />
-                <span>Latvia · Worldwide Shipping</span>
+                <span>{t('footer.location')}</span>
               </li>
               <li className='flex items-center gap-2'>
                 <Mail className='size-3.5 shrink-0 text-muted-foreground/50' />
@@ -70,16 +72,16 @@ export function Footer() {
 
           <div>
             <p className='mb-4 text-xs font-semibold tracking-widest text-muted-foreground/60 uppercase'>
-              Navigation
+              {t('footer.navigation')}
             </p>
             <ul className='space-y-2.5'>
-              {NAV_LINKS.map(({ label, href }) => (
-                <li key={label}>
+              {NAV_LINKS.map(({ key, href }) => (
+                <li key={key}>
                   <a
                     href={href}
                     className='text-sm text-muted-foreground transition-colors hover:text-foreground'
                   >
-                    {label}
+                    {t(key)}
                   </a>
                 </li>
               ))}
@@ -88,16 +90,16 @@ export function Footer() {
 
           <div>
             <p className='mb-4 text-xs font-semibold tracking-widest text-muted-foreground/60 uppercase'>
-              Services
+              {t('footer.services')}
             </p>
             <ul className='space-y-2.5'>
-              {SERVICE_LINKS.map(({ label, href }) => (
-                <li key={label}>
+              {SERVICE_LINKS.map(({ key, href }) => (
+                <li key={key}>
                   <a
                     href={href}
                     className='text-sm text-muted-foreground transition-colors hover:text-foreground'
                   >
-                    {label}
+                    {t(key)}
                   </a>
                 </li>
               ))}
@@ -108,10 +110,8 @@ export function Footer() {
 
       <div className='border-t border-border'>
         <div className='mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-6 py-5 text-xs text-muted-foreground/60'>
-          <span>
-            © {currentYear} {env.appName}. All rights reserved.
-          </span>
-          <span>Precision CNC Machining · Latvia · Est. {FOUNDED_YEAR}</span>
+          <span>{t('footer.copyright', { year: currentYear, appName: env.appName })}</span>
+          <span>{t('footer.tagline', { founded: FOUNDED_YEAR })}</span>
         </div>
       </div>
     </footer>

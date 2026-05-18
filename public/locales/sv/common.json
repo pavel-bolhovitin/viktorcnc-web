@@ -228,6 +228,55 @@
     "allMaterials": "Alla material",
     "showMore": "Visa mer ({{count}})",
     "multiPart": "Flerdelad",
-    "dialogTitle": "CNC-del — {{material}}"
+    "dialogTitle": "CNC-del — {{material}}",
+    "close": "Stäng"
+  },
+  "nav": {
+    "services": "Tjänster",
+    "gallery": "Galleri",
+    "workshop": "Verkstad",
+    "about": "Om oss",
+    "process": "Process",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "contactButton": "Kontakta mig"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC-fräsning",
+    "cncTurning": "CNC-svarvning",
+    "reverseEngineering": "Reverse engineering",
+    "cadModeling": "CAD-modellering",
+    "batchProduction": "Serieproduktion"
+  },
+  "footer": {
+    "description": "Professionella CNC-bearbetnings-, svarvnings- och fräsningstjänster i Lettland. Över {{years}} års erfarenhet av att tillverka kundanpassade komponenter.",
+    "location": "Lettland · Leverans världen över",
+    "navigation": "Navigation",
+    "services": "Tjänster",
+    "copyright": "© {{year}} {{appName}}. Alla rättigheter förbehållna.",
+    "tagline": "Precisions-CNC-bearbetning · Lettland · Grundat {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Öppna meny",
+    "appearance": "Utseende",
+    "contactButton": "Kontakta mig",
+    "theme": {
+      "system": "System",
+      "light": "Ljust",
+      "dark": "Mörkt"
+    },
+    "language": "Språk"
+  },
+  "copyButton": {
+    "copied": "Kopierat",
+    "labelCopied": "{{label}} kopierat",
+    "ariaLabel": "Kopiera"
+  },
+  "themeToggle": {
+    "ariaLabel": "Byt tema"
+  },
+  "notFound": {
+    "title": "Sidan hittades inte",
+    "backHome": "Tillbaka till startsidan"
   }
 }

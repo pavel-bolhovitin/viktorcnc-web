@@ -228,6 +228,55 @@
     "allMaterials": "Všechny materiály",
     "showMore": "Zobrazit více ({{count}})",
     "multiPart": "Vícedílné",
-    "dialogTitle": "CNC díl — {{material}}"
+    "dialogTitle": "CNC díl — {{material}}",
+    "close": "Zavřít"
+  },
+  "nav": {
+    "services": "Služby",
+    "gallery": "Galerie",
+    "workshop": "Dílna",
+    "about": "O nás",
+    "process": "Postup",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "contactButton": "Kontaktovat mě"
+  },
+  "serviceLinks": {
+    "cncMilling": "CNC frézování",
+    "cncTurning": "CNC soustružení",
+    "reverseEngineering": "Reverzní inženýrství",
+    "cadModeling": "CAD modelování",
+    "batchProduction": "Sériová výroba"
+  },
+  "footer": {
+    "description": "Profesionální služby CNC obrábění, soustružení a frézování v Lotyšsku. Více než {{years}} let zkušeností s výrobou zakázkových komponentů.",
+    "location": "Lotyšsko · Celosvětová expedice",
+    "navigation": "Navigace",
+    "services": "Služby",
+    "copyright": "© {{year}} {{appName}}. Všechna práva vyhrazena.",
+    "tagline": "Přesné CNC obrábění · Lotyšsko · Zal. {{founded}}"
+  },
+  "sidebar": {
+    "openMenu": "Otevřít menu",
+    "appearance": "Vzhled",
+    "contactButton": "Kontaktovat mě",
+    "theme": {
+      "system": "Systém",
+      "light": "Světlý",
+      "dark": "Tmavý"
+    },
+    "language": "Jazyk"
+  },
+  "copyButton": {
+    "copied": "Zkopírováno",
+    "labelCopied": "{{label}} zkopírováno",
+    "ariaLabel": "Kopírovat"
+  },
+  "themeToggle": {
+    "ariaLabel": "Přepnout motiv"
+  },
+  "notFound": {
+    "title": "Stránka nenalezena",
+    "backHome": "Zpět na úvod"
   }
 }

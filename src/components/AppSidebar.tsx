@@ -15,10 +15,12 @@ import {
   Wrench,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FOUNDED_YEAR } from '@/constants/founder';
 import { NAV_LINKS, SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
+import { LanguageSelect } from './LanguageSelect';
 import { useTheme } from './ThemeProvider';
 import { Button } from './ui/button';
 import {
@@ -43,30 +45,32 @@ const NAV_ICONS = {
 
 export function AppSidebarTrigger({ className }: { className?: string }) {
   const { toggleSidebar } = useSidebar();
+  const { t } = useTranslation('common');
   return (
     <Button
       variant='ghost'
       size='icon'
       className={className}
       onClick={toggleSidebar}
-      aria-label='Open menu'
+      aria-label={t('sidebar.openMenu')}
     >
       <Menu className='h-5 w-5' />
     </Button>
   );
 }
 
-const THEME_OPTIONS = [
-  { value: 'system', icon: Monitor, label: 'System' },
-  { value: 'light', icon: Sun, label: 'Light' },
-  { value: 'dark', icon: Moon, label: 'Dark' },
-] as const;
-
 export function AppSidebar() {
   const { setOpenMobile } = useSidebar();
   const [activeHash, setActiveHash] = useState('');
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation('common');
   const close = () => setOpenMobile(false);
+
+  const THEME_OPTIONS = [
+    { value: 'system', icon: Monitor, label: t('sidebar.theme.system') },
+    { value: 'light', icon: Sun, label: t('sidebar.theme.light') },
+    { value: 'dark', icon: Moon, label: t('sidebar.theme.dark') },
+  ] as const;
 
   useEffect(() => {
     const onHashChange = () => setActiveHash(window.location.hash);
@@ -90,11 +94,11 @@ export function AppSidebar() {
       </SidebarHeader>
       <SidebarContent className='flex flex-col py-4 px-2'>
         <SidebarMenu className='gap-0.5 flex-1'>
-          {NAV_LINKS.map(({ label, href }) => {
-            const Icon = NAV_ICONS[label as keyof typeof NAV_ICONS];
+          {NAV_LINKS.map(({ key, icon, href }) => {
+            const Icon = NAV_ICONS[icon as keyof typeof NAV_ICONS];
             const isActive = activeHash === href;
             return (
-              <SidebarMenuItem key={label}>
+              <SidebarMenuItem key={key}>
                 <SidebarMenuButton
                   asChild
                   onClick={close}
@@ -113,7 +117,7 @@ export function AppSidebar() {
                       />
                     )}
                     <span className='text-[11px] uppercase tracking-wider font-semibold'>
-                      {label}
+                      {t(key)}
                     </span>
                   </a>
                 </SidebarMenuButton>
@@ -125,7 +129,7 @@ export function AppSidebar() {
         <div className=' mt-auto pt-4 px-2 pb-2 flex flex-col gap-3'>
           <div className='flex flex-col gap-1.5'>
             <p className='text-[10px] uppercase tracking-wider font-semibold text-muted-foreground px-2'>
-              Appearance
+              {t('sidebar.appearance')}
             </p>
             <div className='grid grid-cols-3 gap-1 rounded-md border border-sidebar-border p-1'>
               {THEME_OPTIONS.map(({ value, icon: Icon, label }) => (
@@ -148,6 +152,13 @@ export function AppSidebar() {
             </div>
           </div>
 
+          <div className='flex flex-col gap-1.5'>
+            <p className='text-[10px] uppercase tracking-wider font-semibold text-muted-foreground px-2'>
+              {t('sidebar.language')}
+            </p>
+            <LanguageSelect className='w-full' />
+          </div>
+
           <Button
             variant='outline'
             className='w-full rounded-none text-[11px] uppercase tracking-wider font-semibold gap-2 h-10 mt-9'
@@ -156,16 +167,16 @@ export function AppSidebar() {
           >
             <a href={`#${SECTION_IDS.contact}`}>
               <Mail className='h-4 w-4' />
-              Contact me
+              {t('sidebar.contactButton')}
             </a>
           </Button>
 
           <div className='flex flex-col gap-1 opacity-60'>
             <p className='font-mono text-[10px] text-muted-foreground'>
-              © {new Date().getFullYear()} {env.appName}. All rights reserved.
+              {t('footer.copyright', { year: new Date().getFullYear(), appName: env.appName })}
             </p>
             <p className='font-mono text-[10px] text-muted-foreground'>
-              Precision CNC Machining · Latvia · Est. {FOUNDED_YEAR}
+              {t('footer.tagline', { founded: FOUNDED_YEAR })}
             </p>
           </div>
         </div>
