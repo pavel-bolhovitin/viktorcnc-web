@@ -12,8 +12,8 @@ import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
+import HeroBg from '@/assets/hero-bg.webp';
 import { env } from '@/utils/env';
-import HeroBg from '$/public/hero-bg.webp';
 
 export function HeroSection() {
   const { t } = useTranslation('common');

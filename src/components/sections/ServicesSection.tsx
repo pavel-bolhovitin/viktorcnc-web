@@ -2,12 +2,12 @@
 import { ArrowRight } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useTranslation } from 'react-i18next';
+import cadImg from '@/assets/cad.webp';
+import millingImg from '@/assets/milling.webp';
+import turningImg from '@/assets/turning.webp';
 import { Button } from '@/components/ui/button';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
-import cadImg from '$/public/cad.webp';
-import millingImg from '$/public/milling.webp';
-import turningImg from '$/public/turning.webp';
 
 export function ServicesSection({ className }: { className?: string }) {
   const { t } = useTranslation('common');

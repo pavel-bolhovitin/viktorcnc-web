@@ -1,11 +1,11 @@
 'use client';
 import Image from 'next-export-optimize-images/image';
 import { useTranslation } from 'react-i18next';
+import founderImg from '@/assets/founder.webp';
 import { FOUNDER_FULL_NAME, YEARS_EXPERIENCE } from '@/constants/founder';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
-import founderImg from '$/public/founder.webp';
 
 function SectionHeading() {
   const { t } = useTranslation('common');
