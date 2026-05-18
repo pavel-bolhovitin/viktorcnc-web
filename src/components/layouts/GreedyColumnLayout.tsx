@@ -31,36 +31,23 @@ function distributeToColumns<T>(
   return cols;
 }
 
-export function GreedyColumnLayout<T>({
-  data,
+function ColumnSet<T>({
+  cols,
+  visibleKeys,
   keyExtractor,
-  widthExtractor,
-  heightExtractor,
   renderItem,
-  pageSize,
-  page,
-  numColumns = 3,
-  className,
-}: GreedyColumnLayoutProps<T>) {
-  const cols = distributeToColumns(
-    data,
-    numColumns,
-    widthExtractor,
-    heightExtractor,
-  );
-  const visibleKeys = new Set(
-    data.slice(0, (page + 1) * pageSize).map(keyExtractor),
-  );
-
+  gridClass,
+}: {
+  cols: T[][];
+  visibleKeys: Set<string>;
+  keyExtractor: (item: T) => string;
+  renderItem: (item: T) => ReactNode;
+  gridClass: string;
+}) {
   return (
-    <div
-      className={cn(
-        'grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 items-start',
-        className,
-      )}
-    >
+    <div className={cn('grid gap-4 items-start', gridClass)}>
       {cols.map((col, ci) => (
-        // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+        // biome-ignore lint/suspicious/noArrayIndexKey: column index is stable
         <div key={ci} className='flex flex-col gap-4'>
           {col.map((item) => {
             const key = keyExtractor(item);
@@ -75,6 +62,46 @@ export function GreedyColumnLayout<T>({
           })}
         </div>
       ))}
+    </div>
+  );
+}
+
+export function GreedyColumnLayout<T>({
+  data,
+  keyExtractor,
+  widthExtractor,
+  heightExtractor,
+  renderItem,
+  pageSize,
+  page,
+  numColumns = 3,
+  className,
+}: GreedyColumnLayoutProps<T>) {
+  const cols1 = distributeToColumns(data, 1, widthExtractor, heightExtractor);
+  const cols2 = distributeToColumns(data, 2, widthExtractor, heightExtractor);
+  const cols3 = numColumns >= 3
+    ? distributeToColumns(data, 3, widthExtractor, heightExtractor)
+    : null;
+
+  const visibleKeys = new Set(
+    data.slice(0, (page + 1) * pageSize).map(keyExtractor),
+  );
+
+  const shared = { visibleKeys, keyExtractor, renderItem };
+
+  return (
+    <div className={cn('relative', className)}>
+      <div className='sm:hidden'>
+        <ColumnSet cols={cols1} gridClass='grid-cols-1' {...shared} />
+      </div>
+      <div className={cn('hidden sm:block', cols3 ? 'lg:hidden' : '')}>
+        <ColumnSet cols={cols2} gridClass='grid-cols-2' {...shared} />
+      </div>
+      {cols3 && (
+        <div className='hidden lg:block'>
+          <ColumnSet cols={cols3} gridClass='grid-cols-3' {...shared} />
+        </div>
+      )}
     </div>
   );
 }
