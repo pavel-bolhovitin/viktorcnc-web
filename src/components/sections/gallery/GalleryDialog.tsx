@@ -92,15 +92,15 @@ export function GalleryDialog({
 
           <CarouselContent className='ml-0 h-full'>
             {set.photos.map((photo) => (
-              <CarouselItem key={photo.src.src} className='pl-0 h-full'>
+              <CarouselItem key={photo.src} className='pl-0 h-full'>
                 <div className='relative w-full h-full'>
                   <Image
                     src={photo.src}
                     alt={photo.alt}
-                    fill
-                    placeholder='blur'
+                    width={photo.width}
+                    height={photo.height}
                     sizes='(max-width: 1024px) 100vw, 896px'
-                    className='object-contain select-none'
+                    className='absolute inset-0 h-full w-full object-contain select-none'
                   />
                 </div>
               </CarouselItem>
@@ -113,7 +113,7 @@ export function GalleryDialog({
                 <div className='flex gap-1 bg-black/40 px-2 py-1.5 backdrop-blur-sm'>
                   {set.photos.map((p, i) => (
                     <button
-                      key={p.src.src}
+                      key={p.src}
                       type='button'
                       onClick={() => api?.scrollTo(i)}
                       className={`h-1.25 transition-all duration-200 ${i === active ? 'w-3 bg-white' : 'w-1.25 bg-white/60'}`}

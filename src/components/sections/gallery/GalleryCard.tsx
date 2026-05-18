@@ -81,21 +81,16 @@ export function GalleryCard({
 
       <CarouselContent className='ml-0 h-full'>
         {set.photos.map((photo, i) => (
-          <CarouselItem key={photo.src.src} className='pl-0 h-full'>
+          <CarouselItem key={photo.src} className='pl-0 h-full'>
             <div className='relative h-full w-full'>
-              {loaded.has(i) ? (
+              {loaded.has(i) && (
                 <Image
                   src={photo.src}
                   alt={photo.alt}
-                  fill
-                  placeholder='blur'
+                  width={photo.width}
+                  height={photo.height}
                   sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'
-                  className='object-cover transition-transform duration-500 group-hover:scale-102 select-none'
-                />
-              ) : (
-                <div
-                  className='absolute inset-0 bg-cover bg-center'
-                  style={{ backgroundImage: `url(${photo.src.blurDataURL})` }}
+                  className='absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-102 select-none'
                 />
               )}
             </div>
@@ -109,7 +104,7 @@ export function GalleryCard({
             <div className='flex gap-1 bg-black/30 px-2 py-1.5 backdrop-blur-sm'>
               {set.photos.map((p, i) => (
                 <button
-                  key={p.src.src}
+                  key={p.src}
                   type='button'
                   onClick={(e) => {
                     e.stopPropagation();
