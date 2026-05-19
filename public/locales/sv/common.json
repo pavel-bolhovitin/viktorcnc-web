@@ -226,6 +226,12 @@
     "eyebrow": "Arbetsportfölj",
     "heading": "Anpassade CNC-delar — exempel",
     "allMaterials": "Alla material",
+    "materials": {
+      "aluminum": "Aluminium",
+      "steel": "Stål",
+      "plastic": "Plast",
+      "brass": "Mässing"
+    },
     "showMore": "Visa mer ({{count}})",
     "multiPart": "Flerdelad",
     "dialogTitle": "CNC-del — {{material}}",

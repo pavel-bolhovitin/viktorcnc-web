@@ -226,6 +226,12 @@
     "eyebrow": "Arbeitsgalerie",
     "heading": "Individuelle CNC-Teile — Beispiele",
     "allMaterials": "Alle Materialien",
+    "materials": {
+      "aluminum": "Aluminium",
+      "steel": "Stahl",
+      "plastic": "Kunststoff",
+      "brass": "Messing"
+    },
     "showMore": "Mehr anzeigen ({{count}})",
     "multiPart": "Mehrteilig",
     "dialogTitle": "CNC-Teil — {{material}}",

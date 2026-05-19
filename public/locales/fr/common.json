@@ -226,6 +226,12 @@
     "eyebrow": "Galerie de travaux",
     "heading": "Pièces CNC sur mesure — exemples",
     "allMaterials": "Tous les matériaux",
+    "materials": {
+      "aluminum": "Aluminium",
+      "steel": "Acier",
+      "plastic": "Plastique",
+      "brass": "Laiton"
+    },
     "showMore": "Afficher plus ({{count}})",
     "multiPart": "Multi-pièces",
     "dialogTitle": "Pièce CNC — {{material}}",

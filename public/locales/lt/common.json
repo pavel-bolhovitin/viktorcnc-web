@@ -226,6 +226,12 @@
     "eyebrow": "Darbų galerija",
     "heading": "Individualios CNC detalės — pavyzdžiai",
     "allMaterials": "Visos medžiagos",
+    "materials": {
+      "aluminum": "Aliuminis",
+      "steel": "Plienas",
+      "plastic": "Plastikas",
+      "brass": "Žalvaris"
+    },
     "showMore": "Rodyti daugiau ({{count}})",
     "multiPart": "Daugiakomponentė",
     "dialogTitle": "CNC detalė — {{material}}",

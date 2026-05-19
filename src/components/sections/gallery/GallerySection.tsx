@@ -22,14 +22,8 @@ function parseAspect(aspect: string): [number, number] {
 
 export function GallerySection({ className }: { className?: string }) {
   const { t } = useTranslation('common');
-  const ALL = t('gallery.allMaterials');
 
-  const MATERIALS = [
-    ALL,
-    ...Array.from(new Set(photoSets.flatMap((s) => s.material))).map(
-      (m) => m.charAt(0).toUpperCase() + m.slice(1),
-    ),
-  ];
+  const MATERIAL_KEYS = Array.from(new Set(photoSets.flatMap((s) => s.material))) as string[];
 
   const [selectedMaterials, setSelectedMaterials] = useState<Set<string>>(new Set());
   const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
@@ -40,22 +34,20 @@ export function GallerySection({ className }: { className?: string }) {
   const filteredSets = photoSets.filter(
     (set) =>
       isAll ||
-      set.material.some((m) =>
-        selectedMaterials.has(m.charAt(0).toUpperCase() + m.slice(1)),
-      ),
+      set.material.some((m) => selectedMaterials.has(m)),
   );
 
   const remaining = filteredSets.length - pageSize;
 
-  function toggle(material: string) {
+  function toggle(materialKey: string | null) {
     setPageSize(PAGE_SIZE);
-    if (material === ALL) {
+    if (materialKey === null) {
       setSelectedMaterials(new Set());
     } else {
       setSelectedMaterials((prev) => {
         const next = new Set(prev);
-        if (next.has(material)) next.delete(material);
-        else next.add(material);
+        if (next.has(materialKey)) next.delete(materialKey);
+        else next.add(materialKey);
         return next;
       });
     }
@@ -74,15 +66,24 @@ export function GallerySection({ className }: { className?: string }) {
         </div>
 
         <div className='mb-8 flex flex-wrap gap-2'>
-          {MATERIALS.map((material) => (
+          <Toggle
+            key='all'
+            pressed={isAll}
+            onPressedChange={() => toggle(null)}
+            variant='outline'
+            className='font-mono text-xs uppercase tracking-wider border-foreground/30 text-foreground/70 hover:bg-transparent hover:border-primary hover:text-primary data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:border-primary'
+          >
+            {t('gallery.allMaterials')}
+          </Toggle>
+          {MATERIAL_KEYS.map((key) => (
             <Toggle
-              key={material}
-              pressed={material === ALL ? isAll : selectedMaterials.has(material)}
-              onPressedChange={() => toggle(material)}
+              key={key}
+              pressed={selectedMaterials.has(key)}
+              onPressedChange={() => toggle(key)}
               variant='outline'
               className='font-mono text-xs uppercase tracking-wider border-foreground/30 text-foreground/70 hover:bg-transparent hover:border-primary hover:text-primary data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:border-primary'
             >
-              {material}
+              {t(`gallery.materials.${key}`)}
             </Toggle>
           ))}
         </div>

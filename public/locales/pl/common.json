@@ -226,6 +226,12 @@
     "eyebrow": "Galeria prac",
     "heading": "Niestandardowe części CNC — przykłady",
     "allMaterials": "Wszystkie materiały",
+    "materials": {
+      "aluminum": "Aluminium",
+      "steel": "Stal",
+      "plastic": "Plastik",
+      "brass": "Mosiądz"
+    },
     "showMore": "Pokaż więcej ({{count}})",
     "multiPart": "Wieloczęściowe",
     "dialogTitle": "Część CNC — {{material}}",

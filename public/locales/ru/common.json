@@ -226,6 +226,12 @@
     "eyebrow": "Галерея работ",
     "heading": "Детали на заказ — примеры",
     "allMaterials": "Все материалы",
+    "materials": {
+      "aluminum": "Алюминий",
+      "steel": "Сталь",
+      "plastic": "Пластик",
+      "brass": "Латунь"
+    },
     "showMore": "Показать ещё ({{count}})",
     "multiPart": "Составная деталь",
     "dialogTitle": "Деталь ЧПУ — {{material}}",

@@ -226,6 +226,12 @@
     "eyebrow": "Darbu galerija",
     "heading": "Pielāgotas CNC detaļas — piemēri",
     "allMaterials": "Visi materiāli",
+    "materials": {
+      "aluminum": "Alumīnijs",
+      "steel": "Tērauds",
+      "plastic": "Plastmasa",
+      "brass": "Misiņš"
+    },
     "showMore": "Rādīt vairāk ({{count}})",
     "multiPart": "Daudzkomponentu",
     "dialogTitle": "CNC detaļa — {{material}}",

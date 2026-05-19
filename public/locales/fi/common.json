@@ -226,6 +226,12 @@
     "eyebrow": "Työgalleria",
     "heading": "Räätälöidyt CNC-osat — esimerkkejä",
     "allMaterials": "Kaikki materiaalit",
+    "materials": {
+      "aluminum": "Alumiini",
+      "steel": "Teräs",
+      "plastic": "Muovi",
+      "brass": "Messinki"
+    },
     "showMore": "Näytä lisää ({{count}})",
     "multiPart": "Moniosaiset",
     "dialogTitle": "CNC-osa — {{material}}",

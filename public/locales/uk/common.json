@@ -226,6 +226,12 @@
     "eyebrow": "Галерея робіт",
     "heading": "Деталі на замовлення — приклади",
     "allMaterials": "Всі матеріали",
+    "materials": {
+      "aluminum": "Алюміній",
+      "steel": "Сталь",
+      "plastic": "Пластик",
+      "brass": "Латунь"
+    },
     "showMore": "Показати більше ({{count}})",
     "multiPart": "Складова деталь",
     "dialogTitle": "Деталь ЧПК — {{material}}",

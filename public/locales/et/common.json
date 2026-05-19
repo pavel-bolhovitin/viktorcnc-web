@@ -226,6 +226,12 @@
     "eyebrow": "Tööde galerii",
     "heading": "Kohandatud CNC-osad — näited",
     "allMaterials": "Kõik materjalid",
+    "materials": {
+      "aluminum": "Alumiinium",
+      "steel": "Teras",
+      "plastic": "Plastik",
+      "brass": "Messing"
+    },
     "showMore": "Näita rohkem ({{count}})",
     "multiPart": "Mitmeosaline",
     "dialogTitle": "CNC-osa — {{material}}",

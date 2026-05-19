@@ -59,9 +59,7 @@ export function GalleryCard({
       }}
     >
       <div className='absolute top-2 left-2 z-10 rounded-sm bg-black/30 px-2 py-0.5 font-mono text-xs uppercase text-white backdrop-blur-sm'>
-        {set.material
-          .map((m) => m.charAt(0).toUpperCase() + m.slice(1))
-          .join(', ')}
+        {set.material.map((m) => t(`gallery.materials.${m}`)).join(', ')}
       </div>
 
       {set.isMultiPart && (

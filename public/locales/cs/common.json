@@ -226,6 +226,12 @@
     "eyebrow": "Galerie prací",
     "heading": "Díly na míru — příklady",
     "allMaterials": "Všechny materiály",
+    "materials": {
+      "aluminum": "Hliník",
+      "steel": "Ocel",
+      "plastic": "Plast",
+      "brass": "Mosaz"
+    },
     "showMore": "Zobrazit více ({{count}})",
     "multiPart": "Vícedílné",
     "dialogTitle": "CNC díl — {{material}}",

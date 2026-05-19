@@ -226,6 +226,12 @@
     "eyebrow": "Work Gallery",
     "heading": "Custom CNC Parts — Examples",
     "allMaterials": "All Materials",
+    "materials": {
+      "aluminum": "Aluminum",
+      "steel": "Steel",
+      "plastic": "Plastic",
+      "brass": "Brass"
+    },
     "showMore": "Show more ({{count}})",
     "multiPart": "Multi-part",
     "dialogTitle": "CNC part — {{material}}",

@@ -226,6 +226,12 @@
     "eyebrow": "Werkgalerij",
     "heading": "Maatwerk CNC-onderdelen — voorbeelden",
     "allMaterials": "Alle materialen",
+    "materials": {
+      "aluminum": "Aluminium",
+      "steel": "Staal",
+      "plastic": "Kunststof",
+      "brass": "Messing"
+    },
     "showMore": "Meer weergeven ({{count}})",
     "multiPart": "Meerdelig",
     "dialogTitle": "CNC-onderdeel — {{material}}",
