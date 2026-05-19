@@ -31,15 +31,17 @@ export function GallerySection({ className }: { className?: string }) {
     ),
   ];
 
-  const [selected, setSelected] = useState<Set<string>>(new Set([ALL]));
+  const [selectedMaterials, setSelectedMaterials] = useState<Set<string>>(new Set());
   const [openSet, setOpenSet] = useState<PhotoSet | null>(null);
   const [pageSize, setPageSize] = useState(PAGE_SIZE);
 
+  const isAll = selectedMaterials.size === 0;
+
   const filteredSets = photoSets.filter(
     (set) =>
-      selected.has(ALL) ||
+      isAll ||
       set.material.some((m) =>
-        selected.has(m.charAt(0).toUpperCase() + m.slice(1)),
+        selectedMaterials.has(m.charAt(0).toUpperCase() + m.slice(1)),
       ),
   );
 
@@ -48,14 +50,12 @@ export function GallerySection({ className }: { className?: string }) {
   function toggle(material: string) {
     setPageSize(PAGE_SIZE);
     if (material === ALL) {
-      setSelected(new Set([ALL]));
+      setSelectedMaterials(new Set());
     } else {
-      setSelected((prev) => {
+      setSelectedMaterials((prev) => {
         const next = new Set(prev);
-        next.delete(ALL);
         if (next.has(material)) next.delete(material);
         else next.add(material);
-        if (next.size === 0) next.add(ALL);
         return next;
       });
     }
@@ -77,7 +77,7 @@ export function GallerySection({ className }: { className?: string }) {
           {MATERIALS.map((material) => (
             <Toggle
               key={material}
-              pressed={selected.has(material)}
+              pressed={material === ALL ? isAll : selectedMaterials.has(material)}
               onPressedChange={() => toggle(material)}
               variant='outline'
               className='font-mono text-xs uppercase tracking-wider border-foreground/30 text-foreground/70 hover:bg-transparent hover:border-primary hover:text-primary data-[state=on]:bg-primary data-[state=on]:text-primary-foreground data-[state=on]:border-primary'
