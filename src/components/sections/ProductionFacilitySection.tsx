@@ -9,12 +9,13 @@ import {
 } from 'lucide-react';
 import Image from 'next-export-optimize-images/image';
 import { useTranslation } from 'react-i18next';
-import millingCenter1 from '@/assets/milling-center-1.webp';
-import millingCenter2 from '@/assets/milling-center-2.webp';
-import turningCenter from '@/assets/turning-center.webp';
 import { Button } from '@/components/ui/button';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
+
+const millingCenter1 = '/milling-center-1.webp';
+const millingCenter2 = '/milling-center-2.webp';
+const turningCenter = '/turning-center.webp';
 
 export function ProductionFacilitySection({
   className,
@@ -103,7 +104,6 @@ export function ProductionFacilitySection({
                     src={machine.image}
                     alt={machine.alt}
                     fill
-                    placeholder='blur'
                     sizes='(max-width: 768px) 100vw, 60vw'
                     className='object-cover transition-all duration-500 select-none'
                   />

@@ -1,11 +1,12 @@
 'use client';
 import Image from 'next-export-optimize-images/image';
 import { useTranslation } from 'react-i18next';
-import founderImg from '@/assets/founder.webp';
 import { FOUNDER_FULL_NAME, YEARS_EXPERIENCE } from '@/constants/founder';
 import { SECTION_IDS } from '@/constants/sections';
 import { cn } from '@/lib/utils';
 import { env } from '@/utils/env';
+
+const founderImg = '/founder.webp';
 
 function SectionHeading() {
   const { t } = useTranslation('common');
@@ -74,7 +75,6 @@ export function MeetFounderSection({ className }: { className?: string }) {
                 src={founderImg}
                 alt={t('founder.imgAlt')}
                 fill
-                placeholder='blur'
                 sizes='(max-width: 1024px) 100vw, 50vw'
                 className='object-cover select-none'
               />

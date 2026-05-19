@@ -12,7 +12,6 @@ import { CopyButton } from '@/components/buttons/CopyButton';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { YEARS_EXPERIENCE } from '@/constants/founder';
-import HeroBg from '@/assets/hero-bg.webp';
 import { env } from '@/utils/env';
 
 export function HeroSection() {
@@ -22,10 +21,9 @@ export function HeroSection() {
     <section className='relative flex min-h-[calc(100vh-4rem)] w-full items-center overflow-hidden'>
       <div className='absolute inset-0 z-0'>
         <Image
-          src={HeroBg}
+          src='/hero-bg.webp'
           alt=''
           fill
-          placeholder='blur'
           sizes='100vw'
           className='object-cover filter-[grayscale(0.2)_contrast(1.1)] select-none'
         />
